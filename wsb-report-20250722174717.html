@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            color: #1a237e;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1a237e;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid #4267B2;
+        }
+        .stock-card h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .stock-table th, .stock-table td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .stock-table th {
+            font-size: 16px;
+            font-weight: 700;
+            color: #555;
+            background-color: #f8f9fa;
+        }
+        .stock-table td {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .reason-title {
+            font-weight: bold;
+            color: #0d47a1;
+        }
+        .analysis {
+            color: #333;
+        }
+        .annotation {
+            display: block;
+            font-size: 12px;
+            color: #888;
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 2px solid #ccc;
+        }
+        .positive { color: #2e7d32; font-weight: bold; }
+        .negative { color: #c62828; font-weight: bold; }
+        .neutral { color: #546e7a; font-weight: bold; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 24px; }
+            .stock-card h2 { font-size: 20px; }
+            .stock-table th, .stock-table td { font-size: 14px; }
+            .annotation { font-size: 11px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향 (24.07.31)</h1>
+
+        <div class="stock-card">
+            <h2>OPEN (Opendoor Technologies)</h2>
+            <table class="stock-table">
+                <tr>
+                    <td class="reason-title positive">폭발적 급등과 기대감</td>
+                    <td class="analysis">
+                        게시물과 댓글 전반에 걸쳐 가장 많이 언급된 종목. 단기간에 수백 %의 수익률을 기록하며 투자자들의 폭발적인 관심을 받음. 많은 투자자들이 추가 상승을 기대하며 매수에 동참했으며, 목표가로 $10, $50, 심지어 $80까지 거론됨.
+                        <span class="annotation"><strong>투더문(To the moon):</strong> 주가가 달에 닿을 만큼 급격하게 상승하기를 바라는 표현.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="reason-title negative">펌프 앤 덤프 우려</td>
+                    <td class="analysis">
+                        상당수 투자자들은 현재의 급등이 펀더멘털과 무관한 전형적인 '펌프 앤 덤프'라고 지적함. 회사의 높은 부채 비율(400%)과 수익성 문제를 지적하며, 곧 폭락이 올 것이라고 경고.
+                        <span class="annotation"><strong>펌프 앤 덤프(Pump and Dump):</strong> 특정 자산의 가격을 인위적으로 부풀린 후 고점에서 팔아치우는 시세 조종 행위.</span>
+                        <span class="annotation"><strong>러그풀(Rug Pull):</strong> 프로젝트 개발자가 갑자기 프로젝트를 중단하고 투자금을 가지고 사라지는 사기 행위. 주가 폭락을 비유적으로 표현.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="reason-title neutral">FOMO와 무지성 매수</td>
+                    <td class="analysis">
+                        많은 투자자들이 다른 사람들의 수익 인증에 자극받아 'FOMO' 심리로 매수에 동참했다고 밝힘. 일부는 해당 기업이 무엇을 하는지조차 모르고 매수했다고 언급. 이는 밈 주식의 전형적인 특징을 보여줌.
+                        <span class="annotation"><strong>FOMO(Fear Of Missing Out):</strong> 기회를 놓치는 것에 대한 두려움으로, 주가가 급등할 때 추격 매수하는 심리를 이름.</span>
+                        <span class="annotation"><strong>Regards:</strong> 'Retards'를 순화하여 커뮤니티 사용자들이 서로를 부르는 애칭. 비이성적이고 무모한 투자자를 의미.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="reason-title neutral">상승 이유 분석</td>
+                    <td class="analysis">
+                        투자자들은 상승 이유로 'CEO의 CVNA 언급', '기관 투자자의 매수설', '숏 스퀴즈 기대감', '실적 발표(어닝) 기대감', '금리 인하 시 수혜 전망' 등을 거론함. 한편에서는 한 알고리즘이 동명의 다른 회사("Open Door Partners LLC")의 공시를 $OPEN의 것으로 착각해 매도 폭탄을 던졌고, 이로 인해 급락 후 반발 매수세가 유입되었다는 루머도 언급됨.
+                        <span class="annotation"><strong>DD (Due Diligence):</strong> 기업 실사. 투자 분석을 의미하지만, 커뮤니티에서는 종종 편향된 긍정적 분석을 뜻하기도 함.</span>
+                        <span class="annotation"><strong>감마 스퀴즈(Gamma Squeeze):</strong> 콜옵션 대량 매수로 인해 마켓메이커들이 주식을 매수하며 주가 상승이 가속화되는 현상.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="reason-title neutral">매매 전략 공유</td>
+                    <td class="analysis">
+                        수익 실현, 손절 라인 설정, 원금 회수 후 나머지 물량 보유 등 다양한 투자 전략이 공유됨. 특히 주가가 급등락하며 "다이아몬드 핸드"와 "페이퍼 핸드" 투자자들의 희비가 엇갈림.
+                        <span class="annotation"><strong>다이아몬드 핸드(Diamond Hands):</strong> 극심한 변동성에도 자산을 팔지 않고 굳건히 버티는 투자자.</span>
+                        <span class="annotation"><strong>페이퍼 핸드(Paper Hands):</strong> 작은 가격 변동에도 쉽게 겁을 먹고 자산을 팔아버리는 투자자.</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <h2>GME (GameStop) & BBBY (Bed Bath & Beyond)</h2>
+            <table class="stock-table">
+                <tr>
+                    <td class="reason-title neutral">과거 밈 주식의 상징</td>
+                    <td class="analysis">
+                        OPEN의 열풍을 과거 게임스탑, 베드배스앤비욘드 사태와 비교하는 댓글이 다수 등장. 이들 주식에서 큰 손실을 본 경험을 언급하며 OPEN 투자의 위험성을 경고하거나, 당시의 영광이 재현되기를 기대하는 모습을 보임. 이들 종목은 현재 밈 주식 현상의 '바로미터' 역할을 함.
+                        <span class="annotation"><strong>밈 주식(Meme Stock):</strong> 온라인 커뮤니티의 유행을 통해 펀더멘털과 무관하게 주가가 급등하는 주식.</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <h2>CVNA (Carvana)</h2>
+            <table class="stock-table">
+                <tr>
+                    <td class="reason-title positive">OPEN의 롤모델</td>
+                    <td class="analysis">
+                        온라인 중고차 판매 플랫폼인 카바나는 OPEN과 유사한 비즈니스 모델을 가진 기업으로 자주 언급됨. 과거 CEO가 OPEN을 CVNA에 비유한 것이 상승의 촉매제가 되었다는 분석이 있음. 또한, CVNA 역시 밈 주식으로 시작해 주가가 크게 상승한 성공 사례로 거론됨.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <h2>기타 언급 주식</h2>
+            <table class="stock-table">
+                <thead>
+                    <tr>
+                        <th>종목</th>
+                        <th>언급 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="neutral">CRCL, PEW</td>
+                        <td class="analysis">OPEN에 투자하기 위해 손실을 보고 매도한 종목으로 언급됨.</td>
+                    </tr>
+                    <tr>
+                        <td class="neutral">APLD, PLTR, RIOT, PLUG, UNH</td>
+                        <td class="analysis">개별 투자자들이 매수를 추천하거나 관심을 표현하며 짧게 언급됨.</td>
+                    </tr>
+                    <tr>
+                        <td class="neutral">VOO, SPY</td>
+                        <td class="analysis">밈 주식의 높은 변동성에서 벗어나 안정적인 ETF로 돌아가겠다는 투자자가 언급. OPEN의 주가 움직임이 SPY와 연동되었다는 분석도 나옴.</td>
+                    </tr>
+                    <tr>
+                        <td class="neutral">RKT, COOP</td>
+                        <td class="analysis">금리 인하 시 OPEN보다 더 유망한 주택 관련주로 언급됨.</td>
+                    </tr>
+                    <tr>
+                        <td class="neutral">ASTS, NVDA, HBAR</td>
+                        <td class="analysis">과거에 큰 수익을 냈거나, 너무 일찍 팔아 아쉬움이 남는 종목으로 회자됨.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
