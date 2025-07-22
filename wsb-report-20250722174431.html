@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            padding: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .stock-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .stock-card h2 {
+            color: #4CAF50; /* Green for tickers */
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        .stock-card h3 {
+            color: #bb86fc; /* Purple for subheadings */
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #2a2a2a;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #bb86fc;
+        }
+        strong {
+            color: #fdd835; /* Yellow for emphasis */
+            font-weight: 700;
+        }
+        .bullish { color: #66bb6a; }
+        .bearish { color: #ef5350; }
+        .neutral { color: #78909c; }
+        .annotation {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #9e9e9e;
+            background-color: #2c2c2c;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px dashed #444;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background-color: #333;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+        }
+        td {
+            background-color: #2a2a2a;
+        }
+        .highlight {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(24.07.31)</h1>
+
+        <div class="stock-card">
+            <h2>$OPEN (Opendoor Technologies Inc.)</h2>
+            <p>이번 주 SNS에서 가장 압도적인 관심을 받은 주식. 주가 급등으로 인한 폭발적인 반응과 함께, 투자자들은 극도의 흥분과 불안을 동시에 표출하며 격렬한 토론을 벌이고 있습니다.</p>
+            
+            <table>
+                <thead>
+                    <tr><th colspan="2">주요 관심사 요약</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="bullish highlight">긍정적 전망 (Bullish)</span></td>
+                        <td>
+                            <ul>
+                                <li><strong>모멘텀 및 FOMO:</strong> 주가 급등에 따른 '나만 뒤처질 수 없다'는 FOMO 심리가 매수를 강력하게 유도.</li>
+                                <li><strong>숏 스퀴즈 기대:</strong> 높은 공매도 비율을 근거로 제2의 게임스탑 같은 숏 스퀴즈 발생 가능성 제기.</li>
+                                <li><strong>CVNA와의 비교:</strong> 과거 급등했던 온라인 중고차 업체 카바나(CVNA)와 비즈니스 모델을 비교하며 높은 성장 잠재력 기대.</li>
+                                <li><strong>금리 인하 기대감:</strong> 향후 금리 인하 시 부동산 시장이 활성화되어 회사에 큰 호재가 될 것이라는 전망.</li>
+                                <li><strong>실적 개선 루머:</strong> 다가오는 실적 발표에서 흑자 전환이 가능하다는 루머가 확산되며 기대감 증폭.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="bearish highlight">부정적 전망 (Bearish)</span></td>
+                        <td>
+                            <ul>
+                                <li><strong>펌프 앤 덤프 우려:</strong> "전형적인 펌프 앤 덤프"라는 의견이 지배적. 주가 조작 후 대량 매도로 인한 폭락 경고.</li>
+                                <li><strong>펀더멘탈 부실:</strong> 높은 부채 비율(400% 언급)과 지속적인 적자 등 취약한 회사 재무 상태에 대한 지적.</li>
+                                <li><strong>차익 실현 압박:</strong> 단기 급등에 따른 차익 실현 매물이 쏟아지며 주가 하락을 유발.</li>
+                                <li><strong>러그풀(Rug Pull) 경고:</strong> 기관 투자자들이 개인들을 이용해 주가를 띄운 뒤 탈출할 것이라는 우려.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="neutral highlight">투자 전략</span></td>
+                        <td>
+                            <ul>
+                                <li><strong>원금 회수:</strong> 수익 발생 시 원금을 먼저 회수하고 나머지로만 투자하는 전략이 많은 공감을 얻음.</li>
+                                <li><strong>손절매(Stop Loss) 활용:</strong> 큰 변동성에 대비해 손절매를 설정하는 투자자와, 잦은 변동성으로 손절만 당할 것이라며 반대하는 의견이 대립.</li>
+                                <li><strong>풋옵션 헤징:</strong> 주가 하락 위험에 대비해 풋옵션을 매수하여 위험을 관리하는 전략 제시.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <p class="annotation">
+                <strong>※ 용어 설명:</strong><br>
+                - <strong>FOMO (Fear Of Missing Out):</strong> 좋은 기회를 놓치는 것에 대한 두려움.<br>
+                - <strong>펌프 앤 덤프 (Pump and Dump):</strong> 인위적으로 주가를 부양한 뒤 고점에서 팔아치우는 작전.<br>
+                - <strong>러그풀 (Rug Pull):</strong> 프로젝트 개발자가 갑자기 잠적해 투자금을 가로채는 행위.<br>
+                - <strong>숏 스퀴즈 (Short Squeeze):</strong> 주가 하락에 베팅한 공매도 투자자들이 주가 상승으로 인해 손실을 줄이기 위해 주식을 다시 사들이면서 주가가 폭등하는 현상.<br>
+                - <strong>HODL:</strong> 'Hold On for Dear Life'의 약자로, 가격 변동에 상관없이 계속 보유하는 것을 의미.<br>
+                - <strong>Regards:</strong> '멍청이들'이라는 뜻의 'retards'를 고의로 틀리게 쓴 단어. 커뮤니티 회원들이 서로를 부르는 애칭이자 자조적인 용어.
+            </p>
+        </div>
+
+        <div class="stock-card">
+            <h2>$CVNA (Carvana Co.)</h2>
+            <ul>
+                <li><strong>비교 대상:</strong> 많은 투자자들이 $OPEN의 미래를 예측하기 위해 과거 주가가 폭등했던 $CVNA를 주요 비교 사례로 언급합니다.</li>
+                <li><strong>성공 기대:</strong> 한 투자자는 "과거 CVNA는 6달러였으나 지금은 330달러"라며 $OPEN도 비슷한 성공을 거둘 수 있다고 주장했습니다.</li>
+                <li><strong>CEO 발언:</strong> $OPEN의 CEO가 $CVNA를 언급한 것이 주가 상승의 중요한 촉매제 중 하나로 분석되었습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>$BBBY (Bed Bath & Beyond)</h2>
+            <ul>
+                <li><strong>경고의 상징:</strong> 파산한 대표적인 '밈 주식'으로, $OPEN에 대한 투자가 $BBBY처럼 비극으로 끝날 수 있다는 경고의 의미로 자주 소환됩니다.</li>
+                <li><strong>실패 경험담:</strong> 한 투자자는 과거 $BBBY에 5천 달러를 투자했다가 80% 손실을 본 경험을 이야기하며 신중한 투자를 암시했습니다.</li>
+                <li><strong>잘못된 투자 사례:</strong> 다른 투자자는 $NVDA 주식을 팔고 $BBBY에 '몰빵'했다가 전 재산을 잃을 뻔한 아픈 기억을 공유했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>기타 관심 주식</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>티커</th>
+                        <th>관심 이유 및 분석</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>$CRCL</strong></td>
+                        <td>한 투자자가 $OPEN을 매수하기 위해 보유하고 있던 $CRCL 주식 전량을 매도했다고 언급했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$PEW</strong></td>
+                        <td>투자자 한 명이 $PEW 주식을 60% 손실을 보고 매도한 후, 그 자금으로 $OPEN에 FOMO 매수했다고 밝혔습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$PLTR</strong></td>
+                        <td>일부 투자자들 사이에서 '보장된 수익'을 낼 수 있는 주식으로 언급되었으나, 다른 한편에서는 "악의적인 기술을 가진 기업"이라며 매도해야 한다는 상반된 주장이 나왔습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$NVDA</strong></td>
+                        <td>차세대 $NVDA가 될 것이라는 기대감과 함께, 과거 $NVDA를 팔고 다른 밈 주식에 투자했다가 후회한 사례가 언급되었습니다.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>$ASTS</strong></td>
+                        <td>과거 주가 급등 사례로 언급되며, 커버드 콜 전략을 통해 변동성 장세에서 수익을 내는 방법에 대한 논의에서 예시로 사용되었습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$VOO</strong></td>
+                        <td>$OPEN과 같은 변동성 큰 주식에서 벗어나 안정적인 ETF인 $VOO로 돌아가겠다는 투자자의 언급이 있었습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$APLD</strong></td>
+                        <td>한 투자자가 "10배 갈 AI 데이터센터 주식"이라며 매수를 추천했습니다.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>$RKT & $COOP</strong></td>
+                        <td>금리 인하 시 $OPEN보다 더 나은 비즈니스 모델을 가졌다고 주장하며, 이들 주식에 투자하고 있다는 의견이 있었습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
