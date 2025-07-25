@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.07.25 PM)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            color: #1877f2;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e7e7e7;
+            margin-bottom: 20px;
+        }
+        .stock-card {
+            background-color: #f7f8fa;
+            border: 1px solid #dddfe2;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .stock-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .stock-ticker {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #333;
+        }
+        .sentiment {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        .sentiment.bullish {
+            background-color: #e7f3ff;
+            color: #1877f2;
+        }
+        .sentiment.bearish {
+            background-color: #ffebe5;
+            color: #d93025;
+        }
+        .sentiment.mixed {
+            background-color: #f0f0f0;
+            color: #606770;
+        }
+        .stock-summary {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border-left: 4px solid #1877f2;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #e9ebee;
+            font-weight: 700;
+            color: #4b4f56;
+        }
+        td strong {
+            color: #1d2129;
+        }
+        .footnote {
+            font-size: 0.8em;
+            color: #65676b;
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .other-stocks h2 {
+            font-size: 1.4em;
+            color: #1877f2;
+            border-bottom: 2px solid #e7e7e7;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .other-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .other-list li {
+            background-color: #f7f8fa;
+            border: 1px solid #dddfe2;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+        .other-list strong {
+            color: #1877f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.07.25 PM)</h1>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$INTC (Intel)</span>
+                <span class="sentiment bearish">매우 부정적</span>
+            </div>
+            <p class="stock-summary">
+                투자자들은 인텔의 실적 발표와 대규모 구조조정 계획에 대해 압도적으로 부정적인 반응을 보이고 있습니다. AI 붐의 혜택을 전혀 받지 못하고 있으며, 과거의 잘못된 경영 판단이 현재의 위기를 초래했다는 분석이 지배적입니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>실적 부진</strong></td>
+                    <td>예상치를 하회하는 주당순손실(EPS)을 기록했으며, 매출 가이던스 또한 실망스러워 투자자들의 신뢰를 잃었습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>대규모 구조조정</strong></td>
+                    <td>전체 직원의 15~20%에 해당하는 약 24,000명을 감원하고 독일, 폴란드 등에서의 확장 계획을 철회한다고 발표하며 회사의 미래에 대한 불안감을 증폭시켰습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>기술 경쟁력 약화</strong></td>
+                    <td>과거 ASML의 EUV 기술 도입을 거부한 결정적 실수가 TSMC, AMD 등 경쟁사에 뒤처지는 원인이 되었다는 분석이 많습니다. AI 칩 시장에서 완전히 소외되었다는 평가입니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>경영진 리스크</strong></td>
+                    <td>엔지니어링 중심 문화를 잃고 재무 전문가들이 회사를 장악하면서 혁신에 실패했다는 비판이 제기됩니다.</td>
+                </tr>
+            </table>
+            <div class="footnote">
+                <strong>주석:</strong> '나나(Nana)'는 한 유명 유저가 할머니(Nana)를 위해 인텔에 장기 투자했다며 올린 글에서 유래한 밈입니다. 그의 막대한 손실은 인텔의 부진을 상징하는 조롱의 의미로 사용됩니다.
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$OPEN (Opendoor)</span>
+                <span class="sentiment mixed">투기적 / 혼재</span>
+            </div>
+            <p class="stock-summary">
+                최근 가장 뜨거운 밈 주식으로 떠올랐습니다. 높은 공매도 비율로 인한 숏 스퀴즈 가능성에 대한 기대감과 단기 급등에 따른 '펌프 앤 덤프' 우려가 공존하며 극심한 변동성을 보이고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>숏 스퀴즈 기대감</strong></td>
+                    <td>높은 공매도 비율(약 22%)이 알려지면서 개인 투자자들이 주가를 끌어올려 공매도 세력의 손실을 유도하려는 움직임이 활발합니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>밈 주식 열풍</strong></td>
+                    <td>'이번 주 밈 전쟁의 승자'로 불리며, 펀더멘털과 무관하게 커뮤니티의 관심만으로 주가가 급등락하고 있습니다. 수십만 달러 규모의 YOLO 베팅과 손실 인증이 이어지고 있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>내부자 매도 우려</strong></td>
+                    <td>일부 투자자들은 최고 법률 책임자의 지분 매도 등을 근거로 파산 가능성과 내부자들의 마지막 '러그 풀' 가능성을 제기하며 경계하고 있습니다.</td>
+                </tr>
+            </table>
+            <div class="footnote">
+                <strong>주석:</strong> 'YOLO(You Only Live Once)'는 인생은 한 번뿐이라는 뜻으로, 초고위험 '몰빵' 투자를 의미합니다. '러그 풀(Rug Pull)'은 프로젝트 개발자가 갑자기 자금을 빼돌려 사라지는 사기 행위를 뜻하는 용어입니다. '숏 스퀴즈(Short Squeeze)'는 주가 하락을 예상하고 주식을 빌려 판(공매도) 투자자들이 예상과 달리 주가가 급등할 때 손실을 줄이기 위해 서둘러 주식을 되사는 과정에서 주가 상승이 가속화되는 현상입니다.
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$AMD (Advanced Micro Devices)</span>
+                <span class="sentiment bullish">매우 긍정적</span>
+            </div>
+            <p class="stock-summary">
+                NVIDIA의 강력한 대항마이자 인텔을 압도하는 CPU 강자로 평가받으며 투자자들의 강력한 지지를 받고 있습니다. AI 시장에서의 성장 잠재력과 합리적인 밸류에이션이 매력 포인트로 꼽힙니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>AI 칩 경쟁력</strong></td>
+                    <td>MI300X, MI350 등 차세대 AI 칩이 NVIDIA 제품 대비 가격과 성능 면에서 경쟁력이 있다는 분석이 많습니다. NVIDIA가 독점한 AI 시장의 점유율을 뺏어올 것이라는 기대감이 큽니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>CPU 시장 지배력</strong></td>
+                    <td>Ryzen(PC), EPYC(서버) 칩으로 인텔을 압도하며 시장 지배력을 공고히 하고 있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>밸류에이션 매력</strong></td>
+                    <td>'고평가' 논란이 있는 NVIDIA에 비해 상대적으로 저렴하여 상승 여력이 더 크다고 평가받습니다. "NVIDIA가 왕국을 지켜야 할 때, AMD는 작은 마을만 점령해도 주가가 두 배가 된다"는 의견이 있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>CEO 리더십</strong></td>
+                    <td>CEO 리사 수에 대한 강력한 신뢰를 보이며 '수 베이(Su Bae)'라는 애칭으로 부르는 등 그녀의 리더십을 높이 평가하고 있습니다.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$GOOGL / $GOOG (Alphabet/Google)</span>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <p class="stock-summary">
+                AI가 검색 사업을 잠식할 것이라는 우려와 달리, 검색 광고 매출이 견고하게 성장하며 투자자들의 신뢰를 회복하고 있습니다. Waymo의 자율주행 기술과 AI 분야의 잠재력이 재평가받는 분위기입니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>견고한 검색 매출</strong></td>
+                    <td>AI의 위협에도 불구하고 검색 및 기타 부문 매출이 꾸준히 증가하며 핵심 사업의 건재함을 증명했습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>AI 리더십</strong></td>
+                    <td>Gemini AI 모델의 생태계 통합과 1,060억 달러에 달하는 클라우드 및 AI 서비스 수주잔고는 장기적인 성장 동력으로 평가됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>Waymo 가치 재평가</strong></td>
+                    <td>자회사 Waymo가 자율주행차 문제를 사실상 해결했다는 평가를 받으며, 현재 기업가치(약 750억 달러)가 매우 저평가되었다는 주장이 제기됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>저평가 매력</strong></td>
+                    <td>실적 발표 후의 주가 하락은 과도한 시장 반응이며, 오히려 매수 기회라는 인식이 확산되고 있습니다. 250달러까지 상승할 것이라는 낙관론이 많습니다.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$RKT (Rocket Companies)</span>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <p class="stock-summary">
+                높은 공매도 비율과 금리 인하 기대감, 그리고 M&A를 통한 사업 확장이 맞물리며 '제2의 게임스탑'이 될 수 있다는 기대감이 커지고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>높은 공매도 비율</strong></td>
+                    <td>유통 주식의 67%에 달하는 높은 공매도 비율은 숏 스퀴즈의 강력한 재료로 여겨집니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>수직계열화 완성</strong></td>
+                    <td>부동산 중개(Redfin), 모기지(Rocket Mortgage), 모기지 서비스(Mr Cooper) 인수를 통해 부동산 시장의 수직계열화를 완성, 시너지 효과가 기대됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>금리 인하 수혜</strong></td>
+                    <td>향후 금리가 인하될 경우 주택 시장 활성화와 함께 실적이 크게 개선될 것이라는 전망이 많습니다.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$TSLA (Tesla)</span>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <p class="stock-summary">
+                CEO 리스크, 경쟁 심화, EV 크레딧 축소 등 여러 악재가 겹치며 주가에 대한 비관론이 우세합니다. 특히 OTM 콜옵션에 베팅했다가 큰 손실을 본 투자자들의 인증이 이어지고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>CEO 리스크</strong></td>
+                    <td>일론 머스크 CEO의 예측 불가능한 행동과 xAI 등 다른 사업에 대한 관심이 테슬라 경영의 불확실성을 높인다는 지적이 많습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>성장 둔화 및 경쟁</strong></td>
+                    <td>매출 성장세가 둔화되고 있으며, 다른 자동차 제조사들과의 경쟁이 심화되고 있다는 점이 우려 요인입니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>잘못된 베팅</strong></td>
+                    <td>많은 투자자들이 주가 상승을 예상하고 외가격(OTM) 콜옵션을 매수했으나, 주가 하락으로 인해 파산에 이를 정도의 막대한 손실을 입었다는 게시물이 다수 올라왔습니다.</td>
+                </tr>
+            </table>
+            <div class="footnote">
+                <strong>주석:</strong> 'OTM (Out-of-the-Money)'은 '외가격'을 의미하며, 옵션의 행사가가 현재 주가보다 불리한 상태를 말합니다. OTM 옵션은 가격이 저렴한 대신 주가가 예측대로 크게 움직이지 않으면 가치를 모두 잃을 위험이 매우 큽니다.
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$ASTS (AST SpaceMobile)</span>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <p class="stock-summary">
+                세계 최초의 우주 기반 셀룰러 브로드밴드 네트워크를 구축하는 회사로, 높은 기술적 잠재력 때문에 '장기 보유'하려는 투자자들이 많습니다. 최근 주가 급등으로 큰 수익을 인증하는 게시물이 늘고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>장기 성장성</strong></td>
+                    <td>수년간의 투자가 100K 달러 이상의 수익으로 이어진 사례가 공유되며, "파티는 아직 시작도 안 했다"며 추가 상승에 대한 기대감을 나타냈습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>기술적 독점력</strong></td>
+                    <td>위성을 통해 일반 스마트폰에 직접 통신 서비스를 제공하는 독보적인 기술력은 강력한 펀더멘털로 평가됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>가격 변동성</strong></td>
+                    <td>최근 전환사채 발행 소식으로 주가가 급락했지만, 많은 투자자들은 이를 '매수 기회'로 여기고 있습니다.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$AEO (American Eagle)</span>
+                <span class="sentiment bullish">투기적 / 긍정적</span>
+            </div>
+            <p class="stock-summary">
+                배우 시드니 스위니를 모델로 한 광고 캠페인 하나만으로 밈 주식으로 부상했습니다. "그녀의 DDs가 나의 DD"라는 식의 농담이 퍼지며 투기적 매수가 유입되고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>'시드니 스위니' 효과</strong></td>
+                    <td>배우의 인기가 주가 상승의 유일한 동력으로 작용하고 있으며, 이는 강력한 밈 랠리 잠재력으로 여겨지고 있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>저평가 매력</strong></td>
+                    <td>펀더멘털 분석을 추가한 한 투자자는 동종 업계 대비 낮은 주가수익비율(P/E), 부채 없는 재무구조 등을 근거로 추가 상승 여력이 충분하다고 주장했습니다. (ANF 언급)</td>
+                </tr>
+            </table>
+             <div class="footnote">
+                <strong>주석:</strong> 'DD(Due Diligence)'는 투자 전 기업을 분석하는 것을 의미하는 용어입니다. '그녀의 DDs'는 DD와 배우의 큰 가슴을 의미하는 속어를 이용한 언어유희로, 비이성적인 투자 열풍을 상징합니다.
+            </div>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$QQQ / $SPY (나스닥/S&P 500 ETF)</span>
+                <span class="sentiment mixed">혼재</span>
+            </div>
+            <p class="stock-summary">
+                시장이 사상 최고치에 근접하면서 방향성에 대한 의견이 엇갈리고 있습니다. 단기 하락을 예상하는 풋옵션 베팅과 추세 추종 콜옵션 베팅이 동시에 나타나고 있습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>풋옵션 베팅 (하락)</strong></td>
+                    <td>과도한 랠리, 금요일의 차익 실현 경향, 일부 기업의 실적 부진 등을 근거로 단기 하락에 베팅하는 투자자들이 나타났습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>0DTE 스캘핑 (단타)</strong></td>
+                    <td>SPY 등 유동성이 풍부한 ETF를 이용해 만기가 하루 남지 않은 0DTE 옵션으로 초단타 매매를 하여 큰 수익을 올렸다는 인증글이 올라왔습니다.</td>
+                </tr>
+            </table>
+            <div class="footnote">
+                <strong>주석:</strong> '0DTE(Zero Days to Expiration)'는 만기일이 당일인 옵션을 의미합니다. 가격 변동이 매우 크고 예측이 어려워 초고위험 투자로 분류됩니다.
+            </div>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$UNH (UnitedHealth) / 헬스케어 섹터</span>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <p class="stock-summary">
+                미 법무부의 조사 소식이 알려지면서 유나이티드헬스를 포함한 헬스케어 보험주 전반에 대한 투자 심리가 악화되었습니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>법무부 조사</strong></td>
+                    <td>유나이티드헬스가 법무부의 요청에 '협조 중'이라고 밝히면서 주가가 하락했습니다. 투자자들은 벌금 등으로 끝날 작은 문제로 보지만 단기적 불확실성은 남아있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>실적 우려</strong></td>
+                    <td>경쟁사인 CNC의 부진한 실적 발표 이후, UNH 역시 실적이 부진할 것이라는 우려가 커지며 섹터 전체가 약세를 보이고 있습니다.</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">$RDDT (Reddit)</span>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <p class="stock-summary">
+                상장 초기 부진을 딛고 반등 가능성에 대한 기대감이 형성되고 있습니다. 높은 공매도 비율과 향후 수익화 모델에 대한 잠재력이 긍정적으로 평가됩니다.
+            </p>
+            <table>
+                <tr><th>언급 이유/분석</th><th>상세 내용</th></tr>
+                <tr>
+                    <td><strong>반전 기대감</strong></td>
+                    <td>로빈후드(HOOD)가 상장 초기 비난을 딛고 상승했던 것처럼, 레딧 역시 저평가 상태에서 반등할 것이라는 '역발상' 투자 의견이 많습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>수익화 잠재력</strong></td>
+                    <td>아직 본격적인 수익화가 시작되지 않았으며, 광고 외에 다양한 유료 서비스를 통해 성장할 잠재력이 크다고 평가됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>공매도 비율</strong></td>
+                    <td>약 20%에 달하는 공매도 비율은 향후 숏 스퀴즈의 가능성을 시사합니다.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="other-stocks">
+            <h2>기타 관심 종목</h2>
+            <ul class="other-list">
+                <li><strong>$GME (GameStop):</strong> "빈티지 리가드(vintage regards)"들의 꾸준한 지지를 받고 있으며, 90억 달러의 현금 보유와 비트코인 투자가 긍정적으로 평가됨. 최근 다시 YOLO 베팅이 등장.</li>
+                <li><strong>$CROX (Crocs):</strong> 못생겼지만 꾸준히 잘 팔리는 '불황 없는' 신발이라는 점에 착안, 콜옵션 매수 후 수익금으로 실제 크록스 신발을 사서 매출을 올려주는 '무한 돈 복사' 전략이 제기됨.</li>
+                <li><strong>$IOVA (Iovance Biotherapeutics):</strong> 경쟁사의 부재로 독점적 위치를 차지했으며, 주가 하락 시마다 추가 매수("Every time it drops, I'll buy more")하는 전략을 취하는 투자자들이 많음.</li>
+                <li><strong>$NVDA (NVIDIA):</strong> 4조 달러가 넘는 시가총액에도 불구하고 여전히 저평가되었다는 의견과 함께, 최근 큰 수익을 안겨준 핵심 종목으로 꾸준히 언급됨.</li>
+                <li><strong>$DECK (Deckers Outdoor):</strong> 호실적 발표 후 주가가 급등하며 일부 투자자들에게 수익을 안겨줌.</li>
+                <li><strong>$POET (POET Technologies):</strong> 광자 기술을 이용한 차세대 칩 기술을 보유한 회사로, 기술적 잠재력은 높으나 재무적으로는 불안하다는 평가. 장기 LEAPS 옵션 투자가 다수 보임.</li>
+                <li><strong>$PYPL (PayPal), $SQ (Block):</strong> 2021년 밈 주식 열풍 당시의 종목들로, 일부 투자자들이 여전히 보유하며 손실을 보고 있음.</li>
+                <li><strong>$PARA (Paramount Global):</strong> 인수합병(M&A) 승인 소식이 전해졌으나, 거래 조건이 주주들에게 불리하다는 분석으로 주가 반응은 미미함.</li>
+                <li><strong>$SOUN (SoundHound AI):</strong> 한때 NVIDIA의 투자로 주목받았으나, NVIDIA가 지분을 모두 매각했다는 소식이 알려지며 투자 매력이 감소했다는 의견이 있음.</li>
+                <li><strong>$DNUT (Krispy Kreme):</strong> OPEN의 뒤를 이을 새로운 밈 주식 후보로 잠시 언급되었으나, 빠르게 관심이 식는 모습.</li>
+                <li><strong>기타 언급된 티커:</strong> ANF, XYZ, BINGO, CEIN, NIO, BYND, FIG, SMCI, HOOD, IXLH, LCID, ARCHER, BULL, SOC, LIDR, KSS, CMG, NVTS, SOY, TMC, CLOV, VKTX, HIMS, PLTR, RIVN, RDW, MSTR, TOST, IBM, PEW, RCAT, PNG, SOXL, AMDL, VOO, VZ, AMLP, QQQI, TXO, BMY, ZIM, TGB, AMPX, BB, PZZA, ETHU, ETHA, TQQQ, BTBT, PGY, OSCR, LKQ, NEM, BGM, SENS, AVXL, TIGR, NBIS, EXAS, IBIT, RKLB, GLXY, LUNR, JOBY, TSMC, ARM, DOW, NOW, AAPL, MBLY, FDX, HD, SOFI, SBUX, UBER, LULU, GMEU, KODK, IBRX, OKLO, SMX, LHAI, BITF, VLO, MU, XOM, COP, SHEL, CVX, LMT, TSLQ, Mtplf, GRAB, CAN, RZLV, XRP, COST, GLD, TGT, CNC, HUM, KASPA, CHSN, RIOT.</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
