@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            text-align: center;
+            margin: 20px 0;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a5fb4;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 5px solid #1a5fb4;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        td {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .stock-ticker {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+        }
+        .reason-list {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .reason-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .reason-item::before {
+            content: '🔹';
+            position: absolute;
+            left: 0;
+            color: #1a5fb4;
+        }
+        .annotation {
+            font-size: 12px;
+            color: #606770;
+            margin-top: 5px;
+            padding-left: 20px;
+            border-left: 2px solid #e0e0e0;
+        }
+        .positive {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .negative {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .neutral {
+            color: #333;
+        }
+        strong {
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.07.29 PM)</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명 (티커)</th>
+                    <th>관심 이유 및 분석 요약</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="stock-ticker">Apple (AAPL)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>실적 발표 기대감과 우려 교차:</strong> 실적 발표를 앞두고 콜 옵션에 대한 대규모 베팅이 관찰되었습니다. 투자자들은 애플의 충성도 높은 고객층과 구독 서비스의 견고함을 근거로 <span class="positive">상승에 대한 기대감</span>을 보였습니다. 반면, 최근 시장 랠리에서 소외된 점, AI 관련 업데이트 부재, 관세 문제 등을 이유로 <span class="negative">실적에 대한 우려와 풋 옵션 베팅</span>도 동시에 나타나고 있습니다.</span>
+                            </li>
+                             <li class="reason-item">
+                                <span class="neutral"><strong>기술적 분석:</strong> 한 달 이상 주가가 특정 범위에서 움직이는 '횡보(consolidating)' 상태에 있어, 실적 발표를 계기로 큰 변동성이 나타날 것이라는 예측이 많습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">AMD (Advanced Micro Devices)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>강력한 실적과 AI 모멘텀:</strong> 1600%에 달하는 엄청난 콜 옵션 수익 인증이 화제가 되었습니다. 투자자들은 CEO 리사 수에 대한 강한 신뢰를 보이며, AI 칩 시장에서의 성과를 매우 긍정적으로 평가하고 있습니다. 'Advanced Money Destroyer'라는 과거 별명이 무색하게 'Always Making Dollar'라는 새로운 별명을 얻는 등 <span class="positive">강력한 상승 모멘텀</span>을 보이고 있습니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="positive"><strong>장기 투자 성공 사례:</strong> 2019년부터 6년간 5천 달러를 3만 3천 달러로 불린 장기 투자 성공 사례가 공유되며, 꾸준한 성장에 대한 믿음을 더했습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Amazon (AMZN)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>실적 주시:</strong> 실적 발표 주간을 맞아 대규모 포트폴리오에 포함된 주요 종목 중 하나로 언급되었습니다. 구체적인 분석보다는 실적에 대한 기대감으로 포지션을 보유 중인 것으로 보입니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">ASML Holding (ASML)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>저평가 및 지정학적 기대감:</strong> 현재 주가가 저평가 상태라는 분석과 함께 13만 4천 달러 규모의 대규모 콜 옵션 베팅이 등장했습니다. 특히 트럼프 행정부가 들어설 경우 중국에 대한 반도체 장비 수출 제한이 완화될 수 있다는 <span class="positive">지정학적 기대감</span>이 주된 투자 이유로 꼽혔습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Boeing (BA)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>실적 발표 대기:</strong> 실적 발표를 앞두고 투자자들이 포지션을 보유하고 있는 종목으로 언급되었습니다. 실적 결과에 따라 주가 변동성이 클 것으로 예상됩니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">BitMine Immersion (BMNR)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>'러그풀' 논란 및 손실 인증:</strong> 톰 리와 캐시 우드가 투자한 후 주가가 급락하며 큰 손실을 본 투자자들의 인증 글이 다수 올라왔습니다. MSTR의 이더리움 버전 사기(scam)라는 비판과 함께, 주가 희석에 대한 우려가 커지고 있습니다. 피터 틸이 저가에 매수해 캐시 우드에게 고가에 매도했다는 분석도 나왔습니다.</span>
+                                <p class="annotation"><strong>*러그풀(Rug pull):</strong> 개발자가 갑자기 프로젝트를 중단하고 투자금을 챙겨 사라지는 행위를 뜻하는 암호화폐 용어. 주식 시장에서는 급등 후 갑작스러운 폭락으로 투자자들에게 큰 손실을 입히는 상황을 비유적으로 표현합니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><span class="stock-ticker">Caesars Entertainment (CZR)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>실적 부진 예상 (상세 분석):</strong> 상세한 분석과 함께 실적 부진을 예상하는 글이 올라왔습니다. <strong>과도한 부채, 라스베이거스 관광객 감소, 고래(큰손 도박사) 이탈 가능성, 디지털 부문의 낮은 마진</strong> 등이 주요 하락 요인으로 지적되었습니다. 이 분석에 기반한 풋 옵션 베팅이 있었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Digital Ocean (DOCN)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>저평가된 클라우드 주식으로 주목:</strong> AWS, Google 등 대기업에 비해 사용이 간편하고, 꾸준히 성장하며 흑자를 내고 있음에도 매출 대비 주가(4x)와 주가수익비율(20 PE)이 매우 낮다는 점에서 <span class="positive">저평가된 종목</span>으로 분석되었습니다. 새로운 AI 도구 출시와 인수합병 가능성도 긍정적 요인으로 꼽혔습니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="negative"><strong>반대 의견:</strong> 경쟁사인 AWS가 훨씬 더 많은 서비스를 제공하며, 부채 증가와 일부 사용자가 겪은 불안정한 서비스(uptime)는 단점으로 지적되었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Figma (FIG)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>IPO 최대 기대주:</strong> 기업공개(IPO)를 앞두고 투자자들의 관심이 집중되고 있습니다. 포춘 500대 기업의 95%가 사용하는 강력한 시장 지배력, 암호화폐 관련 사업 노출, 높은 마진 등이 <span class="positive">매우 긍정적으로 평가</span>되며 대규모 청약 신청이 이어지고 있습니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="neutral"><strong>IPO 리스크:</strong> 다만, IPO 직후 주가 변동성이 크고 초기 투자자들이 손실을 볼 수 있다는 신중론도 제기되었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><span class="stock-ticker">Google (GOOG/GOOGL)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>상반된 시각:</strong> 다른 기술주에 비해 주가 상승이 더디다는 불만이 많지만, 다른 빅테크 기업 대비 <strong>주가수익비율(P/E)이 낮아 저평가</strong> 되었다는 분석과 함께 장기 콜 옵션 매수가 이루어지고 있습니다. '검색은 죽었다'는 우려를 극복하고 반등할지에 대한 기대감이 있습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Robinhood (HOOD)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>실적 기대감:</strong> SNS에서 로빈후드 앱 스크린샷이 자주 공유된다는 점, 즉 인기가 높다는 점을 근거로 실적 호조를 기대하는 <span class="positive">콜 옵션 베팅</span>이 나타났습니다.</span>
+                                <p class="annotation"><strong>*DD (Due Diligence):</strong> '실사'를 의미하지만, SNS에서는 특정 주식에 대한 자신만의 분석이나 투자 논리를 뜻하는 용어로 사용됩니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Intel (INTC)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>대표적인 부진주:</strong> AMD, NVIDIA와 비교되며 '죽어가는 주식'으로 묘사됩니다. 7년간의 투자 계좌가 인텔 주가와 비슷하다는 조롱을 받거나, '인텔에 올인하라'는 식의 <span class="negative">반어법적 조롱</span>의 대상이 되고 있습니다. '백홀딩 올림픽 종목'이라는 비아냥도 나왔습니다.</span>
+                                 <p class="annotation"><strong>*백홀딩(Bagholding):</strong> 주가가 폭락했음에도 팔지 못하고 손실이 난 주식을 계속 보유하고 있는 투자자를 조롱하는 멸칭입니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Iovance Biotherapeutics (IOVA)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>전형적인 바이오 YOLO:</strong> 특별한 분석 없이 전 재산을 투자하는 'YOLO' 베팅이 등장했습니다. 이에 다른 투자자들은 '풋 옵션이 구제받았다'며 하락을 예측하는 등, <span class="negative">대표적인 고위험 바이오 투자</span>의 예시로 언급되었습니다.</span>
+                                 <p class="annotation"><strong>*YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 투자에서는 큰 리스크를 감수하고 한 종목에 전 재산을 투자하는 매우 공격적인 베팅을 의미합니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Meta Platforms (META)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>강력한 AI 투자와 성장 기대:</strong> 저커버그의 헤어스타일 사진과 함께 '이런 저커는 처음 본다(Never META mother Zucker like me)'는 언어유희적 제목의 YOLO 게시물이 올라왔습니다. AI에 대한 막대한 투자가 결국 큰 수익으로 돌아올 것이라는 <span class="positive">강력한 믿음</span>을 바탕으로 한 5만 달러 규모의 콜 옵션 베팅이 있었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">NVIDIA (NVDA)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>시장을 이끄는 절대 강자:</strong> 연일 사상 최고가를 경신하며 포트폴리오를 '캐리'하는 주식으로 묘사됩니다. 3개월 전 90달러였던 주가가 믿기지 않는다는 반응과 함께, <span class="positive">'다른 건 다 쓰레기, 오직 엔비디아'</span>라는 극단적인 낙관론이 지배적입니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="negative"><strong>과열 우려:</strong> 동시에, 실적 발표에서 조금이라도 실망스러운 결과가 나올 경우 -20%의 폭락이 올 수 있다는 <span class="negative">과열에 대한 경고</span>도 존재합니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Opendoor (OPEN)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>대표적인 '밈 주식' 실패 사례:</strong> 옵션을 잘 모르는 투자자가 뒤늦게 콜 옵션을 대량 매수하는 등, 전형적인 '상투 잡기'의 예시로 자주 언급됩니다. <span class="negative">'백홀더들의 무덤'</span>으로 불리며 조롱의 대상이 되고 있으며, 주가 하락으로 인한 손실 인증이 이어지고 있습니다.</span>
+                                <p class="annotation"><strong>*밈 주식(Meme Stock):</strong> 기업의 내재가치보다는 온라인 커뮤니티의 유행이나 입소문을 통해 주가가 급등락하는 주식을 말합니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><span class="stock-ticker">Palantir (PLTR)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>계좌 구원자:</strong> 7년간의 손실을 회복한 투자자의 계좌에 결정적인 역할을 한 것으로 언급되며, '계좌를 구원했다'는 긍정적인 평가를 받았습니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="neutral"><strong>실적 기대감:</strong> 실적 발표를 앞두고 아이언 콘도르(Iron Condor) 전략을 사용한 투자 사례가 있었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><span class="stock-ticker">QQQ (Invesco QQQ Trust)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>0DTE 거래의 핵심:</strong> SPY와 함께 초단타 옵션 거래인 '0DTE'의 주요 대상으로 활발하게 거래되고 있습니다. 한 투자자는 전 재산을 이용한 QQQ 0DTE 매매로 100%의 승률을 기록했다고 주장하며 큰 논쟁을 불러일으켰습니다.</span>
+                                <p class="annotation"><strong>*0DTE (Zero-Day-to-Expiration):</strong> 만기가 하루도 남지 않은 초단기 옵션을 의미하며, 매우 높은 위험성과 변동성을 가집니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Reddit (RDDT)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>은퇴 계좌 YOLO:</strong> 401k나 IRA 같은 은퇴 계좌 자금을 '몰빵' 투자하는 대상으로 등장했습니다. 구체적인 분석보다는 '한탕'을 노리는 투기적 성격의 베팅이 주를 이룹니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">SharpLink Gaming (SBET)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>'이더리움의 MSTR'로 부상:</strong> 이더리움을 대량 보유한 회사로, 비트코인을 보유한 MSTR(마이크로스트래티지)처럼 이더리움의 대리 투자처로 주목받고 있습니다. 한 투자자가 150만 달러를 베팅하며 큰 화제가 되었습니다. 강력한 리더십과 저평가 상태가 투자 이유로 꼽혔습니다.</span>
+                            </li>
+                            <li class="reason-item">
+                                <span class="negative"><strong>직접 투자와의 비교:</strong> 왜 이더리움을 직접 사지 않고 중간 관리 비용이 발생하는 회사를 통해 투자하냐는 비판적인 시각도 많습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Super Micro Computer (SMCI)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>강력한 숏스퀴즈 기대감:</strong> 높은 공매도 비율과 함께 주가 상승에 대한 기대감이 매우 큽니다. +100% 수익을 내고도 '사상 최고가를 깰 때까지 팔지 않겠다'며 '다이아몬드 핸드'를 외치는 투자자들이 다수 등장했습니다.</span>
+                                <p class="annotation"><strong>*숏스퀴즈(Short Squeeze):</strong> 주가 하락에 베팅한 공매도 투자자들이 주가가 오르자 손실을 줄이기 위해 주식을 다시 사들이면서 주가 상승이 가속화되는 현상입니다.<br><strong>*다이아몬드 핸드(Diamond Hands):</strong> 주가 변동성에 흔들리지 않고 목표가에 도달할 때까지 주식을 절대 팔지 않는 강한 의지를 가진 투자자를 칭찬하는 밈입니다.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">SPY (SPDR S&P 500 ETF Trust)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>시장의 바로미터이자 도박판:</strong> 시장의 기준점으로 가장 많이 언급되며, 투자자들의 수익률을 비교하는 척도로 사용됩니다. 동시에, 만기가 임박한 OTM(외가격) 콜 옵션에 5만 5천 달러를 YOLO하는 등 <span class="negative">가장 인기 있는 도박의 대상</span>이기도 합니다. '복권보다 못한 100% 손실'이라는 비판과 '너무 멍청해서 오히려 성공할 수도 있다'는 반응이 공존합니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Sarepta Therapeutics (SRPT)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>FDA 호재로 급등:</strong> FDA가 임상 중 사망 사건이 자사 약물과 관련 없다고 발표하면서, 시장의 불확실성이 해소되어 시간 외 거래에서 주가가 21달러나 급등했습니다. 이를 예측하고 콜 옵션을 매수한 투자자의 수익 인증이 있었습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Tesla (TSLA)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="positive"><strong>실적 발표 후 V자 반등 패턴:</strong> 실적이 안 좋게 나온 후 주가가 하락했다가 빠르게 회복하는 패턴이 반복되고 있습니다. 이를 이용해 실적 발표 직후 콜 옵션을 매수하여 단기간에 큰 수익을 올린 사례가 다수 공유되었습니다. 자동차 회사를 넘어 AI, 로봇, FSD 등 다양한 분야의 기업이라는 인식이 강합니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">Tilray (TLRY)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>대표적인 대마초 '백홀더' 주식:</strong> 과거에 투자자들에게 큰 손실을 안겨준 대표적인 대마초 관련주입니다. 최근 다시 YOLO 베팅이 등장했지만, 대부분의 투자자들은 '다시는 쳐다보지도 않는다'며 부정적인 반응을 보였고, 실제로 시간 외 거래에서 7% 하락했습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">UnitedHealth (UNH)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>실적 쇼크와 투자자 대혼란:</strong> 실적 발표를 앞두고 SNS에서 가장 뜨거운 종목이었으나, 예상치를 하회하는 실적과 가이던스 하향으로 주가가 급락했습니다. 수많은 콜 옵션 투자자들이 막대한 손실을 입었으며, '루이지에게 당했다'는 등의 반응이 쏟아졌습니다.</span>
+                                 <p class="annotation"><strong>*루이지(Luigi):</strong> 특정 종목(주로 UNH)에 대한 부정적인 전망이나 내부자 정보를 암시하는 익명의 인물로, 그의 등장은 주가 하락의 신호로 여겨지는 밈입니다.</p>
+                            </li>
+                             <li class="reason-item">
+                                <span class="neutral"><strong>저가 매수 기회 논쟁:</strong> 폭락 이후 '모든 악재가 반영되었으니 장기적으로는 매수 기회'라는 주장과 '떨어지는 칼날을 잡지 말라'는 주장이 팽팽하게 맞서고 있습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="stock-ticker">UPS (United Parcel Service)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="negative"><strong>내부자 폭로와 실적 부진:</strong> 현직 직원이라고 주장하는 인물이 '회사가 노조 임금 인상과 아마존 물량 이탈로 파산 위기에 처해있다'고 주장했습니다. 실제로 회사는 실망스러운 실적과 함께 미래 가이던스를 제시하지 않아 주가가 하락했습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><span class="stock-ticker">Wendy's (WEN)</span></td>
+                    <td>
+                        <ul class="reason-list">
+                            <li class="reason-item">
+                                <span class="neutral"><strong>공식 밈 주식:</strong> '우리 집 근처에 웬디스가 생긴다'는 것을 투자 이유로 드는 글이 올라오는 등, 투자자들이 손실을 보면 일하게 될 곳이라는 상징적인 밈 주식으로 자리 잡았습니다. 부채가 많다는 지적에도 불구하고 꾸준히 언급되고 있습니다.</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
