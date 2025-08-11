@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background-color: #4267B2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        .stock-section {
+            padding: 20px;
+            border-bottom: 1px solid #dddfe2;
+        }
+        .stock-section:last-child {
+            border-bottom: none;
+        }
+        .stock-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .stock-title h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #1d2129;
+        }
+        .stock-title .ticker {
+            font-size: 1em;
+            color: #606770;
+            background-color: #e7f3ff;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        .content-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .content-list li {
+            background-color: #f7f8fa;
+            border: 1px solid #dddfe2;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            font-size: 1.05em;
+            line-height: 1.5;
+        }
+        .content-list li strong {
+            color: #4B4F56;
+        }
+        .positive { color: #388e3c; }
+        .negative { color: #d32f2f; }
+        .neutral { color: #505050; }
+        .footnote {
+            font-size: 0.85em;
+            color: #606770;
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: -5px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .section-header {
+            font-size: 1.6em;
+            color: #4267B2;
+            padding: 15px 20px;
+            background-color: #e7f3ff;
+            border-bottom: 2px solid #4267B2;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>미국 SNS 주식 관심 동향</h1>
+            <p>25.08.11 PM</p>
+        </header>
+
+        <h2 class="section-header">주요 관심 종목</h2>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>엔비디아</h2>
+                <span class="ticker">NVDA</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>중국 매출 15% 수수료 소식에 '오히려 호재'</strong>: 중국에 대한 반도체 판매 금지 조치가 있었으나, 이번 조치로 불확실성이 해소되고 합법적인 판매 길이 열렸다는 분석이 지배적. 투자자들은 이를 강력한 매수 신호로 받아들이고 있음.</span></li>
+                <li><span class="positive"><strong>독점적 지위에 대한 강한 신뢰</strong>: 중국 소비자들이 다른 대안이 없기 때문에 15%의 비용 증가는 엔비디아가 판매 가격에 전가할 수 있을 것으로 예상됨. 이는 엔비디아의 이익에 큰 타격이 없을 것이라는 믿음으로 이어짐.</span></li>
+                <li><span class="positive"><strong>AI 혁명의 선두주자</strong>: AI 분야의 독보적인 1위 기업이라는 인식이 강하며, 장기적인 성장 가능성에 대한 기대가 매우 높음. 한 투자자는 980%의 수익률을 인증하기도 함.</span></li>
+                <li><span class="neutral"><strong>'믿거나 말거나, 콜' 밈(Meme)</strong>: 잠재적인 악재 소식에도 불구하고 "Believe it or not, calls"라는 댓글이 반복적으로 등장. 이는 시장의 맹목적인 강세 심리를 보여줌.</span>
+                    <small class="footnote"><strong>* 콜(Call) 옵션</strong>: 특정 자산을 미래의 정해진 날짜에 정해진 가격으로 '살 수 있는 권리'. 주가 상승을 예상할 때 매수합니다.</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>유나이티드헬스 그룹</h2>
+                <span class="ticker">UNH</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>과매도에 따른 가치 투자 기회</strong>: 주가가 코로나 시기 저점 수준까지 하락해 '과도하게 매도되었다'는 인식이 강함. 미국 최대 건강보험사 중 하나로, '망하기에는 너무 큰 기업(Too Big to Fail)'이라는 논리가 지지를 얻고 있음.</span></li>
+                <li><span class="positive"><strong>장기 콜옵션(LEAPS) 대규모 베팅</strong>: 다수의 투자자들이 2027년 만기의 장기 콜옵션에 큰 금액을 투자(YOLO)하며 주가 반등에 베팅. 이는 단순 주식 매수보다 높은 레버리지 효과를 노린 전략.</span>
+                    <small class="footnote"><strong>* YOLO (You Only Live Once)</strong>: '인생은 한 번뿐'이라는 뜻으로, 투자에서는 전 재산을 특정 종목에 '몰빵'하는 과감한 투자를 의미합니다.</small>
+                    <small class="footnote"><strong>* LEAPS (Long-Term Equity Anticipation Securities)</strong>: 만기가 1년 이상 남은 장기 옵션으로, 장기적인 주가 상승에 베팅할 때 사용됩니다.</small>
+                </li>
+                 <li><span class="positive"><strong>내부자 매수 및 정치적 안정성</strong>: DOJ(미 법무부) 조사를 감독하는 의원이 UNH 주식을 매수하고 있다는 점, 그리고 CEO의 보상 체계가 주가 상승과 연동되어 있다는 점이 긍정적 신호로 해석됨.</span></li>
+                <li><span class="negative"><strong>'떨어지는 칼날 잡기' 우려</strong>: 반면, DOJ의 사기 혐의 조사, 구조적인 의료 시스템 문제, 메디케어/메디케이드 삭감 등을 이유로 향후 몇 년간 주가가 회복하기 어려울 것이라는 비관론도 존재함.</span></li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>AMD</h2>
+                <span class="ticker"></span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>중국 판매 허용에 대한 긍정적 반응</strong>: 엔비디아와 마찬가지로 15% 수수료에도 불구하고 중국 시장이 열린 것을 호재로 보는 시각이 많음. 기존 가이던스에 중국 매출이 포함되지 않았기 때문에 추가적인 이익이 기대됨.</span></li>
+                <li><span class="negative"><strong>수익성 우려</strong>: 엔비디아에 비해 마진이 낮아 15%의 수수료가 더 큰 타격이 될 수 있다는 분석이 제기됨. 이로 인해 엔비디아보다 주가 흐름이 약할 수 있다는 우려가 있음.</span></li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>애플</h2>
+                <span class="ticker">AAPL</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>강력한 펀더멘털과 장기 보유 가치</strong>: 세계에서 가장 강력한 현금 창출 기업 중 하나로, 포트폴리오의 핵심 자산으로 장기 보유해야 한다는 의견이 다수.</span></li>
+                <li><span class="positive"><strong>단기 상승 기대감</strong>: 아이폰 신제품 출시가 가까워지면서 주가 상승에 대한 기대감이 있으며, 곧 $300에 도달할 것이라는 낙관적인 전망도 나옴.</span></li>
+                <li><span class="negative"><strong>고점 매도 논란</strong>: 한 젊은 투자자가 큰 수익을 실현하고 매도한 것을 인증하자, 왜 지금 파는지에 대한 의문과 함께 장기 보유했어야 한다는 비판이 제기됨.</span></li>
+            </ul>
+        </div>
+
+        <h2 class="section-header">기타 관심 종목</h2>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>메타 플랫폼스</h2>
+                <span class="ticker">META</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>안전한 빅테크 투자처</strong>: 왓츠앱, 인스타그램 등 다양한 플랫폼을 보유하여 '망하기에는 너무 다각화된' 기업으로 평가되며, 장기적으로 자산을 안전하게 성장시킬 종목으로 추천됨.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>알파벳 (구글)</h2>
+                <span class="ticker">GOOGL/GOOG</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>클라우드 사업 성장 기대</strong>: 구글 클라우드(GCP)가 미래 성장의 핵심 동력으로 꼽힘. 저렴한 비용과 높은 통합성을 강점으로 내세움.</span></li>
+                 <li><span class="positive"><strong>신제품 출시 기대</strong>: 8월 20일로 예정된 행사에서 새로운 AI 폰, 픽셀 버즈, 픽셀 워치 등이 발표될 것으로 예상되어 주가 상승 모멘텀으로 작용할 수 있음. 목표가로 $265가 제시됨.</span></li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>S&P 500 ETF</h2>
+                <span class="ticker">SPY</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="neutral"><strong>초단타 도박의 대상</strong>: 만기일이 당일인 0DTE 옵션 거래가 활발히 언급되며, 시장 지수 자체를 단기적인 도박의 대상으로 삼는 경향이 뚜렷함.</span>
+                    <small class="footnote"><strong>* 0DTE (0 Day to Expiration)</strong>: 만기가 당일에 끝나는 초단기 옵션. 매우 높은 위험성과 변동성을 가집니다.</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>대마초(Weed) 관련주</h2>
+                <span class="ticker">MSOX, CGC, SNDL 등</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>규제 완화(재분류) 기대감</strong>: 트럼프 행정부에서 대마초의 법적 지위 재분류를 논의하고 있다는 소식에 관련 주식들이 급등. MSOX ETF에 11만 달러 이상을 투자해 큰 수익을 본 사례가 공유됨.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>코인베이스</h2>
+                <span class="ticker">COIN</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>암호화폐 시장과 연동된 높은 변동성</strong>: 비트코인(BTC) 가격 급등과 함께 주가가 크게 움직이며, 이를 이용한 단기 옵션 거래로 큰 수익을 올린 투자자들이 나타남.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>인텔</h2>
+                <span class="ticker">INTC</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>정부와의 관계 개선 기대</strong>: CEO가 백악관을 방문한다는 소식이 알려지면서, 정부의 지원이나 우호적인 정책에 대한 기대로 주가 상승을 점치는 의견이 있음.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>팔란티어</h2>
+                <span class="ticker">PLTR</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>방산주 강세 속 수혜</strong>: 방산 기업인 노스롭 그루먼(NOC)과 함께 투자하여 큰 수익을 올린 사례가 있으며, 일부 투자자들은 $200까지 상승할 것으로 기대.</span></li>
+                <li><span class="negative"><strong>고평가 및 하락 베팅</strong>: 주가가 너무 올랐다는 인식에 "돈이 싫어서" 풋옵션을 산다는 자조적인 투자자도 있음.</span>
+                    <small class="footnote"><strong>* 풋(Put) 옵션</strong>: 특정 자산을 미래의 정해진 날짜에 정해진 가격으로 '팔 수 있는 권리'. 주가 하락을 예상할 때 매수합니다.</small>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>로빈후드 / 레딧</h2>
+                <span class="ticker">HOOD / RDDT</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>개인 투자자의 성공 사례</strong>: 한 투자자가 개인 은퇴 계좌(Roth IRA)에서 두 주식을 저점에 매수하여 2만 달러를 38만 달러로 불린 성공 스토리를 공유하며 큰 관심을 받음. 투자 이유로 '자신과 친구들이 사용하는 서비스'라는 점을 꼽음.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>일라이 릴리 / 노보 노디스크</h2>
+                <span class="ticker">LLY / NVO</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>조정받은 우량주 매수 기회</strong>: 주가가 크게 하락한 틈을 타 매수 기회로 보는 시각. 다른 기술주들이 너무 비싸진 상황에서 대안으로 주목받음.</span></li>
+                <li><span class="negative"><strong>여전히 비싸다는 의견</strong>: 주가가 하락했음에도 불구하고 여전히 비싸다는 의견도 존재.</span></li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>드래프트킹스</h2>
+                <span class="ticker">DKNG</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>시즌 특수 기대</strong>: 미식축구 시즌이 시작되면서 매출이 증가할 것이라는 기대감에 베팅하는 투자자들이 있음.</span></li>
+                <li><span class="negative"><strong>규제 및 경쟁 우려</strong>: 새로운 세금 규정과 경쟁 심화로 인해 사업 전망이 어둡다는 비판적인 시각도 존재함.</span></li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <div class="stock-title">
+                <h2>센틴</h2>
+                <span class="ticker">CNC</span>
+            </div>
+            <ul class="content-list">
+                <li><span class="positive"><strong>UNH의 대안</strong>: UNH와 함께 반등 후보로 거론되며, DOJ 조사 리스크가 없고 P/B, P/S 등 가치 지표가 더 매력적이라는 점에서 더 나은 투자처로 평가됨.</span></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
