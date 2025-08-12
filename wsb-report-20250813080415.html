@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향 (25.08.13 AM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1c1e21;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .stock-card {
+            background-color: #f7f8fa;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .stock-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .stock-ticker {
+            font-size: 28px;
+            font-weight: 900;
+            color: #005A9C;
+            margin-right: 10px;
+        }
+        .stock-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+        .sentiment {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .sentiment.bullish { background-color: #42b72a; }
+        .sentiment.bearish { background-color: #f02849; }
+        .sentiment.mixed { background-color: #ffab00; }
+        .sentiment.neutral { background-color: #606770; }
+        .content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-left: 4px solid #005A9C;
+            padding-left: 8px;
+        }
+        .content p, .content ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #3c4043;
+            margin: 0 0 10px 0;
+        }
+        .content ul {
+            padding-left: 20px;
+        }
+        blockquote {
+            border-left: 3px solid #ccc;
+            padding-left: 15px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #606770;
+        }
+        .annotation {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+            padding-top: 5px;
+            border-top: 1px dashed #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.08.13 AM)</h1>
+
+        <!-- SPY Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">SPY</span>
+                <span class="stock-name">SPDR S&P 500 ETF</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment bullish">매우 강세</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    시장의 전반적인 방향성을 나타내는 대표적인 ETF로, 현재 시장의 극단적인 강세 심리를 반영하며 가장 많이 언급되었습니다. 인플레이션 데이터(CPI)가 예상보다 높게 나왔음에도 불구하고 시장이 폭등하는 현상에 대한 토론이 주를 이룹니다.
+                </p>
+                <ul>
+                    <li><strong>비이성적 강세장:</strong> 많은 투자자들이 CPI 데이터가 금리 인하 가능성을 낮춤에도 불구하고 주가가 오르는 것을 이해할 수 없다고 토로합니다. 이는 "시장은 비이성적이다", "나쁜 소식도 좋은 소식"이라는 인식이 팽배함을 보여줍니다.</li>
+                    <li><strong>풋옵션 투자자의 손실:</strong> 시장 하락에 베팅한 풋(Put) 옵션 투자자들이 막대한 손실을 보고 있다는 댓글이 많습니다. 한 투자자는 "풋옵션을 사는 것을 배워본 적이 없다. 내 풋옵션이 불타고 있다"며 고통을 호소했습니다.</li>
+                    <li><strong>극단적 목표가 제시:</strong> 한 사용자는 SPY가 8월 29일까지 650달러에 도달할 것이라는 극단적인 낙관론을 펼치기도 했습니다. 반면, 690달러 콜옵션을 구매한 투자자의 손실 인증글은 시장의 과열과 위험성을 동시에 보여주었습니다.</li>
+                    <li><strong>데이터 불신:</strong> 발표되는 경제 데이터 자체를 신뢰하지 못하겠다는 의견이 많으며, "데이터가 어떻게 나오든 시장은 상승한다"는 자조적인 반응이 주를 이룹니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>풋(Put) 옵션:</strong> 주가가 하락할 것이라 예상하고 투자하는 파생상품. 주가가 오르면 큰 손실을 봅니다.<br>
+                    - <strong>콜(Call) 옵션:</strong> 주가가 상승할 것이라 예상하고 투자하는 파생상품.
+                </p>
+            </div>
+        </div>
+
+        <!-- CAVA Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">CAVA</span>
+                <span class="stock-name">Cava Group</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment bearish">매우 약세</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    실적 발표 후 주가가 시간 외 거래에서 -20% 폭락하며 큰 주목을 받았습니다. 특히 실적 발표 직전 "녹아내릴 듯이 오를 것(melt up)"이라고 예측했던 게시물이 조롱의 대상이 되었습니다.
+                </p>
+                <ul>
+                    <li><strong>실망스러운 가이던스:</strong> 동일 매장 매출 성장률 전망치를 기존 6~8%에서 4~6%로 하향 조정한 것이 주가 폭락의 직접적인 원인으로 지목됩니다. 이는 투자자들의 높은 기대치에 미치지 못했습니다.</li>
+                    <li><strong>고평가 논란:</strong> 주가수익비율(PER)이 70배에 달하는 등, 단순한 패스트 캐주얼 음식점 체인에 비해 기술주처럼 고평가되었다는 비판이 많았습니다. 한 사용자는 "이런 밸류에이션은 말이 안 된다"고 지적했습니다.</li>
+                    <li><strong>저가 매수 기회 vs 추가 하락:</strong> "84달러에 좋았다면 66달러에는 더 사랑하게 될 것"이라며 저가 매수 기회로 보는 의견과, "26달러가 되면 더 사랑하게 될 것"이라며 추가 하락을 경고하는 의견이 엇갈렸습니다.</li>
+                    <li><strong>소비자 경험 악화:</strong> 일부 사용자들은 CAVA의 양이 줄고 가격이 올랐으며, 주문 실수가 잦다고 불평하며 주가 하락이 당연하다는 반응을 보였습니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>PER(주가수익비율):</strong> 주가를 주당순이익으로 나눈 값. 기업의 가치가 고평가되었는지 판단하는 지표 중 하나입니다.<br>
+                    - <strong>시간 외 거래(After hours):</strong> 정규 주식 시장이 마감된 후 이루어지는 거래.
+                </p>
+            </div>
+        </div>
+        
+        <!-- PLTR Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">PLTR</span>
+                <span class="stock-name">Palantir Technologies</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment mixed">혼재 (강세 우위)</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    "팔란티어가 무슨 일을 하는 회사인지 아무도 모른다"는 밈(meme)과 함께, 패스트푸드 체인 웬디스(Wendy's)와의 연관성을 유머러스하게 분석한 게시물이 큰 인기를 끌었습니다.
+                </p>
+                <ul>
+                    <li><strong>사업 모델에 대한 궁금증:</strong> 대부분의 투자자들이 팔란티어의 정확한 사업 내용을 모르면서도 AI와 정부 계약 관련주라는 이유만으로 투자하고 있다는 점이 희화화되었습니다. "팔란티어가 자기가 뭐 하는지 알까?"라는 댓글이 많은 공감을 얻었습니다.</li>
+                    <li><strong>웬디스와의 파트너십:</strong> 팔란티어가 웬디스의 운영 효율성을 개선한다는 내용이 "웬디스 뒤뜰에서 일하는 사람들도 효율적으로 만들어준다"는 식으로 해석되며 유머 소재가 되었습니다. 이는 팔란티어의 기술이 다양한 산업에 적용될 수 있다는 점을 시사합니다.</li>
+                    <li><strong>고밸류에이션 논란:</strong> PER이 600배가 넘는다는 점이 지적되며 고평가 논란이 있었지만, "뱀 기름(가짜 약) 치고는 낮은 PER"이라며 비꼬는 등, 펀더멘털보다는 밈과 기대감으로 주가가 움직인다는 인식이 강합니다.</li>
+                    <li><strong>강력한 강세 심리:</strong> "팔란티어에 풋옵션을 사는 것은 미친 짓"이라는 의견이 있을 정도로, 비이성적인 주가 상승세에 대한 믿음이 강하게 나타났습니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>밈(Meme):</strong> 인터넷에서 유행하는 특정 문화 요소나 콘텐츠. 주식 시장에서는 특정 종목에 대한 집단적인 유머나 인식을 의미합니다.<br>
+                    - <strong>Forward Deployed Engineers:</strong> 팔란티어의 특수 직군으로, 고객사에 파견되어 고객의 데이터를 분석하고 문제를 해결하는 소프트웨어 엔지니어.
+                </p>
+            </div>
+        </div>
+
+        <!-- ASTS Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">ASTS</span>
+                <span class="stock-name">AST SpaceMobile</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment bullish">매우 강세</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    긍정적인 실적 보고서를 발표하며 투자자들의 큰 관심을 받았습니다. 충분한 현금 보유와 구체적인 위성 발사 계획이 투자자들에게 신뢰를 주었습니다.
+                </p>
+                <ul>
+                    <li><strong>명확한 사업 계획과 자금력:</strong> "실제 계획과 은행 잔고를 갖춘 우주 주식"이라는 평가를 받으며, 2026년까지 45~60개의 위성을 발사할 자금이 충분하다는 점이 긍정적으로 작용했습니다.</li>
+                    <li><strong>높은 성장 잠재력:</strong> "여기서 10배의 잠재력이 있다", "내년에는 100달러를 넘을 것"이라는 등 향후 주가에 대한 기대감이 매우 높습니다. 많은 투자자들이 2026년까지 장기 보유할 의사를 밝혔습니다.</li>
+                    <li><strong>경쟁사와의 비교:</strong> 로켓랩(RKLB)과 ASTS 중 어느 곳에 투자할지 고민하는 투자자들이 많았으며, 두 회사 모두에 투자하는 것이 좋다는 의견도 있었습니다.</li>
+                    <li><strong>스트랭글(Strangle) 전략 성공:</strong> 한 투자자가 ASTS의 높은 변동성을 예상하고 콜옵션과 풋옵션을 동시에 매수하는 '스트랭글' 전략으로 15,000달러의 수익을 올린 것을 인증하여 주목받았습니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>스트랭글(Strangle) 옵션 전략:</strong> 주가가 크게 오르거나 내릴 것으로 예상될 때, 행사가가 다른 콜옵션과 풋옵션을 동시에 매수하는 전략입니다.<br>
+                    - <strong>Aerotyne International:</strong> 영화 '더 울프 오브 월스트리트'에 나오는 가짜 유망주 회사 이름. 여기서는 사기성이 짙은 주식을 비꼬는 밈으로 사용되었습니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- NVDA Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">NVDA</span>
+                <span class="stock-name">NVIDIA</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment bullish">강세</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    시장의 주도주로서 꾸준한 관심을 받고 있으며, 특히 사상 최고가(ATH) 경신 이후에도 추가 상승에 대한 기대감이 높습니다.
+                </p>
+                <ul>
+                    <li><strong>사상 최고가 돌파 베팅:</strong> 한 투자자가 2만 달러를 들여 9월 말 만기인 행사가 200달러 콜옵션을 매수한 것을 인증하며, 추가 상승에 대한 강한 믿음을 보여주었습니다.</li>
+                    <li><strong>실적 기대감:</strong> 실적 발표를 앞두고 주가가 상승할 것이라는 기대감이 있습니다. 특히 중국이라는 새로운 고객 기반 덕분에 가이던스가 좋을 것이라는 분석이 나왔습니다.</li>
+                    <li><strong>고평가 우려 속 강세 심리:</strong> 시가총액이 4.5조 달러에 육박하는 등 고평가에 대한 우려가 존재하지만, "시장이 비논리적일 때 펀더멘털은 쓰레기"라며 추세 추종의 중요성을 강조하는 의견이 많습니다.</li>
+                    <li><strong>중국발 악재:</strong> 중국이 주요 기업들에게 엔비디아 칩 구매를 중단하라고 지시했다는 소식이 전해졌으나, 시장의 강세 분위기에 묻히는 모습입니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>ATH(All-Time High):</strong> 사상 최고가.
+                </p>
+            </div>
+        </div>
+        
+        <!-- TSLA Section -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">TSLA</span>
+                <span class="stock-name">Tesla</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment mixed">혼재</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    '컬트 주식(Cult Stock)'의 대명사로, 주가의 비합리적인 움직임에 대한 토론이 활발합니다. 특히 테슬라 주가 하락에 베팅(숏)했다가 두 번이나 파산했다는 투자자의 글이 화제가 되었습니다.
+                </p>
+                <ul>
+                    <li><strong>숏 스퀴즈 위험:</strong> 경제 현실과 무관하게 움직이는 주가 때문에 숏 포지션이 매우 위험하다는 인식이 강합니다. "컬트 주식을 공매도하다니... 주식 처음 해보나?"라며 숏 투자자를 비꼬는 댓글이 많았습니다.</li>
+                    <li><strong>비이성적 주가:</strong> 4분기 영업이익이 마이너스가 될 수 있는 상황임에도 불구하고 주가가 견고한 것에 대해 "내가 본 주식 중 가장 놀라운 주식"이라는 평가가 나왔습니다.</li>
+                    <li><strong>감정적 매매 경고:</strong> 한 투자자는 테슬라에 대한 복수심 때문에 다시 숏을 쳤다가 손실을 봤다고 고백하며 감정적인 매매의 위험성을 보여주었습니다.</li>
+                    <li><strong>반론:</strong> "결국에는 무너질 것"이라며 장기적인 하락을 예측하는 의견도 있지만, 그 시점을 예측하려다 많은 투자자들이 파산했다는 반박이 뒤따릅니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>컬트 주식(Cult Stock):</strong> 기업의 펀더멘털보다는 CEO나 제품에 대한 강력한 팬덤(추종)에 의해 주가가 움직이는 주식.<br>
+                    - <strong>숏(Short):</strong> 주가 하락에 베팅하는 공매도 투자.
+                </p>
+            </div>
+        </div>
+
+        <!-- 크립토 관련 주식 -->
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">BMNR / MSTR</span>
+                <span class="stock-name">암호화폐 대리 투자 관련주</span>
+            </div>
+            <div class="content">
+                <p><span class="sentiment bullish">강세</span></p>
+                <h3>관심 이유 및 분석</h3>
+                <p>
+                    Bitmine Immersion(BMNR)이 200억 달러 규모의 주식을 발행해 이더리움(ETH)을 추가 매수하겠다는 계획을 밝히면서, 비트코인을 대량 매수해 주가를 띄운 MicroStrategy(MSTR)의 전략을 따라한다는 분석이 나왔습니다.
+                </p>
+                <ul>
+                    <li><strong>'세일러 스페셜' 모방:</strong> MSTR의 CEO 마이클 세일러가 회사의 자금으로 비트코인을 매수해 주가를 부양한 전략을 '세일러 스페셜'이라 부르며, BMNR이 이를 모방하고 있다고 평가됩니다. <strong>"BMNR은 이더리움계의 MSTR이 될 것이다"</strong>라는 기대감이 형성되었습니다.</li>
+                    <li><strong>기관 투자자들의 우회로:</strong> 암호화폐를 직접 매수할 수 없는 기관 투자자들이 이런 회사 주식을 통해 암호화폐 시장에 간접적으로 노출될 수 있다는 점이 주가 상승의 원인으로 분석됩니다. 이로 인해 주식은 보유한 암호화폐 가치보다 높은 프리미엄에 거래됩니다.</li>
+                    <li><strong>버블 및 폰지사기 우려:</strong> "가짜 돈(주식)을 받고 다른 종류의 더 가짜 돈(암호화폐)을 산다"며 이러한 사업 모델을 폰지사기에 비유하는 비판적인 시각도 존재합니다. 하지만 "게임의 룰을 싫어하지 말고 흐름에 올라타라"며 상승 추세에 동참해야 한다는 의견이 우세합니다.</li>
+                </ul>
+                <p class="annotation">
+                    <strong>주석:</strong><br>
+                    - <strong>TradFi(Traditional Finance):</strong> 전통 금융. 암호화폐 커뮤니티에서 은행, 증권사 등 기존 금융 시스템을 지칭하는 용어.
+                </p>
+            </div>
+        </div>
+
+        <!-- 기타 주목할 만한 주식 -->
+        <div class="stock-card">
+             <div class="stock-header">
+                 <span class="stock-ticker">기타</span>
+                 <span class="stock-name">기타 관심 주식</span>
+             </div>
+             <div class="content">
+                <h3>주요 언급 종목 요약</h3>
+                <p>다양한 종목들이 개별적인 이슈로 짧게 언급되었습니다.</p>
+                <ul>
+                    <li><strong>$OPEN (Opendoor):</strong> 금리 인하 기대감으로 주가가 급등했으며, 공매도 비율이 높아 숏 스퀴즈 가능성이 언급되는 등 단기 트레이딩 대상으로 인기가 높습니다.</li>
+                    <li><strong>$UNH (UnitedHealth Group):</strong> 주가 하락 후 반등하며 "UNH가 내 포트폴리오를 구했다"는 긍정적인 반응이 나왔습니다. 워렌 버핏의 매수 루머도 언급되었습니다.</li>
+                    <li><strong>$CRWV (CoreWeave):</strong> 예상치를 상회하는 실적에도 불구하고 운영 비용 급증으로 시간 외 거래에서 주가가 하락했습니다. AI 데이터 센터 관련주로 주목받고 있습니다.</li>
+                    <li><strong>$ONON (On Holding):</strong> "공항에 가면 80%가 이 신발을 신고 있다"며 일상에서의 높은 인기가 투자 포인트로 제시되었습니다. 실적 발표 후 주가가 급등했습니다.</li>
+                    <li><strong>$LULU (Lululemon):</strong> 치열해진 경쟁과 소비자 지출 감소 우려로 하락에 베팅하는 의견이 많았으나, 일부 투자자들은 저가 매수 기회로 보고 콜옵션을 대량 매수했습니다.</li>
+                    <li><strong>$KODK (Kodak):</strong> "할머니의 카메라 회사에 투자했다"며 한 투자자의 큰 손실 인증이 화제가 되었습니다. 그러나 제약 사업으로 전환하고 있다는 점이 반전 요소로 언급되었습니다.</li>
+                    <li><strong>$FNMA / $FMCC (Fannie Mae / Freddie Mac):</strong> 한 투자자가 이혼 후 이 두 종목에 집중 투자하여 큰 수익을 올렸다고 인증했습니다. 정부의 정책 변화에 따라 주가가 크게 움직일 수 있는 종목입니다.</li>
+                    <li><strong>$FIG (Figma):</strong> IPO 직후 최고가에 매수하여 큰 손실을 보고 있는 투자자의 인증글이 올라왔습니다. IPO 초기 변동성의 위험을 보여주는 사례로 언급됩니다.</li>
+                     <li><strong>$BBAI (BigBear.ai):</strong> 실망스러운 실적 발표와 CEO의 불분명한 태도로 인해 주가가 급락했습니다. AI 관련주임에도 불구하고 AI 열풍의 수혜를 받지 못하고 있다는 비판을 받았습니다.</li>
+                     <li><strong>$RKT (Rocket Companies):</strong> 주택담보대출 관련 기업으로, Mr. Cooper(COOP) 인수와 금리 인하 기대감으로 긍정적인 전망이 나오고 있습니다.</li>
+                </ul>
+             </div>
+        </div>
+        
+    </div>
+</body>
+</html>
