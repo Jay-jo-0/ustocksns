@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            font-size: 1.6em;
+            margin-top: 35px;
+        }
+        .stock-card {
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #3498db;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            background-color: #fdfdfd;
+        }
+        .stock-card strong {
+            color: #2980b9;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 25px;
+        }
+        li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .negative-point::before {
+            content: '🔻';
+            color: #c0392b;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #eaf2f8;
+            color: #34495e;
+            font-size: 1.1em;
+        }
+        td {
+            font-size: 1em;
+        }
+        .annotation {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #eee;
+            font-style: italic;
+            line-height: 1.4;
+        }
+        .positive { color: #27ae60; font-weight: bold; }
+        .negative { color: #c0392b; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향 (25.09.08 AM)</h1>
+
+        <div class="stock-card">
+            <h2>HOOD (Robinhood)</h2>
+            <ul>
+                <li><strong>S&P 500 편입 기대감:</strong> 최근 가장 큰 호재로 언급됩니다. 많은 투자자들이 S&P 500 지수 편입이 주가 상승의 강력한 촉매제가 될 것이라고 보고 있으며, 이로 인해 주가가 <strong>$120, $130, $140, 심지어 $150까지 상승</strong>할 수 있다는 낙관적인 전망이 다수입니다.</li>
+                <li><strong>대규모 손실 인증:</strong> 한 투자자가 1백만 달러를 투자해 32만 달러만 남은 콜옵션 <span class="negative">대규모 손실</span>을 인증하며 화제가 되었습니다. 이는 옵션 투자의 위험성을 보여주는 동시에, 오히려 해당 주식에 대한 커뮤니티의 관심을 증폭시키는 계기가 되었습니다.</li>
+                <li><strong>다가오는 이벤트:</strong> 9월 9일에 예정된 'HOOD Summit' 이벤트 또한 단기적인 주가 상승 모멘텀으로 작용할 수 있다는 기대감이 있습니다. 제품 발표 등 긍정적인 소식이 나올 경우 주가에 호재가 될 것으로 보입니다.</li>
+                <li><strong>엇갈리는 의견:</strong> 긍정적인 전망이 우세하지만, 일부는 S&P 500 편입 호재가 이미 주가에 선반영되었을 수 있다고 경고합니다. 한 사용자는 "S&P 편입 후 하락했던 COIN의 사례"를 언급하며 주의를 당부했습니다.</li>
+            </ul>
+            <p class="annotation">
+                <strong>* 콜옵션(Call Option):</strong> 주식을 미래의 특정 시점에 정해진 가격으로 살 수 있는 권리. 주가 상승을 예상할 때 투자합니다.<br>
+                <strong>* S&P 500 편입:</strong> 미국을 대표하는 500개 대기업으로 구성된 주가 지수에 포함되는 것. 편입 시 지수를 추종하는 펀드들의 대규모 자금 유입이 예상되어 주가에 호재로 작용하는 경우가 많습니다.
+            </p>
+        </div>
+
+        <div class="stock-card">
+            <h2>금주 IPO 주식들</h2>
+            <p style="font-size:1.1em; margin-bottom:20px;">이번 주에 예정된 여러 IPO에 대한 관심이 매우 뜨겁습니다. 대부분의 투자자들은 장기 보유보다는 상장 첫날의 변동성을 이용해 단기 차익을 실현하려는 '플립핑(Flipping)' 전략에 집중하고 있습니다.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목명 (티커)</th>
+                        <th>예상 가격</th>
+                        <th>주요 관심사</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Klarna (KLAR)</strong></td>
+                        <td>$35 - $37</td>
+                        <td>가장 큰 기대를 받는 IPO. 경쟁사 <strong>Affirm (AFRM)</strong>의 성공에 힘입어 상장 후 큰 폭의 상승을 기대하는 의견이 지배적입니다. 많은 투자자들이 상장 직후 매도할 계획을 공유하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Figure Tech (FIGR)</strong></td>
+                        <td>$18 - $20</td>
+                        <td>이번 IPO 중 유일하게 <span class="positive">수익을 내고 있는 기업</span>으로 주목받고 있습니다. 안정성을 중시하는 투자자들 사이에서 긍정적으로 평가받고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gemini (GEMI)</strong></td>
+                        <td>$17 - $19</td>
+                        <td>유명한 윙클보스 쌍둥이가 설립한 암호화폐 관련 기업이라는 점에서 화제가 되고 있습니다. 암호화폐 시장에 대한 기대감을 가진 투자자들이 관심을 보입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Via Trans. (VIA)</strong></td>
+                        <td>$40 - $44</td>
+                        <td>스마트 모빌리티 및 운송 기술 분야의 잠재력을 보고 일부 투자자들이 관심을 보이고 있으나, 다른 IPO에 비해 상대적으로 주목도는 낮은 편입니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="annotation">
+                <strong>* IPO (Initial Public Offering):</strong> 기업공개. 회사가 처음으로 주식 시장에 주식을 상장하여 일반 투자자들에게 판매하는 것을 의미합니다.
+            </p>
+        </div>
+        
+        <div class="stock-card">
+            <h2>TSLA (Tesla)</h2>
+            <ul>
+                <li><strong>단기 급등 수익 인증:</strong> 한 투자자가 옵션 스프레드 전략을 사용하여 하룻밤 사이에 674달러를 5,000달러로 불린 <span class="positive">수익을 인증</span>하여 주목받았습니다. 이는 단기 변동성을 이용한 성공적인 트레이딩 사례로 언급되었습니다.</li>
+                <li><strong>강력한 상승 기대감:</strong> "테슬라는 곧 엄청나게 펌핑될 것"이라는 댓글처럼, 시장이 상승세(Green SPY day)를 보일 경우 테슬라 주가가 크게 오를 것이라는 <span class="positive">강한 기대감</span>이 존재합니다. 일부는 주가가 <strong>$400</strong>까지 갈 수 있다고 예측합니다.</li>
+                <li><strong>옵션 전략 토론:</strong> 단순 콜/풋옵션 매수보다 '스프레드'와 같은 복합적인 전략이 단기 트레이딩에 더 유리할 수 있다는 토론이 있었습니다. 하지만 장기 투자(LEAPs)의 경우 상승 잠재력을 제한할 수 있다는 반론도 제기되었습니다.</li>
+            </ul>
+             <p class="annotation">
+                <strong>* 옵션 스프레드(Option Spread):</strong> 동일한 기초자산에 대해 만기일은 같지만 행사가가 다른 콜옵션이나 풋옵션을 동시에 매수하고 매도하여 위험을 줄이고 수익을 추구하는 전략입니다.<br>
+                <strong>* 펌핑(Pumping):</strong> 주가가 인위적이거나 급격하게 상승하는 것을 의미하는 속어입니다.
+            </p>
+        </div>
+
+        <div class="stock-card">
+            <h2>GOOG/GOOGL (Alphabet)</h2>
+            <ul>
+                <li><strong>압도적인 낙관론:</strong> "시간의 끝까지 구글 립스(LEAPs)를 살 것"이라는 표현에서 알 수 있듯, 구글의 장기적인 성장 가능성에 대한 <span class="positive">매우 강한 신뢰</span>가 나타났습니다.</li>
+                <li><strong>단기 상승 기대:</strong> 이번 주에 주가가 추가적으로 상승할 것이라는 전망이 많으며, 연말까지 주가가 <strong>$245 또는 $300</strong>에 도달할 수 있다는 구체적인 목표가 제시되었습니다.</li>
+                <li><strong>AI 분야 경쟁력:</strong> 자체 개발한 맞춤형 AI 칩(TPU)이 경쟁사(NVDA)에 도전하고 있다는 소식이 긍정적인 투자 심리에 기여하고 있습니다. 이는 장기적인 AI 경쟁에서 구글이 우위를 점할 수 있다는 기대로 이어집니다.</li>
+            </ul>
+            <p class="annotation">
+                <strong>* 립스(LEAPs - Long-Term Equity Anticipation Securities):</strong> 만기가 1년 이상 남은 장기 옵션을 의미합니다.
+            </p>
+        </div>
+        
+        <div class="stock-card">
+            <h2>OPEN (Opendoor Technologies)</h2>
+            <ul>
+                <li><strong>강력한 매수 추천:</strong> "내일의 전략은?"이라는 질문에 많은 투자자들이 'OPEN'을 외칠 정도로 인기가 높습니다. 커뮤니티 내에서 가장 <span class="positive">강력한 '밈 주식'</span> 중 하나로 떠오르고 있습니다.</li>
+                <li><strong>높은 목표 주가:</strong> 현재 주가 대비 매우 높은 목표가인 <strong>$8, $10, 심지어 $15</strong>까지 언급되며, 단기간 내에 주가가 폭등할 것이라는 기대감이 팽배합니다.</li>
+                <li><strong>잠재적 조정 우려:</strong> 일부 투자자는 단기 급등에 따른 피로감으로 주가가 <strong>$5까지 후퇴</strong>할 수 있다는 <span class="negative">조정 가능성</span>도 제기하고 있어, 맹목적인 추종은 경계해야 한다는 의견도 있습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>기타 주요 언급 주식</h2>
+            <ul>
+                 <li><strong>NVDA (NVIDIA):</strong> AI 붐의 핵심 주식이지만, 최근 들어 <span class="negative">고평가 논란</span>과 구글 등 빅테크 기업들의 자체 칩 개발로 인한 경쟁 심화 우려가 제기되고 있습니다. 그럼에도 <strong>$180~$185</strong>를 목표로 하는 강세론자들도 여전히 많습니다.</li>
+                 <li><strong>AVGO (Broadcom):</strong> 실적 발표 후 주가가 급등하며, 한 투자자가 콜옵션으로 <span class="positive">하룻밤에 3300%의 수익</span>을 올린 사례가 공유되었습니다. 실적 발표를 이용한 '로또' 같은 투자가 성공한 케이스입니다.</li>
+                 <li><strong>SPY (S&P 500 ETF):</strong> 시장 전반의 방향성에 대한 베팅으로 자주 언급됩니다. "모기지 전체를 SPY 콜에 걸겠다"는 과격한 표현처럼, 시장의 강한 상승을 예측하는 투자자들이 많습니다.</li>
+                 <li><strong>GLD (SPDR Gold Shares):</strong> 금 가격 상승에 베팅하는 투자자들이 늘고 있습니다. 금 가격이 연말까지 <strong>$4,000</strong>에 도달할 것이라는 파격적인 전망과 함께 "골드 콜옵션이 정답"이라는 의견이 있습니다.</li>
+                 <li><strong>RDDT (Reddit):</strong> 상장 이후 꾸준히 언급되는 주식입니다. 한 투자자는 주가가 <strong>$800</strong>이 될 때까지 보유하겠다는 장기적인 관점을 제시했습니다.</li>
+                 <li><strong>AMD (Advanced Micro Devices):</strong> "왜 또 AMD 롱 포지션에 들어갔을까"라는 후회 섞인 언급이 나오는 등, 최근 주가 움직임에 실망한 투자자들의 목소리가 있었습니다.</li>
+                 <li><strong>UNH (UnitedHealth Group):</strong> 저명한 투자자(워렌 버핏)가 매수했다는 소식이 퍼지면서 관심이 증가했습니다. 주가가 곧 <strong>$350을 넘어 $500</strong>까지 회복할 것이라는 기대감이 있습니다.</li>
+                 <li><strong>UPS (United Parcel Service):</strong> 미국 정부의 관세 정책 변경으로 인해 <span class="negative">실적이 악화될 것</span>이라는 구체적인 분석이 제기되었습니다. 특히 저가 해외 직구 물량 감소가 타격을 줄 것이라는 우려가 있습니다.</li>
+            </ul>
+            <p class="annotation">
+                <strong>* 밈 주식(Meme Stock):</strong> 기업의 실적이나 가치보다는 온라인 커뮤니티의 관심과 유행으로 인해 주가가 급등락하는 주식을 말합니다.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
