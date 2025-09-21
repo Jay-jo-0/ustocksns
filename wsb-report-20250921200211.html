@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            margin: 0;
+            padding: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2em;
+            text-align: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.8em;
+            margin-top: 40px;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+        th {
+            background-color: #2a2a2a;
+            color: #4CAF50;
+            font-size: 1.1em;
+        }
+        tr:nth-child(even) {
+            background-color: #1c1c1c;
+        }
+        tr:hover {
+            background-color: #282828;
+        }
+        .sentiment-positive {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .sentiment-negative {
+            color: #F44336;
+            font-weight: bold;
+        }
+        .sentiment-neutral {
+            color: #FFC107;
+            font-weight: bold;
+        }
+        strong {
+            color: #ffffff;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 2px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.09.21 PM)</h1>
+
+        <h2>SPY (SPDR S&P 500 ETF Trust)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$50,000 규모 풋 옵션 매수</td>
+                    <td>한 투자자가 시장 하락에 크게 베팅. 대부분의 다른 투자자들은 이를 비웃으며 연준의 금리 인하, 강력한 상승 추세 등을 이유로 시장이 계속 상승할 것이라고 전망. 정부 셧다운이나 계절적 요인(10월 하락)을 하락의 근거로 드는 소수 의견도 존재.</td>
+                    <td class="sentiment-positive">시장 강세</td>
+                </tr>
+                <tr>
+                    <td>$10,000 규모 풋 옵션 매수</td>
+                    <td>또 다른 투자자가 단기 하락에 베팅. 마찬가지로 대부분은 상승을 예측하며 이 베팅을 '기부'라고 표현. H1-B 비자 뉴스나 정부 셧다운 가능성이 하락을 유발할 수 있다는 기대감도 있음.</td>
+                    <td class="sentiment-positive">시장 강세</td>
+                </tr>
+                <tr>
+                    <td>안전 자산으로 추천</td>
+                    <td>위험한 '밈 주식' 대신 친구나 가족에게 추천하기 좋은 안전한 투자처로 여러 번 언급됨. 장기적으로 꾸준히 우상향한다는 인식이 강함.</td>
+                    <td class="sentiment-positive">안전/장기</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="annotation">
+            <strong>풋 옵션(Put Option):</strong> 주가가 하락할 것이라 예상될 때 이익을 얻는 파생상품. 시장 하락에 베팅하는 것을 의미합니다.<br>
+            <strong>🌈🐻 (Gay Bear):</strong> 주식 시장의 하락을 예상하고 하락에 베팅하는 투자자를 조롱하는 밈. 'Bear'는 하락장 투자자를 의미합니다.<br>
+            <strong>H1-B 비자:</strong> 미국 기업들이 외국인 전문 인력을 고용할 때 사용하는 비자. 이 비자에 대한 수수료 인상이나 제한은 기술 기업에 부담을 줄 수 있어 주가 하락 요인으로 거론됩니다.
+        </p>
+        
+        <h2>PLTR (Palantir Technologies)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>공매도 YOLO</td>
+                    <td>한 투자자가 전 재산을 팔란티어 공매도에 투자. 그는 펀더멘털에 비해 주가가 과대평가되었다고 판단. 하지만 대부분의 댓글은 팔란티어의 강력한 지지층('컬트')과 정부 계약을 이유로 공매도는 매우 위험하다고 경고.</td>
+                    <td class="sentiment-neutral">매우 양극화</td>
+                </tr>
+                <tr>
+                    <td>내부자 매도</td>
+                    <td>CEO 알렉스 카프를 포함한 내부 직원들이 지속적으로 주식을 매도하는 것에 대한 비판이 제기됨. 일부는 이를 회사의 고평가 신호로 해석.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td>과거 추천 사례</td>
+                    <td>과거에 $20, $75(오타 가능성 있음) 등 다양한 가격대에서 추천했던 경험담이 공유됨. 주가 변동성이 매우 크다는 점이 부각됨.</td>
+                    <td class="sentiment-neutral">변동성</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="annotation">
+            <strong>공매도(Shorting):</strong> 주식을 빌려서 판 뒤, 주가가 하락하면 더 싼 가격에 사서 갚아 차익을 얻는 투자 방식. 주가 상승 시 손실이 무한대가 될 수 있어 매우 위험합니다.<br>
+            <strong>YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 전 재산을 특정 주식이나 옵션에 투자하는 매우 위험한 베팅을 의미하는 밈.
+        </p>
+
+        <h2>MU (Micron Technology)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>대규모 투자 (주식 및 콜 옵션)</td>
+                    <td>AI 데이터센터 수요 폭증으로 마이크론의 HBM 메모리 수요가 급증할 것이라는 기대감. 엔비디아, AMD, 구글 등 주요 고객사들의 기록적인 실적은 마이크론의 실적 호조로 이어질 것이라는 분석.</td>
+                    <td class="sentiment-positive">매우 긍정적</td>
+                </tr>
+                <tr>
+                    <td>실적 발표 기대감</td>
+                    <td>다가오는 실적 발표에서 예상을 뛰어넘는 가이던스를 제시할 경우 주가가 $200까지 상승할 수 있다는 낙관적인 전망이 나옴. 2026년 주당순이익(EPS)이 $10-12에 이를 것이라는 기대.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td>과거의 아픔</td>
+                    <td>과거 마이크론 실적 발표 때마다 투자자들을 실망시켰던 경험 때문에 투자를 꺼리는 의견도 존재. 좋은 실적이 이미 주가에 선반영되었을 수 있다는 우려도 제기됨.</td>
+                    <td class="sentiment-neutral">신중론</td>
+                </tr>
+                 <tr>
+                    <td>'인버스 크레이머'</td>
+                    <td>유명 방송인 짐 크레이머가 마이크론 주가가 조정을 받을 것이라고 말한 것이 오히려 상승 신호라는 밈.</td>
+                    <td class="sentiment-positive">긍정적 (밈)</td>
+                </tr>
+            </tbody>
+        </table>
+         <p class="annotation">
+            <strong>인버스 크레이머(Inverse Cramer):</strong> CNBC의 주식 전문가 짐 크레이머의 예측이 자주 틀리는 것을 비꼬아, 그의 추천과 반대로 투자하면 성공한다는 밈.
+        </p>
+
+        <h2>OPEN (Opendoor Technologies)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>'펌프 앤 덤프' 후 상승</td>
+                    <td>과거 '펌프 앤 덤프' 주식으로 여겨졌으나, 최근 다시 상승하는 모습에 대한 의문 제기. 투자자들의 변동성에 대한 혼란을 보여줌.</td>
+                    <td class="sentiment-neutral">변동성</td>
+                </tr>
+                <tr>
+                    <td>잘못된 매매 타이밍</td>
+                    <td>한 투자자가 여동생에게 $1에 사라고 추천했으나, 여동생은 주가가 $4.50까지 오른 뒤 최고점에서 매수하고 저점에서 공포에 질려 매도한 사례가 공유됨.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td>회복 기대감</td>
+                    <td>과거 큰 손실을 입었지만, 이제는 바닥을 다지고 회복한 주식으로 보고 매수하는 것이 낫다는 의견. 한 투자자는 평균 단가 $9.52에 주식을 보유 중이라고 밝힘.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="annotation">
+            <strong>펌프 앤 덤프(Pump and Dump):</strong> 특정 자산의 가격을 허위 정보나 투기 세력을 이용해 인위적으로 끌어올린 뒤(펌프), 높은 가격에 팔아치우는(덤프) 사기 수법.
+        </p>
+
+        <h2>AVGO (Broadcom)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>내부자 $9.5M 매도</td>
+                    <td>최고법률책임자가 $9.5M(약 130억 원) 상당의 주식을 매도했다는 소식. 하지만 이는 양도제한조건부주식(RSU)에 대한 세금을 내기 위한 계획된 매도로, 부정적인 신호가 아니라고 분석됨.</td>
+                    <td class="sentiment-neutral">중립/해프닝</td>
+                </tr>
+                <tr>
+                    <td>CEO의 강세 전망</td>
+                    <td>CEO가 향후 2-3년간 회사에 대해 매우 낙관적이라는 발언이 공유됨. 내부자 매도 우려를 불식시키는 긍정적인 정보로 작용.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td>'투 더 문'</td>
+                    <td>"AVGO to the moon"이라는 댓글로, 주가 상승에 대한 강한 기대감을 표현.</td>
+                    <td class="sentiment-positive">매우 긍정적</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>LUNR (Intuitive Machines)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IM-2 미션 실패 후폭풍</td>
+                    <td>IM-2 달 착륙 미션의 실패와 회사의 미숙한 대응(미흡한 홍보, 통신 두절, 장 마감 후 실패 발표)이 회사의 신뢰도에 치명타를 입혔다고 분석. '관에 못을 박았다'는 표현까지 나옴.</td>
+                    <td class="sentiment-negative">매우 부정적</td>
+                </tr>
+                <tr>
+                    <td>주식 희석</td>
+                    <td>미션 실패 직후 유상증자 등을 통해 주식을 희석(dilute)시킨 것에 대한 투자자들의 불만이 제기됨.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td>실패한 투자 사례</td>
+                    <td>지난 1월에 투자했다가 후회하는 투자자의 경험담이 공유됨.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>AAPL (Apple)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>언급 내용</th>
+                    <th>분석/이유</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>장기 콜 옵션 수익 실현</td>
+                    <td>한 투자자가 장기간 보유했던 콜 옵션으로 수익을 실현. 애플의 AI 기능 탑재 및 경쟁사(구글, 마이크로소프트)의 실수에 대한 기대로 긍정적 전망 유지.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td>경쟁 우위</td>
+                    <td>경쟁사들이 자사 제품을 '망치는(enshittify)' 속도보다 애플이 망치는 속도가 느릴 것이기 때문에 상대적으로 더 낙관적이라는 분석.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td>장기 투자 가치</td>
+                    <td>2010년에 $70만 달러를 애플에 투자했다면 현재 $1,600만 달러가 되었을 것이라는 예시를 통해 장기 투자의 중요성을 강조.</td>
+                    <td class="sentiment-positive">매우 긍정적</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>기타 언급 주식</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목</th>
+                    <th>언급 내용 및 분석</th>
+                    <th>분위기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>RKLB</strong></td>
+                    <td>$10에서 $3-4까지 급락한 경험과, 저점에서 매수하라고 권유한 경험이 공존. 변동성이 크지만 장기적으로는 긍정적으로 보는 시각 존재.</td>
+                    <td class="sentiment-neutral">변동성</td>
+                </tr>
+                <tr>
+                    <td><strong>NFLX / WBD</strong></td>
+                    <td>넷플릭스가 워너브라더스 디스커버리 인수를 검토 중이라는 루머. DC 코믹스 등 IP 확보는 긍정적이나, 기존 사업과의 시너지에 의문. WBD 주주들은 인수설에 기대감.</td>
+                    <td class="sentiment-neutral">M&A 이슈</td>
+                </tr>
+                <tr>
+                    <td><strong>GDX</strong></td>
+                    <td>금광 ETF. 연준의 금리 인하 기대감으로 금 가격 상승에 베팅. 한 투자자는 5배의 수익을 올렸다고 인증.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td><strong>TSLA</strong></td>
+                    <td>"테슬라 주식이 정답"이라는 강한 매수 추천과, 지속적으로 공매도 포지션을 유지하고 있다는 상반된 의견이 존재.</td>
+                    <td class="sentiment-neutral">양극화</td>
+                </tr>
+                <tr>
+                    <td><strong>OKLO / NBIS</strong></td>
+                    <td>OKLO는 원자력 관련주로 AI 데이터센터 전력 공급 이슈로 급등. NBIS는 구체적인 이유 없이 포트폴리오 회복의 주역으로 언급되며 강한 매수세를 보임.</td>
+                    <td class="sentiment-positive">긍정적</td>
+                </tr>
+                <tr>
+                    <td><strong>RIVN</strong></td>
+                    <td>'제2의 테슬라'가 될 것이라고 주변에 추천했다가 현재 사람들을 피해다니고 있다는 투자자의 후회. 기대에 못 미치는 성과를 보임.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td><strong>NIO</strong></td>
+                    <td>초기 투자 시절 너무 오래 보유했다가 손실을 본 '아픈 손가락'으로 여러 번 언급됨.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td><strong>BABA</strong></td>
+                    <td>알리바바 투자로 인해 크게 손실을 본('wrecked') 경험담.</td>
+                    <td class="sentiment-negative">부정적</td>
+                </tr>
+                <tr>
+                    <td><strong>MAG7</strong></td>
+                    <td>(마이크로소프트, 애플, 엔비디아, 알파벳, 아마존, 메타, 테슬라) 지난 몇 년간 그냥 이 주식들을 샀으면 쉽게 돈을 벌었을 것이라는 의견. 시장을 주도하는 핵심 자산으로 평가됨.</td>
+                    <td class="sentiment-positive">매우 긍정적</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
