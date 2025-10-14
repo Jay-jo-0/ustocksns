@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.10.15 AM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            word-break: keep-all;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1877f2;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            border-bottom: 3px solid #1877f2;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .stock-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stock-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .stock-table th, .stock-table td {
+            text-align: left;
+            padding: 12px 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stock-table th {
+            font-size: 0.9rem;
+            color: #606770;
+            width: 30%;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        .stock-table td {
+            font-size: 1.0rem;
+            color: #333;
+        }
+        .positive {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .negative {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .neutral {
+            color: #6c757d;
+        }
+        .annotation {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 3px solid #ccc;
+        }
+        strong {
+            color: #1877f2;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .stock-title { font-size: 1.3rem; }
+            .stock-table th { display: none; }
+            .stock-table td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 8px;
+                position: relative;
+            }
+            .stock-table td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+                color: #606770;
+                font-size: 0.9rem;
+            }
+             .stock-table tr {
+                display: block;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .stock-table tr:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+            .stock-table td {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향<br>(25.10.15 AM)</h1>
+
+        <h2>📈 AI & 반도체</h2>
+        <div class="stock-card">
+            <h3 class="stock-title">NVIDIA (NVDA)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="분석">경쟁 심화 우려</th>
+                        <td data-label="분석">Oracle이 5만 개의 AMD AI 칩을 도입하기로 결정하면서, Nvidia의 독점적 지위에 대한 경쟁이 본격화될 것이라는 분석이 나옵니다. 투자자들은 이를 AMD에게는 긍정적, Nvidia에게는 잠재적 위협으로 인식하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="시장 반응">과민 반응</th>
+                        <td data-label="시장 반응">"식용유가 국가 안보 위협"이라는 트럼프 전 대통령의 트윗 하나에 NVDA 시가총액이 400억 달러 증발하는 등, 시장이 AI/반도체 섹터와 관련 없는 뉴스에도 극도로 민감하게 반응하고 있습니다. 이는 현재 시장의 비이성적인 과열 상태를 보여주는 사례로 언급됩니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="투자 심리">AI 버블의 중심</th>
+                        <td data-label="투자 심리">"AI 버블은 진짜다. 그리고 나는 계속 콜옵션을 살 것이다"라는 의견처럼, 버블에 대한 우려 속에서도 상승세에 대한 강한 믿음이 공존합니다. 많은 투자자들이 조정 시 매수 기회로 삼으려는 경향을 보입니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="기타">AI 순환 투자</th>
+                        <td data-label="기타">Nvidia가 고객사에 투자하고, OpenAI가 AMD에 투자하며, 이 돈으로 다시 칩을 구매하는 식의 'AI 순환 투자(circlejerk)'가 시장을 왜곡하고 있다는 비판이 제기됩니다. 이는 버블의 근거 중 하나로 지적됩니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">AMD (Advanced Micro Devices)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="핵심 호재">Oracle과 파트너십</th>
+                        <td data-label="핵심 호재">Oracle Cloud가 Nvidia 대신 5만 개의 AMD AI 칩을 배포하기로 한 결정은 AMD에게 큰 호재로 작용하고 있습니다. 이는 AMD가 AI 칩 시장에서 Nvidia의 강력한 대안으로 부상하고 있음을 시사하며, <strong>"엄마 수(CEO 리사 수)가 최고"</strong>라는 긍정적인 반응을 이끌어내고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="주가 반응">기대 이하의 상승</th>
+                        <td data-label="주가 반응">큰 호재에도 불구하고 주가가 2% 상승에 그친 것에 대해 의문을 표하는 투자자들이 많습니다. 이는 이미 주가가 최근 몇 주간 30% 이상 급등하여 기대감이 선반영되었거나, 거시 경제 불안(중국과의 무역 갈등)이 상승폭을 제한했다는 분석이 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="개인 투자">고위험 투자</th>
+                        <td data-label="개인 투자">한 투자자가 마진을 최대로 활용해 AMD에 거액을 투자한 "대규모 갬블" 인증글을 올렸습니다. 이는 AMD의 미래 성장성에 대한 강한 믿음을 보여주지만, 동시에 높은 변동성에 따른 위험성을 상징하기도 합니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">Palantir (PLTR)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="부정적 전망">제2의 리먼 브라더스?</th>
+                        <td data-label="부정적 전망">한 투자자는 Palantir가 다음 리먼 브라더스가 될 수 있다고 경고하며, 잠재적 폭락 가능성을 언급했습니다. 이는 현재의 높은 가치 평가에 대한 회의적인 시각을 반영합니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="헷지 전략">AI 버블 붕괴 헷지</th>
+                        <td data-label="헷지 전략">AI 버블 붕괴에 대비한 헷지 수단으로 PLTR 풋옵션이 거론됩니다. 버블이 터지면 주가가 한 자릿수로 떨어질 수 있다는 극단적인 예측도 나옵니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>🔋 원자력 & 희귀 광물/자원</h2>
+        <div class="stock-card">
+            <h3 class="stock-title">Energy Fuels (UUUU)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="주요 투자 동향">폭발적인 콜옵션 수익</th>
+                        <td data-label="주요 투자 동향">다수의 투자자들이 UUUU 콜옵션으로 엄청난 수익을 인증하고 있습니다. 특히 트럼프 행정부의 정책(관세, 자국 산업 보호)과 맞물려 희귀 광물 및 원자력 관련주가 시장의 뜨거운 주목을 받고 있음을 보여줍니다. "Soulja Boy" 밈과 함께 언급되며 투기적 열풍을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="시장 심리">FOMO 확산</th>
+                        <td data-label="시장 심리">"어떻게 이런 종목을 급등 전에 찾느냐"는 질문이 쇄도하며, 많은 투자자들이 UUUU의 급등세에 뒤늦게라도 편승하려는 강한 <strong>FOMO</strong>를 느끼고 있습니다. 일부는 다음 급등주를 찾기 위해 관련 섹터(예: 리튬)를 주시하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="매매 전략">수익 실현 고민</th>
+                        <td data-label="매매 전략">주가가 단기간에 급등하자 "50% 수익을 내고 팔았다"며 아쉬워하는 투자자와, "11월 1일까지는 보유할 것"이라는 장기 보유 의견이 공존합니다. 급격한 변동성 속에서 투자자들이 수익 실현 시점을 두고 고심하고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="annotation">
+                <strong>FOMO (Fear Of Missing Out):</strong> 자신만 흐름을 놓치고 소외되는 것에 대한 두려움을 의미하는 용어입니다.
+            </div>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">Iris Energy (IREN), HIVE Digital (HIVE), Bitfarms (BITF) 등</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="투자 테마">비트코인 채굴 + AI</th>
+                        <td data-label="투자 테마">이들 주식은 비트코인 채굴 사업을 기반으로, AI 및 고성능 컴퓨팅(HPC) 데이터 센터로 사업을 확장하는 공통점을 가집니다. AI 열풍에 필요한 막대한 전력을 저렴하게 확보할 수 있다는 점이 투자 포인트로 부각되고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="엄청난 수익률">100배 수익 인증</th>
+                        <td data-label="엄청난 수익률">한 투자자가 <strong>IREN</strong>에 2천 달러를 투자해 20만 달러(약 100배)를 벌었다고 인증하며 큰 화제가 되었습니다. 그는 IREN을 "세대주(generational stock)"라 칭하며 장기 보유 의사를 밝혔습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="다음 타자 찾기">HIVE, CIFR, WULF 등</th>
+                        <td data-label="다음 타자 찾기">IREN의 성공 이후, 투자자들은 비슷한 사업 모델을 가진 <strong>HIVE, Cipher Mining(CIFR), TeraWulf(WULF)</strong> 등을 "제2의 IREN"으로 지목하며 적극적으로 매수하고 있습니다. 특히 HIVE에 대해서는 상세한 분석글(DD)이 올라오며 높은 관심을 받고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="annotation">
+                <strong>DD (Due Diligence):</strong> 기업 실사 또는 심층 분석. 투자 전 기업의 가치와 리스크를 상세히 알아보는 행위를 말합니다.
+            </div>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">Oklo (OKLO) & Rigetti Computing (RGTI)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="시장 평가">대표적인 버블 주식</th>
+                        <td data-label="시장 평가"><strong>"매출 없는 주식이 지금 가장 안전한 피난처"</strong>라는 역설적인 평가와 함께, 이들 주식은 현재 시장의 비이성적 과열을 상징하는 대표적인 종목으로 꼽힙니다. RGTI는 "실질적인 제품도 없는데 시총이 200억 달러"라며 버블의 심각성을 지적하는 근거로 사용됩니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="투자자 반응">경이로운 수익률</th>
+                        <td data-label="투자자 반응">한 투자자는 <strong>OKLO</strong>로 2000%의 수익을 인증했으며, 다른 투자자는 ChatGPT의 추천을 받아 1만 달러의 수익을 올렸다고 밝혔습니다. 펀더멘털과 무관하게 주가가 급등하는 현상에 많은 투자자들이 열광하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="경고">"Regretti"가 될 수도</th>
+                        <td data-label="경고">RGTI의 이름에 빗대어, "후회(Regret)"를 의미하는 <strong>"Regretti"</strong> 주식이 될 수 있으니 매도하라는 경고가 나옵니다. "스크린샷 찍을 만큼 올랐으면 팔 때"라는 격언이 함께 언급됩니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">Peabody Energy (BTU) - 석탄주</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="투자 이유">트럼프 정책 수혜 기대</th>
+                        <td data-label="투자 이유">"트럼프가 석탄에 관심이 있다는 소식을 듣고" <strong>장기 외가격(Long-dated OTM) 콜옵션</strong>에 3.6천 달러를 투자해 13만 달러로 불린 투자 사례가 공유되었습니다. 이는 정치적 변수가 특정 산업에 미치는 영향을 예측한 성공적인 투기 사례로 평가됩니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="시장 반응">새로운 투자처 발굴</th>
+                        <td data-label="시장 반응">AI와 같은 첨단 기술주가 아닌, 전통적인 19세기 산업인 석탄, 광산업, 금에 투자해야 한다는 의견이 힘을 얻고 있습니다. 이는 현재 시장의 관심이 다양한 테마로 확산되고 있음을 보여줍니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="annotation">
+                <strong>OTM (Out of the Money):</strong> 외가격. 콜옵션의 경우 행사가가 현재가보다 높고, 풋옵션의 경우 행사가가 현재가보다 낮은 상태를 의미하며, 성공 시 높은 수익률을 기대할 수 있는 투기적 옵션입니다.
+            </div>
+        </div>
+
+        <h2>🛒 빅테크 & 우량주</h2>
+        <div class="stock-card">
+            <h3 class="stock-title">Walmart (WMT)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="핵심 이슈">OpenAI 파트너십</th>
+                        <td data-label="핵심 이슈">OpenAI와의 파트너십 발표 후 주가가 사상 최고치를 경신했습니다. 검색창에 ChatGPT를 통합하여 대화형 쇼핑 경험을 제공할 계획입니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="시장 해석">AI 버블의 정점</th>
+                        <td data-label="시장 해석">"닷컴 버블 시절, 기업이 웹사이트를 만들었다고 발표만 하면 주가가 오르던 때가 생각난다"는 의견처럼, 월마트와 OpenAI의 파트너십은 현재의 AI 버블이 정점에 달했다는 신호로 해석되고 있습니다. "이게 농담인 줄 알았다"는 반응이 다수입니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="긍정적 평가">유통 혁신</th>
+                        <td data-label="긍정적 평가">CEO인 Doug McMillon의 리더십 아래, 월마트 플러스(+)와 같은 서비스로 Target과 Amazon을 압도하고 있다는 긍정적인 평가도 있습니다. AI 도입은 이러한 혁신 전략의 연장선으로 보입니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">PayPal (PYPL)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="투자자 분위기">극심한 손실과 후회</th>
+                        <td data-label="투자자 분위기">특정 인플루언서의 추천 보고서(DD)를 믿고 투자했다가 큰 손실을 본 투자자들의 원성이 자자합니다. "Donald Pump"라는 인물이 "Donald Dump"로 불리며 조롱받고 있으며, "페이팔은 건드리지 마라"는 격언이 다시 회자되고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="기업 분석">가치 함정(Value Trap)</th>
+                        <td data-label="기업 분석">리더십 부재와 혁신 실패로 인해 수년간 주가가 하락세를 면치 못하고 있습니다. Shopify, Block(Square) 등 경쟁사에 밀리고 있으며, "가치 함정"의 전형적인 사례로 평가받습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="기대감">CEO 교체 효과</th>
+                        <td data-label="기대감">일부 투자자들은 새로운 CEO인 Alex Chriss의 리더십에 기대를 걸고 있으며, 회사가 '슈퍼 앱'으로 거듭날 것이라는 믿음을 유지하고 있습니다. 그러나 대부분의 투자자들은 비관적인 상황입니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>📉 시장 지수 & ETF (SPY, QQQ, GLD 등)</h2>
+        <div class="stock-card">
+            <h3 class="stock-title">SPDR S&P 500 ETF (SPY) & Invesco QQQ Trust (QQQ)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="주요 변수">정치적 불확실성</th>
+                        <td data-label="주요 변수">트럼프 전 대통령의 "식용유(Cooking Oil)" 관련 트윗 하나에 시장 전체가 급락하는 등, 정치적 변수가 시장을 좌우하는 불안정한 상황이 연출되고 있습니다. 투자자들은 <strong>TACO(Trump Arbitrarily Changes Opinion)</strong> 현상에 극도의 피로감을 호소하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="투자 전략">초단타 옵션(0DTE) 열풍</th>
+                        <td data-label="투자 전략">많은 투자자들이 SPY/SPX의 <strong>0DTE 옵션</strong>으로 하루 만에 수십, 수백 배의 수익이나 손실을 보고 있습니다. 한 투자자는 500달러를 3만 2천 달러로 불린 사례를, 다른 투자자는 일주일간 번 수익을 하루 만에 모두 잃은 사례를 공유하며 극심한 변동성을 보여주었습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="장기 투자와의 비교">인덱스 펀드의 우월성</th>
+                        <td data-label="장기 투자와의 비교">한 투자자가 8년간의 매매 끝에 겨우 원금을 회복하자, "그냥 SPY나 QQQ에 묻어뒀으면 2~4배는 벌었을 것"이라는 지적이 쏟아졌습니다. 이는 적극적인 트레이딩의 비효율성과 장기적인 인덱스 펀드 투자의 안정성을 비교하며 많은 이들의 공감을 얻었습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="annotation">
+                <strong>0DTE (Zero Days To Expiration):</strong> 만기가 당일인 초단기 옵션으로, 매우 높은 수익률을 노릴 수 있지만 반대로 투자금 전체를 잃을 위험도 극도로 높은 상품입니다.
+            </div>
+            <div class="annotation">
+                <strong>TACO (Trump Arbitrarily Changes Opinion):</strong> 트럼프 전 대통령이 임의로 의견을 바꿔 시장에 큰 영향을 미치는 것을 일컫는 밈입니다.
+            </div>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">SPDR Gold Shares (GLD) & iShares Silver Trust (SLV)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="상승 원인">안전 자산 선호 & 달러 약세</th>
+                        <td data-label="상승 원인">AI 버블에 대한 우려, 지정학적 불안, 미국 달러 가치 하락에 대한 베팅이 금과 은의 가격을 사상 최고치로 밀어 올리고 있습니다. 제롬 파월 연준 의장조차 "금의 랠리를 인플레이션 지표로 적극적으로 보지 않는다"고 언급할 정도로 이례적인 강세입니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="투자자 반응">"금이 왕이다"</th>
+                        <td data-label="투자자 반응">"주식과 금이 동시에 사상 최고치를 경신하는 것은 드물다"며 현재의 특이한 시장 상황을 지적합니다. 다수의 투자자들이 GLD 콜옵션으로 큰 수익을 인증하며, "금에 풋옵션을 사는 것은 어리석은 짓"이라는 의견이 지배적입니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="장기 전망">새로운 금본위제?</th>
+                        <td data-label="장기 전망">"미국 달러가 기축 통화 지위를 잃고 결국 금본위제로 돌아갈 것"이라는 대담한 예측까지 나오며, 금에 대한 장기적인 낙관론이 확산되고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>🎲 밈 주식 & 기타 투기성 자산</h2>
+        <div class="stock-card">
+            <h3 class="stock-title">ASTS (AST SpaceMobile)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="투자 열기">제2의 GME?</th>
+                        <td data-label="투자 열기">SNS에서 상세한 분석글(DD)이 공유된 이후 폭발적인 관심을 받고 있습니다. "2달러짜리 쓰레기 주식" 시절부터 언급되었으나, 최근 사업의 실현 가능성이 부각되며 주가가 재평가되고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="수익 인증">자녀 계좌로 2500% 수익</th>
+                        <td data-label="수익 인증">한 투자자가 자녀의 UTMA(미성년자 증여 신탁 계좌)로 ASTS에 투자해 2500%의 수익을 올렸다고 인증하며, "아이의 포트폴리오가 내 것보다 낫다"는 반응을 이끌어냈습니다. 이는 ASTS의 높은 수익률을 상징적으로 보여줍니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="stock-card">
+            <h3 class="stock-title">GameStop (GME)</h3>
+            <table class="stock-table">
+                <tbody>
+                    <tr>
+                        <th data-label="투자 심리">사라진 희망</th>
+                        <td data-label="투자 심리">한 투자자가 만기가 임박한 GME 심한 외가격(deep OTM) 콜옵션을 대량 보유한 사진을 올리며 "기회가 있을까?"라고 질문했습니다. 이에 대해 "가망이 없다", "2021년이 아니다" 등 대부분의 투자자들이 비관적인 반응을 보이며, GME 밈 주식 열풍이 끝났음을 시사했습니다.</td>
+                    </tr>
+                    <tr>
+                        <th data-label="조언">AI 테마로 갈아타라</th>
+                        <td data-label="조언">"그 돈을 AI 이름이 들어간 아무 회사에나 던졌으면 성공 확률이 더 높았을 것"이라는 조언이 나오며, 현재 시장의 주도 테마가 AI임을 명확히 보여주었습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
