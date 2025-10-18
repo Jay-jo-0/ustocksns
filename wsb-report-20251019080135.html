@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            color: #1877f2;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        .stock-card {
+            background-color: #fff;
+            border: 1px solid #dddfe2;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .stock-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #050505;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e7f3ff;
+            padding-bottom: 10px;
+        }
+        .stock-title .ticker {
+            color: #606770;
+            font-size: 0.8em;
+            margin-left: 8px;
+        }
+        .content-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .content-list li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        strong {
+            color: #1d2129;
+            font-weight: 600;
+        }
+        .bullish {
+            color: #42b72a;
+            font-weight: bold;
+        }
+        .bearish {
+            color: #fa3e3e;
+            font-weight: bold;
+        }
+        .annotation {
+            display: block;
+            font-size: 0.85em;
+            color: #606770;
+            margin-top: 5px;
+            padding: 8px;
+            background-color: #f6f7f8;
+            border-radius: 6px;
+            border-left: 3px solid #ced0d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.10.19 AM)</h1>
+
+        <div class="stock-card">
+            <h2 class="stock-title">Amazon <span class="ticker">(AMZN)</span></h2>
+            <ul class="content-list">
+                <li><span class="bullish">장기 콜옵션(LEAPS)에 대한 강력한 긍정론:</span> 한 투자자는 2027년 1월 만기 콜옵션에 큰 금액을 투자했습니다. 현재는 손실 상태이지만, 아마존의 장기 성장 가능성을 매우 높게 평가하고 있습니다.</li>
+                <li><strong>AI 및 데이터 센터 성장 기대:</strong> 투자자들은 아마존이 OpenAI나 엔비디아처럼 '순수 AI 기업'으로 주목받지 못해 주가가 부진하다고 분석합니다. 하지만 AWS의 성장세 회복, AI 기술 도입을 통한 인력 감축 및 효율성 증대, 오리건주에 건설 중인 소형 원자력 발전소 등 데이터 센터 인프라 확충 노력을 긍정적으로 평가하며, 3분기 실적 발표가 주가 반등의 전환점이 될 것으로 기대합니다.</li>
+                <li><strong>구체적인 목표 주가 제시:</strong> 한 투자자는 2026년 말까지 기본적으로 <strong>$300 ~ $350</strong>, 낙관적인 경우 <strong>$400 ~ $500</strong>까지 상승할 것으로 예측했습니다.</li>
+                <li><span class="bearish">단기적 우려 및 매도 의견:</span> 다른 투자자는 ChatGPT가 이커머스 상품 구매 옵션을 직접 제공하면서 아마존의 브랜드 가치가 손실될 수 있다는 점을 우려하여 보유 주식을 전량 매도했다고 밝혔습니다. 주가가 힘을 보여주지 못하고 있다고 판단했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2 class="stock-title">SPDR S&P 500 ETF <span class="ticker">(SPY)</span></h2>
+            <ul class="content-list">
+                <li><span class="bearish">단기 풋옵션 실패 사례:</span> 한 투자자가 <strong>행사가 $620</strong>의 단기 풋옵션을 구매했으나, -12% 손실 구간에서 '패닉 매도'한 경험을 공유했습니다. 이는 시장 하락에 베팅했으나 예상과 달리 주가가 움직여 손절매한 상황입니다.</li>
+                <li><span class="bullish">하락 시 장기 콜옵션(LEAPS) 매수 전략:</span> "미국 증시에 반대로 베팅하지 말라"는 조언과 함께, SPY가 하락할 때마다 만기가 1년 이상 남은 <strong>LEAPS 콜옵션</strong>을 매수하는 전략이 추천되었습니다. 이는 장기적인 우상향을 믿고 저점 매수하는 전략입니다.</li>
+                <li><strong>구체적인 LEAPS 수익률 분석:</strong> 2024년 10월 17일에 등가격(ATM) 상태였던 '2026년 12월 18일 만기 행사가 $590 콜옵션'을 매수했다면, 현재 SPY 지수 자체는 14.1% 상승한 반면, 해당 옵션은 약 <strong>54.5%의 수익률</strong>을 기록했을 것이라는 분석이 제시되었습니다.</li>
+                <div class="annotation">
+                    <strong>*LEAPS (Long-term Equity Anticipation Securities):</strong> 만기일이 1년 이상 남은 장기 옵션을 의미합니다. 시간 가치 하락(세타)의 영향이 적어 장기적인 주가 상승이나 하락에 베팅할 때 사용됩니다.
+                </div>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2 class="stock-title">Coinbase <span class="ticker">(COIN)</span></h2>
+            <ul class="content-list">
+                <li><span class="bullish">엄청난 수익률의 콜옵션 거래:</span> 한 투자자가 <strong>47,000%</strong>라는 경이로운 수익률을 인증하며 가장 큰 수익을 안겨준 종목 중 하나로 언급했습니다.</li>
+                <li><strong>투자 전략:</strong> 해당 투자자는 비트코인이 하락하며 지지선을 형성했을 때 코인베이스의 주가 상승을 예측하고 콜옵션에 진입했다고 설명했습니다. 외가격(OTM) 옵션을 활용해 높은 수익률을 노렸으며, '2026년 12월 만기 콜옵션' 2개를 여전히 보유 중이라고 밝혔습니다.</li>
+                <li><strong>인기 있는 투자처:</strong> 다른 투자자 역시 다음 LEAPS 투자 대상으로 코인베이스를 고려하고 있다고 언급하여, 투자자들 사이에서 긍정적인 관심이 높음을 시사했습니다.</li>
+                 <div class="annotation">
+                    <strong>*OTM (Out-of-the-Money, 외가격):</strong> 콜옵션의 경우 행사가가 현재가보다 높고, 풋옵션의 경우 행사가가 현재가보다 낮은 상태. 실현 가능성은 낮지만 성공 시 레버리지가 매우 큽니다.
+                </div>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2 class="stock-title">Salesforce <span class="ticker">(CRM)</span></h2>
+            <ul class="content-list">
+                <li><span class="bullish">향후 유망 투자처로 지목:</span> 47,000% 수익을 인증한 투자자가 자신의 다음 투자 계획으로 세일즈포스를 지목했습니다. 구체적으로 <strong>'2026년 12월 만기 행사가 $320 콜옵션'</strong>에 투자할 것이라고 밝혔습니다.</li>
+                <li><span class="bearish">단기 매도 포지션:</span> 다른 투자자는 변동성 관리를 위해 세일즈포스 콜옵션을 매도했다고 언급하여, 단기적으로는 하락 또는 횡보를 예측하는 시각도 존재함을 보여주었습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2 class="stock-title">Palantir Technologies <span class="ticker">(PLTR)</span></h2>
+            <ul class="content-list">
+                <li><strong>아쉬운 조기 매도 사례:</strong> 한 투자자가 2024년에 매수했던 2026년 만기 콜옵션 10개 중 일부를 자동차 수리비를 위해 조기에 매도한 것을 후회하는 글을 올렸습니다. 만약 모두 보유했다면 현재 가치가 <strong>$58,000</strong>에 달했을 것이라고 아쉬워했습니다.</li>
+                <li><strong>장기 보유 투자자의 존재:</strong> 다른 투자자는 '2026년 12월 만기 행사가 $10 콜옵션' 10개를 2024년 8월부터 계속 보유하고 있다고 인증하며, 장기적인 상승에 대한 믿음을 보여주었습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2 class="stock-title">Amazon <span class="ticker">(AMZN)</span></h2>
+            <ul class="content-list">
+                <li><span class="bullish">장기 콜옵션(LEAPS)에 대한 강력한 긍정론:</span> 한 투자자는 2027년 1월 만기 콜옵션에 큰 금액을 투자했습니다. 현재는 손실 상태이지만, 아마존의 장기 성장 가능성을 매우 높게 평가하고 있습니다.</li>
+                <li><strong>AI 및 데이터 센터 성장 기대:</strong> 투자자들은 아마존이 OpenAI나 엔비디아처럼 '순수 AI 기업'으로 주목받지 못해 주가가 부진하다고 분석합니다. 하지만 AWS의 성장세 회복, AI 기술 도입을 통한 인력 감축 및 효율성 증대, 오리건주에 건설 중인 소형 원자력 발전소 등 데이터 센터 인프라 확충 노력을 긍정적으로 평가하며, 3분기 실적 발표가 주가 반등의 전환점이 될 것으로 기대합니다.</li>
+                <li><strong>구체적인 목표 주가 제시:</strong> 한 투자자는 2026년 말까지 기본적으로 <strong>$300 ~ $350</strong>, 낙관적인 경우 <strong>$400 ~ $500</strong>까지 상승할 것으로 예측했습니다.</li>
+                <li><span class="bearish">단기적 우려 및 매도 의견:</span> 다른 투자자는 ChatGPT가 이커머스 상품 구매 옵션을 직접 제공하면서 아마존의 브랜드 가치가 손실될 수 있다는 점을 우려하여 보유 주식을 전량 매도했다고 밝혔습니다. 주가가 힘을 보여주지 못하고 있다고 판단했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2 class="stock-title">Canaan Inc. <span class="ticker">(CAN)</span></h2>
+            <ul class="content-list">
+                <li><span class="bullish">대규모 베팅 (YOLO):</span> 한 투자자가 <strong>$50,000</strong>를 가나안 주식에 투자한 것을 인증했습니다. 이는 매우 공격적인 '몰빵' 투자로 보입니다.</li>
+                <li><strong>옵션 동향 기반 투자:</strong> 해당 투자자는 11월 21일 만기 옵션의 대규모 콜옵션 거래량(volume)을 따라 투자했으며, 일부는 2026년 1월 만기 옵션으로 보유하고 있다고 밝혔습니다. 이는 특정 만기일에 대한 시장의 기대감을 따르는 전략입니다.</li>
+                <div class="annotation">
+                    <strong>*YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 큰 위험을 감수하고 특정 자산에 전 재산에 가까운 돈을 투자하는 행위를 가리키는 은어입니다.
+                </div>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2 class="stock-title">기타 언급된 주식들</h2>
+            <ul class="content-list">
+                <li><strong>Rivian (RIVN):</strong> 47,000% 수익 투자자가 CRM과 함께 다음 투자 대상으로 지목했습니다. <strong>'2026년 1월 만기 행사가 $15 콜옵션'</strong>에 대한 긍정적 전망을 내비쳤습니다.</li>
+                <li><strong>Microvast Holdings (MVST):</strong> <span class="bullish">11월 10일 3분기 실적 발표</span>를 앞두고 한 투자자가 큰 규모의 YOLO 베팅을 한 사실을 공유했습니다. 행사가 $6 및 $8 콜옵션을 보유 중입니다.</li>
+                <li><strong>Apple (AAPL):</strong> 한 투자자는 애플에 대해 지속적으로 부정적인 시각을 가지고 있다고 언급했습니다. 반면, 다른 투자자는 장기 계약 덕분에 애플 주가 하락에도 손실을 피한 경험을 이야기했습니다.</li>
+                <li><strong>PayPal (PYPL):</strong> 한 투자자가 콜옵션의 수익성에 대해 긍정적으로 언급했으나, 다른 투자자는 과거 실적 발표 후 콜옵션으로 큰 손실을 본 경험이 있어 주식을 싫어한다고 말했습니다. 거래가 쉽지 않은 종목으로 인식됩니다.</li>
+                <li><strong>Google (GOOGL):</strong> 한 투자자가 <strong>'2026년 9월 만기 행사가 $260 콜옵션'</strong>에 대한 다른 사람들의 의견을 구했습니다.</li>
+                <li><strong>AMD / MA / META:</strong> 여러 투자자들이 이들 주식에 대한 콜/풋옵션 거래 경험(손실 및 수익)을 공유했습니다. 주로 포트폴리오 다각화나 단기 트레이딩 대상으로 언급되었습니다.</li>
+                <li><strong>GameStop (GME):</strong> 한 투자자가 "멈출 수 없어, 멈추지 않을 거야, 게임스탑" 이라며 밈 주식의 상징으로 농담처럼 언급했습니다.</li>
+                <li><strong>성장주 그룹 (IREN, WULF, RKLB, SOFI):</strong> 한 투자자가 이들 기업의 펀더멘털 성장(매출, 마진, 순이익 개선)을 이유로 장기 LEAPS 옵션을 매수하고 있다고 밝혔습니다.</li>
+                <li><strong>MercadoLibre (MELI):</strong> '남미의 아마존'으로 불리며, 최근 과매도 상태로 판단한 한 투자자가 비중을 두 배로 늘렸다고 언급했습니다. 높은 상승 잠재력을 기대하고 있습니다.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
