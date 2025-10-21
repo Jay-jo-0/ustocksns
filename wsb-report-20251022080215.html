@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.10.22 AM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 1em;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .stock-card h2 {
+            color: #34495e;
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .ticker {
+            background-color: #3498db;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 1.1em;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.05em;
+        }
+        li::before {
+            content: '✓';
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 1px;
+        }
+        .sentiment-bullish {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .sentiment-bearish {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            border-left: 3px solid #bdc3c7;
+            padding-left: 10px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5em; }
+            .stock-card h2 { font-size: 1.3em; }
+            li { font-size: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향<br>(25.10.22 AM)</h1>
+
+        <div class="stock-card">
+            <h2><span class="ticker">GLD</span> SPDR Gold Shares</h2>
+            <ul>
+                <li><span class="sentiment-bullish">강력한 매수 추천(DD) 등장:</span> 1979-1980년의 골드 랠리와 현재 상황을 비교하며, 금 가격의 폭발적인 상승 가능성을 제시. 미국 달러에 대한 불신, 중앙은행들의 금 매입, BRICS의 금 기반 통화 논의 등을 주요 상승 요인으로 꼽음.</li>
+                <li><span class="sentiment-bearish">게시물 직후 가격 급락:</span> 해당 분석글이 올라온 직후 금 가격이 6% 이상 급락하며, 커뮤니티에서 '탑 시그널(고점 신호)'의 대표적인 사례로 조롱받음. 이로 인해 많은 투자자들이 콜옵션에서 큰 손실을 입음.</li>
+                <li><span class="sentiment-bullish">저가 매수 기회:</span> 일부 투자자들은 이번 급락을 장기적인 관점에서 좋은 매수 기회로 보고 있음.</li>
+                <li><strong>밈 주식화:</strong> 금과 같은 안전자산이 하루에 5% 이상 변동하는 모습을 보이며, 사실상 밈 주식처럼 취급되고 있음. OpenAI와의 파트너십 같은 농담이 나올 정도.</li>
+            </ul>
+            <p class="annotation">주석: DD (Due Diligence)는 '기업실사' 또는 '정밀 분석'을 의미하며, 투자자가 특정 주식에 대해 깊이 있게 조사한 자료를 뜻합니다.</p>
+            <p class="annotation">주석: YOLO (You Only Live Once)는 '인생은 한 번뿐'이라는 뜻으로, 가진 돈 전부를 한 곳에 투자하는 매우 공격적인 베팅을 의미합니다.</p>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">BYND</span> Beyond Meat</h2>
+            <ul>
+                <li><span class="sentiment-bullish">새로운 밈 주식으로 부상:</span> 금(GLD)의 대안으로 떠오르며 강력한 매수 추천이 이어지고 있음. '진짜 주식을 사라'며 BYND를 지목하는 투자자들이 많음.</li>
+                <li><span class="sentiment-bullish">밈 ETF 편입 및 월마트 입점:</span> 최근 밈 주식 ETF에 편입되고 월마트에서 판매를 시작했다는 소식이 전해지며 주가가 폭등. 하루 거래량이 18억 주에 달할 정도로 시장의 관심이 집중됨.</li>
+                <li><span class="sentiment-bullish">단기 급등 기대감:</span> 일부 투자자들은 주가가 주말까지 10달러를 돌파할 것으로 예상하는 등 단기적인 폭등에 대한 기대감이 매우 높음.</li>
+                <li><span class="sentiment-bearish">과열 및 숏 스퀴즈 우려:</span> 단기간에 4배 이상 급등하여 과열되었다는 지적이 있으며, 언제든 -50%의 급락이 올 수 있다는 경고도 나옴.</li>
+            </ul>
+             <p class="annotation">주석: 숏 스퀴즈(Short Squeeze)는 주가 하락을 예상하고 공매도한 투자자들이 예상과 달리 주가가 급등할 때 손실을 줄이기 위해 주식을 다시 사들이면서 주가 상승을 더욱 부추기는 현상입니다.</p>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">GOOG/GOOGL</span> Alphabet</h2>
+            <ul>
+                <li><span class="sentiment-bearish">일시적 하락:</span> OpenAI가 새로운 웹 브라우저를 출시할 것이라는 소식에 주가가 일시적으로 하락.</li>
+                <li><span class="sentiment-bullish">강력한 매수 기회로 인식:</span> 대부분의 투자자들은 OpenAI의 브라우저가 구글의 아성에 위협이 되지 않을 것이라 판단. 특히 해당 브라우저가 구글의 '크로미움' 기반이라는 점이 알려지자 하락은 '공짜 돈(free money)'을 줍는 기회로 여겨짐.</li>
+                <li><span class="sentiment-bullish">Anthropic과의 대규모 클라우드 계약:</span> AI 기업 Anthropic과 수십억 달러 규모의 클라우드 계약을 논의 중이라는 소식이 전해지며 시간 외 거래에서 주가가 급등. 이는 OpenAI 이슈를 완전히 압도하는 호재로 작용.</li>
+                <li><strong>YOLO 베팅 성공:</strong> 한 투자자가 하락 시점에 5만 달러 규모의 콜옵션을 매수(YOLO)했고, Anthropic 호재로 인해 큰 수익을 거둔 사례가 화제가 됨.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2><span class="ticker">NBIS</span> Nebius AI</h2>
+            <ul>
+                <li><strong>밈 주식 논쟁:</strong> 한 투자자가 10% 손실 후 '쓰레기 밈 주식'이라고 비난했으나, 다른 투자자들은 'MSFT와 190억 달러 계약을 맺은 진짜 AI 데이터센터 기업'이라며 반박.</li>
+                <li><span class="sentiment-bullish">장기 투자 관점:</span> 단기 변동성은 크지만, 3~5년 후를 내다보는 장기 투자자들 사이에서는 긍정적인 평가를 받고 있음. 주가 하락을 '매수 기회'로 여기며 추가 매수하는 움직임이 나타남.</li>
+                <li><strong>높은 변동성:</strong> 고성장 기술주 특성상 주가 등락이 매우 크다는 점이 자주 언급됨. 최근 고점 대비 26% 하락.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">NFLX</span> Netflix</h2>
+            <ul>
+                <li><span class="sentiment-bearish">실적 발표 후 주가 하락:</span> 예상치를 하회하는 실적을 발표하며 주가가 하락. 회사는 '브라질 세금 분쟁'을 원인으로 꼽았음.</li>
+                <li><span class="sentiment-bearish">투자자들의 불신:</span> 투자자들은 회사의 해명을 믿지 않으며, 계속되는 가격 인상, 계정 공유 단속, 그리고 'K-Pop Demon Hunters' 외에 볼만한 콘텐츠 부재를 진짜 원인으로 지적.</li>
+                <li><strong>대규모 손실 발생:</strong> 실적 발표 전, 'K-Pop Demon Hunters'의 인기를 근거로 대규모 콜옵션을 매수한 여러 투자자들이 큰 손실을 입은 것으로 보임.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">NVO</span> Novo Nordisk</h2>
+            <ul>
+                <li><strong>이사회 내분 및 사임:</strong> 이사회 의장 및 임원들이 사임하며 경영진에 큰 변화가 생김. 주가는 1.6% 하락에 그쳐 투자자들을 혼란스럽게 함.</li>
+                <li><span class="sentiment-bullish">긍정적 해석:</span> 일부는 이를 지배주주인 재단이 새로운 CEO에게 힘을 실어주기 위해 기존 이사회를 정리한 '호재'로 해석.</li>
+                <li><span class="sentiment-bearish">경쟁 심화 우려:</span> 경쟁사인 일라이 릴리(LLY)가 비만 치료제 시장에서 NVO를 압도하고 있다는 분석이 지배적. "점심을 뺏어 먹히고 있다"는 표현이 사용됨.</li>
+                <li><strong>기타 제안:</strong> 주가 부양을 위해 OpenAI나 Nvidia와 파트너십을 맺어 '오젬픽AI'를 출시해야 한다는 농담 섞인 제안이 나옴.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">AMZN</span> Amazon</h2>
+            <ul>
+                <li><span class="sentiment-bullish">AWS 장애에도 주가 상승:</span> 대규모 AWS 서비스 장애로 인터넷의 절반이 마비되었음에도 불구하고 주가는 오히려 상승하는 기현상을 보임.</li>
+                <li><span class="sentiment-bullish">실적 발표 기대감:</span> 다른 대형 기술주(Mag7)들이 이미 크게 상승한 반면, 아마존은 아직 본격적인 랠리를 시작하지 않았다는 점에서 실적 발표 전 매수세가 유입됨.</li>
+                <li><strong>기술적 분석:</strong> 주가가 200일 이동평균선에서 지지를 받고 반등한 점이 긍정적인 기술적 신호로 해석됨.</li>
+                 <li><span class="sentiment-bearish">경쟁 우려:</span> 구글이 Anthropic과 대규모 클라우드 계약을 맺으면서 AWS의 경쟁 환경에 대한 우려가 제기됨.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2><span class="ticker">ACHR</span> Archer Aviation</h2>
+            <ul>
+                <li><span class="sentiment-bullish">대한항공과의 계약:</span> 대한항공에 최대 100대의 전기 수직이착륙기(eVTOL) '미드나이트'를 공급하는 계약을 체결했다는 소식에 강한 매수세가 유입됨.</li>
+                <li><strong>스윙 트레이딩 전략:</span> 일부 투자자들 사이에서 9달러에 매수하여 12달러에 매도하는 단기 트레이딩 전략이 공유되고 있음.</li>
+                <li><strong>미래 시장에 대한 갑론을박:</strong> 부유층, CEO, 응급 의료 수송 등 틈새 시장을 공략할 것이라는 긍정론과, 실제 사용자는 극소수에 불과할 것이라는 회의론이 맞서고 있음.</li>
+            </ul>
+             <p class="annotation">주석: eVTOL (electric Vertical Take-Off and Landing)은 전기 동력을 사용하여 수직으로 이착륙하는 항공기로, '에어택시' 또는 '플라잉카'로 불립니다.</p>
+        </div>
+
+        <div class="stock-card">
+            <h2>기타 언급된 주식들</h2>
+            <ul>
+                <li><strong><span class="ticker">UUUU</span> (Energy Fuels):</strong> 한 투자자가 이 주식으로 한 달 만에 자산을 두 배로 늘렸다고 인증. 희귀 광물 관련주로 미중 무역 협상에 따라 변동성이 매우 큼.</li>
+                <li><strong><span class="ticker">LLY</span> (Eli Lilly):</strong> 비만 치료제 시장에서 Novo Nordisk(NVO)의 강력한 경쟁자로, 시장을 장악하고 있다는 평가를 받음.</li>
+                <li><strong><span class="ticker">SLV</span> (iShares Silver Trust):</strong> 금(GLD)과 함께 언급되며, 금 가격 급락 시 동반 하락하며 손실을 본 투자자들이 있음. 일부는 은의 공급 부족과 숏 스퀴즈 가능성을 제기.</li>
+                <li><strong><span class="ticker">META</span> (Meta Platforms):</span> AI 인프라에 대한 막대한 투자가 미래의 강력한 수익 성장을 예고한다는 긍정적인 분석이 나옴. BofA는 목표 주가를 900달러로 제시.</li>
+                <li><strong><span class="ticker">WEN</span> (Wendy's):</strong> 저평가와 높은 공매도 비율을 근거로 한 투자자가 3만 달러를 베팅(YOLO)함.</li>
+                <li><strong><span class="ticker">NVDA</span> (Nvidia):</strong> AI 열풍의 중심. OpenAI의 데이터센터 구축에 대출 보증을 서는 방안이 논의되는 등 AI 생태계에서 핵심적인 역할을 하고 있음.</li>
+                <li><strong><span class="ticker">RKT</span> (Rocket Companies):</strong> 주택담보대출 관련 기업으로, UWMC보다 나은 투자처로 언급되며 정치적 이슈와 연관된 잠재적 호재가 거론됨.</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
