@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #FFD700;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .date-subtitle {
+            font-size: 1.1em;
+            text-align: center;
+            color: #AAAAAA;
+            margin-bottom: 30px;
+        }
+        .stock-card {
+            background-color: #1E1E1E;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .stock-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+        }
+        .stock-ticker {
+            font-size: 2.0em;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-right: 15px;
+        }
+        .stock-name {
+            font-size: 1.2em;
+            color: #BBBBBB;
+        }
+        .sentiment {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .sentiment.bullish { background-color: #1E4620; color: #4CAF50; border: 1px solid #4CAF50; }
+        .sentiment.bearish { background-color: #4A1B1B; color: #F44336; border: 1px solid #F44336; }
+        .sentiment.mixed { background-color: #4A3F1B; color: #FFC107; border: 1px solid #FFC107; }
+        .section-title {
+            font-size: 1.4em;
+            color: #FFD700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #282828;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 4px solid #FFD700;
+        }
+        strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 10px;
+            display: block;
+            background-color: #2a2a2a;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background-color: #333;
+            font-size: 1.1em;
+            color: #FFD700;
+        }
+        td {
+            font-size: 1.0em;
+        }
+        tr:nth-child(even) {
+            background-color: #252525;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p class="date-subtitle">25.11.03 PM</p>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">META</span>
+                <span class="stock-name">Meta Platforms, Inc.</span>
+            </div>
+            <div class="sentiment mixed">의견 충돌</div>
+            <div class="section-title">주요 논의 내용</div>
+            <p>최근 주가 하락 이후 SNS에서 가장 뜨거운 논쟁의 중심에 있는 주식입니다. 수많은 투자자들이 저점 매수를 외치며 콜 옵션과 주식을 대량 매수하는 'YOLO' 게시물을 올리고 있지만, 동시에 이러한 과열된 분위기가 오히려 주가 추가 하락을 유발할 것이라는 '역발상 투자' 의견도 팽팽하게 맞서고 있습니다.</p>
+            <ul>
+                <li><strong>강세론 (Bullish):</strong> 최근 주가 하락은 과도한 반응이며 <strong>절호의 매수 기회</strong>라는 의견이 지배적입니다. 30%에 달하는 견고한 매출 성장률, 막대한 현금 흐름, AI 기반 성장 가능성을 긍정적으로 평가하며 빠른 반등을 기대하고 있습니다.</li>
+                <li><strong>약세론 (Bearish):</strong> 개인 투자자들의 매수세가 이례적으로 집중되는 현상 자체가 <strong>하락 신호</strong>라는 분석이 많습니다. 마크 저커버그의 AI 및 메타버스 분야에 대한 막대한 투자 지출이 단기적인 수익성에 대한 우려를 낳고 있습니다.</li>
+                <li><strong>투자 전략:</strong> 많은 투자자들이 단기 콜 옵션에 투자하고 있으나, 시간 가치 하락(세타)의 위험이 크다는 지적과 함께 장기 옵션(LEAPs)이나 주식 직접 매수를 권장하는 목소리도 높습니다.</li>
+            </ul>
+            <small class="annotation">주석: 'YOLO(You Only Live Once)'는 '인생은 한 번뿐'이라는 뜻으로, 큰 위험을 감수하고 한 종목에 전 재산을 투자하는 행위를 의미합니다. '콜 옵션'은 주가가 오를 것에, '풋 옵션'은 내릴 것에 베팅하는 파생상품입니다. 'LEAPs'는 만기가 1년 이상 남은 장기 옵션을 말합니다.</small>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">BRK.B</span>
+                <span class="stock-name">Berkshire Hathaway Inc.</span>
+            </div>
+            <div class="sentiment mixed">중립적 토론</div>
+            <div class="section-title">주요 논의 내용</div>
+            <p>워런 버핏이 이끄는 버크셔 해서웨이가 <strong>사상 최대 규모인 3,810억 달러의 현금을 보유</strong>하고도 자사주 매입이나 신규 투자를 하지 않는 점이 주요 화두입니다. 투자자들은 버핏의 의도를 두고 다양한 추측을 내놓고 있습니다.</p>
+            <ul>
+                <li><strong>시장 대폭락 대비설:</strong> 버핏이 대규모 시장 조정을 예상하고, 자산 가격이 폭락했을 때를 대비해 '총알'을 비축하고 있다는 분석이 가장 많습니다.</li>
+                <li><strong>사후(死後) 매수설:</strong> 버핏이 자신의 사망 이후 발생할 수 있는 버크셔 주가의 일시적 하락에 대비하고 있다는 흥미로운 추측도 제기되었습니다. 그의 사후에 회사가 이 현금으로 자사주를 대량 매입해 주가를 방어하는, '무덤에서 저점 매수'를 계획했다는 것입니다.</li>
+                <li><strong>비판적 시각:</strong> 일부 투자자들은 버핏이 시대에 뒤처져 AI와 같은 새로운 성장 동력을 놓치고 있다고 비판합니다. 최근 몇 년간 버크셔의 주가 수익률이 S&P 500 지수(SPY)에 미치지 못했다는 점을 지적하기도 합니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">POET</span>
+                <span class="stock-name">POET Technologies Inc.</span>
+            </div>
+            <div class="sentiment bullish">매우 긍정적</div>
+            <div class="section-title">주요 논의 내용</div>
+            <p>AI 데이터센터의 핵심 부품을 만드는 소형 기술주로, '제2의 엔비디아'가 될 수 있다는 기대감에 상세한 분석글(DD)이 공유되며 큰 관심을 받고 있습니다.</p>
+            <ul>
+                <li><strong>핵심 기술:</strong> 기존의 구리선을 대체해 빛으로 데이터를 전송하는 <strong>'광 인터포저(Optical Interposer)' 기술</strong>을 보유하고 있습니다. AI 시대의 데이터 병목 현상을 해결할 핵심 '파이프라인'을 판매하는 기업으로 비유됩니다.</li>
+                <li><strong>최근 호재:</strong> 성공적인 대규모 유상증자(1.5억 달러), 실제 생산 수주(500만 달러), 추가 투자 유치(7,500만 달러) 등 긍정적인 소식이 연이어 발표되었습니다.</li>
+                <li><strong>기술적 분석:</strong> 옵션 시장에서 콜 옵션 비중이 압도적으로 높고, 주가가 상승 추세선의 하단에 위치해 기술적 반등이 유력하다는 분석입니다.</li>
+                <li><strong>리스크:</strong> 아직 본격적인 매출이 발생하지 않는 단계이므로 계획 실행에 대한 리스크가 있으며, 최근의 자금 조달로 인한 주식 희석(희석)도 단기적인 부담으로 언급됩니다.</li>
+            </ul>
+             <small class="annotation">주석: 'DD(Due Diligence)'는 특정 기업에 대한 심층 분석 보고서를 의미하는 커뮤니티 용어입니다.</small>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">ABXX</span>
+                <span class="stock-name">Abaxx Technologies Inc.</span>
+            </div>
+            <div class="sentiment bullish">매우 긍정적</div>
+            <div class="section-title">주요 논의 내용</div>
+            <p>기존 금융 시스템을 혁신할 잠재력을 가진 차세대 거래소 및 청산소 기술 기업으로, 향후 50배 이상의 상승 가능성이 있다는 분석글이 주목받고 있습니다.</p>
+            <ul>
+                <li><strong>핵심 사업:</strong> 기존 대형 거래소들이 외면하는 <strong>실물 인도 기반 원자재(LNG, 니켈, 리튬 등) 선물 거래</strong>에 집중하는 새로운 글로벌 거래소 및 청산소입니다.</li>
+                <li><strong>파괴적 혁신:</strong> 디지털 신원(ID++), T+0(실시간) 결제, 디지털 수표 등 독자 기술을 바탕으로 기존의 국제은행간통신협회(SWIFT)망을 대체할 수 있는 '금융계의 애플 생태계'를 구축하고 있다는 평가입니다.</li>
+                <li><strong>시장 잠재력:</strong> 42조 달러 규모의 머니마켓펀드(MMF) 시장을 토큰화하여 막대한 수익을 창출할 수 있는 잠재력을 가지고 있으며, 주요 투자자들이 미국 MMF 시장의 50% 이상을 장악하고 있다는 점이 부각됩니다.</li>
+                <li><strong>가치 평가:</strong> 현재 시가총액이 CME, LSEG 등 경쟁사에 비해 극도로 저평가되어 있다는 분석입니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <span class="stock-ticker">HOOD</span>
+                <span class="stock-name">Robinhood Markets, Inc.</span>
+            </div>
+            <div class="sentiment bullish">매우 긍정적</div>
+            <div class="section-title">주요 논의 내용</div>
+            <p>과거 논란에도 불구하고, 젊은 세대를 중심으로 한 압도적인 시장 지배력과 지속적인 혁신을 바탕으로 장기적인 성장 가능성이 매우 높다는 의견이 주를 이룹니다.</p>
+            <ul>
+                <li><strong>시장 지배력:</strong> 부정적인 여론에도 불구하고, SNS에 공유되는 대부분의 주식 거래 스크린샷이 로빈후드 앱일 정도로 <strong>젊은 투자자들 사이에서 독보적인 위치</strong>를 차지하고 있습니다.</li>
+                <li><strong>혁신과 확장:</strong> 24시간 주식 거래, 3% 캐시백 신용카드, 암호화폐 거래 등 혁신적인 서비스를 계속 출시하며 기존 금융사들을 위협하고 있습니다.</li>
+                <li><strong>장기 성장 동력:</strong> '부의 대이전' 시대에 젊은 세대가 자산을 상속받으면서 이들이 주로 사용하는 로빈후드가 가장 큰 수혜를 입을 것으로 예상됩니다. 향후 10년 내에 <strong>1조 달러 기업이 될 잠재력</strong>이 있다는 과감한 전망도 나옵니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="section-title">기타 주요 관심 주식</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목 (티커)</th>
+                        <th>주요 내용 및 투자 심리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NVIDIA (NVDA)</strong></td>
+                        <td>AI 붐의 상징. 높은 밸류에이션에 대한 논쟁은 있지만, 여전히 AI 관련 논의에서 빠지지 않는 핵심 주식으로 언급됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Palantir (PLTR)</strong></td>
+                        <td>실적 발표를 앞두고 주가가 폭등할 것이라는 강한 기대감이 형성되어 있습니다. '괴짜 CEO지만 결과물은 내놓는다'는 긍정적 평가가 많습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grab (GRAB)</strong></td>
+                        <td>'동남아의 우버'로 불리며 현지에서의 높은 사용 빈도를 근거로 장기적인 성장 가능성이 높게 점쳐지고 있습니다. 저렴한 주가가 매력 포인트로 꼽힙니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amazon (AMZN)</strong></td>
+                        <td>성공적인 실적 발표 이후 추가 상승에 대한 기대감이 남아있습니다. 연말까지 $270 도달을 희망하는 의견이 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AMD</strong></td>
+                        <td>엔비디아와 함께 AI 시장의 핵심 플레이어로 꾸준히 언급됩니다. 최근 주가 상승으로 실적 발표 후 단기 조정을 예상하는 의견도 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google (GOOGL)</strong></td>
+                        <td>견조한 우량주로 평가받습니다. 과거 구글의 주가 하락이 좋은 매수 기회였던 것처럼, 현재 META의 상황도 비슷할 것이라는 비교 분석에 자주 등장합니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tesla (TSLA)</strong></td>
+                        <td>높은 주가수익비율(P/E)이 시장 거품의 신호로 해석되며, 잠재적인 시장 붕괴의 지표로 자주 언급되는 등 비판적인 시각이 많습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apple (AAPL)</strong></td>
+                        <td>워런 버핏의 가장 성공적인 기술주 투자 사례로 언급되며, 안정적인 우량주로 평가받습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beyond Meat (BYND)</strong></td>
+                        <td>심각한 재정적 손실이나 주가 폭락을 의미하는 '밈(Meme)'으로 사용됩니다. 실제 투자 대상으로의 논의는 거의 없으며, 유머 소재로 활용됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Getty Images (GETY)</strong></td>
+                        <td>현재 주가가 저평가되어 있으며, AI 기업이 이미지 생성 모델의 저작권 문제 해결을 위해 인수할 가능성이 있다는 투기적 아이디어가 제시되었습니다.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>우라늄 관련주 (UUUU, UURAF 등)</strong></td>
+                        <td>정부 투자 및 공급망 계약 등 호재를 바탕으로 우라늄 및 희토류 관련 기업들에 대한 긍정적인 전망이 공유되고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+             <small class="annotation">주석: '밈(Meme)'은 온라인에서 유행하는 특정 문화적 요소나 유행어를 의미하며, 주식 시장에서는 특정 종목에 대한 집단적인 농담이나 상징으로 사용되기도 합니다.</small>
+        </div>
+
+    </div>
+</body>
+</html>
