@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f6f8;
+            color: #212529;
+            word-break: keep-all;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            color: #003366;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .header .date {
+            font-size: 1em;
+            color: #6c757d;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 5px solid #0056b3;
+        }
+        .stock-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .stock-title .ticker {
+            font-size: 0.8em;
+            color: #495057;
+            margin-left: 8px;
+            font-weight: 400;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        .point-title {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #0056b3;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .point-content {
+            font-size: 1em;
+            color: #343a40;
+        }
+        .annotation {
+            font-size: 0.85em;
+            color: #6c757d;
+            display: block;
+            margin-top: 5px;
+            border-left: 3px solid #e9ecef;
+            padding-left: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #e9f5ff;
+            font-weight: 700;
+            color: #003366;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .bullish { border-left-color: #28a745; }
+        .bullish .stock-title { color: #28a745; }
+        .bullish .point-title { color: #28a745; }
+
+        .bearish { border-left-color: #dc3545; }
+        .bearish .stock-title { color: #dc3545; }
+        .bearish .point-title { color: #dc3545; }
+
+        .neutral { border-left-color: #6c757d; }
+        .neutral .stock-title { color: #6c757d; }
+        .neutral .point-title { color: #6c757d; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p class="date">25.11.12 AM</p>
+    </div>
+
+    <div class="stock-card neutral">
+        <div class="stock-title">NVIDIA (NVDA)<span class="ticker">엔비디아</span></div>
+        <ul>
+            <li>
+                <span class="point-title">주요 이슈: 소프트뱅크의 지분 전량 매각</span>
+                <span class="point-content">소프트뱅크가 보유하고 있던 엔비디아 주식 전량(58.3억 달러)을 매각했다는 소식이 가장 큰 화두입니다. 이에 대한 투자자들의 해석이 엇갈리고 있습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">긍정적 해석 (매수 기회)</span>
+                <span class="point-content">소프트뱅크의 과거 투자 실패 사례(예: WeWork 투자, 2019년 엔비디아 매각 후 주가 폭등)를 언급하며, 그들의 매도가 오히려 강력한 매수 신호라는 의견이 많습니다. "기관 투자자 버전의 역크레이머"라는 평가도 나옵니다. 또한, 이번 매각은 엔비디아에 대한 불신이 아니라, 다른 투자(특히 OpenAI) 자금 마련을 위한 이익 실현이라는 분석이 지배적입니다.</span>
+                <p class="annotation">주석: '역크레이머(Inverse Cramer)'는 CNBC 주식 평론가 짐 크레이머의 예측이 자주 틀리는 것을 비꼬아, 그의 추천과 반대로 투자하는 전략을 의미하는 밈(meme)입니다.</p>
+            </li>
+            <li>
+                <span class="point-title">부정적 해석 (버블 붕괴 신호)</span>
+                <span class="point-content">일부 투자자들은 이번 매각을 AI 버블의 정점 신호로 해석하며, 다른 기관들의 연쇄적인 매도로 이어질 수 있다고 우려합니다. 주가가 '완벽하게 고평가(priced to perfection)'되어 더 이상 상승 여력이 없다는 의견도 있습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">기타 의견</span>
+                <span class="point-content">매각 규모가 엔비디아의 전체 시가총액에 비하면 '새 발의 피' 수준이라 주가에 큰 영향이 없다는 의견과, AI 산업이 엔비디아 없이는 작동할 수 없으므로 여전히 독보적이라는 믿음이 강하게 나타났습니다. 다가오는 실적 발표에 대한 기대감도 여전히 높습니다.</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stock-card bullish">
+        <div class="stock-title">AMD<span class="ticker">Advanced Micro Devices</span></div>
+        <ul>
+            <li>
+                <span class="point-title">CEO의 긍정적 전망</span>
+                <span class="point-content">CEO 리사 수가 '만족을 모르는(insatiable)' AI 수요에 힘입어 연간 35%의 매출 성장을 전망했다는 소식이 긍정적으로 작용하고 있습니다. 많은 투자자들이 이 발언에 신뢰를 보이고 있습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">엔비디아의 대안으로 부상</span>
+                <span class="point-content">엔비디아의 강력한 경쟁자이자, 더 저렴한 대안으로 인식되고 있습니다. 일부 투자자들은 엔비디아를 매도하고 AMD로 갈아타고 있으며, 두 회사를 합병해야 한다는 농담 섞인 의견도 나옵니다.</span>
+            </li>
+            <li>
+                <span class="point-title">회의적 시각</span>
+                <span class="point-content">일부에서는 AI 수요에 대한 낙관론이 과장되었다고 지적합니다. 특히 CoreWeave, OpenAI와 같은 기업들이 정부 지원을 요청한다는 루머를 근거로 AI 버블에 대한 우려를 표하기도 합니다. 엔비디아에 비해 낮은 이익률(13% vs 50%)도 약점으로 지적됩니다.</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="stock-card bullish">
+        <div class="stock-title">Nebius Group (NBIS)<span class="ticker">네비우스 그룹</span></div>
+        <ul>
+            <li>
+                <span class="point-title">대규모 계약 체결</span>
+                <span class="point-content">메타(Meta)와 5년간 30억 달러 규모의 AI 인프라 제공 계약을 체결했다는 소식이 큰 호재로 작용했습니다. 이는 마이크로소프트와의 174억 달러 계약에 이은 두 번째 대규모 계약입니다.</span>
+            </li>
+            <li>
+                <span class="point-title">폭발적인 성장세</span>
+                <span class="point-content">3분기 매출이 355% 급증했으며, 2026년 말까지 연간 실행 매출(ARR) 70억~90억 달러를 목표로 하고 있어 높은 성장 잠재력에 대한 기대감이 큽니다. 한 투자자는 "30억 달러 계약은 시가총액 1000억 달러를 추가할 가치가 있다"고 평가했습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">주가 변동성 및 우려</span>
+                <span class="point-content">호재에도 불구하고 주가가 급락 후 변동성을 보이는 모습을 보였습니다. 이는 대규모 유상증자(ATM offering)로 인한 주식 희석 우려와, 높은 자본 지출 및 분기 손실 때문으로 분석됩니다. 경쟁사인 CoreWeave(CRWV)의 부진도 영향을 미친 것으로 보입니다.</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stock-card bearish">
+        <div class="stock-title">CoreWeave (CRWV)<span class="ticker">코어위브</span></div>
+        <ul>
+            <li>
+                <span class="point-title">재무 건전성 우려</span>
+                <span class="point-content">과도한 부채와 높은 이자율(최대 9%)로 재정적으로 불안정하다는 평가가 많습니다. 계약을 따낼 때마다 미래 수익을 담보로 새로운 대출을 받는 사업 모델에 대한 비판이 제기됩니다. "1페니를 벌 때마다 5센트를 빌린다"는 비유가 나왔습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">데이터센터 구축 지연</span>
+                <span class="point-content">데이터센터 구축이 지연되고 있으며, 이로 인해 계약 이행에 차질을 빚고 있다는 분석입니다. CEO가 지연의 원인이 Core Scientific(CORZ) 때문이라고 인정한 점이 언급되었습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">자산 가치 하락 위험</span>
+                <span class="point-content">주요 자산인 GPU가 빠르게 가치가 하락하는 자산(depreciating assets)이라는 점이 장기적인 리스크로 지적됩니다. 비트코인 채굴 회사에서 AI 유행에 편승해 사업을 전환했다는 비판적인 시각도 존재합니다.</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stock-card neutral">
+        <div class="stock-title">Alphabet (GOOGL/GOOG)<span class="ticker">알파벳/구글</span></div>
+        <ul>
+            <li>
+                <span class="point-title">강력한 장기 투자처</span>
+                <span class="point-content">많은 투자자들이 포트폴리오의 상당 부분을 할당하며 강한 신뢰를 보이고 있습니다. 일부는 3개월 만에 포트폴리오를 3배로 늘렸다고 인증하며, "절대 팔지 않을 가족 같은 주식"이라고 표현했습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">AI 경쟁 구도</span>
+                <span class="point-content">소프트뱅크가 엔비디아를 매각한 자금으로 OpenAI에 투자할 것이라는 소식과 맞물려, 구글이 AI 칩 분야에서 엔비디아의 경쟁자가 될 것이라는 기대감이 나타났습니다.</span>
+            </li>
+            <li>
+                <span class="point-title">단기적 우려</span>
+                <span class="point-content">OpenAI의 ChatGPT로 인해 주력 사업인 검색 엔진의 미래가 불투명하며, 현재 주가가 고평가되었다는 소수 의견도 존재합니다.</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="stock-card bullish">
+        <div class="stock-title">Palantir (PLTR)<span class="ticker">팔란티어</span></div>
+        <ul>
+            <li>
+                <span class="point-title">강력한 팬덤과 장기 보유</span>
+                <span class="point-content">2021년부터 포트폴리오의 99%를 팔란티어로 채워 400% 이상의 수익률을 올린 투자자의 인증 글이 올라왔습니다. '팔란타드(Palantard)'라고 불리는 충성도 높은 투자자 그룹이 존재하며, 주가 하락에도 매도하지 않는 '다이아몬드 핸드' 성향이 강하게 나타납니다.</span>
+                <p class="annotation">주석: '다이아몬드 핸드(Diamond Hands)'는 주가가 폭락해도 팔지 않고 굳건히 버티는 투자자를 의미하는 밈입니다.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stock-card neutral">
+        <div class="stock-title">Meta Platforms (META)<span class="ticker">메타 플랫폼스</span></div>
+        <ul>
+            <li>
+                <span class="point-title">주가 하락과 투자 심리 위축</span>
+                <span class="point-content">주가가 연일 하락하고 있다는 불만이 많습니다. 네비우스(NBIS)와의 대규모 계약 소식에도 불구하고 주가가 하락했으며, 이는 핵심 AI 과학자인 얀 르쿤(Yann LeCun)의 퇴사 소식 때문으로 분석됩니다.</span>
+            </li>
+            <li>
+                <span class="point-title">장기적 관점</span>
+                <span class="point-content">일부 투자자는 현재의 하락을 매수 기회로 보고 있으며, 인스타그램/페이스북이라는 강력한 현금 창출원이 있어 장기적으로는 긍정적일 것이라는 의견도 있습니다.</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="stock-card neutral">
+        <div class="stock-title">Oklo (OKLO)<span class="ticker">오클로</span></div>
+        <ul>
+            <li>
+                <span class="point-title">긍정적 뉴스에도 주가 하락</span>
+                <span class="point-content">미국 에너지부(DOE)로부터 차세대 소형모듈원자로(SMR) 연료 시설에 대한 설계 승인을 받았다는 호재가 있었지만, 주가는 하락했습니다. 이는 투자자들이 단기 실적에 더 집중하고 있음을 보여줍니다.</span>
+            </li>
+            <li>
+                <span class="point-title">실적 부진 및 밈 주식화</span>
+                <span class="point-content">향후 2~10년간 매출이 없을 것이라는 전망과 저조한 실적(EPS)으로 인해 펀더멘털에 대한 의구심이 큽니다. 투자자들 사이에서 '펌프 앤 덤프'가 우려되는 대표적인 밈 주식으로 인식되고 있습니다.</span>
+                <p class="annotation">주석: '밈 주식(Meme Stock)'은 온라인 커뮤니티의 유행으로 인해 펀더멘털과 무관하게 주가가 급등락하는 주식을 의미합니다.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stock-card neutral">
+        <div class="stock-title">기타 주요 언급 주식</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명 (티커)</th>
+                    <th>주요 내용</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>SoftBank (SFTBY)</strong></td>
+                    <td>엔비디아 지분 매각의 주체로 가장 많이 언급되었습니다. WeWork 투자 실패 등으로 투자 결정에 대한 신뢰도가 낮으며, 이들의 매도를 오히려 매수 기회로 보는 시각이 많습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>Adobe (ADBE)</strong></td>
+                    <td>한 투자자가 개인 퇴직 계좌(IRA)의 전 재산(10만 달러)을 어도비 콜옵션에 투자한 사실을 인증하며 화제가 되었습니다. AI로 인한 사업 모델의 위협과 짧은 만기일 때문에 매우 위험한 투자라는 평가가 대부분입니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>SPY, QQQ, VOO</strong></td>
+                    <td>S&P 500, 나스닥 100 지수를 추종하는 ETF들입니다. 위험한 옵션 거래로 큰 손실을 본 투자자들에게 '그냥 지수 ETF나 샀어야 했다'는 자조적인 의미로 자주 언급됩니다. 동시에 만기일이 당일인 0DTE 옵션 거래의 주요 대상이기도 합니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>Take-Two (TTWO)</strong></td>
+                    <td>GTA 6 출시 기대감으로 주가가 상승했으며, 단기 하락을 '반등 매수' 기회로 보고 콜옵션에 베팅한 투자자가 있었습니다.</td>
+                </tr>
+                 <tr>
+                    <td><strong>Sony (SONY)</strong></td>
+                    <td>플레이스테이션과 이미지 센서 사업부의 호조로 실적 전망을 상향 조정했습니다. 콘솔 게임 시장의 강력한 경쟁력(경쟁자가 Xbox뿐)이 긍정적으로 평가됩니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>Micron (MU)</strong></td>
+                    <td>LEAPS(장기 옵션)를 통해 큰 수익을 냈다는 인증 글이 올라왔습니다. AI 붐과 함께 메모리 반도체 시장에 대한 긍정적 전망이 반영된 것으로 보입니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>IREN, RKLB, APLD</strong></td>
+                    <td>데이터센터 및 기술 관련주로 NBIS, CRWV와 함께 자주 언급됩니다. 높은 변동성을 보이며 투자자들의 희비가 엇갈리고 있습니다.</td>
+                </tr>
+                <tr>
+                    <td><strong>Beyond Meat (BYND)</strong></td>
+                    <td>주가 하락으로 인해 손실을 보고 있는 투자자들에 대한 조롱이 많습니다. '가짜 고기 펌프 앤 덤프' 다큐멘터리를 만들겠다는 농담이 나올 정도로 부정적인 여론이 강합니다.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
