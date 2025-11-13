@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.11.14 AM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            padding: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            padding: 18px;
+            border: 1px solid #e0e0e0;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+        }
+        .card-header h2 {
+            font-size: 1.5em;
+            color: #34495e;
+            margin: 0;
+            font-weight: 600;
+        }
+        .sentiment {
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: white;
+            white-space: nowrap;
+        }
+        .sentiment-bullish { background-color: #27ae60; }
+        .sentiment-bearish { background-color: #c0392b; }
+        .sentiment-neutral { background-color: #7f8c8d; }
+        .sentiment-mixed { background-color: #f39c12; }
+        
+        .special-event h2 {
+            color: #8e44ad;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .special-event p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1.0em;
+        }
+        th {
+            font-weight: 600;
+            display: none; /* Mobile optimization: hide headers, use data attributes if needed */
+        }
+        tr {
+            border-bottom: 1px solid #ecf0f1;
+        }
+        tr:last-child {
+            border-bottom: none;
+        }
+        td:first-child {
+            width: 35%;
+            font-weight: bold;
+            color: #34495e;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed #ddd;
+            line-height: 1.5;
+        }
+        strong {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.11.14 AM)</h1>
+
+        <div class="card special-event">
+            <h2>주요 이슈: '빅쇼트' 마이클 버리의 펀드 폐쇄</h2>
+            <p>영화 '빅쇼트'의 실제 주인공으로 유명한 투자자 마이클 버리가 자신의 헤지펀드 '사이언 자산운용(Scion Asset Management)'을 폐쇄하고 SEC 등록을 철회한다는 소식이 전해지며 큰 파장을 일으켰습니다. 그는 투자자들에게 보낸 서한에서 "나의 가치 평가는 시장과 동기화되지 않은 지 꽤 되었다"고 밝히며 사실상 시장 예측의 어려움을 인정했습니다. 이 소식은 시장의 비이성적인 과열에 대한 경고로 해석되기도 하고, 그의 투자 실패로 보는 시각도 있습니다. 많은 투자자들은 그가 SEC 공시 의무(13F)를 피하고 '패밀리 오피스' 형태로 전환하여 더 자유롭게 투자하려는 의도일 것이라고 추측하고 있습니다.</p>
+            <div class="annotation">
+                <strong>※ 빅쇼트(The Big Short):</strong> 2008년 금융 위기를 예측하고 공매도를 통해 막대한 수익을 올린 투자자들의 실화를 다룬 영화. 마이클 버리는 이 영화의 핵심 인물입니다.<br>
+                <strong>※ 13F 공시:</strong> 1억 달러 이상을 운용하는 기관 투자자가 분기별로 보유 종목을 SEC(미국 증권거래위원회)에 의무적으로 공개하는 보고서입니다.<br>
+                <strong>※ 패밀리 오피스(Family Office):</strong> 특정 가문의 자산을 운용하고 관리하기 위해 설립된 개인 투자 회사로, 외부 투자자를 받지 않아 공시 의무 등에서 비교적 자유롭습니다.
+            </div>
+        </div>
+        
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>NVIDIA (NVDA)</h2>
+                <span class="sentiment sentiment-bearish">매우 부정적</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>마이클 버리의 대규모 숏</strong></td>
+                        <td>마이클 버리가 펀드 폐쇄 직전까지 <strong>엔비디아에 대한 대규모 풋옵션(하락 베팅)</strong>을 보유했던 것으로 알려져 투자자들의 관심이 집중되었습니다. 이는 AI 버블에 대한 그의 비관적인 시각을 보여주는 대표적인 사례로 언급됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AI 버블 우려</strong></td>
+                        <td>엔비디아의 주가 급등이 AI에 대한 과도한 기대로 형성된 버블이라는 비판이 많습니다. 한 투자자는 엔비디아의 주가 하락에 베팅하는 것이 "멍청한 짓"이라고 비판하면서도, 현재 데이터센터 관련 기업들의 부채가 심각하며 AI 버블 붕괴 가능성이 크다고 분석했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>시장 바로미터</strong></td>
+                        <td>엔비디아의 주가가 <strong>S&P 500(SPY) 및 나스닥(QQQ) 지수와 거의 동일하게 움직인다</strong>는 분석이 제기되었습니다. 이는 엔비디아가 시장 전체에 미치는 영향력이 지대하며, 사실상 시장의 방향성을 결정하는 핵심 종목이 되었음을 시사합니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>투자자 손실</strong></td>
+                        <td>많은 투자자들이 최근 엔비디아의 주가 하락으로 큰 손실을 입었다고 토로했습니다. 한 투자자는 자신의 포트폴리오 가치가 증발하는 것을 지켜보고 있다고 언급하며 고통을 호소했습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>Palantir (PLTR)</h2>
+                <span class="sentiment sentiment-bearish">부정적</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>마이클 버리의 숏 포지션</strong></td>
+                        <td>엔비디아와 함께 마이클 버리의 주요 숏 타겟이었습니다. <strong>행사가 50달러의 풋옵션</strong>을 대량 매수한 것으로 알려졌으며, 이는 팔란티어의 고평가에 대한 강한 의구심을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CEO에 대한 비판</strong></td>
+                        <td>CEO 알렉스 카프(Alex Karp)의 언행이 불안정하고 과장되었다는 비판이 제기되었습니다. 투자자들은 그를 "사기꾼(Charlatan)", "테무 버전 일론 머스크" 등으로 묘사하며, 그의 인터뷰 태도와 발언이 신뢰도를 떨어뜨린다고 지적했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>고평가 논란</strong></td>
+                        <td>팔란티어가 "지난 10년간 최악의 버블"이라는 격한 비판이 나왔습니다. 회사의 실적 대비 주가가 지나치게 높다는 의견이 지배적이며, 많은 투자자들이 버블 붕괴를 우려하고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>MicroStrategy (MSTR)</h2>
+                <span class="sentiment sentiment-bearish">매우 부정적</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>비트코인 대리 투자 비판</strong></td>
+                        <td>마이크로스트래티지의 사업 모델이 사실상 비트코인에 대한 <strong>'3배 레버리지 투자'와 같다</strong>는 비판이 제기되었습니다. 회사의 본업인 소프트웨어 사업은 적자 상태이며, 지속적인 부채 발행을 통해 비트코인을 매입하는 전략은 매우 위험한 '사기(scam)'라는 의견이 많습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CEO 리스크</strong></td>
+                        <td>CEO 마이클 세일러가 닷컴 버블 당시 회계 부정으로 시장 붕괴의 원인을 제공했던 인물이라는 점이 재조명되었습니다. 그의 과거 행적을 볼 때, 현재의 비트코인 집중 투자 전략도 신뢰하기 어렵다는 반응입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>투자자 손실 인증</strong></td>
+                        <td>한 투자자는 MSTR에 투자했다가 큰 손실을 본 내역을 공개하며 "마이클 세일러를 증오한다"고 밝혔습니다. 심지어 손실을 만회하기 위해 풋옵션을 매도했다가 추가 손실을 입는 등, 투자자들의 고통이 큰 것으로 보입니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+             <div class="annotation">
+                <strong>※ 닷컴 버블(Dot-com bubble):</strong> 1990년대 후반 인터넷 관련 분야가 성장하면서 전 세계적으로 주가가 폭등했다가 2000년대 초반 거품이 붕괴된 사건을 말합니다.
+            </div>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>Ubisoft (UBSFY)</h2>
+                <span class="sentiment sentiment-bearish">매우 부정적</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>실적 발표 연기 및 거래 정지</strong></td>
+                        <td>유비소프트가 반기 실적 발표를 연기하고 거래 정지를 요청한 것이 큰 충격을 주었습니다. 투자자들은 이를 <strong>"회사가 얼마나 심각한 상황에 처했는지 보여주는 신호"</strong>로 해석하며, 이러한 조치가 불법이 아니냐는 의문까지 제기했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>반복적인 게임 출시</strong></td>
+                        <td>'어쌔신 크리드', '파 크라이' 시리즈 등 성공한 IP를 복사-붙여넣기 식으로 반복 출시하는 것에 대한 비판이 거셉니다. 게임들이 "조립 라인에서 찍어낸 것처럼" 독창성이 없고 모두 비슷하게 느껴져 게이머들이 외면하고 있다는 분석입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>파산 및 인수 가능성</strong></td>
+                        <td>회사의 재무 상태가 심각하여 파산하거나 <strong>마이크로소프트, 소니 등 거대 기업에 인수될 가능성</strong>이 높다는 전망이 나오고 있습니다. 주가가 20달러에서 1.5달러까지 폭락한 상태라, 회사의 미래에 대한 비관론이 팽배합니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>Disney (DIS)</h2>
+                <span class="sentiment sentiment-mixed">혼재</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>매출 예상 하회</strong></td>
+                        <td>4분기 매출이 시장 예상치를 밑돌면서 주가가 하락했습니다. 특히 전통적인 TV 네트워크 부문의 매출이 16%나 감소하며 실적에 부담을 주었습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>스트리밍 사업 수익성 개선</strong></td>
+                        <td>디즈니플러스(+)와 훌루를 포함한 스트리밍 부문이 3억 5,200만 달러의 이익을 기록하며 수익성이 개선되었습니다. 신규 구독자도 예상을 뛰어넘는 380만 명 증가했습니다. 하지만 이는 4년 연속 이어진 구독료 인상에 기인한 것으로, 투자자들은 지속 가능성에 의문을 표하고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>높은 파크 이용료</strong></td>
+                        <td>디즈니월드 방문 비용이 "부끄러울 정도로 비싸다"는 불만이 터져 나왔습니다. 5인 가족의 4일권 티켓 가격이 약 3,454달러에 달하는 등 과도한 가격 정책이 비판의 대상이 되고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>유튜브 TV 분쟁</strong></td>
+                        <td>디즈니가 유튜브 TV와의 콘텐츠 송출 계약에 실패하면서, 많은 구독자들이 ESPN 등 주요 채널을 시청하지 못하게 된 것에 대한 불만이 큽니다. 이는 디즈니에 대한 부정적인 여론을 확산시키는 요인이 되고 있습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>Verizon (VZ)</h2>
+                <span class="sentiment sentiment-bearish">부정적</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>대규모 인력 감축</strong></td>
+                        <td>버라이즌이 <strong>역대 최대 규모인 약 15,000명의 직원을 해고</strong>할 계획이라는 소식이 전해졌습니다. 이는 회사가 비용 절감과 조직 효율화를 위해 극단적인 조치를 취하고 있음을 보여줍니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>가입자 수 감소</strong></td>
+                        <td>경쟁사인 AT&T와 T-Mobile이 가입자 수를 늘리는 동안, 버라이즌은 오히려 순감소를 기록하며 시장 경쟁에서 밀리고 있습니다. 높은 요금제와 부족한 혜택이 고객 이탈의 주요 원인으로 꼽힙니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CEO의 '스크래피' 발언</strong></td>
+                        <td>새 CEO가 "더 효율적이고, 더 악착같이(scrappy) 될 것"이라고 발언한 것에 대해, 투자자들은 이것이 <strong>"더 적은 자원으로 더 많은 일을 시키겠다"</strong>는 의미라며, 회사 상황이 좋지 않다는 신호로 해석했습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>Webull (BULL)</h2>
+                <span class="sentiment sentiment-mixed">혼재</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>YOLO 베팅 등장</strong></td>
+                        <td>한 투자자가 Webull의 제품 품질과 사업 확장을 이유로 <strong>15,000달러 규모의 욜로(YOLO) 투자</strong>를 감행했습니다. 그는 실적이 부진했던 만큼 이번 실적 발표(11/20)에서 주가가 반등할 가능성이 있다고 기대했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>중국 관련 리스크</strong></td>
+                        <td>Webull이 중국과 연관되어 있다는 점이 투자자들에게 불안 요소로 작용하고 있습니다. CEO는 미국인이지만, 창업자와 회사의 뿌리가 중국에 있다는 점이 리스크로 거론됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>주가 하락 및 물린 투자자</strong></td>
+                        <td>많은 투자자들이 13~15달러 선에서 매수하여 현재 손실을 보고 있는 '백홀더(bagholder)' 상태라고 밝혔습니다. 주가가 8달러까지 떨어질 수 있다는 비관적인 전망도 나왔습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="annotation">
+                <strong>※ YOLO(You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 큰 리스크를 감수하고 특정 종목에 전 재산을 투자하는 행위를 의미하는 밈입니다.<br>
+                <strong>※ Bagholder:</strong> 주가가 크게 하락했음에도 팔지 못하고 손실 상태로 계속 보유하고 있는 투자자를 조롱하는 말입니다.
+            </div>
+        </div>
+
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>SPDR Gold Shares (GLD)</h2>
+                <span class="sentiment sentiment-bullish">강세</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>대규모 수익 인증</strong></td>
+                        <td>한 투자자가 GLD 콜옵션 투자로 <strong>100만 달러(약 13억 원) 이상의 수익</strong>을 올렸다고 인증하며 큰 화제가 되었습니다. 그는 2027년 만기 콜옵션을 매수했으며, 최근 수익의 75%를 실현했다고 밝혔습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>강세 전망</strong></td>
+                        <td>수익을 인증한 투자자는 "많은 거대 경제권의 재정 상황이 지속 불가능하며, 이는 결국 화폐 발행으로 이어질 것"이라며, 향후 10년간 <strong>금과 같은 실물 자산이 강세를 보일 것</strong>이라고 전망했습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card stock-card">
+            <div class="card-header">
+                <h2>기타 관심 종목</h2>
+                <span class="sentiment sentiment-neutral">다양</span>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Tesla (TSLA)</strong></td>
+                        <td>CEO 일론 머스크의 리더십 리스크와 함께 주가 버블에 대한 우려가 꾸준히 제기됩니다. 한 투자자는 레버리지를 이용한 단기 숏 포지션으로 수익을 냈다고 밝혔습니다.</td>
+                    </tr>
+                     <tr>
+                        <td><strong>Oracle (ORCL)</strong></td>
+                        <td>최근 주가 하락세가 지속되며 투자자들의 우려를 낳고 있습니다. 데이터센터 관련주로 주목받았으나, 한 투자자는 1,300억 달러에 달하는 부채와 사업 계획의 비현실성을 지적하며 강한 비관론을 펼쳤습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duolingo (DUOL)</strong></td>
+                        <td>한 투자자가 "인간이 어떻게 배우고 생각하는지에 대한 고유한 데이터"를 보유하고 있어 AI 시대의 핵심 자산이 될 것이라는 독특한 분석을 내놓으며 매수했습니다. 하지만 대부분의 투자자들은 고평가된 주식이라며 회의적인 반응을 보였습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Singapore Airlines (SIA)</strong></td>
+                        <td><strong>에어 인디아(Air India) 투자로 인해 2분기 수익이 82% 급감</strong>했다는 소식이 전해졌습니다. 투자자들은 에어 인디아의 열악한 서비스와 기체 상태를 지적하며, SIA의 투자 결정을 "역대급 바보 같은 짓"이라고 비판했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Opendoor (OPEN)</strong></td>
+                        <td>한 투자자가 주택 시장 붐을 예측하며 매수를 고려했으나, 다른 투자자들은 주택 시장이 오히려 침체될 것이라며 부정적인 반응을 보였습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AMD</strong></td>
+                        <td>과거 저점에서 매수했다면 큰 수익을 얻었을 것이라는 'What if' 시나리오에서 자주 언급됩니다. 엔비디아와 함께 시장의 주요 기술주로 인식되고 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Robinhood (HOOD)</strong></td>
+                        <td>팔란티어와 함께 버블 종목으로 언급되며, Webull과 비교 대상이 되는 등 개인 투자자들이 많이 사용하는 플랫폼으로서 자주 거론됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bitcoin (BTC)</strong></td>
+                        <td>MSTR의 주가와 연동되며 큰 변동성을 보였습니다. 비트코인이 10만 달러를 넘을 것이라는 기대감과 함께, 제도권에 편입되면서 변동성이 커지고 주식 시장과 동조화되는 현상에 대한 비판도 제기되었습니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
