@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #3949ab;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #283593;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3949ab;
+            padding-left: 10px;
+        }
+        .stock-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .stock-card:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .stock-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .stock-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+        }
+        .sentiment {
+            font-size: 1em;
+            font-weight: 700;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        .sentiment.bullish {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+        }
+        .sentiment.bearish {
+            color: #c62828;
+            background-color: #ffebee;
+        }
+        .sentiment.mixed {
+            color: #ff8f00;
+            background-color: #fff8e1;
+        }
+        .sentiment.neutral {
+            color: #37474f;
+            background-color: #eceff1;
+        }
+        .reason-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .reason-item {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .reason-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #3949ab;
+            font-weight: bold;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #6c757d;
+            background-color: #e9ecef;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        strong.positive {
+            color: #2e7d32;
+        }
+        strong.negative {
+            color: #c62828;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e8eaf6;
+            color: #1a237e;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향<br>(25.11.16 PM)</h1>
+        
+        <h2>종합 동향: AI 버블 논쟁 심화</h2>
+        <div class="stock-card">
+             <div class="stock-header">
+                <p class="stock-name">시장 전반</p>
+                <span class="sentiment mixed">혼재</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">AI 산업에 대한 <strong class="negative">버블 우려</strong>가 커뮤니티의 핵심 주제로 부상했습니다. 많은 투자자들이 현재의 높은 밸류에이션이 지속 불가능하다고 보며, 닷컴 버블과 비교하는 의견이 많습니다.</li>
+                <li class="reason-item">반면, 현재 상황이 버블이 아니라는 <strong class="positive">반론</strong>도 만만치 않습니다. AI 기술이 실제 수익을 창출하고 있으며, 과거 버블과 달리 실체가 있는 기술 혁명이라는 주장입니다.</li>
+                <li class="reason-item">"모두가 버블이라고 말하면, 그것은 버블이 아니다"라는 역발상 투자 심리도 나타나고 있습니다. 시장의 붕괴를 기다리며 저가 매수를 노리는 투자자들도 많아, 실제 폭락이 와도 빠른 회복을 보일 것이라는 기대감도 존재합니다.</li>
+            </ul>
+             <p class="annotation"><strong>Schrödinger's bubble (슈뢰딩거의 버블):</strong> 양자역학의 '슈뢰딩거의 고양이' 밈을 활용한 표현. 버블인 동시에 버블이 아닌 상태, 즉 버블 여부가 불확실하다는 것을 의미합니다.</p>
+        </div>
+
+        <h2>주요 관심 종목 요약</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>종목명 (티커)</th>
+                    <th>주요 동향</th>
+                    <th>투자 심리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NVIDIA (NVDA)</td>
+                    <td>AI 칩 선두주자, 버블 논쟁의 중심</td>
+                    <td style="color: #ff8f00; font-weight: bold;">혼재</td>
+                </tr>
+                <tr>
+                    <td>Alphabet/Google (GOOGL)</td>
+                    <td>워런 버핏의 매수 소식으로 강력한 매수세 기대</td>
+                    <td style="color: #2e7d32; font-weight: bold;">긍정적</td>
+                </tr>
+                <tr>
+                    <td>Invesco QQQ (QQQ)</td>
+                    <td>ETF에 대한 풋옵션 베팅 등장, 시장 하락 기대</td>
+                    <td style="color: #c62828; font-weight: bold;">부정적</td>
+                </tr>
+                 <tr>
+                    <td>Microsoft (MSFT)</td>
+                    <td>빌 게이츠 재단의 대량 매도 소식</td>
+                    <td style="color: #c62828; font-weight: bold;">부정적</td>
+                </tr>
+                <tr>
+                    <td>AMD, Intel, Micron</td>
+                    <td>NVIDIA 대비 고평가 되었다는 비판</td>
+                    <td style="color: #c62828; font-weight: bold;">부정적</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>개별 종목 상세 분석</h2>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">NVIDIA (NVDA)</p>
+                <span class="sentiment mixed">혼재</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong class="positive">긍정적:</strong> AI 산업의 핵심 기업으로, 높은 성장률과 마진을 바탕으로 현재의 가치가 정당화된다는 의견이 있습니다. 일부 투자자들은 주가 조정을 매수 기회로 보고 추가 매수를 언급했습니다.</li>
+                <li class="reason-item"><strong class="negative">부정적:</strong> AI 버블의 중심에 있으며, '빅쇼트'의 실제 인물인 마이클 버리가 공매도를 시도했던 점이 불안 요소로 언급됩니다. OpenAI 같은 대형 AI 기업이 흔들릴 경우 가장 큰 타격을 받을 것으로 예상됩니다.</li>
+                <li class="reason-item"><strong class="negative">부정적:</strong> 반도체 산업의 주기적 특성상 현재가 사이클의 고점일 수 있다는 경고도 나왔습니다.</li>
+             </ul>
+            <p class="annotation"><strong>The Big Short (빅쇼트):</strong> 2008년 금융 위기를 예측하고 공매도(short)로 큰돈을 번 투자자들의 실화를 다룬 영화. '마이클 버리'가 실제 주인공 중 한 명입니다.</p>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Alphabet/Google (GOOGL)</p>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong class="positive">긍정적:</strong> 워런 버핏의 버크셔 해서웨이가 대규모 지분을 매입했다는 소식이 가장 큰 호재로 작용하고 있습니다. 이는 기술주 시장 전반에 긍정적인 영향을 미칠 것으로 기대됩니다.</li>
+                <li class="reason-item"><strong class="positive">긍정적:</strong> 현재 주가가 저평가 상태("cheap RN")라는 인식이 있으며, AI 분야에서도 강력한 입지를 가지고 있다고 평가됩니다.</li>
+                <li class="reason-item"><strong class="positive">긍정적:</strong> AI 외에도 자율주행(Waymo) 등 다양한 사업 포트폴리오를 보유하고 있어, AI 산업의 리스크가 부각될 경우 오히려 안정적인 투자처로 여겨질 수 있다는 분석이 있습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Microsoft (MSFT)</p>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong class="negative">부정적:</strong> 빌 & 멜린다 게이츠 재단이 보유 지분의 약 65%에 달하는 88억 달러 규모를 매각했다는 소식이 전해졌습니다. 이는 워런 버핏의 구글 매수와 대조되며 부정적인 신호로 해석되고 있습니다.</li>
+                <li class="reason-item"><strong class="positive">긍정적:</strong> 다만, 다른 대형 기술주들과 마찬가지로 미래 P/E가 30대 초반으로 비싸지 않다는 의견도 존재합니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">기타 반도체주: AMD, Intel (INTC), Micron (MU)</p>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong class="negative">부정적:</strong> 이들 주식은 NVIDIA에 비해 성장성과 마진이 낮은데도 불구하고 밸류에이션이 과도하게 높다는 비판을 받고 있습니다. 특히 AMD의 P/E 비율이 NVIDIA의 3배에 달하는 점이 지적되었습니다.</li>
+            </ul>
+            <p class="annotation"><strong>P/E Ratio (주가수익비율):</strong> 주가를 주당순이익으로 나눈 값으로, 기업의 가치를 평가하는 지표 중 하나입니다. 수치가 높을수록 고평가되었다고 볼 수 있습니다.</p>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Amazon (AMZN)</p>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <ul class="reason-list">
+                 <li class="reason-item"><strong class="positive">긍정적:</strong> 클라우드(AWS) 외에도 압도적인 물류, 배송, 창고 등 물리적 인프라를 보유하고 있다는 점이 강점으로 꼽혔습니다. AI 기술을 통해 이 인프라를 완전 자동화할 경우, 소프트웨어 중심의 다른 기업들을 압도할 잠재력이 있다고 평가됩니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Palantir (PLTR)</p>
+                <span class="sentiment mixed">혼재</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">마이클 버리가 공매도를 시도했던 종목으로 언급되었습니다.</li>
+                <li class="reason-item">최근 50%나 상승한 대표적인 AI 관련주로, 만약 AI 섹터가 50% 하락하더라도 연간 기준으로는 여전히 상승 상태일 수 있다는 예시로 사용되었습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">OpenAI</p>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong class="negative">부정적:</strong> (비상장사지만) 막대한 자금을 소진하면서도 뚜렷한 수익 모델을 찾지 못할 경우, OpenAI의 실패가 AI 시장 전체의 붕괴를 촉발하는 도화선이 될 수 있다는 우려가 제기되었습니다.</li>
+                <li class="reason-item">과거 큰 기대를 모았으나 사기극으로 끝난 '테라노스'와 비교하는 의견도 있었습니다.</li>
+            </ul>
+        </div>
+        
+        <h2>ETF 및 기타 종목 동향</h2>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Invesco QQQ Trust (QQQ)</p>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">한 투자자가 QQQ 지수의 하락에 베팅하는 대규모 풋옵션을 매수한 사실을 공유했습니다.</li>
+                <li class="reason-item">그러나 대부분의 다른 투자자들은 워런 버핏의 구글 매수 소식과 NVIDIA 실적 발표에 대한 기대로 인해 시장이 상승할 것이라며, 이 풋옵션 투자는 실패할 것이라고 비관적으로 전망했습니다.</li>
+            </ul>
+            <p class="annotation"><strong>Puts (풋옵션):</strong> 주가가 하락할 것이라 예상하고 베팅하는 파생상품입니다. 반대로 상승에 베팅하는 것은 '콜옵션'입니다.</p>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">레버리지/인덱스 ETF: UPRO, TQQQ, VOO, SPY</p>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">한 투자자는 이들 ETF에 수십만 달러를 투자하고 있으며, "시장은 더 이상 붕괴할 수 없다"고 주장했습니다. 하락 시마다 저가 매수세가 유입되어 시장을 방어할 것이라는 강한 믿음을 보였습니다.</li>
+                 <li class="reason-item">다른 투자자는 장기 만기의 SPY 풋옵션을 보유하고 있다고 언급했습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">금 관련 ETF: GDX, GLD</p>
+                <span class="sentiment bullish">긍정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">금 가격 상승을 예상한 한 투자자가 금광 채굴 기업 ETF인 GDX에 대한 콜옵션을 매수했습니다.</li>
+                <li class="reason-item">금 현물 ETF인 GLD보다 GDX가 금 가격 상승 시 더 높은 수익률을 보일 것이라고 분석했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Cisco Systems (CSCO)</p>
+                <span class="sentiment neutral">중립</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">한 투자자가 CSCO 주식으로 수익을 실현했다고 인증했습니다.</li>
+                <li class="reason-item">기술적 분석에 기반하여 주가가 85달러까지 상승할 수 있다는 긍정적인 전망이 나왔으나, 네트워킹 장비 업체가 갑자기 급등할 이유가 무엇인지에 대한 회의적인 시각도 있었습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Oklo (OKLO)</p>
+                <span class="sentiment mixed">혼재</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">소형모듈원자로(SMR) 관련 주로, 한 투자자가 손실을 보고 있는 상황을 공유했습니다.</li>
+                <li class="reason-item">아직 실제 발전소를 건설하지 않은, 사업 초기 단계의 회사로 "실체가 없다"는 비판과, 향후 실제 건설이 시작되면 주가가 급등할 것이라는 기대가 공존하고 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">Voyager (VOYG)</p>
+                <span class="sentiment bearish">부정적</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item">한 투자자가 VOYG 주가 하락에 베팅하는 풋옵션을 매수했습니다.</li>
+                <li class="reason-item">약세장이 지속될 경우, 특별한 호재 없이는 주가가 10달러 이상을 유지하기 어려울 것이라고 전망했습니다.</li>
+            </ul>
+        </div>
+
+         <div class="stock-card">
+            <div class="stock-header">
+                <p class="stock-name">기타 언급된 종목</p>
+                <span class="sentiment neutral">중립</span>
+            </div>
+            <ul class="reason-list">
+                <li class="reason-item"><strong>Beyond Meat (BYND):</strong> '인공지능'의 버블을 '인공 고기'의 실패에 비유하는 데 사용되었습니다.</li>
+                <li class="reason-item"><strong>General Mills (GIS):</strong> 위험 자산인 PLTR은 50% 상승하는 동안 안전 자산인 GIS는 25% 하락했다며, 현재 시장의 비이성적인 면을 보여주는 예시로 언급되었습니다.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
