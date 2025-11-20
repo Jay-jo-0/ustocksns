@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+        h1 {
+            color: #1a237e;
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1a237e;
+            padding-bottom: 10px;
+        }
+        .stock-section {
+            background-color: #fff;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            border-left: 5px solid #1a237e;
+        }
+        .stock-title {
+            font-size: 1.8em;
+            color: #3f51b5;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .stock-title .ticker {
+            font-weight: normal;
+            color: #757575;
+            font-size: 0.8em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        td:first-child {
+            width: 25%;
+            font-weight: bold;
+            font-size: 1.1em;
+            vertical-align: top;
+        }
+        .sentiment-bullish {
+            color: #4CAF50;
+        }
+        .sentiment-bearish {
+            color: #f44336;
+        }
+        .sentiment-neutral {
+            color: #607d8b;
+        }
+        .reason-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+        .annotation {
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 3px solid #ccc;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .stock-title {
+                font-size: 1.5em;
+            }
+            td:first-child {
+                font-size: 1em;
+            }
+            .reason-text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>미국 SNS 주식 관심 동향<br>(25.11.20 PM)</h1>
+
+        <div class="stock-section">
+            <h2 class="stock-title">NVIDIA <span class="ticker">(NVDA)</span></h2>
+            <table>
+                <tr>
+                    <td class="sentiment-bullish">압도적 강세</td>
+                    <td class="reason-text">
+                        <strong>기대치를 뛰어넘는 실적 발표 및 가이던스 상향:</strong><br>
+                        모든 예상을 뛰어넘는 3분기 실적과 4분기 매출 전망 상향 조정으로 투자자들의 환호를 받았습니다. 73.6%라는 경이로운 매출 총이익률(Gross Margin)이 특히 주목받았습니다. "경기 침체가 다음 실적 발표까지 일시정지됐다", "산타 랠리가 돌아왔다"는 등 시장 전체를 구원했다는 평가가 지배적입니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-bullish">AI 시장 독점</td>
+                    <td class="reason-text">
+                        CEO 젠슨 황의 "Blackwell 칩 판매가 예상을 초월한다", "클라우드 GPU가 모두 매진되었다"는 발언이 강한 자신감을 불어넣었습니다. AI 칩을 사기 위해 사우디아라비아 등 중동 국가들이 거액을 투자하고, 미국 정부가 이를 승인했다는 소식이 전해지며 AI 골드러시 시대의 '곡괭이와 삽'을 파는 독점적 지위가 재확인되었습니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-bearish">버블 우려</td>
+                    <td class="reason-text">
+                        소수 의견으로 AI 버블에 대한 우려가 존재합니다. "실적이 이미 주가에 반영됐다(priced in)", "실적이 좋아도 주가가 하락할 수 있다"는 의견이 있습니다. 일부는 현재의 AI 투자가 MS, Google 등 소수의 빅테크 기업들이 서로의 제품을 사주는 '순환 거래(Circular economy)'에 가깝다며 지속 가능성에 의문을 제기합니다. 닷컴 버블 당시의 시스코(CSCO)와 비교하는 의견도 있습니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral">시장 중심성</td>
+                    <td class="reason-text">
+                        "S&P 500의 실적 발표", "세계 경제의 운명이 가죽 재킷을 입은 한 남자에게 달렸다"는 표현처럼, 현재 시장에서 NVIDIA의 실적이 S&P 500 지수뿐만 아니라 세계 경제의 방향성을 결정하는 가장 중요한 변수로 인식되고 있습니다.
+                        <div class="annotation">
+                            <strong>주석:</strong> '가죽 재킷을 입은 남자'는 NVIDIA CEO 젠슨 황을 지칭하는 밈(meme)입니다. 그가 공식 석상에서 자주 입는 검은색 가죽 재킷은 그의 상징이 되었습니다.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-section">
+            <h2 class="stock-title">Google <span class="ticker">(GOOG / GOOGL)</span></h2>
+            <table>
+                <tr>
+                    <td class="sentiment-bullish">강력한 모멘텀</td>
+                    <td class="reason-text">
+                        새롭게 공개된 AI 모델 'Gemini 3.0'에 대한 반응이 폭발적입니다. "내 코드베이스 전체를 리팩토링했다", "동료들을 압도한다" 등 뛰어난 성능에 대한 찬사가 이어지며 주가가 급등했습니다. NVIDIA와 달리 자체 AI 칩(TPU)을 설계 및 사용하는 점이 강점으로 부각되며 AI 경쟁에서 강력한 플레이어로 자리매김하고 있습니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-bullish">상대적 저평가</td>
+                    <td class="reason-text">
+                        다른 빅테크 주식에 비해 주가수익비율(P/E)이 낮아 상대적으로 저평가되었다는 인식이 있습니다. 강력한 AI 기술력과 기존의 막대한 현금 흐름을 바탕으로 투자 매력이 높다는 의견이 많습니다.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-section">
+            <h2 class="stock-title">Meta Platforms <span class="ticker">(META)</span></h2>
+            <table>
+                <tr>
+                    <td class="sentiment-bearish">심각한 약세</td>
+                    <td class="reason-text">
+                        투자자들의 우려가 가장 큰 종목 중 하나입니다. "피를 흘리고 있다(bleeding bad)", "지속적으로 하락한다"는 등 부정적인 의견이 많습니다. 콜옵션을 보유한 투자자들이 막대한 손실을 보고 있으며, 손절해야 할지에 대한 고민이 깊어지고 있습니다. Google의 Gemini 성공이 Meta의 AI 경쟁력에 대한 의문을 키우고 있습니다.
+                    </td>
+                </tr>
+                 <tr>
+                    <td class="sentiment-neutral">NVIDIA와의 연관성</td>
+                    <td class="reason-text">
+                        NVIDIA의 실적 발표 컨퍼런스 콜에서 Meta가 주요 고객사로 여러 번 언급되었습니다. 이는 Meta가 AI 인프라에 막대한 투자를 지속하고 있음을 시사하며, 일부 투자자들은 이를 주가 반등의 신호로 해석하기도 했습니다.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-section">
+            <h2 class="stock-title">Target <span class="ticker">(TGT)</span></h2>
+            <table>
+                <tr>
+                    <td class="sentiment-bearish">매우 부정적</td>
+                    <td class="reason-text">
+                        실적 전망 하향 조정과 함께 OpenAI와의 파트너십 발표가 투자자들의 조롱을 받고 있습니다. 소비 위축이라는 근본적인 문제를 해결하지 못한 채, 유행에 편승하려는 '절박한 움직임'으로 평가됩니다. "이젠 코미디다", "AI가 어떻게 매출을 올리겠는가" 등 회의적인 반응이 대부분입니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-bearish">펀더멘털 문제</td>
+                    <td class="reason-text">
+                        정치적 이슈(DEI, Pride month 등)에 대한 대응으로 기존 핵심 고객층을 잃었고, 월마트(WMT)나 아마존(AMZN)에 비해 가격 경쟁력과 매장 경험 모두에서 밀리고 있다는 분석이 많습니다. '이 시대의 Kmart'가 될 것이라는 비판도 제기됩니다.
+                        <div class="annotation">
+                            <strong>주석:</strong> Kmart는 과거 미국의 대형 유통업체였으나, 월마트 등과의 경쟁에서 밀려 파산한 기업입니다. 실패한 유통업체의 대명사로 쓰입니다.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-section">
+            <h2 class="stock-title">Tesla <span class="ticker">(TSLA)</span></h2>
+            <table>
+                <tr>
+                    <td class="sentiment-bearish">풋옵션 베팅</td>
+                    <td class="reason-text">
+                        주가 하락에 베팅하는 풋옵션에 큰 금액을 투자한 인증 글이 올라왔습니다. 일부 투자자들은 주가 하락을 예상하고 있습니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral">변동성 경고</td>
+                    <td class="reason-text">
+                        "테슬라를 숏(short)하는 것은 과부 제조기(widowmaker) 거래"라는 격언처럼, 주가 변동성이 극심하여 공매도가 매우 위험하다는 경고도 함께 나옵니다. 주가가 펀더멘털보다는 CEO 일론 머스크에 대한 팬덤에 의해 움직인다는 분석이 있습니다.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-section">
+            <h2 class="stock-title">기타 관심 종목</h2>
+            <table>
+                <tr>
+                    <td class="sentiment-neutral"><strong>S&P 500 (SPY)</strong></td>
+                    <td class="reason-text">NVIDIA의 실적에 따라 시장 전체가 움직일 것으로 예상되며, 많은 투자자들이 0DTE 옵션으로 단기 변동성에 베팅하고 있습니다.
+                        <div class="annotation">
+                            <strong>주석:</strong> 0DTE (Zero Days to Expiration)는 만기가 하루도 남지 않은 초단기 옵션을 의미하며, 매우 높은 위험과 수익률을 동반하는 투기적인 거래입니다.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral"><strong>AMD (AMD)</strong></td>
+                    <td class="reason-text">NVIDIA의 경쟁자이자 AI 생태계의 주요 플레이어로 언급됩니다. NVIDIA 주가 상승 시 동반 상승하는 경향을 보입니다.</td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral"><strong>Microsoft (MSFT)</strong></td>
+                    <td class="reason-text">AI 관련 투자를 지속하는 빅테크 기업으로, 일부 투자자들이 콜옵션을 보유하고 있으나 최근 Google에 비해 주목도가 떨어지는 모습입니다.</td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral"><strong>Walmart (WMT)</strong></td>
+                    <td class="reason-text">Target의 부진과 대비되며, 저가 시장을 공략해 안정적인 실적을 낼 것으로 기대되는 유통주입니다.</td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral"><strong>Bitcoin (BTC)</strong></td>
+                    <td class="reason-text">AI 버블 붕괴 시 함께 폭락할 것이라는 예측과, 오히려 안전자산이 될 것이라는 예측이 엇갈립니다. MSTR(MicroStrategy)의 비트코인 보유 리스크도 함께 거론됩니다.</td>
+                </tr>
+                 <tr>
+                    <td class="sentiment-neutral"><strong>AI 관련주</strong></td>
+                    <td class="reason-text"><strong>PLTR, ORCL, SMCI, DELL</strong> 등 AI 인프라 및 소프트웨어 관련주들이 NVIDIA 실적 발표에서 직간접적으로 언급되며 주목받았습니다. 특히 <strong>NBIS, IREN, CRWV, CIFR</strong> 등 클라우드 및 데이터센터 관련주들이 NVIDIA의 GPU 매진 소식에 강세를 보였습니다.</td>
+                </tr>
+                <tr>
+                    <td class="sentiment-neutral"><strong>Palo Alto (PANW)</strong></td>
+                    <td class="reason-text">예상치를 상회하는 실적에도 불구하고 주가가 하락했습니다. 투자자들의 관심이 온통 Mag 7과 AI에 쏠려있어 소외되었다는 평가입니다.</td>
+                </tr>
+                 <tr>
+                    <td class="sentiment-neutral"><strong>Samsung (SSNLF)</strong></td>
+                    <td class="reason-text">한 투자자가 삼성전자에 투자해 큰 수익을 올린 것을 인증하며, Apple 대신 삼성에 투자한 이유에 대한 토론이 있었습니다.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
