@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.12.02 PM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .stock-table th, .stock-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .stock-table th {
+            background-color: #3498db;
+            color: white;
+            font-size: 1.1em;
+        }
+        .stock-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .ticker {
+            font-weight: bold;
+            font-size: 1.4em;
+            color: #2980b9;
+        }
+        .company-name {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .summary-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .bullish {
+            color: #27ae60;
+        }
+        .bearish {
+            color: #c0392b;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .annotation {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #7f8c8d;
+            border-radius: 5px;
+        }
+        .annotation h3 {
+            margin-top: 0;
+            color: #34495e;
+        }
+        .annotation p {
+            font-size: 0.85em;
+            color: #555;
+        }
+        .annotation-term {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Mobile Optimization */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .stock-table, .stock-table thead, .stock-table tbody, .stock-table th, .stock-table td, .stock-table tr {
+                display: block;
+            }
+            .stock-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            .stock-table tr {
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .stock-table td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+                white-space: normal;
+                text-align: left;
+            }
+            .stock-table td:before {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                color: #3498db;
+            }
+            .stock-table td:nth-of-type(1):before { content: "종목"; }
+            .stock-table td:nth-of-type(2):before { content: "주요 내용"; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.12.02 PM)</h1>
+
+        <table class="stock-table">
+            <thead>
+                <tr>
+                    <th>종목</th>
+                    <th>주요 내용</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="ticker">NVDA</div>
+                        <div class="company-name">NVIDIA</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bearish">매도(Bearish) 관점</div>
+                        <ul>
+                            <li><strong>경쟁 심화:</strong> 구글(Google)이 자체 AI 칩(TPU)을 만들고, 메타(Meta)가 이를 구매하기 시작하면서 NVDA의 독점적 지위에 균열이 생길 수 있다는 우려가 제기되었습니다.</li>
+                            <li><strong>재무적 위험 신호:</strong> 재고 자산 증가 및 미수금 회수 기간 장기화 등 재무제표상의 위험 신호가 보인다는 분석이 있습니다.</li>
+                            <li><strong>고평가 논란:</strong> 현재 주가가 무한한 수요를 가정하고 있으며, 경쟁으로 인해 높은 가격 정책을 유지하기 어려워지면 주가가 크게 하락할 수 있다고 주장합니다.</li>
+                        </ul>
+                        <div class="summary-title bullish">매수(Bullish) 관점</div>
+                        <ul>
+                            <li><strong>강력한 생태계:</strong> CUDA 소프트웨어 플랫폼은 단순한 하드웨어를 넘어 개발자, 프레임워크, 라이브러리를 아우르는 거대한 생태계를 구축했으며, 이는 경쟁사가 넘기 어려운 강력한 해자(moat)로 작용합니다.</li>
+                            <li><strong>기술적 우위:</strong> 데이터센터를 타사 칩으로 전환하는 것은 매우 복잡하고 비용이 많이 들어 단기간에 NVDA의 점유율을 뺏기 어렵다는 의견이 지배적입니다.</li>
+                            <li><strong>시장 심리:</strong> 비관적인 분석글이 올라오자, 오히려 이를 '바닥 신호(bottom signal)'로 해석하고 매수 기회로 삼으려는 투자자들이 많았습니다.</li>
+                            <li><strong>전략적 투자:</strong> 반도체 설계 소프트웨어 기업인 시놉시스(Synopsys)에 20억 달러를 투자하며 AI 기반 설계 및 엔지니어링 분야에서 협력을 강화, 공급망 내 핵심 기술을 확보하려는 움직임을 보였습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">GOOG / GOOGL</div>
+                        <div class="company-name">Alphabet (Google)</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bullish">매수(Bullish) 관점</div>
+                        <ul>
+                            <li><strong>NVDA의 대항마:</strong> 자체 AI 칩인 TPU 개발을 통해 NVDA의 강력한 경쟁자로 부상하고 있습니다. 특히 메타가 TPU를 구매하기로 한 점은 기술력을 입증하는 사례로 평가됩니다.</li>
+                            <li><strong>AI 통합 솔루션:</strong> 칩(TPU), 모델(Gemini), 데이터센터를 모두 보유한 '올인원 AI 기업'으로 평가되며, 일부 투자자들은 NVDA보다 다각화된 안전한 투자처로 간주합니다.</li>
+                            <li><strong>저평가 매력:</strong> 현재 주가가 저평가 상태라는 인식이 있으며, '매수하기 좋은 기회'라는 의견이 다수 존재합니다.</li>
+                        </ul>
+                        <div class="summary-title bearish">매도(Bearish) 관점</div>
+                        <ul>
+                            <li><strong>불확실한 사업 지속성:</strong> 과거 구글이 여러 유망한 프로젝트를 중단했던 이력 때문에, 하드웨어 생태계에 대한 장기적인 지원이 불확실하다는 우려가 있습니다.</li>
+                            <li><strong>제한적인 경쟁력:</strong> TPU는 특정 작업에는 효율적이지만, 범용적인 GPU를 완전히 대체하기는 어렵다는 기술적 한계가 지적됩니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">MSTR</div>
+                        <div class="company-name">MicroStrategy</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bearish">매도(Bearish) 관점</div>
+                        <ul>
+                            <li><strong>과도한 비트코인 의존:</strong> 회사의 본업보다 비트코인(BTC) 보유에 집중하는 전략이 '폰지 사기'와 유사하다는 비판을 받고 있습니다.</li>
+                            <li><strong>부정적 피드백 루프:</strong> BTC 가격 하락 시 MSTR 주가도 하락하며, 이는 다시 MSTR이 보유 BTC를 매도하게 만들어 BTC 가격을 추가로 하락시키는 악순환을 유발할 수 있다는 우려가 큽니다.</li>
+                            <li><strong>경영진 리스크:</strong> CEO 마이클 세일러의 전략이 지나치게 공격적이며, 시장이 하락세로 전환될 경우 회사가 큰 위험에 처할 수 있다는 의견이 많습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">GOLD</div>
+                        <div class="company-name">Barrick Gold</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bullish">매수(Bullish) 관점</div>
+                        <ul>
+                            <li><strong>거시 경제 환경:</strong> 미국 연준의 양적완화(QE) 재개 가능성, 막대한 국가 부채, 인플레이션 우려 속에서 금(Gold)이 안전자산으로 부각되고 있습니다.</li>
+                            <li><strong>중앙은행들의 금 매입:</strong> BRICS 국가를 중심으로 전 세계 중앙은행들이 달러 비중을 줄이고 금 보유량을 늘리는 추세가 금 가격 상승을 지지할 것으로 보입니다.</li>
+                            <li><strong>기업 가치:</strong> 금 가격이 향후 2배 상승할 경우, 채굴 기업인 Barrick Gold의 주가는 레버리지 효과로 7배 이상 상승할 수 있다는 공격적인 전망이 제시되었습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">MDB</div>
+                        <div class="company-name">MongoDB</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bullish">매수(Bullish) 관점</div>
+                        <ul>
+                            <li><strong>호실적 및 가이던스 상향:</strong> 강력한 3분기 실적과 긍정적인 미래 전망을 발표하며 주가가 급등했습니다.</li>
+                            <li><strong>성장 잠재력:</strong> 데이터베이스 시장 점유율은 아직 2~5%에 불과하지만, NoSQL 분야에서의 기술력을 바탕으로 성장할 여지가 크다는 평가를 받습니다.</li>
+                        </ul>
+                        <div class="summary-title bearish">매도(Bearish) 관점</div>
+                        <ul>
+                            <li><strong>고평가 논란:</strong> 아직 수익성이 완전히 검증되지 않았음에도 불구하고 주가가 지나치게 높다는 의견이 있으며, 공매도 포지션을 취하는 투자자도 있습니다.</li>
+                            <li><strong>경쟁 구도:</strong> 스노우플레이크(SNOW), 데이터브릭스(Databricks) 등 경쟁사들이 강력한 경쟁자로 자리 잡고 있습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">RGTI</div>
+                        <div class="company-name">Rigetti Computing</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bearish">매도(Bearish) 관점</div>
+                        <ul>
+                            <li><strong>내부자 매도:</strong> CEO가 자신의 모든 주식을 매도하는 등 주요 경영진이 지속적으로 주식을 처분하고 있어 회사 미래에 대한 신뢰가 부족하다는 신호로 해석됩니다.</li>
+                            <li><strong>재무 부실:</strong> 매출은 감소하는 반면 현금 소진은 심각하며, 유상증자를 통해 겨우 회사를 유지하는 상황입니다. 이는 기존 주주 가치를 희석시키는 요인입니다.</li>
+                            <li><strong>기술적 불확실성:</strong> CEO 스스로도 상용화 가능한 양자 컴퓨터가 나오기까지 최소 10년이 걸릴 것이라고 언급, 단기적인 성과를 기대하기 어렵다는 분석이 지배적입니다. '스캠'이라는 극단적인 평가도 나옵니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">IBIT</div>
+                        <div class="company-name">iShares Bitcoin Trust ETF</div>
+                    </td>
+                    <td>
+                        <div class="summary-title bullish">매수(Bullish) 관점</div>
+                        <ul>
+                            <li><strong>저점 매수 기회:</strong> 한 투자자가 48만 달러 규모의 대규모 매수 포지션을 인증하며, 현재 가격이 과매도 구간에 있어 좋은 진입점이라는 의견을 제시했습니다.</li>
+                            <li><strong>전략적 활용:</strong> 주식을 보유하면서 커버드콜(Covered Call) 옵션 전략을 통해 꾸준한 현금 흐름을 창출할 수 있다는 장점이 부각되었습니다.</li>
+                            <li><strong>장기적 전망:</strong> 비트코인(BTC)이 결국 10만 달러를 다시 넘어설 것이라는 강한 믿음을 가진 투자자들이 많습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">기타 반도체 및 하드웨어 관련주</div>
+                        <div class="company-name">Various</div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>MU (Micron), SK Hynix:</strong> 삼성전자의 메모리 반도체 가격 인상 소식에 따른 수혜주로 언급됩니다. 메모리 부족 현상이 심화되면서 이들 기업의 수익성 개선이 기대됩니다.</li>
+                            <li><strong>SNPS (Synopsys):</strong> 엔비디아의 20억 달러 투자 및 파트너십 발표로 주가가 급등했습니다. AI 반도체 설계의 핵심 소프트웨어를 공급하는 기업으로, 엔비디아와의 협력을 통해 큰 시너지가 예상됩니다.</li>
+                            <li><strong>CRSR (Corsair):</strong> 메모리 가격 인상의 피해자로 지목됩니다. 부품 원가가 상승하면 제품 가격이 오르고, 이는 게이밍 PC 수요 감소로 이어져 실적에 부정적인 영향을 줄 수 있다는 분석입니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">기타 EV 및 금융 관련주</div>
+                        <div class="company-name">Various</div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>RIVN (Rivian):</strong> 한 투자자가 큰 규모의 '욜로(YOLO)' 매수를 인증했습니다. 도로에서 차량이 자주 보인다는 긍정적 시그널과, 여전히 적자 상태이며 EV 보조금 축소 등 부정적 요인이 공존합니다.</li>
+                            <li><strong>SEZL (Sezzle):</strong> '선구매 후결제(BNPL)' 산업이 오해받고 있으며, 실제 부실률은 신용카드보다 낮다는 상세한 분석(DD)이 공유되었습니다. 구독 모델 전환을 통해 장기적인 성장이 기대된다는 긍정적 전망이 제시되었습니다.</li>
+                            <li><strong>AFRM (Affirm), PYPL (PayPal) 등:</strong> Sezzle의 경쟁사로 언급되며 BNPL 시장의 경쟁 구도를 형성하고 있습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="ticker">주요 지수 ETF</div>
+                        <div class="company-name">SPY, QQQ 등</div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>SPY (S&P 500 ETF), QQQ (Nasdaq 100 ETF):</strong> 시장의 방향성을 예측하는 단기 옵션(0DTE) 거래의 주요 대상입니다. 많은 투자자들이 개별 종목 투자에서 저조한 성과를 거둔 후, "차라리 SPY에 투자했다면..."이라며 비교 기준으로 삼고 있습니다.</li>
+                            <li><strong>레버리지 ETF (SSO, UPRO 등):</strong> 시장 상승에 공격적으로 베팅하는 투자자들이 활용하는 상품으로, 높은 수익률을 추구하는 동시에 큰 위험을 감수하는 전략으로 언급됩니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="annotation">
+            <h3>주요 용어 설명</h3>
+            <p><span class="annotation-term">DD (Due Diligence):</span> '실사'를 의미하며, 특정 주식에 대한 심층 분석 자료를 뜻합니다.</p>
+            <p><span class="annotation-term">Regard:</span> '바보', '멍청이'를 의미하는 'Retard'를 순화한 표현으로, 커뮤니티 사용자들이 서로를 친근하게 부르는 밈(meme)입니다.</p>
+            <p><span class="annotation-term">YOLO (You Only Live Once):</span> '인생은 한 번뿐'이라는 뜻으로, 전 재산을 특정 주식에 투자하는 매우 공격적인 베팅을 의미합니다.</p>
+            <p><span class="annotation-term">0DTE (Zero Days to Expiration):</span> 만기가 하루도 남지 않은 초단기 옵션을 거래하는 것으로, 매우 높은 위험과 수익률을 동반하는 도박에 가까운 투자 방식입니다.</p>
+            <p><span class="annotation-term">Calls / Puts:</span> 콜옵션(Calls)은 주가 상승에, 풋옵션(Puts)은 주가 하락에 베팅하는 파생상품입니다.</p>
+            <p><span class="annotation-term">Theta Gang:</span> 옵션의 시간 가치(Theta)가 시간이 지남에 따라 감소하는 것을 이용해 수익을 내는 전략을 구사하는 투자자들을 의미합니다. 주로 옵션을 매도하는 포지션을 취합니다.</p>
+            <p><span class="annotation-term">Bag Holder:</span> 주가가 크게 하락했음에도 불구하고 손절매하지 못하고 계속 보유하고 있는 투자자를 조롱하는 표현입니다.</p>
+            <p><span class="annotation-term">Corn (옥수수):</span> 비트코인(BTC)을 지칭하는 은어입니다.</p>
+            <p><span class="annotation-term">JPOW:</span> 제롬 파월(Jerome Powell) 미국 연방준비제도 의장을 의미합니다.</p>
+        </div>
+    </div>
+
+</body>
+</html>
