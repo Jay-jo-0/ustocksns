@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.12.09 AM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3949ab;
+            padding-bottom: 10px;
+        }
+        .stock-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        .stock-card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .stock-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .stock-ticker {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .summary-table td {
+            padding: 12px;
+            border: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+        .summary-table td:first-child {
+            font-weight: bold;
+            background-color: #f8f9fa;
+            width: 30%;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 30px;
+        }
+        li::before {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            font-weight: bold;
+        }
+        .positive li {
+            background-color: #e8f5e9; /* Light green */
+            border-left: 5px solid #4caf50; /* Green */
+        }
+        .positive li::before {
+            content: '▲';
+            color: #4caf50;
+        }
+        .negative li {
+            background-color: #ffebee; /* Light red */
+            border-left: 5px solid #f44336; /* Red */
+        }
+        .negative li::before {
+            content: '▼';
+            color: #f44336;
+        }
+        .neutral li {
+            background-color: #f1f3f5; /* Light gray */
+            border-left: 5px solid #868e96; /* Gray */
+        }
+        .neutral li::before {
+            content: '●';
+            color: #868e96;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .annotation {
+            display: block;
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px dashed #ced4da;
+        }
+        strong {
+            color: #3949ab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.12.09 AM)</h1>
+
+        <!-- Netflix (NFLX) -->
+        <div class="stock-card">
+            <div class="stock-title">Netflix <span class="stock-ticker">NFLX</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>Warner Bros. Discovery(WBD) 인수전에서 Paramount에게 역제안을 받으며 주가 변동성 확대</td></tr>
+                <tr><td>투심</td><td>혼재 (부정적 우세)</td></tr>
+                <tr><td>주요 동향</td><td>인수전 참여로 인한 재무 부담, 규제 불확실성, 경쟁 심화 우려로 주가 하락</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>인수전 패배 시 <strong>$58억의 위약금(break-up fee)</strong>을 받을 수 있다는 점은 긍정적.</li>
+                <li>일부 투자자들은 최근 주가 하락이 과도하며, 현재가 매수 기회라고 판단.</li>
+                <li>인수전에서 발을 빼면 재무적 부담이 줄고, 오히려 주가에 긍정적일 수 있다는 의견.</li>
+            </ul>
+            <ul class="negative">
+                <li>WBD 인수 발표 시 주가 하락, Paramount의 역제안 등장 후에도 추가 하락하는 등 시장 반응이 부정적.</li>
+                <li>Paramount가 더 높은 금액을 제시하며 인수전이 치열해질 경우, Netflix가 <strong>승자의 저주</strong>에 빠질 위험.</li>
+                <li>Paramount의 인수 시도가 Netflix에 더 높은 인수 비용을 지불하게 하려는 '트롤링'이라는 분석.</li>
+                <li>정치적 변수(트럼프 행정부)가 Paramount에 유리하게 작용할 수 있어 인수 성공 가능성에 대한 불확실성 증대.</li>
+                <li>"Better Call Saul을 7번 보는 것 외에 볼 게 없다"며 자체 IP 부족을 지적하는 의견도 존재.</li>
+            </ul>
+            <ul class="neutral">
+                <li>Paramount가 WBD 인수에 성공한 뒤 파산하면, Netflix가 두 회사를 모두 저렴하게 인수할 수 있다는 '4D 체스' 시나리오 언급.</li>
+                <li>Netflix가 이미 WBD 인수가 완료된 것처럼 구독자들에게 이메일을 보낸 것이 성급했다는 지적.</li>
+            </ul>
+        </div>
+
+        <!-- Paramount (PARA/PSKY) -->
+        <div class="stock-card">
+            <div class="stock-title">Paramount <span class="stock-ticker">PARA / PSKY</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>$1,084억 규모의 WBD 적대적 인수 제안으로 시장의 중심에 섬</td></tr>
+                <tr><td>투심</td><td>혼재 (기대감과 우려 공존)</td></tr>
+                <tr><td>주요 동향</td><td>오라클 래리 앨리슨과 중동 자본을 등에 업은 자금력, 정치적 영향력에 대한 기대감으로 주가 상승</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>$30/주, 전액 현금이라는 파격적인 조건은 주주들에게 매력적일 수 있음.</li>
+                <li><strong>트럼프 행정부와의 친분</strong>(래리 앨리슨)을 활용해 규제 당국의 승인을 얻어낼 가능성이 높다는 분석.</li>
+                <li>UFC 중계권 확보 등 미디어 콘텐츠 강화에 대한 기대감으로 콜 옵션 매수 의견 등장.</li>
+            </ul>
+            <ul class="negative">
+                <li>Paramount 자체의 <strong>재무 상태가 좋지 않은데(messy balance sheet)</strong>, 자기 시가총액의 6배가 넘는 회사를 인수하려는 것은 무리수라는 비판.</li>
+                <li>인수에 성공하더라도 막대한 부채로 인해 장기적으로 회사 가치가 파괴될 것이라는 우려.</li>
+                <li>래리 앨리슨의 아들 데이비드 앨리슨을 '재능 없는 금수저(nepo baby)'라 비판하며, 단순히 아버지의 돈으로 미디어 제국을 만들려는 시도라고 폄하.</li>
+                <li>스트리밍 서비스인 Paramount+의 품질이 매우 낮다는 사용자들의 불만.</li>
+            </ul>
+            <ul class="neutral">
+                <li>이번 인수는 사업적 판단보다는 CNN을 장악해 미디어 영향력을 확보하려는 <strong>정치적 목적</strong>이 크다는 분석이 지배적.</li>
+                <span class="annotation"><strong>Nepo baby:</strong> '연고주의(nepotism)'와 '아기(baby)'의 합성어. 부모의 명성이나 부 덕분에 성공한 자녀를 비꼬는 말.</span>
+            </ul>
+        </div>
+        
+        <!-- Warner Bros. Discovery (WBD) -->
+        <div class="stock-card">
+            <div class="stock-title">Warner Bros. Discovery <span class="stock-ticker">WBD</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>Netflix와 Paramount의 인수전 대상으로 떠오르며 주가 급등</td></tr>
+                <tr><td>투심</td><td>긍정적</td></tr>
+                <tr><td>주요 동향</td><td>치열한 인수 경쟁으로 인해 주가가 상승할 것이라는 기대감 형성. "반쯤 먹은 피자를 두고 싸우는 격"이라는 비아냥도 존재.</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>인수 경쟁으로 주가가 $30 이상으로 오를 가능성이 제기되며, 기존 주주들은 차익 실현 기회로 여김.</li>
+                <li>HBO, DC코믹스, 해리포터 등 강력한 IP 포트폴리오의 가치가 재평가받고 있음.</li>
+            </ul>
+            <ul class="negative">
+                <li>AT&T가 $400억 손해를 보고 매각한 회사를 두고 이제 와서 입찰 전쟁이 벌어지는 상황에 대한 의구심.</li>
+                <li>누가 인수하든 결국 소비자에게는 미디어 독점 심화로 이어져 부정적일 것이라는 우려.</li>
+            </ul>
+        </div>
+        
+        <!-- NVIDIA (NVDA) -->
+        <div class="stock-card">
+            <div class="stock-title">NVIDIA <span class="stock-ticker">NVDA</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>미 상무부의 H200 칩 중국 수출 허용 소식</td></tr>
+                <tr><td>투심</td><td>매우 긍정적</td></tr>
+                <tr><td>주요 동향</td><td>중국 시장 재개방에 따른 막대한 매출 증대 기대감으로 주가 급등 및 콜 옵션 베팅 증가.</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>미 행정부가 대중국 수출 통제 완화 기조를 보이면서 <strong>중국 시장이라는 거대한 매출처가 다시 열릴 것</strong>이라는 기대감이 폭발.</li>
+                <li>"젠슨이 이번엔 제대로 된 가슴에 사인했다"는 농담과 함께 CEO 젠슨 황에 대한 긍정적 평가.</li>
+                <li>많은 투자자들이 $200, $250 등 추가 상승을 예상하며 콜 옵션 매수에 동참.</li>
+                <li>"곰들은 끝장났다(ber r fuk)"는 표현이 반복되며 강세장에 대한 확신을 보임.</li>
+            </ul>
+            <ul class="negative">
+                <li>중국이 이미 자국산 칩 사용 데이터센터에 보조금을 지급하는 등 엔비디아 칩 의존도를 낮추려 하고 있어 실제 매출 효과는 기대에 못 미칠 수 있다는 분석.</li>
+                <li>H200은 최신 칩(Blackwell)이 아닌 구형 모델이며, 재고 처리를 위한 것이라는 회의적인 시각도 존재.</li>
+                <li>익명의 소스를 기반으로 한 뉴스에 주가가 급등락하는 등 변동성이 크다는 점에 대한 우려.</li>
+                <span class="annotation"><strong>Ber r fuk:</strong> 'Bears are fucked'의 의도적인 오타. 약세론자들이 큰 손실을 볼 것이라는 조롱의 의미.</span>
+            </ul>
+        </div>
+
+        <!-- Carvana (CVNA) -->
+        <div class="stock-card">
+            <div class="stock-title">Carvana <span class="stock-ticker">CVNA</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>S&P 500 지수 편입 가능성 언급</td></tr>
+                <tr><td>투심</td><td>극단적 긍정 (버블 우려 공존)</td></tr>
+                <tr><td>주요 동향</td><td>S&P 500 편입 시 패시브 자금 유입 기대감으로 주가가 급등. 회사의 펀더멘털과 무관한 투기적 거래가 집중.</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>"S&P 편입이 확정되면 이 시장이 가짜라는 내 논리가 증명된다"며, 비이성적인 급등이 오히려 투자 기회라는 역설적인 주장.</li>
+                <li><strong>"사기(fraud)에 베팅하는 것이 가장 수익성이 높다"</strong>며 회사의 재무 건전성보다 투기적 모멘텀에 집중.</li>
+                <li>투자자들이 몰리며 안전자산처럼 취급되는 현상 발생.</li>
+            </ul>
+            <ul class="negative">
+                <li>"중고차 판매점을 1000억 달러 가치로 평가하는 버블"이라며 펀더멘털에 대한 강한 의구심.</li>
+                <li>$450대에 장기 투자로 매수하는 투자자들을 비판하며, 2년 후를 기억하라는 경고.</li>
+                <li>풋옵션 매수 의견이 등장했으나, "카바나에 풋옵션을 사는 건 효과가 없다"며 숏 스퀴즈 위험을 경고하는 의견도 많음.</li>
+            </ul>
+        </div>
+        
+        <!-- SPDR S&P 500 ETF (SPY) -->
+        <div class="stock-card">
+            <div class="stock-title">SPDR S&P 500 ETF <span class="stock-ticker">SPY</span></div>
+            <table class="summary-table">
+                <tr><td>핵심 이슈</td><td>PPI 보고서 발표 지연 및 연준 금리 결정에 대한 경계감</td></tr>
+                <tr><td>투심</td><td>중립 (단기 하락 베팅 증가)</td></tr>
+                <tr><td>주요 동향</td><td>경제 지표 부재로 인한 불확실성 속에서 횡보. 산타 랠리에 대한 기대와 임박한 조정에 대한 우려가 교차.</td></tr>
+            </table>
+
+            <div class="section-title">주요 투자 의견</div>
+            <ul class="positive">
+                <li>연준의 금리 인하 가능성이 90%에 달하므로 결국 상승할 것이라는 '산타 랠리' 기대감.</li>
+                <li>시장이 지루하게 횡보하고 있지만, 결국 녹색 양봉(green dildo)이 나타날 것이라는 낙관론.</li>
+            </ul>
+            <ul class="negative">
+                <li>10월 생산자물가지수(PPI) 발표가 내년 1월로 연기된 것은 <strong>"숫자가 너무 나빠서"</strong>라는 해석이 지배적.</li>
+                <li>"데이터가 없으면 경제가 나쁘다는 걸 증명할 수 없다"는 냉소적 반응과 함께 시장에 대한 불신 팽배.</li>
+                <li>단기 조정 가능성에 베팅하며 수십만 달러 규모의 풋옵션을 매수하는 공격적인 투자자 등장.</li>
+            </ul>
+            <ul class="neutral">
+                <li>"시장은 현실과 동떨어져 있고, 현실은 상식과 동떨어져 있다"며 현재 시장을 예측 불가능한 영역으로 규정.</li>
+            </ul>
+        </div>
+        
+        <!-- 기타 관심 종목 -->
+        <div class="stock-card">
+            <div class="stock-title">기타 관심 종목</div>
+            <table class="summary-table">
+                <tr><td colspan="2" style="text-align: left; background-color: #fff;">SNS에서 언급된 기타 주요 종목들입니다.</td></tr>
+            </table>
+            
+            <div class="section-title" style="margin-top:0;">IBM (IBM) & Confluent (CFLT)</div>
+            <ul class="neutral">
+                <li><strong>IBM이 CFLT를 $110억에 인수</strong>한다는 소식에 CFLT 주가는 30% 급등, IBM은 하락. IBM은 AI 데이터 수요에 대응하기 위해 클라우드 사업을 강화하는 모습.</li>
+                <li>인수 소식에 대해 "IBM에 인수된 Confluent 직원들에게 애도를 표한다"며 IBM의 경직된 기업 문화를 비판하는 의견.</li>
+            </ul>
+
+            <div class="section-title">주택 건설 관련주 (RKT, ITB, OPEN 등)</div>
+            <ul class="neutral">
+                <li>2026년 주택 시장이 새로운 투자 기회가 될 것이라는 분석. 정부의 개입과 금리 인하 기대감이 주요 요인.</li>
+                <li>Rocket Companies(RKT)는 금리 인하 시 수혜를 볼 종목으로, Opendoor(OPEN)는 고위험 고수익 플레이로 언급.</li>
+                <li>반면, 주택 가격이 여전히 너무 높아 하락 또는 정체가 불가피하며, 이는 주택 건설업체에 악재라는 반론도 강력.</li>
+            </ul>
+            
+            <div class="section-title">SoFi (SOFI)</div>
+            <ul class="neutral">
+                <li>한 투자자가 $46.9만 규모의 SOFI 주식을 이익 실현하며 화제. 단기 조정을 예상하면서도 장기적으로는 여전히 긍정적으로 평가.</li>
+                <li>경영진이 올해 두 차례나 증자 관련 거짓말로 주주들을 기만했다는 비판.</li>
+            </ul>
+            
+            <div class="section-title">Google (GOOGL)</div>
+            <ul class="negative">
+                <li>엔비디아의 중국 수출 허용 소식에 반사적으로 하락. AI 칩 시장에서 엔비디아와의 경쟁 구도가 부각.</li>
+                <li>"투기성 쓰레기"로 지칭되며 Carvana와 같은 '우량주'로 자금이 이동하고 있다는 조롱 섞인 비판.</li>
+            </ul>
+
+            <div class="section-title">Amazon (AMZN)</div>
+            <ul class="negative">
+                <li>"1년 수익률 -1%", "주주 신경 안 쓰는 회사", "거대한 쓰레기" 등 부정적 의견이 압도적. 주가 부진에 대한 투자자들의 불만이 극에 달함.</li>
+            </ul>
+
+            <div class="section-title">Oracle (ORCL)</div>
+            <ul class="neutral">
+                <li>래리 앨리슨 회장이 Paramount의 WBD 인수 자금을 지원하는 '전주(錢主)'로 부상. 그의 정치적 영향력과 자금력이 시장의 핵심 변수로 작용.</li>
+                <li>"아빠의 오라클 돈"이라는 표현으로 앨리슨의 막대한 부가 인수전을 좌우하고 있음을 시사.</li>
+            </ul>
+
+            <div class="section-title">MoonLake (MLTX)</div>
+            <ul class="positive">
+                <li>한 투자자가 이혼으로 집에서 쫓겨난 상황에서도 전 재산을 'YOLO'하며 강력한 매수 의견을 제시. 만성 염증 질환 치료제에 대한 기대감이 매우 높음.</li>
+                 <span class="annotation"><strong>YOLO:</strong> 'You Only Live Once'의 줄임말. 인생은 한 번뿐이라는 뜻으로, 큰 리스크를 감수하고 한 종목에 전 재산을 투자하는 행위를 의미.</span>
+            </ul>
+            
+        </div>
+    </div>
+</body>
+</html>
