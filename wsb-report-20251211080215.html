@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>미국 SNS 주식 관심 동향</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        margin: 0;
+        padding: 15px;
+        background-color: #f0f2f5;
+        color: #1c1e21;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 1.8em;
+        color: #1877f2;
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+    .stock-card {
+        background-color: #ffffff;
+        border: 1px solid #dddfe2;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .stock-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e9ebee;
+        padding-bottom: 10px;
+    }
+    .stock-ticker {
+        font-size: 1.6em;
+        font-weight: 800;
+        color: #1c1e21;
+        margin: 0;
+    }
+    .reason-list {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    .reason-list li {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 12px;
+        padding-left: 25px;
+        position: relative;
+    }
+    .reason-list li::before {
+        content: '•';
+        color: #1877f2;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.2em;
+    }
+    .sentiment {
+        font-weight: 700;
+    }
+    .sentiment-bullish {
+        color: #31a24c;
+    }
+    .sentiment-bearish {
+        color: #e74c3c;
+    }
+    .sentiment-neutral {
+        color: #f39c12;
+    }
+    .annotation {
+        display: block;
+        font-size: 0.8em;
+        color: #606770;
+        margin-top: 8px;
+        padding: 8px;
+        background-color: #f0f2f5;
+        border-radius: 6px;
+    }
+    strong {
+        color: #1c1e21;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(25.12.11 AM)</h1>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Oracle (ORCL)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bearish"><strong>강력한 매도 의견:</strong></span> 실적 발표 후 주가가 시간 외 거래에서 큰 폭으로 하락했습니다. 매출이 예상치를 하회했으며, EPS(주당순이익)는 예상치를 상회했으나 이는 Ampere 지분 매각으로 인한 일회성 이익($2.7B) 때문이라는 분석이 지배적입니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>AI 기대감 실망:</strong></span> AI 데이터센터 관련 매출 기대감이 높았으나, 실제 매출이 기대에 미치지 못하자 투자자들이 실망하며 매도세가 이어졌습니다. 일부 투자자들은 오라클이 AI 경쟁에서 뒤처지고 있다고 평가합니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>콜옵션 투자자 손실:</strong></span> 많은 투자자들이 실적 발표 전 콜옵션을 매수했으나, 주가 하락으로 인해 큰 손실을 입었다는 게시물이 다수 확인됩니다. 일부는 이번 하락을 AI 버블 붕괴의 신호탄으로 해석하기도 합니다.</li>
+                <li><span class="sentiment sentiment-neutral"><strong>과도한 하락 주장:</strong></span> 일부 투자자들은 RPO(잔여이행의무)가 5,230억 달러로 급증한 점을 긍정적으로 평가하며, 시장의 하락 반응이 과도하다고 주장합니다. 다음 날 주가가 반등할 것이라는 기대감도 소수 존재합니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">NVIDIA (NVDA)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-neutral"><strong>가치평가 논쟁:</strong></span> P/E 비율이 다른 산업(예: 스타벅스, 월마트)과 비교되며 고평가 논란이 계속되고 있습니다. 그러나 미래 성장성을 고려하면 오히려 저평가되었다는 의견도 강력하게 맞서고 있습니다. <strong>선도적 P/E 비율 기준으로는 밸류에이션이 합리적</strong>이라는 분석이 많습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>경쟁 심화 우려:</strong></span> 구글의 TPU 등 경쟁 칩의 등장과 AI 시장이 훈련(Training)에서 추론(Inference) 중심으로 이동할 경우, 엔비디아의 독점적 지위가 약화될 수 있다는 우려가 제기됩니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>Oracle 실적 여파:</strong></span> Oracle의 실망스러운 실적 발표 이후, AI 관련주에 대한 투자 심리가 악화되면서 엔비디아 주가도 시간 외 거래에서 동반 하락했습니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>지속적인 수요:</strong></span> 중국 시장에 대한 신규 칩 판매 허용 등 긍정적인 소식에도 주가가 정체되어 있다는 불만이 있으며, AI 시장의 구조적 성장에 대한 믿음으로 여전히 강력한 매수 의견을 가진 투자자들이 많습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Netflix (NFLX)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bearish"><strong>주가 하락 지속:</strong></span> 최근 주가가 지속적으로 하락하며 52주 최저가에 근접하고 있습니다. 투자자들은 주가 하락의 원인을 명확히 파악하지 못해 혼란스러워하며, 일부는 스트리밍 서비스의 성장 둔화를 우려합니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>WBD 인수전 관심:</strong></span> 워너 브라더스 디스커버리(WBD) 인수전 참여가 주가의 주요 변수로 작용하고 있습니다. 인수전에서 철수할 경우 오히려 불확실성 해소로 주가가 급등할 수 있다는 'Win-Win' 시나리오가 제기되며, 이를 근거로 저점 매수에 나서는 투자자들이 있습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>주주가치 훼손 불만:</strong></span> WBD 인수 시도 이후 주가가 계속 하락하자, 경영진의 결정이 주주가치를 훼손했다는 비판이 나오고 있습니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>YOLO 베팅 등장:</strong></span> 주가가 과도하게 하락했다는 판단 하에, 15만 달러 규모의 주식 매수 등 대규모 'YOLO' 베팅이 등장하고 있습니다.</li>
+                <p class="annotation"><strong>YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 특정 종목에 전재산에 가까운 큰 돈을 투자하는 행위를 의미하는 커뮤니티 용어입니다.</p>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">SPDR S&P 500 ETF (SPY)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-neutral"><strong>FOMC 경계감:</strong></span> 연준의 금리 결정 발표를 앞두고 시장 변동성이 극대화될 것으로 예상됩니다. 투자자들은 '0DTE' 옵션을 이용한 초단타 매매에 높은 관심을 보이고 있습니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>금리 인하 및 QE 기대:</strong></span> 연준이 25bp 금리 인하와 함께 국채 매입(QE)을 발표하자, 시장은 이를 유동성 공급 신호로 받아들이며 상승했습니다. 이는 '산타 랠리'의 시작이라는 기대감을 키웠습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>불 트랩 우려:</strong></span> 일부 투자자들은 금리 인하가 오히려 경제가 좋지 않다는 신호이며, 현재의 상승이 일시적인 '불 트랩'일 수 있다고 경고합니다. 이들은 풋옵션을 매수하며 하락에 베팅하고 있습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>경제 데이터 부재:</strong></span> 최근 고용 보고서 등 주요 경제 데이터가 발표되지 않은 상황에서 금리 인하가 결정된 것에 대해 경제가 예상보다 심각한 상황일 수 있다는 우려가 제기됩니다.</li>
+                <p class="annotation"><strong>0DTE (Zero Days to Expiration):</strong> 만기가 당일인 초단기 옵션. 높은 레버리지 효과로 초고수익 혹은 전액 손실이 가능해 투기적 성향이 매우 강합니다.<br><strong>불 트랩 (Bull Trap):</strong> 주가가 하락 추세 중 일시적으로 반등하여 투자자들을 유인한 뒤 다시 급락하는 현상.</p>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Unity (U)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bullish"><strong>대규모 YOLO 베팅:</strong></span> 한 투자자가 80만 달러 이상을 3개월 만기 OTM 콜옵션에 투자한 사실이 큰 화제가 되었습니다. 이 투자자는 초기 투자금 6만 8천 달러를 성공적인 트레이딩을 통해 불렸다고 주장합니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>기술적 분석 기반:</strong></span> 주간 및 월간 차트에서 장기 하락 쐐기형 패턴을 돌파하는 등 기술적으로 매우 긍정적인 신호가 나타나고 있다는 분석이 베팅의 주요 근거로 제시되었습니다. $50 돌파를 중요한 변곡점으로 보고 있습니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>신규 사업 기대감:</strong></span> 새로운 광고 제품인 'Unity Vector AI'와 스퀘어(Square), 언리얼 엔진(Unreal Engine)과의 파트너십이 회사의 펀더멘털을 개선시킬 것이라는 기대감이 높습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>과거 정책 논란:</strong></span> 과거 런타임 수수료 정책으로 개발자들의 신뢰를 잃었던 점이 여전히 리스크로 남아있지만, 경영진 교체 이후 긍정적인 변화가 시작되었다는 반론도 있습니다.</li>
+                <p class="annotation"><strong>OTM (Out of The Money):</strong> 외가격. 콜옵션의 경우 행사가가 현재 주가보다 높은 상태로, 주가가 행사가 이상으로 크게 올라야 이익이 나는 고위험-고수익 옵션입니다.</p>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Alphabet / Google (GOOG/GOOGL)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bullish"><strong>Waymo의 약진:</strong></span> 자회사인 웨이모(Waymo)가 로보택시 시장에서 주 100만 회 운행을 목표로 공격적인 확장을 발표하며, 이는 우버(Uber)와 리프트(Lyft)에 큰 위협으로 작용하고 있습니다.</li>
+                <li><span class="sentiment sentiment-neutral"><strong>주가 반응 미미:</strong></span> 웨이모의 긍정적인 소식에도 불구하고 구글의 주가는 거의 움직이지 않았습니다. 투자자들은 웨이모의 잠재적 수익이 구글 전체 규모에 비해 아직 미미하기 때문이라고 분석합니다.</li>
+                <li><span class="sentiment sentiment-bullish"><strong>AI 시장의 지배자:</strong></span> 우버, 오픈AI, 넷플릭스, 엔비디아 등 거의 모든 기술 분야에서 경쟁자들을 압도할 잠재력을 가진 '최종 보스'로 평가받고 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Uber (UBER) & Lyft (LYFT)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bearish"><strong>Waymo의 위협:</strong></span> 구글의 자율주행 자회사 Waymo가 로보택시 서비스를 영국, 일본을 포함한 20개 이상 도시로 확장할 계획을 발표하자, 두 회사의 주가가 각각 7~8% 하락했습니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>사업 모델 붕괴 우려:</strong></span> Waymo와 같은 자율주행 기술 기업들이 자체 플랫폼을 운영하기 시작하면, 우버는 단순 중개 앱으로 전락하거나 시장에서 도태될 수 있다는 우려가 커지고 있습니다.</li>
+                <li><span class="sentiment sentiment-neutral"><strong>플랫폼 전략 기대:</strong></span> 우버의 CEO가 과거 익스피디아(Expedia) CEO였다는 점을 들어, 우버가 여러 자율주행 회사를 아우르는 '마켓플레이스'가 될 수 있다는 긍정적인 시각도 존재합니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">Palantir (PLTR)</h2>
+            </div>
+            <ul class="reason-list">
+                <li><span class="sentiment sentiment-bullish"><strong>대규모 해군 계약:</strong></span> 미 해군과 4억 4,800만 달러 규모의 잠수함 유지보수 AI 시스템 'Ship OS' 계약을 체결했다는 소식이 전해졌습니다. 이는 회사의 기술력과 정부와의 강력한 파트너십을 보여주는 사례로 평가됩니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>고평가 논란:</strong></span> 작은 규모의 계약 소식에도 불구하고 시가총액이 과도하게 반응한다는 비판이 있습니다. 정부 보조금 없이는 지속 가능하지 않은 사업 모델이라는 지적이 나옵니다.</li>
+                <li><span class="sentiment sentiment-bearish"><strong>보안 우려:</strong></span> AI가 핵잠수함 시스템에 접근하는 것에 대한 보안 우려와 함께, CEO 알렉스 카프의 친이스라엘 성향이 국가 안보 리스크가 될 수 있다는 의견도 제기되었습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-header">
+                <h2 class="stock-ticker">기타 관심 종목</h2>
+            </div>
+            <ul class="reason-list">
+                <li><strong>Tesla (TSLA):</strong> <span class="sentiment sentiment-bearish">자율주행 기술에서 Waymo에 5~10년 뒤처져 있다는 평가를 받으며 주가 고평가에 대한 비판이 이어집니다. 그러나 일부 투자자들은 여전히 'AI/로봇 기업'이라며 맹목적인 믿음을 보입니다.</span></li>
+                <li><strong>Carvana (CVNA):</strong> <span class="sentiment sentiment-bearish">사기성 비즈니스 모델이라는 비판에도 불구하고 주가가 12일 연속 상승하는 등 높은 변동성을 보이고 있습니다. 숏 스퀴즈에 대한 기대와 풋옵션 베팅이 혼재합니다.</span></li>
+                <li><strong>Warner Bros. Discovery (WBD):</strong> <span class="sentiment sentiment-bullish">넷플릭스, 파라마운트 등과의 인수 경쟁이 본격화되면서 주가가 상승했습니다. 인수 가격이 더 오를 것이라는 기대감에 콜옵션 투자자들이 큰 수익을 올리고 있습니다.</span></li>
+                <li><strong>Broadcom (AVGO):</strong> <span class="sentiment sentiment-bullish">실적 발표를 앞두고 있으며, AI 관련주로서 엔비디아의 대안으로 주목받고 있습니다. CEO에 대한 긍정적인 평가와 함께 주가 상승에 대한 기대감이 높습니다.</span></li>
+                <li><strong>금 (Gold) / 은 (Silver):</strong> <span class="sentiment sentiment-bullish">연준의 금리 인하와 양적완화(QE) 재개는 달러 가치 하락으로 이어질 것이라는 전망에 따라, 대표적인 안전자산인 금과 은에 대한 관심이 높아지고 있습니다.</span></li>
+                <li><strong>The Metals Company (TMC):</strong> <span class="sentiment sentiment-bullish">심해 광물 채굴 기업으로, 한 투자자가 5만 달러를 투자해 80만 달러 이상의 수익을 올린 사례가 공유되었습니다. 심층적인 리서치를 통해 확신을 얻었다고 주장합니다.</span></li>
+                <li><strong>Microsoft (MSFT):</strong> <span class="sentiment sentiment-bearish">최근 주가 흐름이 부진하며, 2026년에 실적이 악화될 것이라는 예측과 함께 숏 포지션에 대한 언급이 있었습니다.</span></li>
+                <li><strong>Zoom (ZM):</strong> <span class="sentiment sentiment-bullish">차트상 '상승 삼각형' 패턴이 나타나 기술적 반등이 임박했다는 분석이 있습니다. 마이크로소프트 팀즈(Teams) 대신 줌을 다시 채택하는 기업이 늘고 있다는 일화도 공유되었습니다.</span></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
