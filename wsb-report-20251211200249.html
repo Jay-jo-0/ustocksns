@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(25.12.11 PM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: #f4f4f9;
+            color: #333;
+            word-break: keep-all;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 8px;
+        }
+        .date {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 24px;
+            font-size: 0.9em;
+        }
+        h2 {
+            font-size: 1.6em;
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .summary-card {
+            background-color: #eaf2f8;
+            border-left: 5px solid #3498db;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .summary-card p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e0e0e0;
+        }
+        .stock-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .ticker {
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .sentiment {
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 15px;
+            text-transform: uppercase;
+        }
+        .bullish { background-color: #2ecc71; color: white; }
+        .bearish { background-color: #e74c3c; color: white; }
+        .mixed { background-color: #f1c40f; color: #333; }
+        .neutral { background-color: #95a5a6; color: white; }
+        .reason-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+        .reason-list li {
+            margin-bottom: 14px;
+            line-height: 1.6;
+            padding-left: 22px;
+            position: relative;
+        }
+        .reason-list li::before {
+            content: '🔹';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        .reason-list strong {
+            color: #2980b9;
+            font-size: 1.05em;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 8px;
+            border-left: 3px solid #bdc3c7;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>미국 SNS 주식 관심 동향</h1>
+    <p class="date">25.12.11 PM</p>
+
+    <h2>주요 시장 동향 요약</h2>
+    <div class="summary-card">
+        <p>미 연준(Fed)의 <strong>25bp 금리 인하</strong> 및 <strong>국채 매입(QE) 재개</strong> 소식으로 시장에 대한 낙관론과 비관론이 엇갈리고 있습니다. 투자자들은 금리 인하가 시장 유동성을 공급해 증시에 긍정적일 것으로 기대하면서도, 동시에 경기 둔화의 신호이자 인플레이션을 다시 자극할 수 있다는 우려를 표하고 있습니다. 특히 <strong>오라클(ORCL)의 부진한 실적</strong>이 'AI 버블'에 대한 경고 신호로 해석되면서 기술주 전반에 대한 불안감이 커졌고, 이는 시장의 변동성을 증폭시켰습니다.</p>
+    </div>
+
+    <h2>주요 관심 종목</h2>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">ORCL</span>
+            <span>Oracle</span>
+            <span class="sentiment bearish" style="margin-left: auto;">매우 부정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>부정적인 실적 발표:</strong> 예상치를 하회한 매출과 가이던스로 인해 주가가 시간 외 거래에서 10% 이상 급락했습니다. 이는 시장 전반의 투자 심리를 크게 위축시키는 주요 원인으로 작용했습니다.</li>
+            <li><strong>재무 건전성 우려:</strong> 현금 흐름(FCF)이 급격히 악화되고 있으며, 유동부채가 유동자산을 초과하는 등 재무 구조에 대한 불안감이 제기되었습니다. 또한 높은 부채비율(4.53)이 경쟁사(NVDA 0.09, GOOG 0.11)와 비교되며 리스크로 부각되었습니다.</li>
+            <li><strong>이익의 착시 효과:</strong> 발표된 순이익 중 상당 부분이 자회사(Ampere) 지분 매각으로 발생한 일회성 이익으로, 이를 제외할 경우 주당순이익(EPS)이 시장 예상치를 밑돈 것으로 분석되었습니다.</li>
+            <li><strong>'AI 버블'의 첫 희생양?:</strong> AI 데이터센터 사업에 대한 큰 기대감과 달리 실제 소프트웨어 라이선스 매출은 전년 대비 감소했습니다. 이로 인해 오라클이 과열된 AI 기대감의 첫 번째 희생양이 될 수 있다는 비관론이 확산되고 있습니다.</li>
+            <li><strong>투자자들의 부정적 평가:</strong> 많은 투자자들이 오라클의 제품과 비즈니스 모델(고객을 비싼 계약에 묶어두는 방식)에 대해 강한 불만을 표현하며, 주가 하락을 예상하는 '풋 옵션' 매수와 함께 회사의 몰락을 기원하는 분위기가 형성되었습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">NFLX</span>
+            <span>Netflix</span>
+            <span class="sentiment mixed" style="margin-left: auto;">혼재 (저가 매수 vs 추가 하락)</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>주가 급락에 따른 저가 매수 유입:</strong> 최근 주가가 30% 이상 하락하자, 이를 과매도로 판단한 투자자들이 대규모 'YOLO' 베팅에 나서고 있습니다. 주식 및 콜옵션을 매수하며 반등을 기대하는 모습입니다.</li>
+            <li><strong>워너 브라더스(WBD) 인수전:</strong> 워너 브라더스 인수전에 뛰어든 것이 주가 변동의 핵심 요인입니다. 인수 성공 시 시너지 효과를 기대할 수 있지만, 실패하거나 인수 비용이 과도할 경우 재무적 부담이 될 수 있다는 불확실성이 존재합니다. 일부 투자자들은 인수전에서 철수하는 것이 오히려 주가에 호재가 될 것이라 보고 있습니다.</li>
+            <li><strong>콘텐츠 경쟁력 및 구독자 증가 둔화 우려:</strong> '기묘한 이야기' 등 기대작이 있지만, 전반적인 콘텐츠의 질 하락과 계정 공유 단속 이후 구독자 증가세가 둔화될 수 있다는 우려가 주가 하락의 배경으로 지적됩니다.</li>
+        </ul>
+        <p class="annotation">
+            <strong>*YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 큰 위험을 감수하고 특정 종목에 모든 자산을 투자하는 매우 공격적인 투자 방식을 의미합니다.
+        </p>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">NVDA</span>
+            <span>Nvidia</span>
+            <span class="sentiment mixed" style="margin-left: auto;">가치 평가 논쟁</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>고평가 vs 저평가 논쟁:</strong> 현재 주가수익비율(P/E)을 두고 투자자들 사이에서 격렬한 논쟁이 벌어지고 있습니다. 일부는 다른 산업(소매업, 식음료)과 비교하며 고평가라고 주장하는 반면, 다른 일부는 독점적인 기술(CUDA)과 폭발적인 성장률을 고려할 때 오히려 저평가되었다고 반박합니다.</li>
+            <li><strong>긍정적 전망 (저평가론):</strong> AI 시장의 지배적 위치, 지속적인 매출 성장, 높은 마진을 근거로 추가 상승 여력이 충분하다고 보는 시각입니다. 약간의 주가 하락에도 적극적으로 매수하려는 움직임이 관찰됩니다.</li>
+            <li><strong>부정적 전망 (고평가론):</strong> 오라클의 실적 부진이 AI 산업 전반의 지출 둔화 신호일 수 있다는 우려가 있습니다. 또한, AMD나 구글(TPU) 등 경쟁사의 부상으로 엔비디아의 독점적 지위와 높은 마진이 위협받을 수 있다는 분석도 제기됩니다.</li>
+        </ul>
+    </div>
+    
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">GOOG/GOOGL</span>
+            <span>Alphabet (Google)</span>
+            <span class="sentiment bullish" style="margin-left: auto;">긍정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>자율주행 자회사(Waymo)의 약진:</strong> 웨이모가 로보택시 서비스를 영국, 일본 등 해외로 확장하고 주간 운행 100만 회를 목표로 한다는 소식에 큰 기대를 받고 있습니다. 이는 경쟁사인 우버(UBER)와 리프트(LYFT)에 직접적인 위협으로 작용하며, 구글의 새로운 성장 동력으로 부상하고 있습니다.</li>
+            <li><strong>AI 시장에서의 경쟁력:</strong> 오라클 쇼크 이후, 투자자들은 구글의 AI 기술(Gemini, TPU)을 더욱 신뢰하는 분위기입니다. 구글이 AI 경쟁에서 결국 승리할 것이며, 다른 AI 관련주들의 대안이 될 수 있다는 의견이 많습니다.</li>
+            <li><strong>안정적인 대안으로 부각:</strong> 오라클과 같은 불안정한 기술주 대신, 재무적으로 건전하고 다각화된 사업 포트폴리오를 가진 구글을 매수해야 한다는 주장이 힘을 얻고 있습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">PLTR</span>
+            <span>Palantir Technologies</span>
+            <span class="sentiment bullish" style="margin-left: auto;">긍정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>미 해군과의 대규모 계약:</strong> 미 해군과 4억 4,800만 달러 규모의 잠수함 유지보수 AI 시스템('Ship OS') 계약을 체결했다는 소식이 주가에 대한 기대감을 높이고 있습니다.</li>
+            <li><strong>정부 계약 기반의 안정성:</strong> 회사의 주 수입원이 정부 보조금 및 계약이라는 점이 안정적인 성장 기반으로 평가받고 있습니다. 다만, 일각에서는 이것이 오히려 민간 시장에서의 경쟁력 부족을 의미한다고 비판하기도 합니다.</li>
+            <li><strong>유명 투자자의 숏 포지션:</strong> 마이클 버리가 풋옵션을 매수했다는 사실이 언급되었으나, 최근 주가 상승으로 인해 그의 예측이 틀렸다는 조롱 섞인 반응이 나오고 있습니다.</li>
+        </ul>
+    </div>
+
+    <h2>기타 언급 종목</h2>
+    
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">UBER/LYFT</span>
+            <span class="sentiment bearish" style="margin-left: auto;">부정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>구글 웨이모의 위협:</strong> 웨이모의 로보택시 서비스 확장이 두 회사의 비즈니스 모델을 근본적으로 위협할 '우버 킬러'로 인식되면서 주가가 동반 하락했습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">CVNA</span>
+            <span>Carvana</span>
+            <span class="sentiment mixed" style="margin-left: auto;">혼재 (과열 vs 추가 상승)</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>주가 과열 논란:</strong> 2023년 이후 주가가 100배 이상 상승하는 등 비정상적인 급등세를 보였습니다. 많은 투자자들이 펀더멘털과 무관한 거품이라고 판단하며 풋옵션 매수 등 숏 베팅에 나서고 있습니다.</li>
+            <li><strong>S&P 500 편입 이슈:</strong> S&P 500 지수 편입을 앞두고 있어, 패시브 펀드의 자금 유입으로 인해 단기적으로 주가가 더 상승할 수 있다는 기대감도 존재합니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">WBD</span>
+            <span>Warner Bros. Discovery</span>
+            <span class="sentiment bullish" style="margin-left: auto;">긍정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>인수전으로 인한 주가 상승:</strong> 넷플릭스(NFLX)와 파라마운트(PSKY) 간의 인수 경쟁이 벌어지면서 주가 및 콜옵션 가격이 급등했습니다. 투자자들은 인수 경쟁이 계속되기를 기대하고 있습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">MT</span>
+            <span>ArcelorMittal</span>
+            <span class="sentiment bullish" style="margin-left: auto;">긍정적</span>
+        </div>
+        <ul class="reason-list">
+            <li><strong>상세 분석(DD) 게시물 등장:</strong> 12년 만의 최고가를 경신하는 기술적 분석과 함께, 꾸준한 자사주 매입, 미중 무역 갈등의 수혜, 우크라이나 재건 사업 기대감 등을 근거로 강력한 매수 추천 의견이 제시되었습니다.</li>
+        </ul>
+    </div>
+
+     <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">기타 종목 리스트</span>
+            <span class="sentiment bullish" style="margin-left: auto;">대체로 긍정적</span>
+        </div>
+        <p>한 투자자가 장기적으로 우상향 추세를 보이는 종목 중 현재 저점에 있는 주식 목록을 공유했습니다. 각 종목에 대한 긍정적 분석 이유는 다음과 같습니다.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>티커</th>
+                    <th>분석 요약</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>TROX</td><td>이산화티타늄 수요 증가 수혜</td></tr>
+                <tr><td>ACN</td><td>디지털 전환 및 AI 도입 가속화</td></tr>
+                <tr><td>ADP</td><td>안정적인 반복 수익 모델 (급여/HR)</td></tr>
+                <tr><td>AJG</td><td>강력한 반복 보험 수익</td></tr>
+                <tr><td>BC</td><td>보트 모터 등 우수한 실적</td></tr>
+                <tr><td>BIIB</td><td>신경학 파이프라인 및 알츠하이머 신약 기대</td></tr>
+                <tr><td>BRO</td><td>보험 분야에서의 꾸준한 마진 확장</td></tr>
+                <tr><td>CHDN</td><td>온라인 베팅 및 켄터키 더비 성장</td></tr>
+                <tr><td>CHTR</td><td>광대역 및 모바일 성장, 강력한 현금 흐름</td></tr>
+                <tr><td>CLX</td><td>대표적인 소비재, 현재 저평가 상태</td></tr>
+                <tr><td>CMG</td><td>강력한 브랜드와 높은 마진</td></tr>
+                <tr><td>CPRT</td><td>폐차 경매 플랫폼 시장 지배</td></tr>
+                <tr><td>DECK</td><td>HOKA, UGG 브랜드의 지속적인 인기</td></tr>
+                <tr><td>FDS</td><td>구독 기반 분석 플랫폼 확장</td></tr>
+                <tr><td>IT</td><td>대형 금융기관 대상 구독 기반 리서치 모델</td></tr>
+                <tr><td>KMX</td><td>중고차 시장에서의 가격 경쟁력</td></tr>
+                <tr><td>LIN</td><td>산업용 가스 및 청정 에너지 프로젝트</td></tr>
+                <tr><td>MMC</td><td>보험 중개 컨설팅 분야의 견고함</td></tr>
+                <tr><td>MOH</td><td>대체 불가능한 Medicaid 제공업체</td></tr>
+                <tr><td>PAYX</td><td>대체하기 어려운 B2B 급여/HR 구독 서비스</td></tr>
+                <tr><td>PSN</td><td>사이버 보안, 국방 및 인프라 분야의 강자</td></tr>
+                <tr><td>REGN</td><td>블록버스터 바이오 의약품(Dupixent)의 높은 수익</td></tr>
+                <tr><td>RSG</td><td>강력한 가격 결정력을 가진 폐기물 관리 사업</td></tr>
+                <tr><td>STLA</td><td>높은 마진의 미국 자동차 브랜드(닷지 램 등)</td></tr>
+                <tr><td>STZ</td><td>미국 내 1위 맥주(Modelo) 브랜드 보유</td></tr>
+                <tr><td>TEAM</td><td>클라우드 개발 분야의 선두 주자</td></tr>
+                <tr><td>TRI</td><td>AI를 통한 뉴스/정보 생성 분야에서 저평가</td></tr>
+                <tr><td>VRSK</td><td>보험 산업에 필수적인 컴퓨팅 플랫폼</td></tr>
+                <tr><td>WGO</td><td>예상 외의 꾸준한 매출 성장</td></tr>
+                <tr><td>WIX</td><td>필수적인 비즈니스 웹사이트 구독 플랫폼</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="stock-card">
+        <div class="stock-title">
+            <span class="ticker">단기 언급 종목</span>
+        </div>
+        <ul class="reason-list">
+             <li><strong>MSFT (마이크로소프트):</strong> 오라클의 대안으로 언급되나, 일부는 AI 투자 비용에 대한 우려와 함께 주가가 정체되어 있다고 평가.</li>
+             <li><strong>AVGO (브로드컴):</strong> 오라클 이후 다음 실적 발표가 예정된 주요 기술주로, 시장의 불안감이 전이될지 주목됨.</li>
+             <li><strong>META (메타):</strong> 주가 하락세가 지속되자 투자자들의 불만이 커지고 있음.</li>
+             <li><strong>AMZN (아마존):</strong> 주가 부진에 실망한 콜옵션 투자자들의 손실 인증이 이어짐.</li>
+             <li><strong>TSLA (테슬라):</strong> 웨이모의 약진에도 불구하고 주가가 하락하지 않는 현상에 대한 의문 제기. 컬트적인 지지 기반이 주가를 방어한다는 분석.</li>
+             <li><strong>QQQ (나스닥 100 ETF):</strong> 한 투자자가 10만 달러 규모의 풋옵션을 매수하며 시장 하락에 베팅, 다른 투자자들의 이목을 집중시킴.</li>
+             <li><strong>RKLB / ASTS / PL (우주 관련주):</strong> Rocket Lab, AST SpaceMobile은 '스토리' 기반의 투기적 성격이 강한 반면, Planet Labs는 실제 수익 모델이 있음에도 주목받지 못한다는 분석.</li>
+             <li><strong>ADBE (어도비):</strong> 실적 발표 후 주가가 +5%와 -5%를 오가는 극심한 변동성을 보임.</li>
+             <li><strong>GOLD/SILVER (금/은):</strong> 달러 약세와 인플레이션 헤지 수단으로 금과 은에 대한 관심이 다시 증가하고 있음.</li>
+        </ul>
+    </div>
+</body>
+</html>
