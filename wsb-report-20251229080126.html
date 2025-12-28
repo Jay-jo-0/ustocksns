@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: #000;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #000;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .stock-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #005A9C;
+            margin: 0 0 15px 0;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .stock-detail {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .stock-detail ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .stock-detail li {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .emphasis {
+            font-weight: bold;
+            color: #D2042D;
+        }
+        .status-box {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .positive { background-color: #28a745; }
+        .negative { background-color: #dc3545; }
+        .neutral { background-color: #6c757d; }
+        .warning { background-color: #ffc107; color: #000; }
+        .annotation {
+            font-size: 0.8em;
+            color: #555;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">미국 SNS 주식 관심 동향(25.12.29 AM)</div>
+
+        <div class="stock-card">
+            <div class="stock-title">SLV (iShares Silver Trust)</div>
+            <div class="stock-detail">
+                <span class="status-box positive">긍정적</span> <span class="status-box warning">경고</span>
+                <ul>
+                    <li>한 투자자가 <strong>92%의 높은 수익률</strong>을 인증하며 커뮤니티의 폭발적인 관심을 받았습니다.</li>
+                    <li>일부 투자자들은 콜옵션 매수를 통해 '감마 스퀴즈'가 발생, 가격이 단기적으로 폭등할 수 있다는 기대를 보였습니다.</li>
+                    <li>반면, 대형은행(Bullion Banks)들이 은 가격을 공매도하는 데 SLV를 이용하기 때문에 <span class="emphasis">투자자에게 불리하게 작용할 수 있다</span>는 중요한 경고도 나왔습니다.</li>
+                    <li>연초 대비 170% 이상 급등했기 때문에, 곧 큰 폭의 조정이 올 것이라는 예측도 다수 제기되었습니다.</li>
+                </ul>
+                <div class="annotation">
+                    <strong>* 감마 스퀴즈(Gamma Squeeze):</strong> 옵션 매수세가 몰릴 때, 옵션 판매자들이 손실을 막기 위해 기초자산을 대량 매수하면서 주가가 단기 폭등하는 현상입니다.<br>
+                    <strong>* Bullion Banks:</strong> 금, 은 등 귀금속을 대규모로 거래하며 시장 가격에 큰 영향을 미치는 투자은행들을 의미합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">PSLV (Sprott Physical Silver Trust)</div>
+            <div class="stock-detail">
+                <span class="status-box positive">긍정적 (대안)</span>
+                <ul>
+                    <li>SLV의 강력한 대안으로 추천되었습니다.</li>
+                    <li>PSLV는 공매도에 사용되지 않고 <span class="emphasis">실물 은을 직접 보관</span>하기 때문에, 은 가격 상승의 혜택을 더 직접적으로 받을 수 있다는 의견이 지배적입니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">SILJ (Amplify Junior Silver Miners ETF)</div>
+            <div class="stock-detail">
+                <span class="status-box positive">매우 긍정적 (장기)</span>
+                <ul>
+                    <li>2026년 이후 <span class="emphasis">SLV보다 훨씬 높은 수익률</span>을 보일 것으로 기대되는 주니어 은 채굴 기업 ETF입니다.</li>
+                    <li>은 가격 상승 시 채굴 기업들의 이익이 막대해지는 레버리지 효과를 볼 수 있다는 분석입니다.</li>
+                    <li>최근 은 가격 급등이 아직 SILJ 가격에 완전히 반영되지 않아 <span class="emphasis">상승 잠재력이 높다</span>는 의견이 있었습니다.</li>
+                    <li>다만, 옵션 거래 시 매수-매도 호가 차이(스프레드)가 크고 유동성이 낮을 수 있다는 점이 단점으로 지적되었습니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">PAAS (Pan American Silver Corp.)</div>
+            <div class="stock-detail">
+                <span class="status-box positive">긍정적</span>
+                <ul>
+                    <li>ETF 대신 직접 투자할 만한 <span class="emphasis">개별 은 채굴 기업</span>으로 언급되었습니다.</li>
+                    <li>금 채굴 기업이라는 오해에 대해, 3분기 보고서를 근거로 은 생산량이 훨씬 많은 주력 은 채굴 기업임이 강조되었습니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">AGQ, SIL (은 관련 ETF)</div>
+            <div class="stock-detail">
+                <span class="status-box neutral">중립적 (대안)</span>
+                <ul>
+                    <li>은에 투자하는 또 다른 대안으로 PSLV와 함께 언급되었습니다.</li>
+                    <li>특히 <strong>AGQ (ProShares Ultra Silver)</strong>는 은 가격을 2배로 추종하는 레버리지 상품으로, 더 높은 변동성을 추구하는 투자자들에게 거론되었습니다.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">GLD (SPDR Gold Shares)</div>
+            <div class="stock-detail">
+                <span class="status-box neutral">중립적 (대안)</span>
+                <ul>
+                    <li>은(Silver)의 높은 변동성이 부담스러운 투자자들에게 대안으로 제시되었습니다.</li>
+                    <li>금은 아직 은만큼 가격이 오르지 않았고, 옵션의 내재 변동성(IV)이 낮아 <span class="emphasis">상대적으로 저렴하게 콜옵션에 진입</span>할 수 있다는 장점이 언급되었습니다.</li>
+                </ul>
+                 <div class="annotation">
+                    <strong>* 내재 변동성(Implied Volatility, IV):</strong> 옵션 가격에 반영된 미래 가격 변동성에 대한 시장의 기대치로, IV가 높으면 옵션 가격이 비싸집니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">NVDA, TSLA, INTC, Gold(금)</div>
+            <div class="stock-detail">
+                <span class="status-box negative">부정적 (투자 실패 사례)</span>
+                <ul>
+                    <li>한 투자자가 위 주식들의 옵션 거래로 큰 손실을 본 사례로 집중 조명되었습니다.</li>
+                    <li>특히 금(Gold) 가격이 사상 최고치(ATH)를 경신하는 상황에서 <span class="emphasis">콜옵션으로 손실을 본 것</span>이 큰 화제가 되었습니다.</li>
+                    <li>TSLA는 옵션이 내가격(ITM) 상태임에도 손실을 기록, 이는 높은 프리미엄 지불과 시간 가치 하락의 위험성을 보여주는 사례로 분석되었습니다.</li>
+                </ul>
+                <div class="annotation">
+                    <strong>* 사상 최고치(All-Time High, ATH):</strong> 주가가 역사상 가장 높았던 가격입니다.<br>
+                    <strong>* 내가격(In The Money, ITM):</strong> 옵션이 행사 시 이익이 발생하는 상태. 하지만 옵션 매수 가격(프리미엄)이 더 높으면 최종적으로 손실을 볼 수 있습니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">SPY (SPDR S&P 500 ETF Trust)</div>
+            <div class="stock-detail">
+                <span class="status-box negative">부정적 (투자 실패 사례)</span>
+                <ul>
+                    <li>한 투자자가 거의 동일한 만기의 <span class="emphasis">콜옵션과 풋옵션을 모두 보유하고 둘 다 손실</span>을 기록한 사례입니다.</li>
+                    <li>주가가 예상만큼 크게 움직이지 않으면 양방향 포지션 모두 시간 가치 하락(세타 붕괴)으로 손실을 본다는 것을 보여주는 전형적인 옵션 초보자의 실수로 지적되었습니다.</li>
+                </ul>
+                <div class="annotation">
+                    <strong>* 시간 가치 하락(Theta Decay):</strong> 다른 조건이 동일할 때, 옵션은 만기가 가까워질수록 시간이 흐르는 것만으로도 가치가 하락하는 현상입니다.
+                </div>
+            </div>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">CIFR, RKLB</div>
+            <div class="stock-detail">
+                <span class="status-box positive">긍정적</span>
+                <ul>
+                    <li>한 투자자가 <span class="emphasis">연초 대비(YTD) 70% 수익률</span>을 달성한 포트폴리오의 주요 종목으로 공개했습니다.</li>
+                    <li><strong>CIFR (Cipher Mining Inc.)</strong>과 <strong>RKLB (Rocket Lab USA, Inc.)</strong> 두 종목에 대해 2026년에도 지속적인 상승을 기대하는 긍정적인 전망을 내비쳤습니다.</li>
+                </ul>
+                 <div class="annotation">
+                    <strong>* YTD (Year-to-Date):</strong> 연초부터 현재까지의 기간을 의미합니다.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
