@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            word-break: keep-all;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #000;
+        }
+        .header p {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin: 5px 0 0 0;
+        }
+        .stock-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .stock-container h2 {
+            font-size: 1.7em;
+            color: #0052cc;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0052cc;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+        li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: #28a745;
+        }
+        strong {
+            color: #d63384;
+            font-weight: 600;
+        }
+        .annotation {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-top: 8px;
+            padding-left: 25px;
+            border-left: 3px solid #e0e0e0;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 10px 14px;
+            border: 1px solid #dee2e6;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+        .positive { color: #28a745; }
+        .negative { color: #dc3545; }
+        .neutral { color: #6c757d; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p>26.01.01 PM</p>
+    </div>
+
+    <div class="stock-container">
+        <h2>은 (Silver, SLV)</h2>
+        <ul>
+            <li><strong>강력한 랠리 후 급락:</strong> 연말에 AI 및 에너지 수요 증가에 따른 <strong>실물 수요</strong>를 근거로 강력한 랠리를 보였으나, 이후 큰 폭으로 하락하여 많은 투자자들에게 손실을 안겼습니다. '산타 랠리'가 아닌 '사탄 랠리'였다는 조롱이 많습니다.</li>
+            <li><strong>변동성의 원인:</strong> CME(시카고상업거래소)의 <strong>증거금 인상</strong>과 연말 아시아 시장 휴장이 하락의 주요 원인으로 꼽혔습니다. 일부 투자자들은 이를 기관의 '개미 털기'로 해석하며 재반등을 기대하고 있습니다.</li>
+            <li><strong>투자자 반응:</strong> 랠리 최고점에서 FOMO(소외되는 것에 대한 두려움)로 매수한 투자자들의 손실 인증이 이어졌으며, 일부는 선물 거래의 위험성을 경고했습니다. 반면, 하락을 기회로 보고 추가 매수나 저점 매수를 노리는 의견도 존재합니다.</li>
+        </ul>
+        <p class="annotation"><strong>CME 증거금 인상:</strong> 선물 거래에 필요한 최소한의 보증금을 올리는 조치. 이로 인해 투자자들은 포지션을 유지하기 위해 추가 자금을 넣거나 포지션을 청산해야 하므로, 가격 변동성이 커질 수 있습니다.</p>
+    </div>
+
+    <div class="stock-container">
+        <h2>NVIDIA (NVDA)</h2>
+        <ul>
+            <li><strong>AI 랠리 주도주:</strong> 2025년 AI 랠리의 핵심 종목으로 언급되며, 많은 투자자들이 큰 수익을 얻었지만 동시에 높은 변동성으로 손실을 본 사례도 많습니다.</li>
+            <li><strong>중국의 H200 칩 수요:</strong> 로이터 통신 기사를 인용하며, 중국 기술 기업들이 2026년까지 <strong>2백만 개 이상의 H200 칩</strong>을 주문했으나 엔비디아의 재고는 70만 개에 불과하다는 소식이 강세 요인으로 작용했습니다.</li>
+            <li><strong>CES 2026 기대감:</strong> 일부 투자자들은 CES(국제전자제품박람회)에서의 새로운 발표를 기대하며 콜옵션을 매수했습니다. 그러나 이미 로드맵이 알려져 있어 큰 촉매제가 되기 어렵다는 회의적인 시각도 존재합니다.</li>
+            <li><strong>기술적 분석:</strong> 일부 투자자들은 주가가 <strong>$190 저항선</strong>에서 강하게 밀리는 것을 보고, 하락 추세를 의미하는 '헤드 앤 숄더' 패턴이 형성되었다며 $170대까지 하락할 수 있다고 경고했습니다.</li>
+        </ul>
+        <p class="annotation"><strong>헤드 앤 숄더(Head and Shoulders):</strong> 주가 차트 패턴 중 하나로, 세 개의 봉우리가 형성되며 가운데 봉우리가 가장 높은 모양. 일반적으로 하락 추세로의 전환을 예고하는 신호로 해석됩니다.</p>
+    </div>
+
+    <div class="stock-container">
+        <h2>AST SpaceMobile (ASTS)</h2>
+        <ul>
+            <li><strong>2026년 최고 유망주 1위:</strong> SNS 내 투표에서 2026년 가장 기대되는 주식 1위로 선정되었습니다. <strong>위성을 이용한 통신 서비스</strong>의 완전한 상용화가 핵심 성장 동력으로 꼽힙니다.</li>
+            <li><strong>강력한 팬덤(컬트):</strong> 충성도 높은 투자자 커뮤니티를 보유하고 있으며, 이들은 ASTS가 다른 9개 유망주를 합친 것보다 더 높은 성과를 낼 것이라고 주장합니다.</li>
+            <li><strong>성공에 대한 기대감:</strong> MNO(이동통신망사업자)와의 파트너십을 통해 전 세계 <strong>10억 명 이상의 잠재 사용자</strong>를 확보했으며, 국방 분야로의 확장 가능성도 제기됩니다. 기술 시연이 성공적으로 이루어져 투자자들의 신뢰를 얻고 있습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-container">
+        <h2>Rocket Lab (RKLB)</h2>
+        <ul>
+            <li><strong>2026년 최고 유망주 2위:</strong> SNS 투표에서 2위를 차지했으며, 우주 산업에 대한 높은 관심을 보여줍니다.</li>
+            <li><strong>Neutron 로켓 데뷔:</strong> 2026년으로 예정된 <strong>중형 발사체 'Neutron'의 성공적인 데뷔</strong>가 주가 상승의 핵심 촉매제로 기대됩니다. 이는 SpaceX의 독점에 도전하는 중요한 이정표가 될 수 있습니다.</li>
+            <li><strong>컬트적 인기:</strong> ASTS와 마찬가지로 매우 열성적인 투자자 그룹을 보유하고 있으며, 이들은 종종 다른 우주 관련 주식(특히 ASTS)에 대해 비판적인 태도를 보입니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-container">
+        <h2>Amazon (AMZN)</h2>
+        <ul>
+            <li><strong>실망스러운 주가 흐름:</strong> 2025년 한 해 동안 주가가 $300에 도달하지 못하는 등 <strong>기대 이하의 성과</strong>를 보였다는 비판이 많습니다. 일부 투자자들은 현 CEO인 앤디 재시의 교체를 요구하며, 제프 베조스의 복귀를 원하고 있습니다.</li>
+            <li><strong>성장 동력:</strong> 아마존 웹 서비스(AWS)와 구글 클라우드의 성장을 기반으로 <strong>연 15-25%의 안정적인 상승</strong>이 기대되는 '포트폴리오의 밸러스트(안정추)' 역할로 언급됩니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-container">
+        <h2>Tesla (TSLA)</h2>
+        <ul>
+            <li><strong>Cybercab 기대감:</strong> 2026년의 핵심 동력으로 '사이버캡(로보택시)'의 성공적인 상용화 여부가 꼽힙니다. 엘론 머스크의 FSD(완전자율주행) 진행 상황에 따라 주가가 크게 변동할 것으로 예상됩니다.</li>
+            <li><strong>Cybertruck 판매량 논란:</strong> 4분기 사이버트럭 판매량 2만대 중 19,600대를 <strong>SpaceX가 구매</strong>했다는 내용이 조롱의 대상이 되었습니다.</li>
+            <li><strong>밈 주식 평가:</strong> 여전히 '밈 주식'으로 간주되며, 펀더멘털보다는 투자자들의 심리에 따라 주가가 움직이는 경향이 강하다는 평가를 받습니다.</li>
+        </ul>
+        <p class="annotation"><strong>밈 주식(Meme Stock):</strong> 온라인 커뮤니티의 관심과 입소문을 통해 주가가 펀더멘털과 무관하게 급등하는 주식을 말합니다.</p>
+    </div>
+
+    <div class="stock-container">
+        <h2>Robinhood (HOOD)</h2>
+        <ul>
+            <li><strong>5배 수익 후 고민:</strong> 2년 간의 보유 끝에 5배의 수익을 낸 투자자가 이익 실현과 추가 매수 사이에서 고민하는 글이 올라왔습니다.</li>
+            <li><strong>긍정적 전망:</strong> 캐나다, 유럽 등 <strong>신규 시장 진출</strong>, 예측 시장(prediction markets)에서의 지배력, 주식 토큰화 등 새로운 서비스를 통해 2026년에도 성장을 이어갈 것이라는 긍정적인 전망이 많습니다.</li>
+            <li><strong>부정적 전망:</strong> 암호화폐 시장의 잠재적 위기, 경쟁 심화, 지난달 발표된 일부 우려스러운 지표 등을 근거로 하락 가능성을 제기하는 의견도 있습니다.</li>
+        </ul>
+    </div>
+
+    <div class="stock-container">
+        <h2>SPDR S&P 500 ETF (SPY)</h2>
+        <ul>
+            <li><strong>'산타 랠리'의 부재:</strong> 연말 주가 상승 현상인 '산타 랠리'에 대한 기대감이 높았으나, 실제로는 시장이 하락하거나 보합세를 보여 많은 투자자들이 실망했습니다. "내년부터 산타 랠리 언급을 금지하자"는 의견이 많았습니다.</li>
+            <li><strong>연말 목표가 실패:</strong> CNBC 등 주류 미디어에서 예측했던 <strong>연말 S&P 500 지수 6950-7000 도달에 실패</strong>하면서, 이를 믿고 투자한 투자자들의 불만이 터져 나왔습니다.</li>
+            <li><strong>달러 가치 하락 고려:</strong> S&P 500 지수가 연간 15% 상승했지만, 달러 가치가 12% 하락했기 때문에 실질적인 상승률은 3%에 불과하다는 분석이 제기되었습니다.</li>
+        </ul>
+    </div>
+    
+    <div class="stock-container">
+        <h2>기타 주목할 만한 주식</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>종목명 (티커)</th>
+                        <th>주요 내용 및 투자자 반응</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nebius (NBIS)</strong></td>
+                        <td class="positive">AI 분야의 다크호스로, MS와의 GPU 서비스 계약이 큰 호재. 분석가들은 <strong>80% 이상의 상승 여력</strong>이 있다고 평가.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Iris Energy (IREN)</strong></td>
+                        <td class="positive">비트코인 채굴에서 <strong>AI 데이터 센터로 사업 전환</strong>에 성공. AI 인프라 부족의 순수한 수혜주로 꼽히며 <strong>100% 이상 상승</strong>을 기대.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Micron (MU)</strong></td>
+                        <td class="positive">2026년 HBM(고대역폭 메모리) 사이클의 정점에 대한 기대로 유망주에 선정. 다만 메모리 산업의 <strong>경기 순환성</strong>은 리스크로 지적됨.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alphabet (GOOGL/GOOG)</strong></td>
+                        <td class="neutral">안정적인 '밸러스트' 주식으로 언급. 클라우드 성장을 기반으로 <strong>15-25% 상승</strong> 기대. AI 시대의 지배자가 될 것이라는 의견 존재.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reddit (RDDT)</strong></td>
+                        <td class="positive">LLM(거대 언어 모델) 훈련을 위한 <strong>인간 데이터의 가치</strong>에 베팅하는 투자. 데이터 라이선싱 수익 모델의 지속 가능성이 관건.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Palantir (PLTR)</strong></td>
+                        <td class="neutral">사업 실적은 좋으나, 주가가 이미 너무 올라 <strong>'완벽함이 가격에 반영된' 상태</strong>라는 평가. 고평가에 대한 우려가 있음.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ondas Holdings (ONDS)</strong></td>
+                        <td class="positive">드론 관련주로, 1000만 달러 규모의 신규 수주 소식에 시가총액이 4.5억 달러나 급증하며 시장의 큰 관심을 받음. 2026년이 드론의 해가 될 것이라는 기대.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coca-Cola (KO)</strong></td>
+                        <td class="neutral">워런 버핏의 대표적인 장기 보유 종목. 버핏이 매일 콜라를 마시고, 이로 인해 막대한 배당금을 받는다는 점이 유머 소재로 사용됨. '다이아몬드 핸드'의 상징.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plains All American (PAA)</strong></td>
+                        <td class="negative">역사적으로 변동성이 매우 낮아 '당밀보다 느리다'는 평가. <strong>낮은 내재변동성(IV)</strong>을 노린 옵션 투자가 제시되었으나, 주가 움직임이 없어 실패할 것이라는 의견이 지배적.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="annotation"><strong>다이아몬드 핸드(Diamond Hands):</strong> 주가 변동성에 흔들리지 않고 장기간 자산을 보유하는 투자자를 칭하는 밈(meme).</p>
+    </div>
+
+</body>
+</html>
