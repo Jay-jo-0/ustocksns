@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(26.01.07 PM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #bb86fc;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 1em;
+            color: #cccccc;
+        }
+        strong {
+            color: #03dac6;
+        }
+        .stock-ticker {
+            font-weight: bold;
+            color: #fdd835;
+            background-color: #333;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+        }
+        .summary-table th {
+            background-color: #333;
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+        .summary-table tr:nth-child(even) {
+            background-color: #2c2c2c;
+        }
+        .sentiment-bullish { color: #4CAF50; font-weight: bold; }
+        .sentiment-bearish { color: #f44336; font-weight: bold; }
+        .sentiment-mixed { color: #ffeb3b; font-weight: bold; }
+        .annotation {
+            font-size: 0.8em;
+            color: #9e9e9e;
+            background-color: #2a2a2a;
+            padding: 8px;
+            border-left: 3px solid #666;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        .stock-card {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 25px;
+            border: 1px solid #383838;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향<br>(26.01.07 PM)</h1>
+
+        <h2>종목별 관심도 요약</h2>
+        <div style="overflow-x:auto;">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>티커</th>
+                        <th>기업명</th>
+                        <th>주요 내용 및 분위기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="stock-ticker">$B</span></td>
+                        <td>Barrick Gold</td>
+                        <td class="sentiment-bullish">금값 상승의 최대 수혜주로 강력한 매수 의견 다수.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">Silver/Gold</span></td>
+                        <td>귀금속</td>
+                        <td class="sentiment-bullish">달러 약세, 양적완화, 세계 불안정성으로 인한 안전자산 선호 심리.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$ASTS</span></td>
+                        <td>AST SpaceMobile</td>
+                        <td class="sentiment-bullish">주가 급등으로 높은 수익 인증 다수. 추가 상승 기대감 존재.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$RKLB</span></td>
+                        <td>Rocket Lab USA</td>
+                        <td class="sentiment-bullish">우주항공 섹터 강세 속에서 ASTS와 함께 긍정적 언급.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$LUNR</span></td>
+                        <td>Intuitive Machines</td>
+                        <td class="sentiment-bullish">NASA 계약 기대감 및 M&A로 인한 매출 증대로 강력한 상승 모멘텀.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$NVDA</span></td>
+                        <td>NVIDIA</td>
+                        <td class="sentiment-mixed">새로운 칩 발표에도 불구하고 주가 변동성이 크며, 단기 하락 베팅 의견도 존재.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$MU</span> / <span class="stock-ticker">$SNDK</span></td>
+                        <td>Micron / SanDisk</td>
+                        <td class="sentiment-bullish">메모리 반도체 시장의 강력한 상승세. 시장 과열 우려도 공존.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$TSLA</span></td>
+                        <td>Tesla</td>
+                        <td class="sentiment-bearish">주가 하락에 대한 조롱과 풋옵션 수익 인증 다수. NVDA와의 경쟁 우려.</td>
+                    </tr>
+                     <tr>
+                        <td><span class="stock-ticker">$NFLX</span></td>
+                        <td>Netflix</td>
+                        <td class="sentiment-mixed">주가 하락으로 손실 인증이 많으나, 저점 매수 및 장기 보유 의견도 존재.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$MSTR</span></td>
+                        <td>MicroStrategy</td>
+                        <td class="sentiment-mixed">비트코인 대리 투자 성격. 비트코인 상승 시 큰 수익 기대, 하락 시 높은 위험.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$NVO</span></td>
+                        <td>Novo Nordisk</td>
+                        <td class="sentiment-bullish">비만 치료제 파이프라인과 저평가 매력으로 콜옵션 수익 인증 및 추가 상승 기대.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$RYCEY</span></td>
+                        <td>Rolls-Royce</td>
+                        <td class="sentiment-bullish">1000% 수익률 인증. 팬데믹 이후 회복에 대한 기대감.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="stock-ticker">$S</span></td>
+                        <td>SentinelOne</td>
+                        <td class="sentiment-bearish">경쟁사 CRWD에 밀려 실적 악화. 주가 하락세 지속. M&A 가능성이 유일한 희망.</td>
+                    </tr>
+                     <tr>
+                        <td><span class="stock-ticker">$OKLO</span></td>
+                        <td>Oklo Inc.</td>
+                        <td class="sentiment-bullish">실체 없는 기대감만으로 주가가 급등하는 대표적인 '밈 주식'.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <h2>🥇 귀금속 및 광산주 (Precious Metals & Miners)</h2>
+            <p><strong>핵심 요약:</strong> 전반적으로 매우 <span class="sentiment-bullish">강세</span>. 달러 약세, 지정학적 불안, 인플레이션 우려로 인해 금과 은이 안전자산으로 부각. 특히 금/은 채굴 기업들의 주가가 저평가되어 있다는 분석이 지배적.</p>
+            <h3><span class="stock-ticker">$B</span> (Barrick Gold)</h3>
+            <ul>
+                <li><strong>강력한 매수 추천:</strong> 게시물 작성자는 $B를 '돈 복사기'에 비유하며 매우 강력한 매수 의견을 제시. 2027년 1월 만기 $50 콜옵션을 추천하며 여전히 상승 여력이 많다고 주장.</li>
+                <li><strong>저평가 분석:</strong> 경쟁사 <span class="stock-ticker">$AEM</span> (Agnico Eagle Mines)과 비슷한 생산량, 시가총액, 이익을 내고 있음에도 불구하고 주가가 뒤처져 있어 저평가 상태라는 분석. 이는 영구 CEO 부재 때문일 수 있으며, 4분기 실적 발표가 전환점이 될 것으로 기대.</li>
+                <li><strong>상승 촉매:</strong> 금 가격이 100달러 오를 때마다 $B 주가는 3~3.5달러 상승하며, 2026년 금 목표 가격이 5~6천 달러로 예상되어 주가 목표를 보수적으로 70달러, 낙관적으로 100달러로 제시.</li>
+            </ul>
+            <h3><span class="stock-ticker">Silver</span> (은 관련주)</h3>
+            <ul>
+                <li><strong>높은 변동성 및 잠재력:</strong> '가난한 자의 금'으로 불리며 금보다 상승 잠재력이 더 크다는 의견이 존재. 특히 <span class="stock-ticker">$AG</span>, <span class="stock-ticker">$HL</span>, <span class="stock-ticker">$PAAS</span> 같은 은 채굴 기업들이 언급됨.</li>
+                <li><strong>중국의 영향:</strong> 중국이 은 수출을 중단하고 전략 물자로 지정했다는 소식은 은 가격에 큰 상승 요인으로 작용할 수 있다는 기대감.</li>
+                <li><strong>기관 투자:</strong> 중앙은행들은 은보다 금을 비축하고 있다는 점에서 안정성은 금이 더 높다는 반론도 존재.</li>
+            </ul>
+             <p class="annotation"><strong>주석:</strong> 'regard'(바보)는 SNS 커뮤니티에서 자신과 다른 투자자들을 자조적으로 부르는 밈(meme)입니다. 심각한 비하의 의미보다는 유머러스한 표현으로 사용됩니다.</p>
+        </div>
+        
+        <div class="stock-card">
+            <h2>🚀 우주 항공 (Space Sector)</h2>
+            <p><strong>핵심 요약:</strong> <span class="sentiment-bullish">강력한 상승 모멘텀</span>을 보이며, 투자자들의 높은 관심과 수익 인증이 이어지고 있는 섹터. 개별 기업의 기술력과 정부 계약이 주가 상승의 핵심 동력.</p>
+            <h3><span class="stock-ticker">$ASTS</span> (AST SpaceMobile)</h3>
+            <ul>
+                <li><strong>수익 인증 릴레이:</strong> 700% 이상의 수익을 인증하는 글이 올라오며 투자자들의 큰 관심을 받음. 주식 보유만으로 높은 수익을 얻었다는 점이 주목받음.</li>
+                <li><strong>추가 상승 기대감:</strong> "아직 끝나지 않았다", "이제 시작이다" 등 추가 상승에 대한 기대감이 높음. 주가 급등 후 조정을 기다려 재진입하려는 움직임도 포착됨.</li>
+            </ul>
+            <h3><span class="stock-ticker">$RKLB</span> (Rocket Lab USA)</h3>
+            <ul>
+                <li><strong>동반 상승:</strong> 우주항공 섹터의 강세 속에서 ASTS와 함께 긍정적으로 꾸준히 언급됨. 300% 수익을 인증한 투자자도 등장.</li>
+            </ul>
+            <h3><span class="stock-ticker">$LUNR</span> (Intuitive Machines)</h3>
+            <ul>
+                <li><strong>NASA 계약 기대감:</strong> 48억 달러 규모의 NASA 계약 발표가 임박했으며, LUNR이 가장 유력한 후보라는 기대감이 주가를 견인.</li>
+                <li><strong>매출 급증:</strong> 최근 인수를 통해 연간 매출 전망이 2.5억 달러에서 8.5억 달러로 크게 상향 조정됨.</li>
+                <li><strong>숏 스퀴즈 가능성:</strong> 공매도 세력이 주가 상승으로 인해 손실을 보고 있으며, 이들의 숏 커버링(손실을 줄이기 위한 매수)이 발생하면 주가가 폭발적으로 상승('파라볼릭')할 수 있다는 기대감.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>💻 반도체 및 빅테크 (Semis & Big Tech)</h2>
+            <p><strong>핵심 요약:</strong> 종목별로 분위기가 크게 엇갈림. 메모리 반도체는 <span class="sentiment-bullish">강세</span>를, <span class="stock-ticker">$TSLA</span>는 <span class="sentiment-bearish">약세</span>를 보임. 빅테크 기업들은 개별 이슈에 따라 주가 변동성이 큰 모습.</p>
+            <h3><span class="stock-ticker">$NVDA</span> (NVIDIA)</h3>
+            <ul>
+                <li><strong>변동성 확대:</strong> 새로운 칩 발표에도 불구하고 주가 상승세가 제한적. 장 초반 상승 후 하락 마감하는 패턴이 반복되며 투자자들의 피로감 누적. '기관이 물량을 떠넘기고 있다'는 분석도 나옴.</li>
+                <li><strong>TSLA와의 비교:</strong> NVDA가 로보택시 등 AI 분야에서 TSLA가 수년간 시도했던 것을 단 6개월 만에 해냈다는 평가가 나오며 TSLA 주가 하락의 원인으로 지목됨.</li>
+            </ul>
+             <h3><span class="stock-ticker">$MU</span> / <span class="stock-ticker">$SNDK</span> (Micron / SanDisk)</h3>
+            <ul>
+                <li><strong>강력한 랠리:</strong> 두 종목 모두 엄청난 상승세를 보이며 '무한 돈 복사기'로 불림. 시장이 과열(euphoria) 상태에 있다는 신호로 해석되기도 함.</li>
+            </ul>
+            <h3><span class="stock-ticker">$TSLA</span> (Tesla)</h3>
+            <ul>
+                <li><strong>급락 및 비관론:</strong> 주가 하락에 대한 풋옵션 수익 인증과 조롱이 쏟아짐. NVDA의 AI 기술 발전에 따라 '그냥 자동차 회사'라는 인식이 확산.</li>
+            </ul>
+            <h3><span class="stock-ticker">$NFLX</span> (Netflix)</h3>
+             <ul>
+                <li><strong>하락세와 의견 대립:</strong> 주가 하락으로 큰 손실을 본 투자자들의 인증이 이어짐. WBD 인수 시도에 따른 불확실성이 부정적 요인.</li>
+                <li><strong>장기적 관점:</strong> 반면, 현재 주가가 지지선에 있으며 장기적으로는 2배 이상 상승할 것이라는 매수 의견도 존재. 4분기 실적에 대한 기대감도 있음.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>📉 사이버 보안 (Cybersecurity)</h2>
+            <p><strong>핵심 요약:</strong> 업계 내 승자독식 구조가 뚜렷해지면서 기업별 명암이 극명하게 갈림. 시장 선도 기업에 대한 쏠림 현상이 심화.</p>
+            <h3><span class="stock-ticker">$S</span> (SentinelOne)</h3>
+            <ul>
+                <li><strong>경쟁 심화로 인한 약세:</strong> 경쟁사 <span class="stock-ticker">$CRWD</span> (CrowdStrike)의 'Falcon Flex' 모델에 밀려 매출 성장률이 급격히 둔화되고 있으며, 주가가 지속적으로 하락.</li>
+                <li><strong>부정적 전망:</strong> "떨어지는 칼날을 잡는 격", "5년째 단기 고통을 말하고 있다" 등 비관적인 의견이 다수. 전 직원들도 회사 상황이 좋지 않다고 언급.</li>
+                <li><strong>M&A 기대감:</strong> 유일한 상승 시나리오는 <span class="stock-ticker">$PANW</span>, <span class="stock-ticker">$GOOGL</span>, <span class="stock-ticker">$AMZN</span> 등 대기업에 인수되는 것.</li>
+            </ul>
+            <h3><span class="stock-ticker">$CRWD</span> (CrowdStrike)</h3>
+            <ul>
+                <li><strong>시장 지배력:</strong> 엔드포인트 보안 분야에서 타의 추종을 불허하는 기술력을 바탕으로 시장을 장악하고 있다는 평가. 세계 유수의 은행과 나스닥 100 기업의 70%가 사용.</li>
+                <li><strong>고평가 논란:</strong> 주가가 고평가 상태라는 의견도 있지만, 압도적인 시장 지배력으로 인해 성장이 지속될 것이라는 전망이 우세.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
