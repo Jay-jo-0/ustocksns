@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f4f6f8;
+            color: #1c1c1e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #007aff;
+            font-size: 7vw;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .subtitle {
+            text-align: center;
+            color: #8e8e93;
+            font-size: 3.8vw;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .stock-section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e5e5ea;
+            padding-bottom: 20px;
+        }
+        .stock-section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            font-size: 6vw;
+            color: #1c1c1e;
+            background-color: #f0f3f5;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h2 .ticker {
+            font-family: monospace;
+            color: #007aff;
+            font-weight: bold;
+        }
+        p, li {
+            font-size: 4.2vw;
+            line-height: 1.6;
+            color: #3c3c43;
+        }
+        ul {
+            padding-left: 20px;
+            list-style-type: '✓ ';
+        }
+        strong {
+            color: #0056b3;
+            font-weight: 600;
+        }
+        .sentiment-bullish {
+            color: #34c759;
+            font-weight: bold;
+        }
+        .sentiment-bearish {
+            color: #ff3b30;
+            font-weight: bold;
+        }
+        .annotation {
+            font-size: 3.5vw;
+            color: #8e8e93;
+            margin-top: 8px;
+            padding-left: 15px;
+            border-left: 3px solid #e5e5ea;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #e5e5ea;
+            font-size: 4vw;
+        }
+        th {
+            background-color: #f2f2f7;
+            font-weight: 600;
+        }
+
+        @media (min-width: 600px) {
+            h1 { font-size: 42px; }
+            .subtitle { font-size: 22px; }
+            h2 { font-size: 36px; }
+            p, li { font-size: 24px; }
+            .annotation { font-size: 20px; }
+            th, td { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p class="subtitle">26.01.17 PM</p>
+
+        <div class="stock-section">
+            <h2>Intel <span class="ticker">(INTC)</span></h2>
+            <ul>
+                <li><strong>핵심 이슈:</strong> 과거 할머니의 유산으로 70만 달러를 인텔에 투자해 화제가 되었던 투자자, 일명 '나나 가이(Nana Guy)'가 최근 주가 상승으로 백만장자가 되었다는 소식이 커뮤니티의 뜨거운 감자로 떠올랐습니다.</li>
+                <li><strong>주요 분석:</strong> 한 투자자는 인텔이 <strong>최첨단 칩을 생산할 수 있는 3개 회사 중 하나</strong>라는 점, 차세대 EUV 장비를 TSMC나 삼성보다 더 많이 보유하고 있다는 점을 근거로 강한 긍정론을 펼쳤습니다. 또한, 엔비디아, 애플, AMD 등 주요 기업들이 인텔의 파운드리 사용을 논의 중이며, 미국 정부의 전략적 가치와 지원을 고려할 때 <strong>연말까지 80달러에 도달할 수 있다</strong>고 전망했습니다.</li>
+                <li><strong>시장 반응:</strong> '나나 가이'가 과연 주식을 계속 보유했을지에 대한 갑론을박이 이어졌습니다. 대부분은 그가 초기의 조롱과 주가 하락을 견디지 못하고 <strong class="sentiment-bearish">손절했을 것('페이퍼핸드')</strong>이라고 추측했습니다. 반면, 일부는 그가 <strong class="sentiment-bullish">신념을 지켰을 것('다이아몬드핸드')</strong>이라 믿으며 그의 성공을 축하했습니다.</li>
+                <li><strong>기타 의견:</strong> 실적 발표를 앞두고 주가가 <strong>6% 하락할 것</strong>이라는 예측과 반대로 <strong>6% 상승할 것</strong>이라는 예측이 엇갈렸습니다.</li>
+            </ul>
+            <p class="annotation"><strong>주석:</strong> '나나(Nana)'는 할머니를 뜻하는 애칭입니다. '페이퍼핸드(Paper Hand)'는 주가 변동에 쉽게 주식을 파는 투자자를, '다이아몬드핸드(Diamond Hand)'는 변동성에도 굳건히 보유하는 투자자를 비유하는 용어입니다.</p>
+        </div>
+
+        <div class="stock-section">
+            <h2>AST SpaceMobile <span class="ticker">(ASTS)</span></h2>
+            <ul>
+                <li><strong>시장 동향:</strong> 우주 통신 기술 기업으로, 최근 주가가 폭등하며 큰 주목을 받고 있습니다. '지난 20일간 75달러에서 110달러로 급등', '작년 대비 5,600% 상승' 등 경이적인 수익률이 언급되었습니다.</li>
+                <li><strong class="sentiment-bullish">긍정적 요인:</strong> 미 방위 고등 연구 계획국(DARPA)의 '골든 돔(GOLDEN DOME)' 프로그램에 참여하게 되었다는 소식이 주가 상승의 기폭제가 되었습니다. 이는 회사의 기술력을 인정받은 것으로 해석됩니다.</li>
+                <li><strong>투자 심리:</strong> 엄청난 상승세에 <strong class="sentiment-bullish">'포모(FOMO)'를 느끼는 투자자</strong>들과 너무 일찍 매도한 것을 후회하는 의견이 많았습니다. 반면, 아직 매출이 발생하지 않는 '프리-레비뉴(pre-revenue)' 기업이라는 점에서 현재의 주가 급등이 과도하며, 결국 <strong class="sentiment-bearish">'세대급 물림(generational bagholders)'</strong>을 낳을 것이라는 경고도 나왔습니다.</li>
+            </ul>
+            <p class="annotation"><strong>주석:</strong> '포모(FOMO)'는 'Fear Of Missing Out'의 약자로, 자신만 흐름을 놓치고 있다는 불안감을 의미합니다. 'Bagholder'는 주가가 폭락한 주식을 팔지 못하고 계속 들고 있는 투자자를 뜻합니다.</p>
+        </div>
+
+        <div class="stock-section">
+            <h2>Rocket Lab <span class="ticker">(RKLB)</span></h2>
+            <ul>
+                <li><strong>시장 동향:</strong> ASTS와 함께 '우주 주식'으로 묶이며 큰 인기를 끌고 있습니다. 많은 투자자들이 포트폴리오의 주요 종목으로 보유하고 있으며, 상당한 수익을 인증하는 게시물들이 올라왔습니다.</li>
+                <li><strong class="sentiment-bullish">긍정적 전망:</strong> '곧 100달러 갈 것', '언젠가 1000달러 갈 것'이라는 등 매우 낙관적인 전망이 주를 이루었습니다. <strong>모건 스탠리(Morgan Stanley)와 니덤(Needham)</strong>이 목표 주가를 상향 조정한 점도 긍정적 요인으로 언급되었습니다.</li>
+                <li><strong>투자 전략:</strong> 일부 투자자들은 주가가 더 오를 것을 기대하며 추가 매수를 고려하고 있으며, 지금이라도 매수 기회인지 묻는 질문도 있었습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <h2>iShares Silver Trust <span class="ticker">(SLV)</span></h2>
+            <ul>
+                <li><strong>시장 동향:</strong> 은 현물 가격을 추종하는 ETF로, 최근 가격 변동성에 대한 불만이 높습니다. 특히 금요일 옵션 만기일에 가격이 정체되거나 하락하는 패턴을 보인다는 의견이 많았습니다.</li>
+                <li><strong>시장 분석:</strong> 일부 투자자들은 이러한 가격 움직임이 옵션을 휴지 조각으로 만들려는 <strong class="sentiment-bearish">기관 투자자(MM, Market Makers)들의 조작</strong>이라고 주장합니다.</li>
+                <li><strong>투자 심리:</strong> 하락세를 <strong class="sentiment-bullish">매수 기회</strong>로 보는 의견과, 손실을 보고 좌절하는 의견이 혼재했습니다. 한 투자자는 은 가격 하락에 크게 베팅했으나 실패하여 세금으로 낼 돈까지 잃었다고 토로했습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <h2>Micron Technology <span class="ticker">(MU)</span></h2>
+            <ul>
+                <li><strong>시장 동향:</strong> 메모리 반도체 기업으로, 최근 주가 상승세가 매우 강합니다. 투자자들은 "경이롭다"고 표현하며 상승세에 감탄했습니다.</li>
+                <li><strong class="sentiment-bullish">긍정적 요인:</strong> 회사 임원(Teyin Liu)이 <strong>780만 달러 규모의 자사주를 매입</strong>한 사실이 강력한 매수 신호로 해석되었습니다.</li>
+                <li><strong>투자 심리:</strong> 주가가 계속 오를 것이라는 기대감에 '풀 포팅(full porting)' 즉, 전 재산을 투자하고 싶다는 의견도 나왔습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <h2>Nebius <span class="ticker">(NBIS)</span></h2>
+            <ul>
+                <li><strong>핵심 이슈:</strong> NBIS가 <strong>지분 28%를 보유한 '클릭하우스(Clickhouse)'가 150억 달러의 기업 가치를 인정</strong>받았다는 소식이 전해졌습니다.</li>
+                <li><strong class="sentiment-bullish">긍정적 분석:</strong> 이는 NBIS의 기업 가치에 <strong>30억~40억 달러가 추가되는 효과</strong>가 있으며, 주가에 매우 긍정적인 영향을 미칠 것으로 분석되었습니다. '6월까지 150달러, 연말 200달러' 같은 구체적인 목표 주가도 제시되었습니다.</li>
+                <li><strong>시장 반응:</strong> 이 소식으로 주가가 움직이기 시작했으며, 투자자들은 2027년 만기 콜옵션을 매수하는 등 장기적인 상승에 베팅하는 모습을 보였습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-section">
+            <h2>Robinhood <span class="ticker">(HOOD)</span></h2>
+            <ul>
+                <li><strong>시장 심리:</strong> 투자자들 사이에서 애증의 종목으로 여겨집니다. 3개월간 지속적인 하락으로 7만 달러의 손실을 본 투자자는 '심하게 조작된 주식'이라며 강한 불만을 표출했습니다.</li>
+                <li><strong>투자 동향:</strong> 단기적으로 주가를 공매도하여 수익을 낸 투자자도 있었지만, 장기 보유 주식에서는 큰 손실을 보고 있는 이중적인 상황도 나타났습니다.</li>
+                <li><strong>분석:</strong> 비트코인이나 주가 지수가 하락할 땐 같이 떨어지지만, 상승할 땐 오르지 못하는 경향이 있다는 분석이 제기되었습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <h2>Netflix <span class="ticker">(NFLX)</span></h2>
+            <ul>
+                <li><strong>핵심 이슈:</strong> 실적 발표를 앞두고 투자자들의 관심이 집중되었습니다.</li>
+                <li><strong class="sentiment-bullish">긍정적 전망:</strong> 대부분의 투자자들이 실적 호조를 예상하며 <strong>콜옵션에 베팅</strong>했습니다. 드라마 '기묘한 이야기' 시즌 5가 혹평받았다는 이유로 풋옵션을 매수했다는 반대 의견도 있었지만, 시청률 자체가 중요하다는 반박이 뒤따랐습니다.</li>
+                <li><strong>시장 반응:</strong> "넷플릭스는 실적을 박살 낼 것이다", "넷플릭스와 인텔이 달에 갈 것" 등 기대감이 매우 높은 상태입니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-section">
+            <h2>기타 주요 언급 주식</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>종목 (티커)</th>
+                  <th>주요 내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Intuitive Machines (LUNR)</strong></td>
+                  <td>SPY 주간 옵션으로 큰 손실을 본 투자자가 대출까지 받아 '욜로(YOLO)' 투자를 감행한 종목. 달 착륙선이 옆으로 착륙하는 등 기술적 불안정성으로 리스크가 매우 크다는 평가입니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>SanDisk (WDC)</strong></td>
+                  <td>웨스턴 디지털(WDC) 산하 브랜드. MU와 함께 메모리 관련주로 묶이며 매일 5%씩 오르는 등 엄청난 강세를 보여 투자자들의 포모(FOMO)를 자극하고 있습니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>SPDR S&P 500 ETF (SPY)</strong></td>
+                  <td>시장 전반을 나타내는 지수로, 최근 3개월간의 횡보 장세가 '지루하다'는 평이 많습니다. 많은 투자자들이 만기가 하루 남은 '0DTE' 옵션으로 초단타 투기 거래를 하고 있습니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>Figma (FIG)</strong></td>
+                  <td>어도비(ADBE)의 인수 무산 이후 주가가 급락하며 투자자들에게 큰 손실을 안겨주고 있습니다. 소프트웨어가 '느리고 지나치게 복잡해졌다'는 비판과 함께 추가 하락에 대한 우려가 큽니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>Firefly Aerospace (FLY)</strong></td>
+                  <td>우주항공 기업으로, 일부 투자자는 방산 기술 기업 인수, NASA와의 계약 등을 근거로 강력한 매수를 주장합니다. 하지만 전 직원이었다는 한 투자자는 '절대 투자하지 않을 것'이라며 극명한 반대 의견을 내놓았습니다.</td>
+                </tr>
+                <tr>
+                  <td><strong>BigBear.ai (BBAI)</strong></td>
+                  <td>티커에 'AI'가 포함되어 있다는 점, 그리고 전 트럼프 행정부 관료들이 운영한다는 점이 투자 포인트로 언급된 소형주입니다. '과두정치 플레이'라는 독특한 분석이 있었습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+             <p class="annotation"><strong>주석:</strong> '욜로(YOLO)'는 'You Only Live Once'의 약자로, 인생은 한 번뿐이라는 의미를 담아 매우 높은 리스크를 감수하는 몰빵 투자를 의미합니다. '0DTE'는 '0 Days To Expiration'의 약자로, 옵션 만기일 당일에 거래하는 초고위험 전략입니다.</p>
+        </div>
+
+    </div>
+</body>
+</html>
