@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #1877f2;
+            border-bottom: 2px solid #e7e7e7;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .stock-card h3 {
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #050505;
+        }
+        .stock-card h3 .ticker {
+            background-color: #e7f3ff;
+            color: #1877f2;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .stock-card .sentiment {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .sentiment.bullish { color: #31a24c; }
+        .sentiment.bearish { color: #e02c4d; }
+        .sentiment.mixed { color: #f7b928; }
+        .stock-card p, .stock-card li {
+            font-size: 1.0em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .stock-card ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        .annotation {
+            display: block;
+            font-size: 0.8em;
+            color: #65676b;
+            margin-top: 10px;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1877f2;
+            color: white;
+            font-size: 1.1em;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(26.01.26 PM)</h1>
+
+        <h2>주요 관심 주식</h2>
+        
+        <div class="stock-card">
+            <h3><span class="ticker">SLV / GLD</span> 은 / 금 관련주</h3>
+            <div class="sentiment bullish">압도적인 강세 (Overwhelmingly Bullish)</div>
+            <ul>
+                <li><strong>핵심 투자 이유:</strong> 미국 달러 가치 하락, 지정학적 불안정(이란, 캐나다 관세, 정부 셧다운 우려)에 대한 안전자산 및 헤지 수단으로 부상했습니다.</li>
+                <li><strong>시장 분위기:</strong> "세대적인 상승장(Generational run)"이 시작되었다는 의견이 지배적이며, 은(Silver) 가격이 100달러를 넘어 200달러까지 갈 수 있다는 공격적인 전망도 등장했습니다.</li>
+                <li><strong>투자자 동향:</strong> 은과 금 관련 ETF(SLV, GLD)나 금광주(GDXU 등)에 대한 대규모 베팅(YOLO) 인증이 다수 올라오고 있습니다. 은 가격 하락에 베팅한 투자자들을 조롱하는 분위기가 형성되어 있습니다.</li>
+                <li><strong>분석:</strong> 아시아 통화, 특히 일본 엔화의 강세가 달러 약세를 부추기고, 이는 다시 금 가격 상승으로 이어진다는 분석이 제시되었습니다. 중국의 춘절을 앞둔 실물 금 수요 증가도 상승 동력으로 꼽힙니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h3><span class="ticker">META</span> Meta Platforms, Inc.</h3>
+            <div class="sentiment bullish">강세 (Bullish)</div>
+            <ul>
+                <li><strong>언급 이유:</strong> 실적 발표를 앞두고 기대감이 매우 높습니다. 한 투자자는 4만 5천 달러를 초단기 콜옵션에 투자해 30만 달러 이상의 수익을 올린 것을 인증하며 큰 화제를 모았습니다.</li>
+                <li><strong>주요 분석:</strong>
+                    <ul>
+                        <li>AI 기반 광고 시스템이 본격적으로 수익을 창출할 것이라는 기대감이 큽니다. 사업 규모에 상관없이 누구나 쉽게 광고를 제작하고 집행할 수 있는 'AI 광고 스위트'가 미래 성장 동력으로 꼽힙니다.</li>
+                        <li>주가가 100달러 미만으로 폭락했던 시기에 비해 6-7배 상승했음에도 여전히 저평가 상태라는 의견이 많습니다.</li>
+                        <li>Threads의 사용자 수가 4억 명을 돌파하며 잠재적 수익 모델에 대한 기대감을 높이고 있습니다.</li>
+                    </ul>
+                </li>
+                <li><strong>반대 의견:</strong> 저커버그의 메타버스 및 VR/AR 기기에 대한 집착이 리스크로 지적됩니다. "만화같이 생긴 쓰레기 안경"에 막대한 돈을 낭비하고 있다는 비판이 있습니다.</li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h3><span class="ticker">BTC</span> 비트코인 (Bitcoin)</h3>
+            <div class="sentiment bearish">약세 (Bearish)</div>
+            <ul>
+                <li><strong>시장 분위기:</strong> "비트코인 맥시멀리스트"라고 밝힌 한 투자자가 지난 1년간의 막대한 손실을 인증하며 비관론에 불을 지폈습니다.</li>
+                <li><strong>주요 의견:</strong> 금, 은 등 실물 자산의 가치가 폭등하는 것과 대조적으로, 비트코인은 생산적인 자산이 아니며 다음 사람에게 더 비싸게 팔아야만 하는 '폰지 사기'와 같다는 비판이 많습니다.</li>
+                <li><strong>투자자 동향:</strong> "크립토 보유자들은 이제 조용하고 파산했다"는 조롱 섞인 반응이 나오고 있으며, 많은 투자자들이 비트코인을 매도하고 금, 은으로 이동하는 모습을 보입니다.</li>
+                <li><strong>긍정적 소수 의견:</strong> 4년 주기의 반감기(halving) 사이클을 신뢰하며 장기적으로는 상승할 것이라는 의견도 있지만, 현재 SNS 내에서는 소수에 불과합니다.</li>
+            </ul>
+            <small class="annotation"><strong>*비트코인 맥시멀리스트(Bitcoin Maxi):</strong> 비트코인이 궁극적으로 모든 자산을 이기고 유일한 가치 저장 수단이 될 것이라고 믿는 강성 지지자를 의미합니다.</small>
+            <small class="annotation"><strong>*콘(Corn 🌽):</strong> 일부 커뮤니티에서 비트코인을 지칭하는 은어입니다.</small>
+        </div>
+        
+        <div class="stock-card">
+            <h3><span class="ticker">UUUU / USAR</span> 우라늄 및 희토류 관련주</h3>
+            <div class="sentiment bullish">강세 (Bullish)</div>
+            <ul>
+                <li><strong>핵심 투자 이유:</strong> 지정학적 리스크 부각과 정부의 자국 내 핵심 광물 공급망 강화 정책의 수혜주로 주목받고 있습니다.</li>
+                <li><strong>Energy Fuels (UUUU):</strong> 우라늄과 희토류를 모두 다루는 기업으로, 부채가 없고 현금이 풍부하며 서구권에서 독보적인 프로세싱 기술을 가졌다는 점에서 '글로벌 챔피언'이 될 것이라는 높은 평가를 받고 있습니다.</li>
+                <li><strong>USA Rare Earth (USAR):</strong> 미국 정부로부터 16억 달러 규모의 투자를 유치했다는 소식이 전해지며 주가 급등에 대한 기대감이 매우 높습니다. "정실 자본주의의 보너스"라는 평가와 함께 강력한 매수 추천이 이어지고 있습니다.</li>
+                <li><strong>기타 관련주:</strong> DNN, CRML, UAMY, MP 등 다른 우라늄 및 희토류 관련주들도 함께 긍정적으로 언급되고 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h3><span class="ticker">SPY</span> S&P 500 ETF</h3>
+            <div class="sentiment mixed">혼조 (Mixed)</div>
+            <ul>
+                <li><strong>약세 요인:</strong> 미국 정부 셧다운 가능성, 이란과의 갈등, 캐나다와의 무역 마찰 등 여러 정치적, 경제적 불확실성으로 인해 하락 베팅(풋옵션 매수)이나 현금 보유를 선호하는 의견이 많습니다.</li>
+                <li><strong>강세 요인:</strong>
+                    <ul>
+                        <li>반대로, 달러 가치가 빠르게 하락하고 있기 때문에 주식 시장이 오히려 상승할 것이라는 '인버스' 논리가 힘을 얻고 있습니다. 즉, 달러보다 주식을 보유하는 것이 낫다는 주장입니다.</li>
+                        <li>역사적으로 정부 셧다운과 같은 이벤트는 단기적인 하락 후 "저점 매수(Buy the dip)"의 기회가 되었다는 학습 효과도 강하게 작용하고 있습니다.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h3><span class="ticker">HOOD</span> Robinhood Markets, Inc.</h3>
+            <div class="sentiment mixed">혼조 (Mixed)</div>
+            <ul>
+                <li><strong>강세 의견:</strong> 24시간 주식 거래 시스템 도입 등으로 수수료 수입이 급증할 것이라는 기대감이 있습니다. 일부 투자자는 "장기적으로 1000달러까지 갈 주식"이라며 주식으로만 YOLO 베팅을 하기도 했습니다. 비트코인 거래가 가장 쉬운 플랫폼이라는 점도 긍정적으로 평가됩니다.</li>
+                <li><strong>약세 의견:</strong> 최근 주가 하락으로 큰 손실을 봤다는 인증글이 올라오는 등, 변동성이 크고 위험하다는 인식이 여전히 존재합니다. "저평가되었다"는 주장에 대한 회의적인 시각도 있습니다.</li>
+            </ul>
+            <small class="annotation"><strong>*YOLO (You Only Live Once):</strong> '인생은 한 번뿐'이라는 뜻으로, 전 재산에 가까운 큰 돈을 한 종목에 '몰빵' 투자하는 행위를 가리키는 은어입니다.</small>
+        </div>
+        
+        <div class="stock-card">
+            <h3><span class="ticker">ENPH</span> Enphase Energy, Inc.</h3>
+            <div class="sentiment bullish">역발상 강세 (Contrarian Bullish)</div>
+            <ul>
+                <li><strong>투자 아이디어:</strong> AI 데이터센터 운영에 필요한 막대한 전력을 공급하기 위해 태양광 에너지가 필수적이라는 논리가 부상하고 있습니다.</li>
+                <li><strong>현황:</strong> 주가는 고점 대비 크게 하락했으나, 최근 바닥을 다지고 반등하는 모습을 보이고 있습니다. 골드만삭스 등에서 투자 의견을 상향 조정했습니다.</li>
+                <li><strong>리스크 및 반론:</strong>
+                    <ul>
+                        <li>특정 정치인(T)이 태양광 산업에 부정적인 입장을 보이고 있다는 점이 가장 큰 리스크입니다.</li>
+                        <li>ENPH는 주택용 태양광에 집중하는 기업이라, 데이터센터에 필요한 대규모 상업용 태양광 시장의 수혜를 직접 받기 어렵다는 지적이 있습니다.</li>
+                        <li>저렴한 중국산 패널과의 경쟁도 부담 요인입니다.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h3><span class="ticker">PI</span> Impinj, Inc.</h3>
+            <div class="sentiment bullish">장기 강세 (Long-term Bullish)</div>
+            <ul>
+                <li><strong>사업 내용:</strong> 월마트, UPS 등에서 사용하는 RFID 태그 칩을 제조하는 반도체 기업입니다.</li>
+                <li><strong>상세 분석(DD):</strong>
+                    <ul>
+                        <li>경쟁사 NXP와의 특허 소송에서 승리하여 2034년까지 안정적인 성장 환경을 확보했습니다.</li>
+                        <li>궁극적인 성장 동력은 RFID 기술이 소비자용 스마트폰에 탑재되는 것입니다. 소비자가 집에서 식료품 재고를 파악하거나 의류를 관리하는 등 일상에서 RFID를 사용하게 되면 태그 수요가 폭발적으로 증가할 것이라는 전망입니다.</li>
+                        <li>퀄컴이 이미 상업용 칩에 RFID 기능을 통합한 바 있어, 소비자용 스마트폰으로의 확장은 시간 문제라는 분석입니다.</li>
+                    </ul>
+                </li>
+                <li><strong>투자 전략:</strong> 현재 주가는 성장 기대감이 반영되어 다소 높은 편이므로, 110달러 이하로 하락 시 분할 매수하는 전략이 추천되었습니다.</li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h3><span class="ticker">TSM</span> Taiwan Semiconductor Manufacturing Co.</h3>
+            <div class="sentiment mixed">기본적 강세, 지정학적 리스크 혼재</div>
+            <ul>
+                <li><strong>투자자 동향:</strong> 한 투자자가 역사적 신고가(ATH)보다 높은 가격에 매수했다며 타이밍에 대한 아쉬움을 토로했습니다.</li>
+                <li><strong>주요 논쟁:</strong> 가장 큰 논쟁거리는 중국의 대만 침공 리스크입니다.
+                    <ul>
+                        <li><strong>리스크 존재:</strong> 침공 시 TSM 주가는 0으로 수렴할 것이라는 극단적인 비관론이 존재합니다.</li>
+                        <li><strong>'가격에 반영됨' 주장:</strong> 현재 주가에는 이러한 지정학적 리스크가 이미 충분히 반영(Priced-in)되어 있다는 반론도 만만치 않습니다. 전쟁이 일어나지 않으면 주가는 크게 상승할 것이라는 기대입니다.</li>
+                    </ul>
+                </li>
+                <li><strong>기본적 분석:</strong> 반도체 산업에서의 독보적인 위치 때문에 장기적으로는 우상향할 것이라는 데에는 대부분 동의하는 분위기입니다.</li>
+            </ul>
+        </div>
+        
+        <h2>기타 언급 주식</h2>
+        <div class="stock-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>티커</th>
+                        <th>기업명</th>
+                        <th>주요 내용 및 투자 심리</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NVDA</strong></td>
+                        <td>NVIDIA</td>
+                        <td class="sentiment bullish">AI 붐의 최대 수혜주로 꾸준히 언급됩니다. 40배 수익을 냈다는 투자자도 등장했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MSFT</strong></td>
+                        <td>Microsoft</td>
+                        <td class="sentiment bullish">주요 기술주 실적 발표를 앞두고 META, AAPL 등과 함께 상승 기대감이 높습니다. 핵융합 발전소에 투자한다는 소식도 있었습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AAPL</strong></td>
+                        <td>Apple</td>
+                        <td class="sentiment mixed">AI 분야가 하락할 경우 포트폴리오 헤지 수단으로 좋지만, 현재 가격은 매력적이지 않다는 의견이 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TSLA</strong></td>
+                        <td>Tesla</td>
+                        <td class="sentiment mixed">실적 발표를 앞두고 "크게 놓치고도 500달러 갈 것"이라는 조롱 섞인 기대감이 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMCI</strong></td>
+                        <td>Super Micro Computer</td>
+                        <td class="sentiment bullish">AI 서버 관련주로, 한 투자자가 콜옵션을 보유하고 있다고 밝혔습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>XOM</strong></td>
+                        <td>Exxon Mobil</td>
+                        <td class="sentiment bullish">에너지 섹터 내 가장 안정적인 투자처로 꼽히며 "무책임할 정도로 롱 포지션"이라는 투자자도 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OXY</strong></td>
+                        <td>Occidental Petroleum</td>
+                        <td class="sentiment bullish">저평가 상태이며, 부채를 공격적으로 상환하고 있어 배당 증가가 기대된다는 분석이 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INTC</strong></td>
+                        <td>Intel</td>
+                        <td class="sentiment bearish">부진한 실적 발표 이후 주가 하락이 계속될 것이라는 예상이 많습니다. "20% 추가 하락"을 기대하는 의견도 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AMD</strong></td>
+                        <td>Advanced Micro Devices</td>
+                        <td class="sentiment bearish">풋옵션을 보유한 투자자가 있지만, 주가 하락에 대한 확신은 약한 모습입니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GDXU</strong></td>
+                        <td>MicroSectors Gold Miners 3X ETN</td>
+                        <td class="sentiment bullish">금 가격 상승에 3배 레버리지로 투자하는 상품으로, 한 투자자가 869만 달러를 베팅한 것을 인증했습니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>COPX</strong></td>
+                        <td>Global X Copper Miners ETF</td>
+                        <td class="sentiment bullish">구리(Copper)가 은을 대체할 수 있다는 분석과 함께 구리 관련주가 유망하게 언급됩니다.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LAC</strong></td>
+                        <td>Lithium Americas</td>
+                        <td class="sentiment bullish">리튬 관련주로, 에너지 및 원자재 섹터 내에서 긍정적으로 언급됩니다.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
