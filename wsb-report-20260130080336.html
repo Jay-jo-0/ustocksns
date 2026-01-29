@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(26.01.30 AM)</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --title-color: #000;
+            --accent-color: #007bff;
+            --positive-color: #28a745;
+            --negative-color: #dc3545;
+            --neutral-color: #6c757d;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        header {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--title-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+        .stock-section {
+            background-color: var(--bg-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+        }
+        .stock-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .ticker {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            color: white;
+            font-weight: 700;
+        }
+        .positive { background-color: var(--positive-color); }
+        .negative { background-color: var(--negative-color); }
+        .neutral { background-color: var(--neutral-color); }
+        .hot {
+            background: linear-gradient(45deg, #ffc107, #fd7e14);
+            color: white;
+        }
+        .summary {
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            background-color: #eef5ff;
+            border-radius: 0 5px 5px 0;
+            padding: 10px 15px;
+        }
+        .analysis-list {
+            list-style: none;
+            padding: 0;
+        }
+        .analysis-list li {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid;
+            position: relative;
+        }
+        .analysis-list li.pos { border-color: var(--positive-color); }
+        .analysis-list li.neg { border-color: var(--negative-color); }
+        .analysis-list li.neu { border-color: var(--neutral-color); }
+        .analysis-list li strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: var(--neutral-color);
+            background-color: #f1f3f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background-color: var(--bg-color);
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            body { padding: 0; }
+            .container { border-radius: 0; }
+            .content { padding: 15px; }
+            header h1 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>미국 SNS 주식 관심 동향</h1>
+            <p>26.01.30 AM 기준</p>
+        </header>
+
+        <div class="content">
+
+            <h2 class="section-title">주요 관심주</h2>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker hot">SNDK & MU</span>메모리 반도체 (SanDisk, Micron)</h3>
+                <p class="summary"><strong>샌디스크(SNDK)의 폭발적인 실적 발표로 메모리 반도체 섹터 전체에 대한 관심이 집중되고 있습니다. 많은 투자자들이 놓친 기회에 아쉬워하며, 마이크론(MU) 등 관련주로의 쏠림 현상이 나타나고 있습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>폭발적인 실적 (SNDK):</strong> 샌디스크가 예상을 훨씬 뛰어넘는 EPS와 매출 가이던스를 발표하며 시간 외 거래에서 주가가 12% 이상 급등. 일부 투자자들은 하룻밤 사이에 백만장자가 되었다고 인증하며 열광적인 분위기를 주도.</li>
+                    <li class="pos"><strong>동반 상승 기대 (MU):</strong> 샌디스크의 호실적에 힘입어 동종업계인 마이크론(MU)의 주가도 동반 상승. 투자자들은 "메모리 슈퍼 사이클"을 외치며 두 종목을 올해 최고의 투자처로 꼽고 있음.</li>
+                    <li class="neu"><strong>과열 우려:</strong> "9개월 전 28달러였던 주식"이라며 단기 급등에 대한 경계심을 표하는 의견도 존재. 일부는 현재의 상승이 2000년 닷컴 버블 당시 시스코(CISCO)와 유사하다며 과열을 경고.</li>
+                    <li class="pos"><strong>추가 매수 움직임:</strong> 엄청난 상승에도 불구하고, "지금이라도 풀포트폴리오 투자해야 한다"는 과감한 의견과 함께, 조정을 기회로 삼아 추가 매수하려는 움직임이 활발.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker hot">GLD, SLV</span>금 & 은 관련 ETF</h3>
+                <p class="summary"><strong>달러 약세와 시장 불확실성 속에서 금과 은이 기록적인 상승세를 보이며 새로운 '밈 주식'으로 부상했습니다. 엄청난 수익 인증과 함께 과열에 대한 경고도 나오고 있습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>역사적 상승 랠리:</strong> "금과 은이 미쳤다"는 반응이 지배적. 하루에도 7%씩 변동하는 등 엄청난 변동성을 보이며 단기 트레이더들에게 막대한 수익 기회를 제공. 콜옵션으로 수백%의 수익을 올린 인증 글이 다수 게시됨.</li>
+                    <li class="neg"><strong>공매도 투자자의 비극:</strong> 은(Silver) 가격 하락에 베팅했던 한 투자자가 10만 달러(약 1억 3천만원) 이상의 손실을 실현했다고 인증. 추세에 역행하는 투자의 위험성을 보여주는 사례로 언급됨.</li>
+                    <li class="pos"><strong>구리(COPX)로의 관심 확산:</strong> 금, 은의 급등에 "은의 가난한 형제인 구리마저 급등하고 있다"며 구리 관련 ETF에 대한 관심도 증가하는 추세.</li>
+                    <li class="neg"><strong>과열 및 조정 우려:</strong> "내가 사자마자 고점"이라며 조정에 대한 불안감을 나타내는 투자자들이 많음. 일부는 급등 후의 급락 가능성을 경고하며 이익 실현을 조언.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker negative">MSFT</span> Microsoft</h3>
+                <p class="summary"><strong>예상을 상회하는 실적에도 불구하고 AI 관련 막대한 자본 지출(Capex) 계획과 클라우드 성장률 둔화 우려로 주가가 -10% 이상 급락하며 시장에 큰 충격을 주었습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neg"><strong>실적 발표 후 급락:</strong> 양호한 실적에도 불구하고 주가가 급락하자 "이 시장은 망가졌다"는 비판이 쏟아짐. 특히 클라우드(Azure) 성장률이 1%p 기대에 미치지 못한 점이 주요 원인으로 분석됨.</li>
+                    <li class="pos"><strong>저점 매수 기회?:</strong> "MSFT가 하루 만에 -11% 하락한 것은 확실한 매수 기회"라며 급락을 저가 매수의 기회로 보는 의견이 다수. 많은 투자자들이 하락 과정에서 주식을 매수했다고 인증.</li>
+                    <li class="neu"><strong>OpenAI 리스크:</strong> 클라우드 예상 매출의 45%가 OpenAI로부터 발생한다는 사실이 알려지며, OpenAI에 대한 의존도가 너무 높다는 점이 리스크로 부각됨.</li>
+                    <li class="neg"><strong>META와의 비교:</strong> 비슷한 규모의 Capex를 발표한 메타(META)는 주가가 폭등한 반면, MSFT는 급락한 것을 두고 "이해할 수 없다"는 반응이 많음.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker positive">META</span> Meta Platforms</h3>
+                <p class="summary"><strong>견고한 광고 수익과 자사주 매입, 배당 발표 등 긍정적인 실적에 힘입어 주가가 10% 이상 폭등했습니다. 많은 투자자들이 큰 수익을 인증하며 축제 분위기입니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>압도적인 실적:</strong> AI에 대한 막대한 투자에도 불구하고 광고 수익이 폭발적으로 증가하며 시장의 우려를 불식시킴. "저커버그를 거역하지 말라"는 말이 나올 정도로 강력한 실적을 과시.</li>
+                    <li class="pos"><strong>수익 인증 랠리:</strong> 콜옵션으로 수십만 달러의 수익을 올린 '수익 인증(Gain porn)' 글이 연이어 올라오며 투자자들의 부러움을 삼.</li>
+                    <li class="neg"><strong>풋옵션 투자자들의 눈물:</strong> 실적 발표 전 하락에 베팅했던 투자자들은 엄청난 손실을 입음. 한 투자자는 "붉은 시장에서 유일하게 풋옵션으로 돈을 잃었다"며 허탈감을 표현.</li>
+                    <li class="neu"><strong>사업 모델에 대한 의문:</strong> 메타버스 실패 등 신사업이 부진함에도 불구하고 오직 광고 수익만으로 주가가 폭등하는 것에 대해 "이 회사의 가치를 이해할 수 없다"는 회의적인 시각도 존재.</li>
+                </ul>
+            </div>
+            
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">OpenAI & AI 생태계</span> (NVDA, GOOGL, AMZN 등)</h3>
+                <p class="summary"><strong>NVIDIA, Microsoft, Amazon 등 빅테크 기업들이 OpenAI에 수십억 달러를 투자한다는 소식이 전해지며, AI 버블을 유지하기 위한 '돌려막기'라는 비판과 함께 업계의 미래에 대한 갑론을박이 이어지고 있습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neg"><strong>'거대한 돌려막기(Circlejerk)':</strong> 빅테크들이 OpenAI에 투자하면, OpenAI는 그 돈으로 다시 빅테크들의 클라우드 서비스와 칩을 구매하는 구조를 비판. "새로운 폰지 사기"라거나 2008년 금융위기의 '합성 CDO'에 비유.</li>
+                    <li class="neg"><strong>OpenAI 구제 금융?:</strong> 현금 소모가 극심한 OpenAI가 파산할 경우 AI 버블 전체가 붕괴될 것을 우려한 빅테크들이 어쩔 수 없이 '구제 금융'에 나선 것이라는 분석이 지배적.</li>
+                    <li class="pos"><strong>반사 이익 기대 (GOOGL):</strong> 경쟁사들이 OpenAI에 막대한 자금을 쏟아붓는 동안, 구글(Alphabet)은 자체 기술(Gemini)로 우위를 점하고 있어 이번 사태의 진정한 승자라는 평가. 많은 투자자들이 구글 주식을 매수해야 한다는 의견을 제시.</li>
+                    <li class="pos"><strong>관련주 수혜 기대 (ORCL, AMD):</strong> OpenAI의 자금 조달 성공으로, OpenAI와 계약 관계에 있는 오라클(ORCL)과 AMD의 불확실성이 해소되었다는 긍정적 분석.</li>
+                </ul>
+                <div class="annotation">
+                    <p><strong>*주석:</strong> 'Circlejerk'는 특정 집단 내에서 외부의 의견 없이 자기들끼리만 칭찬하고 동의하며 생각을 강화하는 행위를 비꼬는 인터넷 용어입니다. 여기서는 빅테크 기업들이 서로에게 자금을 돌려가며 가치를 부풀리는 행태를 지적하는 의미로 사용됩니다.</p>
+                </div>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">TSLA & SpaceX</span> Tesla & SpaceX</h3>
+                <p class="summary"><strong>SpaceX의 IPO 및 xAI와의 합병 가능성 소식이 전해지며 Elon Musk의 사업 구조 재편에 대한 관심이 뜨겁습니다. 반면 Tesla는 실적 부진과 신차 계획 취소 등으로 부정적 전망이 우세합니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>SpaceX IPO 기대감:</strong> SpaceX가 1.5조 달러 가치로 IPO를 검토 중이라는 소식에 많은 투자자들이 상장 시 매수하겠다는 의지를 보임. 정부 계약을 독점하다시피 하는 사업 구조가 매력적으로 평가됨.</li>
+                    <li class="neg"><strong>'독이 든 성배' 합병:</strong> SpaceX가 부실한 xAI(및 X 플랫폼)와 합병 후 상장할 가능성이 제기됨. 이는 SpaceX의 가치를 희석시키는 '독소 조항'이 될 것이라는 비판이 많음.</li>
+                    <li class="neg"><strong>Tesla에 대한 부정적 전망:</strong> "Tesla는 자동차 회사가 아니라 폰지 사기"라는 극단적 비판과 함께, 주력 모델 단종 및 로봇 사업으로의 전환 발표가 기존 자동차 사업의 실패를 덮으려는 '꼼수'라는 지적이 나옴.</li>
+                    <li class="neu"><strong>Musk의 자금 돌려막기:</strong> Tesla 주식을 담보로 X(트위터)를 인수하고, 다시 Tesla 자금을 xAI에 투자하고, 이제는 SpaceX IPO를 통해 이 모든 것을 묶으려는 움직임을 '근친상간적 자금 조달'이라며 비판.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker negative">BULL</span> Webull</h3>
+                <p class="summary"><strong>한 투자자가 40% 이상의 막대한 손실을 인증하며 화제가 된 종목입니다. 주가 하락에 대한 조롱과 함께, 장기 보유를 권하는 의견도 일부 있었습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neg"><strong>엄청난 손실 인증:</strong> 한 투자자가 "자살해야 하나?"라는 제목으로 1만 1천 달러(약 40%)의 손실을 인증. 많은 이들이 위로와 함께 "그 정도 손실은 아무것도 아니다"라며 조롱 섞인 반응을 보임.</li>
+                    <li class="neg"><strong>부정적 별명:</strong> 'BULL(황소)'이라는 티커와 달리 주가가 약세(Bear)인 점을 비꼬아 'WeBear(위베어)' 또는 'BULLSHIT' 등으로 불림.</li>
+                    <li class="pos"><strong>장기 보유 의견:</strong> 일부 투자자들은 "5년만 보유해라", "AMD도 '돈 파괴자'로 불리던 시절이 있었다"며 장기적인 관점에서 회복을 기대. 다른 투자자는 하락한 주식을 추가 매수('물타기') 했다고 인증.</li>
+                    <li class="neu"><strong>아이러니:</strong> 경쟁사 플랫폼인 로빈후드($HOOD) 앱을 사용하여 웨이블($BULL) 주식을 거래하는 아이러니한 상황이 언급됨.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">AAPL</span> Apple</h3>
+                <p class="summary"><strong>AI 스타트업 인수 소식과 실적 발표가 있었으나, 시장 반응은 미미했습니다. 견고한 실적에도 불구하고 성장성에 대한 의문이 제기되며 주가는 보합세를 보였습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neu"><strong>AI 스타트업 인수:</strong> 20억 달러에 이스라엘 AI 스타트업 Q.ai를 인수. 얼굴 미세 표정을 읽는 기술로, Siri 개선 등에 활용될 전망. 하지만 투자자들은 "너무 늦었다", "가성비가 나쁘다" 등 회의적인 반응을 보임.</li>
+                    <li class="pos"><strong>견고한 실적:</strong> 1분기 실적에서 EPS와 매출 모두 시장 예상을 상회. 특히 아이폰 매출이 강세를 보이며 "아이폰 돈 복사기는 여전하다"는 평가를 받음.</li>
+                    <li class="neg"><strong>성장성 의문 및 주가 보합:</strong> 좋은 실적에도 불구하고 주가는 시간 외에서 거의 움직이지 않음. 폭발적인 성장을 보여주지 못해 투자자들의 기대를 충족시키지 못했다는 분석. "옵션 투자자들을 모두 죽이는 주가 움직임"이라는 비판.</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">기타 언급주</h2>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker negative">미네랄/광물 관련주</span> (MP, LAC, UUUU, USAR)</h3>
+                <p class="summary"><strong>미국 정부가 핵심 광물에 대한 가격 하한선(price floor) 정책을 철회할 것이라는 로이터 보도로 관련주들이 시간 외에서 급락했습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neg"><strong>정책 변경 우려:</strong> 정부의 가격 보조 없이는 중국의 저가 공세에 맞설 수 없어, 미국 내 광물 프로젝트의 경제성이 사라질 것이라는 우려가 확산됨.</li>
+                    <li class="neu"><strong>MP 머티리얼즈의 반박 (MP):</strong> 기사의 직접적인 대상이 된 MP 머티리얼즈는 "기사는 부정확하며, 정부와의 계약은 유효하다"는 공식 입장을 발표. 이후 주가는 일부 회복.</li>
+                    <li class="neu"><strong>장기적 관점:</strong> "가격 보조와 상관없이 중국 의존도를 벗어나야 하는 국가 안보 이슈는 변하지 않았다"며 장기적으로는 주가가 상승할 것이라는 의견도 존재.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">PLTR</span> Palantir Technologies</h3>
+                <p class="summary"><strong>최근 주가 부진을 겪고 있는 PLTR에 대해, AI 및 국방 관련 모멘텀을 기대하며 3만 달러를 투자한 게시글이 올라와 갑론을박이 벌어졌습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>저평가 및 반등 기대:</strong> 주가가 6개월간 3% 하락한 상태이며, AI 및 국방 관련 기업으로서 재평가받을 시점이 되었다는 주장. 실적 발표를 앞두고 '깜짝 발표'에 대한 기대감.</li>
+                    <li class="neg"><strong>정부 계약 리스크:</strong> 주 수입원이 정부 계약인 만큼, 정부 셧다운 등의 정치적 리스크에 취약하다는 지적.</li>
+                    <li class="neg"><strong>과도한 밸류에이션:</strong> 여전히 높은 밸류에이션에 거래되고 있으며, 최근의 상승은 과도한 '하이프(hype)'였다는 비판. 추가 상승보다 하락 위험이 더 크다는 의견.</li>
+                </ul>
+            </div>
+            
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">HOOD</span> Robinhood</h3>
+                 <p class="summary"><strong>주가 하락으로 콜옵션 투자자들이 어려움을 겪는 가운데, 트럼프 행정부와의 연계 가능성 뉴스로 장 막판 급등하는 등 높은 변동성을 보였습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="neg"><strong>지속적인 주가 하락:</strong> "딥(dip)이 몇 번이나 더 나올 수 있냐"며 하락에 지친 투자자들의 한탄. 실적 발표 전까지 회복이 어려울 것이라는 비관적 전망.</li>
+                     <li class="pos"><strong>'트럼프 계정' 뉴스:</strong> 미국 정부가 아동을 위한 '트럼프 계정' 운영사로 로빈후드를 고려하고 있다는 뉴스가 나오며 시간 외에서 주가가 급등.</li>
+                    <li class="neu"><strong>경쟁사 BULL과의 관계:</strong> 많은 투자자들이 로빈후드 앱을 사용해 경쟁사인 웨이블($BULL) 주식을 거래하는 아이러니한 상황이 자주 언급됨.</li>
+                </ul>
+            </div>
+
+            <div class="stock-section">
+                <h3 class="stock-title"><span class="ticker neutral">단기 트레이딩 종목</span> (QQQ, SPY 등)</h3>
+                 <p class="summary"><strong>0DTE 옵션을 활용한 단타 매매로 큰 수익을 올린 인증글들이 공유되었습니다. 시장의 급변동성을 이용한 초단기 트레이딩이 활발하게 이루어지고 있습니다.</strong></p>
+                <ul class="analysis-list">
+                    <li class="pos"><strong>V자 반등을 이용한 수익:</strong> QQQ(나스닥 100 ETF)가 급락 후 V자 반등을 하는 과정에서 풋옵션과 콜옵션을 연달아 성공시켜 720달러를 2만 4천 달러로 만든 투자 사례가 화제.</li>
+                    <li class="neu"><strong>높은 위험성:</strong> "2만 5천 달러를 걸고 3천 달러를 먹는 매매"라며 위험 대비 수익률이 낮다는 비판과, 이런 매매는 결국 계좌를 파산으로 이끈다는 경고가 많았음.</li>
+                </ul>
+                 <div class="annotation">
+                    <p><strong>*주석: 0DTE (Zero Days to Expiration):</strong> 만기가 당일인 초단기 옵션. 가격 변동이 매우 커서 '로또'처럼 여겨지며, 성공 시 막대한 수익을 얻지만 실패 시 투자금 전액을 잃을 확률이 매우 높은 초고위험 상품입니다.</p>
+                </div>
+            </div>
+
+            <!-- More Stocks -->
+            <table>
+              <thead>
+                <tr>
+                  <th>티커</th>
+                  <th>주요 내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ADBE</strong> (Adobe)</td>
+                  <td>AI가 핵심 사업을 잠식하기보다 향상시킬 것이라는 믿음으로 스윙 트레이딩 및 장기 보유 관점의 매수 의견.</td>
+                </tr>
+                <tr>
+                  <td><strong>HIMS</strong> (Hims & Hers Health)</td>
+                  <td>탈모 및 발기부전 치료제 관련 온라인 의료 플랫폼. 주가 급락 후 저가 매수(Buy the dip)에 나선 투자자가 있었으나, GLP-1 판매 중단 등으로 추가 하락 가능성이 높다는 부정적 의견이 다수.</td>
+                </tr>
+                <tr>
+                  <td><strong>DUOL</strong> (Duolingo)</td>
+                  <td>65만 달러 규모의 '욜로(YOLO)' 투자가 등장. 고평가 논란과 함께 실시간 번역 기술의 발전이 장기적인 위협이 될 수 있다는 분석.</td>
+                </tr>
+                 <tr>
+                  <td><strong>TSLA</strong> (Tesla)</td>
+                  <td>실적 부진, 주력 모델 단종 등 악재에도 불구하고 주가는 소폭 하락에 그침. 옵티머스 로봇, SpaceX와의 합병 등 새로운 '이야기'로 주가를 방어하고 있다는 평가. "자동차 회사가 아니다"라는 말이 밈처럼 사용됨.</td>
+                </tr>
+                 <tr>
+                  <td><strong>SOFI</strong> (SoFi Technologies)</td>
+                  <td>실적 발표를 앞두고 기대감과 우려가 공존. "항상 실적은 좋지만 발표 후 주가는 하락한다"는 의견이 있음.</td>
+                </tr>
+                 <tr>
+                  <td><strong>PLTR</strong> (Palantir)</td>
+                  <td>AI와 국방 관련주로 재부각될 것을 기대하는 매수 의견. 그러나 정부 계약 의존도와 높은 밸류에이션에 대한 우려도 제기됨.</td>
+                </tr>
+                 <tr>
+                  <td><strong>RKLB, ASTS, LUNR</strong> (우주 관련주)</td>
+                  <td>SpaceX의 IPO 소식에 동종 기업들이 비교 대상으로 부각되며 주가 상승 기대감이 형성됨.</td>
+                </tr>
+                <tr>
+                  <td><strong>CCL, RCL</strong> (크루즈 관련주)</td>
+                  <td>코로나 이후 여행 수요 회복에 힘입어 꾸준한 상승세를 보이며 일부 투자자들에게 좋은 수익을 안겨줌.</td>
+                </tr>
+                <tr>
+                  <td><strong>GUTS</strong> (Fractyl Health)</td>
+                  <td>임상 결과 발표를 앞두고 한 투자자가 포트폴리오의 절반 이상을 투자. 그러나 결과 발표 후 주가가 -70% 폭락하며 큰 손실을 입음. 바이오테크 투자의 높은 위험성을 보여주는 사례.</td>
+                </tr>
+              </tbody>
+            </table>
+             <div class="annotation">
+                    <p><strong>*면책 조항:</strong> 이 내용은 정보 제공을 목적으로 하며, 투자 조언이 아닙니다. SNS의 의견을 요약한 것으로, 사실과 다를 수 있으며 매우 높은 변동성과 위험을 내포하고 있습니다. 모든 투자 결정에 대한 책임은 투자자 본인에게 있습니다.</p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
