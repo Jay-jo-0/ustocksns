@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 1rem;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #3f51b5;
+            padding-bottom: 0.5rem;
+        }
+        .date-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .stock-card {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            background-color: #fafafa;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .stock-card h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.75rem;
+        }
+        .item-list {
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .item-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .item-list li:last-child {
+            border-bottom: none;
+        }
+        .item-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .bullish-icon, .bearish-icon, .neutral-icon {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .bullish-icon { color: #4CAF50; }
+        .bearish-icon { color: #F44336; }
+        .neutral-icon { color: #757575; }
+        .item-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #444;
+        }
+        .annotation {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.75rem;
+            padding-left: 1rem;
+            border-left: 3px solid #ccc;
+        }
+        strong.bullish { color: #1b5e20; }
+        strong.bearish { color: #b71c1c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p class="date-subtitle">26.02.04 AM</p>
+
+        <div class="stock-card">
+            <h2>PYPL (PayPal)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>약세 전망이 지배적</div>
+                    <div class="item-content">
+                        예상보다 훨씬 부진한 실적 가이던스 발표로 주가가 폭락했습니다. (기존 연 5% 성장 기대 -> 한 자릿수 감소 예상) 투자자들은 페이팔을 '레거시 결제 시스템'으로 간주하며, 애플페이, 구글페이, 리볼루트, 와이즈, 클라나와 같은 경쟁사에 시장 점유율을 잃고 있다고 분석합니다. 또한 높은 수수료, 판매자에게 불리한 정책, 잦은 계정 동결 문제 등이 단점으로 지적됩니다. 일부는 페이팔을 몰락한 야후, 시어스에 비유하며 '<strong class="bearish">가치 함정(Value Trap)</strong>'이라고 평가합니다. 낸시 펠로시가 최근 지분을 매각한 사실도 부정적인 신호로 받아들여집니다.
+                        <span class="annotation">
+                            <strong>*가치 함정(Value Trap):</strong> 주가가 저렴해 보여 매력적인 가치주처럼 보이지만, 실제로는 펀더멘털 악화로 인해 주가가 회복되지 못하고 계속 하락하는 주식.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span>반발 매수 기회 관점</div>
+                    <div class="item-content">
+                        소수 의견으로, 과도한 하락을 <strong class="bullish">매수 기회</strong>로 보는 시각도 있습니다. 낮은 주가수익비율(PER)이 10 미만으로 떨어져 밸류에이션 매력이 있다는 주장입니다. 연간 40억 달러 이상의 순이익을 내는 견실한 기업이며, 60억 달러 규모의 자사주 매입 계획도 긍정적으로 평가됩니다. 일부 투자자들은 '공포에 사라'는 격언을 언급하며 <strong class="bullish">LEAPS 콜옵션</strong> 매수나 주식 분할 매수를 고려하고 있습니다.
+                        <span class="annotation">
+                            <strong>*LEAPS (Long-Term Equity Anticipation Securities):</strong> 만기가 1년 이상 남은 장기 옵션. 단기 옵션보다 시간 가치 하락이 느려 장기적인 주가 상승에 베팅할 때 사용됩니다.
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="neutral-icon">●</span>기타: 밈(Meme) 및 파생 투자</div>
+                    <div class="item-content">
+                        'PainPal(고통페이)'이라는 멸칭으로 불리며 조롱의 대상이 되고 있습니다. 한 투자자가 행사가 52달러, 53달러에 500계약의 풋옵션을 매도한 사실이 언급되며 그의 생사(?)를 걱정하는 반응이 많았습니다. 이는 주가가 행사가 밑으로 떨어질 경우 막대한 손실을 입는 포지션입니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>AMD (Advanced Micro Devices)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span>호실적 발표</div>
+                    <div class="item-content">
+                        매출과 주당순이익(EPS) 모두 시장 예상치를 상회하는 <strong class="bullish">호실적</strong>을 기록했습니다. 데이터센터, 클라이언트 및 게이밍 부문 모두 전년 대비 30% 이상 성장했으며, 다음 분기 가이던스 또한 예상치를 웃돌았습니다. EPYC, Ryzen CPU와 데이터센터 AI 부문의 강한 모멘텀이 강조되었습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>실적 발표 후 주가 하락</div>
+                    <div class="item-content">
+                        호실적에도 불구하고 주가는 시간 외 거래에서 6% 이상 하락했습니다. 이는 시장의 높은 기대치를 완벽히 충족시키지 못했기 때문으로 분석됩니다. 특히 1분기 가이던스가 직전 4분기 매출보다는 낮게 제시된 점이 '성장 둔화' 신호로 해석되었습니다. 'Advanced Money Destroyer(첨단 자금 파괴자)'라는 오랜 밈이 다시 회자되고 있습니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>MSFT (Microsoft)</h2>
+            <ul class="item-list">
+                 <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>최근 주가 부진</div>
+                    <div class="item-content">
+                        최근 주가가 계속 하락하면서 투자자들의 불만이 커지고 있습니다. "쓰레기 주식"이라는 격한 표현까지 등장하며, 빌 게이츠와 엡스타인 파일의 연관성을 하락 원인으로 추측하는 의견도 있으나, 이는 근거가 부족하다는 반박도 있습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span>매수 기회라는 의견</div>
+                    <div class="item-content">
+                        펀더멘털이 견고한 우량주이므로, 현재의 하락을 <strong class="bullish">저가 매수 기회</strong>로 보는 투자자들이 많습니다. 마이크로소프트의 AI '코파일럿'도 매수를 추천했다는 농담 섞인 의견도 있습니다. 일부 투자자들은 장기적인 관점에서 <strong class="bullish">딥 인더머니(Deep ITM) LEAPS 콜옵션</strong>을 매수하며 상승에 베팅하고 있습니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>INTC (Intel)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="neutral-icon">●</span>GPU 사업 재확인</div>
+                    <div class="item-content">
+                        CEO가 GPU를 만들 것이며, 이를 위해 임원을 고용했다고 발표했습니다. 이는 데이터센터용 GPU 시장 진출을 의미하는 것으로 해석되나, 이미 ARC라는 소비자용 GPU를 만들고 있다는 점에서 투자자들 사이에 혼란과 냉소적인 반응이 나왔습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>부정적 평가</div>
+                    <div class="item-content">
+                        모바일과 GPU 시장의 흐름을 놓친 '멍청이들이 운영하는 회사'라는 비판이 많습니다. 일부는 미국 정부의 보조금 없이는 살아남기 힘든 '죽은 회사'라고 평가하며, 전 직원은 내부 상황이 '엉망진창(shit show)'이라고 표현했습니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>SLV / GLD (은/금 ETF)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span>강한 반등세</div>
+                    <div class="item-content">
+                        최근 급락 이후 강한 반등세를 보이고 있습니다. 일부 투자자들은 다시 사상 최고치(ATH)를 경신할 것으로 기대합니다. 하락에 베팅한 풋옵션과 반등에 베팅한 콜옵션으로 큰 수익을 올린 투자자들의 인증이 이어졌습니다.
+                    </div>
+                </li>
+                 <li>
+                    <div class="item-title"><span class="neutral-icon">●</span>변동성 경고</div>
+                    <div class="item-content">
+                        JP Morgan이 은에 대해 '과대평가'되었다가 며칠 만에 '저평가'되었다고 말을 바꾸는 등 기관들의 엇갈린 전망으로 극심한 변동성을 보이고 있습니다. 고점에서 매수한 한 투자자는 큰 손실을 입었다고 토로했습니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>GOOG / GOOGL (Alphabet)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span>실적 발표 기대감</div>
+                    <div class="item-content">
+                        곧 있을 실적 발표에 대한 <strong class="bullish">기대감</strong>이 매우 높습니다. 최근 주가가 계속 상승해왔으며, 구글이 시장의 구원투수가 될 것이라는 의견이 많습니다. 합리적인 PER을 가진 최고의 AI 관련주로 평가받고 있습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>실적 발표 후 하락 우려</div>
+                    <div class="item-content">
+                        AMD의 사례처럼, 시장의 높은 기대를 충족시키지 못할 경우 호실적을 발표하더라도 주가가 하락할 수 있다는 우려도 존재합니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <h2>CMG (Chipotle Mexican Grill)</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span>주가 하락 및 부정적 평가</div>
+                    <div class="item-content">
+                        방문객 수 감소와 부진한 실적 가이던스로 주가가 하락했습니다. 투자자들은 12~17달러에 달하는 비싼 가격, 계속 줄어드는 고기 양, 짠 음식과 일관성 없는 품질, 비위생적인 매장 환경 등을 문제로 지적합니다. 타코벨이나 큐도바(Qdoba)가 더 낫다는 평가가 많습니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <h2>기타 주요 언급 주식</h2>
+            <ul class="item-list">
+                <li>
+                    <div class="item-title"><span class="neutral-icon">●</span><strong>TSLA (Tesla)</strong></div>
+                    <div class="item-content">
+                        부진한 실적에도 주가가 상승하는 것에 대한 의문이 제기되었습니다. 일론 머스크가 엡스타인 파일에 연루되었다는 점이 부정적으로 언급되었습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="neutral-icon">●</span><strong>PLTR (Palantir)</strong></div>
+                    <div class="item-content">
+                        페이팔보다 낫다는 평가를 받으며, 미국 정부와의 계약을 기반으로 한 독점적 위치가 긍정적으로 언급됩니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span><strong>HOOD (Robinhood)</strong></div>
+                    <div class="item-content">
+                        최근 주가 하락폭이 큽니다. 한 투자자는 어제 산 것을 인생 최악의 결정이었다고 말했습니다. 암호화폐 시장의 하락과 연동되어 부정적인 평가를 받고 있습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span><strong>MU (Micron) / SNDK (SanDisk)</strong></div>
+                    <div class="item-content">
+                        메모리 칩 관련주로 AI 열풍의 수혜를 받고 있습니다. 특히 <strong class="bullish">SNDK</strong>는 연일 급등하며 강한 상승세를 보이고 있지만, 단기 급등에 따른 조정 우려도 나옵니다. <strong class="bullish">MU</strong>는 하락 시 매수하라는 의견이 있습니다.
+                    </div>
+                </li>
+                 <li>
+                    <div class="item-title"><span class="bearish-icon">▼</span><strong>NVO (Novo Nordisk)</strong></div>
+                    <div class="item-content">
+                        비만 치료제 시장의 경쟁 심화와 부정적인 매출 전망으로 주가가 14% 급락했습니다. 캐나다 등 주요 시장에서의 특허 만료가 큰 악재로 작용하고 있습니다.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-title"><span class="neutral-icon">●</span><strong>SPY / SPXW / QQQ (주요 지수 ETF)</strong></div>
+                    <div class="item-content">
+                        시장의 극심한 변동성을 보여주는 지표로 자주 언급됩니다. 특히 만기가 하루 남지 않은 <strong class="bearish">0DTE 옵션</strong>을 이용한 초단타 매매가 활발하게 이루어지고 있습니다.
+                        <span class="annotation">
+                            <strong>*0DTE (Zero Day to Expiration):</strong> 만기일이 당일인 옵션. 변동성이 극심하여 초고위험-초고수익 투기로 간주됩니다.
+                        </span>
+                    </div>
+                </li>
+                 <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span><strong>UUUU (Energy Fuels)</strong></div>
+                    <div class="item-content">
+                        "원자(Atoms)가 새로운 소프트웨어"라는 논지와 함께 강력한 <strong class="bullish">매수 추천</strong> 의견이 제시되었습니다. AI와 미래 산업에 필수적인 우라늄을 생산하는 미국의 유일한 기업이라는 점이 부각되며 '제2의 엔비디아'가 될 수 있다는 주장이 나왔습니다.
+                    </div>
+                </li>
+                 <li>
+                    <div class="item-title"><span class="bullish-icon">▲</span><strong>WMT (Walmart)</strong></div>
+                    <div class="item-content">
+                        시가총액 1조 달러 클럽에 가입하며 주목받았습니다. 경기 둔화 속에서 소비자들이 저렴한 상품을 찾으면서 수혜를 보고 있으며, 아마존과 경쟁하는 온라인 유통망을 갖춘 '숨겨진 기술주'라는 평가도 나옵니다.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
