@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --header-bg: #ffffff;
+            --table-border: #dee2e6;
+            --accent-color: #007bff;
+            --positive-color: #28a745;
+            --negative-color: #dc3545;
+            --section-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: var(--header-bg);
+            padding: 20px 15px;
+            text-align: center;
+            border-bottom: 1px solid var(--table-border);
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .stock-section {
+            background-color: var(--section-bg);
+            border: 1px solid var(--table-border);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stock-section h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+        .stock-info {
+            font-size: 1rem;
+        }
+        .stock-info p {
+            margin: 0 0 12px 0;
+        }
+        .stock-info strong {
+            color: #343a40;
+        }
+        .analysis, .reaction {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--table-border);
+        }
+        .analysis h3, .reaction h3 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+        .bullet-list {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .bullet-list li {
+            margin-bottom: 8px;
+        }
+        .positive {
+            color: var(--positive-color);
+            font-weight: bold;
+        }
+        .negative {
+            color: var(--negative-color);
+            font-weight: bold;
+        }
+        .neutral {
+            color: #6c757d;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #f0f0f0;
+        }
+        .category-title {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>미국 SNS 주식 관심 동향</h1>
+            <p>(26.02.25 AM)</p>
+        </div>
+
+        <h2 class="category-title">🤖 AI & 반도체</h2>
+
+        <div class="stock-section">
+            <h2>OpenAI</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> 천문학적인 현금 소진 계획이 투자자들의 주요 관심사로 떠올랐습니다. 2030년까지의 지출 계획이 1.4조 달러에서 6천억 달러로 축소되었다는 소식이 있었으나, 이는 기간 설정의 차이(2034년까지 1.4조 달러)에 따른 오해라는 정정 의견도 나왔습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="negative">과도한 현금 소진(Cash Burn) 우려:</span> Uber, Netflix 등 과거 막대한 자금을 소진했던 기업들과 비교되며, 수익 모델에 대한 강한 의구심이 제기되었습니다. 특히 AGI(일반인공지능) 개발이라는 단 하나의 목표에 모든 것을 거는 'YOLO'식 투자라는 비판이 많습니다.</li>
+                        <li><span class="negative">경쟁 심화와 기술적 한계:</span> Google(Gemini), Anthropic(Claude) 등 경쟁사들의 성능이 뛰어나거나 특정 분야에서 더 우수하다는 평가가 나오면서 OpenAI의 독점적 지위에 대한 회의론이 확산되고 있습니다. 특히 LLM 모델이 AGI로 가는 길이 아닐 수 있다는 기술적 한계 지적도 나옵니다.</li>
+                        <li><span class="neutral">IPO 가능성 언급:</span> 막대한 지출 계획과 맞물려 IPO를 준비하고 있다는 관측이 나오며, 상장 시 시장에 미칠 파장에 대한 우려와 기대가 공존합니다.</li>
+                        <li><span class="neutral">주요 파트너사에 미치는 영향:</span> OpenAI의 지출은 곧 Microsoft(클라우드), Nvidia(반도체) 등 파트너사의 매출로 연결되기에, 이들 기업에 대한 간접적인 투자 판단 근거로도 활용되고 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>AGI (Artificial General Intelligence):</em> 특정 작업만 수행하는 현재의 AI를 넘어 인간과 같이 생각하고 학습하며 광범위한 문제를 해결할 수 있는 인공 일반 지능을 의미합니다.</p>
+                    <p><em>YOLO (You Only Live Once):</em> '인생은 한 번뿐'이라는 뜻으로, 큰 위험을 감수하고 전 재산을 한 곳에 투자하는 행위를 의미합니다.</p>
+                    <p><em>Cash Burn (현금 소진):</em> 기업이 수익보다 더 많은 현금을 지출하여 보유 현금이 줄어드는 상황을 말합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>NVIDIA (NVDA)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> AI 칩 시장의 독점적 리더로서 AI 기업들의 대규모 지출의 최대 수혜자로 꼽힙니다. OpenAI, Meta 등 AI 기업들이 칩 구매를 위해 막대한 자금을 지출하며 Nvidia의 매출을 견인하고 있습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">AI 붐의 최대 수혜주:</span> "AI 시대의 삽과 곡괭이를 파는 기업"으로 비유되며, AI 모델 학습과 추론에 필수적인 GPU를 공급하며 막대한 이익을 창출하고 있다는 평가가 지배적입니다.</li>
+                        <li><span class="neutral">'묻지마 투자'와 버블 우려:</span> OpenAI와 같은 기업에 대한 투자가 다시 Nvidia 칩 구매로 이어지는 '순환 투자' 구조에 대한 언급이 나옵니다. AI 버블이 붕괴될 경우 Nvidia 주가도 큰 타격을 입을 것이라는 우려와 함께 풋옵션(주가 하락 베팅)에 대한 관심도 나타났습니다.</li>
+                        <li><span class="neutral">경쟁사 동향 주시:</span> AMD가 Meta와 대규모 공급 계약을 체결하는 등 경쟁사들의 추격이 시작되면서, Nvidia의 독점적 지위가 흔들릴 수 있다는 의견도 일부 제기됩니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stock-section">
+            <h2>AMD (Advanced Micro Devices)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> Meta와 600억 달러 규모의 AI 칩 공급 계약을 체결했다는 소식에 주가가 급등하며 시장의 큰 주목을 받았습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">Nvidia 대항마 부상:</span> 이번 계약을 통해 AMD가 Nvidia의 대안으로 부상할 수 있다는 기대감이 커졌습니다. 투자자들은 이를 Nvidia의 가격 결정력에 대한 견제 신호로 해석하기도 합니다.</li>
+                        <li><span class="negative">계약 구조에 대한 비판:</span> Meta에 회사 지분 일부를 구매할 수 있는 워런트(warrant)를 제공하는 계약 조건이 알려지자, "제품을 팔기 위해 회사 지분을 넘기는 헐값 판매"라는 비판이 제기되었습니다. 이는 지분 희석(dilution) 우려로 이어졌습니다.</li>
+                        <li><span class="neutral">AI '순환 투자' 참여:</span> Meta와의 계약으로 AMD 역시 AI 관련 기업들의 '순환 투자(circle jerk)' 구조에 본격적으로 편입되었다는 평가가 나옵니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>Anthropic (Claude)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> OpenAI의 강력한 경쟁자로 급부상하며, 특히 코딩 능력(Claude Code)과 추론 능력에서 높은 평가를 받고 있습니다. Anthropic의 기술력이 SaaS(서비스형 소프트웨어) 기업들의 비즈니스 모델을 위협할 수 있다는 우려가 제기되기도 했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">기술력에 대한 높은 기대:</span> 일부 개발자들은 Claude의 코딩 능력이 ChatGPT를 능가하며, 생산성을 몇 배나 높여준다고 평가합니다. 이는 곧 기업의 개발자 수요를 감소시킬 수 있다는 전망으로 이어집니다.</li>
+                        <li><span class="negative">SaaS 시장의 파괴자 우려:</span> Claude와 같은 AI가 기존의 SaaS 제품들을 대체할 수 있다는 공포감이 확산되며, CrowdStrike(CRWD), Snowflake(SNOW) 등 관련 주식의 매도세를 유발했습니다. IBM의 주가 하락도 Claude의 COBOL 현대화 능력 발표와 연관 짓는 시각이 있었습니다.</li>
+                        <li><span class="positive">IPO 시장의 최대어:</span> Anthropic의 IPO는 투자자들 사이에서 GTA 6 출시와 함께 2026년 가장 기대되는 이벤트로 꼽힐 만큼 높은 관심을 받고 있습니다.</li>
+                    </ul>
+                </div>
+                 <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>SaaS (Software as a Service):</em> 구독 기반으로 제공되는 소프트웨어 서비스를 의미합니다.</p>
+                    <p><em>COBOL:</em> 주로 금융권 등에서 사용되는 오래된 프로그래밍 언어로, 현대화에 많은 비용과 노력이 필요합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>TSMC (Taiwan Semiconductor Manufacturing Co.)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> Nvidia 등 AI 칩 설계 기업들의 반도체를 위탁 생산하는 핵심 기업으로, AI 공급망에서 가장 안전한 투자처 중 하나로 언급됩니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">공급망의 핵심:</span> AI 경쟁의 승자가 누가 되든, 칩 생산은 TSMC가 담당할 것이라는 점에서 안정적인 투자처로 평가받습니다.</li>
+                        <li><span class="negative">지정학적 리스크:</span> 중국의 대만 침공 가능성은 TSMC의 가장 큰 리스크 요인으로 꾸준히 거론됩니다. 일부 투자자들은 이에 대비해 풋옵션을 매수하기도 합니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">🏢 빅테크 & 소프트웨어</h2>
+
+        <div class="stock-section">
+            <h2>Microsoft (MSFT)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> OpenAI에 대한 막대한 투자로 AI 경쟁의 핵심 플레이어로 간주되지만, OpenAI의 리스크가 MSFT로 전이될 수 있다는 우려도 공존합니다. 한 투자자는 단기 콜옵션 투자로 큰 손실을 본 '손실 인증' 글을 올리기도 했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="negative">OpenAI 리스크 노출:</span> MSFT의 미래 Azure 매출 상당 부분이 OpenAI에 의존하고 있다는 분석이 나오며, OpenAI의 실패가 MSFT에 심각한 타격을 줄 수 있다는 우려가 제기됩니다.</li>
+                        <li><span class="negative">Copilot 제품 경쟁력 의문:</span> MSFT의 AI 비서 'Copilot'이 경쟁 제품에 비해 성능이 떨어진다는 의견이 있습니다.</li>
+                        <li><span class="positive">견고한 기존 사업:</span> AI 사업이 실패하더라도 Office, Azure 등 막강한 기존 사업 포트폴리오가 있어 안정적이라는 반론도 존재합니다. 주가 하락을 매수 기회로 보는 의견도 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>콜옵션 (Call Option):</em> 주가가 오를 것에 베팅하는 파생상품입니다. 단기 옵션은 변동성이 매우 큽니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>Google (GOOGL)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> AI 모델 'Gemini'가 ChatGPT의 강력한 대항마로 떠오르면서, 많은 사용자들이 Gemini로 전환하고 있다는 후기가 공유되었습니다. OpenAI와 달리 이미 막대한 수익을 내고 있어 AI 경쟁에서 더 유리하다는 평가를 받습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">Gemini의 약진:</span> 많은 사용자들이 ChatGPT 구독을 취소하고 Google의 생태계와 통합된 Gemini를 사용하는 것이 더 매력적이라고 평가합니다.</li>
+                        <li><span class="positive">재무적 안정성:</span> OpenAI와 달리 이미 수익을 내는 사업(검색, 광고 등)을 기반으로 AI에 투자하고 있어, 현금 소진 우려에서 비교적 자유롭다는 점이 강점으로 꼽힙니다.</li>
+                        <li><span class="positive">장기 투자 매력:</span> AI 경쟁에서의 강력한 입지와 안정적인 재무 구조를 바탕으로 장기 투자(LEAPS) 대상으로 추천되었습니다.</li>
+                    </ul>
+                </div>
+                <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>LEAPS:</em> 만기가 1년 이상 남은 장기 옵션을 의미합니다.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stock-section">
+            <h2>Meta Platforms (META)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> AMD로부터 600억 달러 규모의 AI 칩을 구매하는 계약을 체결하며, AI 인프라에 대한 막대한 투자를 이어가고 있습니다. 한편으로는 '메타버스' 실패 이후 Zuckerberg에 대한 불신이 여전하다는 의견도 나옵니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">공격적인 AI 인프라 투자:</span> AMD와의 대규모 계약은 AI 경쟁에서 뒤처지지 않으려는 Meta의 강력한 의지를 보여준다는 평가입니다.</li>
+                        <li><span class="negative">주가 변동성:</span> 대규모 계약 소식에도 불구하고 주가가 하락하는 모습을 보여, 투자자들 사이에서 혼란스러운 반응이 나왔습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stock-section">
+            <h2>기타 소프트웨어 주식 (SaaS)</h2>
+            <div class="stock-info">
+                <p><strong>대상:</strong> <span class="negative">Workday(WDAY), CrowdStrike(CRWD), Snowflake(SNOW), Cloudflare(NET), Palantir(PLTR)</span> 등 다수</p>
+                <p><strong>주요 내용:</strong> Anthropic의 Claude와 같은 고성능 AI가 기존 SaaS 기업들의 소프트웨어를 대체할 수 있다는 'Claude 공포(Claude fears)'가 확산되면서 관련 주식들이 급락했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="negative">비즈니스 모델 위협:</span> AI가 저렴하고 빠르게 맞춤형 소프트웨어를 생성할 수 있게 되면, 비싼 구독료를 받는 기존 SaaS 기업들의 경쟁력이 약화될 것이라는 우려가 큽니다.</li>
+                        <li><span class="positive">과도한 공포라는 반론:</span> 많은 SaaS 주식들이 이미 고평가 상태였기 때문에 자연스러운 조정이라는 시각도 있습니다. 또한, 기업 고객들은 안정성과 신뢰도를 중시하기 때문에 AI로 급조한 '바이브 코딩' 결과물 대신 검증된 제품을 계속 사용할 것이라는 반론도 제기됩니다.</li>
+                        <li><span class="negative">Workday(WDAY)에 대한 비판:</span> 실적 가이던스 악화로 주가가 급락한 가운데, 투자자들은 복잡하고 불편한 소프트웨어라며 강한 불만을 표출했습니다.</li>
+                    </ul>
+                </div>
+                <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>바이브 코딩 (Vibe Coding):</em> 명확한 계획 없이 직감이나 '분위기'에 의존해 AI에게 코드 생성을 지시하는 행위를 비꼬는 용어입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title"> M&A & 특별 상황</h2>
+
+        <div class="stock-section">
+            <h2>Netflix(NFLX), Paramount(PARA), Warner Bros. Discovery(WBD)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> Warner Bros. Discovery(WBD) 인수를 둘러싸고 Netflix와 Paramount 간의 치열한 인수 경쟁이 벌어지고 있습니다. Paramount가 주당 31달러로 인상된 제안을 내놓았습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">Netflix에 대한 조언:</span> 대부분의 투자자들은 WBD 인수가 너무 비싸다며, Netflix가 인수전에서 발을 빼고 계약 파기 위약금(약 28억 달러)을 챙기는 것이 더 이득이라고 주장합니다. 이 소식에 Netflix 주가는 긍정적인 반응을 보였습니다.</li>
+                        <li><span class="negative">Paramount의 '승자의 저주' 우려:</span> Paramount가 무리하게 높은 가격에 WBD를 인수할 경우 '승자의 저주'에 빠질 수 있다는 우려가 나옵니다.</li>
+                        <li><span class="neutral">인수 배경 추측:</span> Oracle 창업자의 아들인 David Ellison이 보수 성향의 뉴스 채널을 만들기 위해 CNN을 확보하려는 정치적 목적이 있다는 추측이 제기되었습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>PayPal (PYPL) & Stripe</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> 경쟁사인 Stripe가 PayPal 인수를 검토하고 있다는 보도에 PayPal 주가가 급등했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">오랜 주가 하락 후 반등:</span> 그동안 주가가 크게 하락했던 만큼, 저가 매수에 나섰던 투자자(Bag holder)들은 이번 소식을 환영하는 분위기입니다.</li>
+                        <li><span class="negative">실현 가능성에 대한 의문:</span> 실제 인수로 이어질 가능성은 낮다는 회의적인 시각도 존재하며, 단기적인 주가 상승에 그칠 것이라는 의견도 있습니다.</li>
+                    </ul>
+                </div>
+                 <div class="annotation">
+                    <p><strong>주석:</strong></p>
+                    <p><em>Bag holder (백홀더):</em> 주가가 폭락한 후에도 주식을 계속 보유하여 큰 손실을 입은 투자자를 경멸적으로 이르는 말입니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>FedEx (FDX) & UPS</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> FedEx가 과거 트럼프 행정부 시절 부과된 관세에 대해 환급 소송을 제기했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="negative">소비자 환급 여부에 대한 불신:</span> 당시 FedEx가 관세 비용을 소비자에게 청구서 형태로 전가했기 때문에, 환급금을 받더라도 이를 소비자에게 돌려주지 않고 회사의 이익으로 챙길 것이라는 비판이 쏟아졌습니다.</li>
+                        <li><span class="neutral">집단 소송 가능성:</span> 소비자들이 FedEx를 상대로 부당하게 징수된 관세에 대한 집단 소송을 제기해야 한다는 주장이 나오고 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">📈 개별 종목 동향</h2>
+        
+        <div class="stock-section">
+            <h2>DHT Holdings (DHT)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> 한 투자자가 중동의 지정학적 리스크에 베팅하여 DHT 콜옵션으로 50만 달러의 수익을 올린 '수익 인증' 글을 게시했습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">지정학적 리스크 플레이:</span> 호르무즈 해협 봉쇄 등 중동의 긴장 고조가 유조선 운임료를 상승시킬 것이라는 예측이 적중했습니다. 이는 전쟁 위기를 이용한 투자 전략의 성공 사례로 언급됩니다.</li>
+                        <li><span class="neutral">수익 실현에 대한 조언:</span> 많은 사용자들이 "수익은 실현할 때 진짜 수익"이라며 이익을 확정하라고 조언했지만, 해당 투자자는 더 큰 수익을 위해 포지션을 유지하겠다는 반응을 보였습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>Marathon Petroleum (MPC)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> 이란과의 전쟁 가능성 등 중동 위기가 심화될 경우, 글로벌 정제유 부족 사태가 발생하여 미국 정유사들이 큰 이익을 볼 것이라는 상세 분석(DD) 글이 올라왔습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">정제 마진 상승 기대:</span> 중동 정유 시설이 타격을 입거나 원유 수송로가 막힐 경우, 미국 걸프 연안에 위치한 MPC와 같은 정유사들의 수출이 급증하며 이익이 크게 늘어날 것이라는 분석입니다.</li>
+                        <li><span class="negative">AI 생성 분석에 대한 비판:</span> 분석 글의 일부가 ChatGPT나 Grok 등 AI로 작성되었다는 비판을 받으며 내용의 신뢰성에 대한 의문이 제기되었습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>IOVANCE Biotherapeutics (IOVA)</h2>
+            <div class="stock-info">
+                <p><strong>주요 내용:</strong> 강력한 4분기 실적 발표와 함께, 회사의 암 치료 기술(TIL)에 대한 긍정적인 전망이 공유되었습니다.</p>
+                <div class="analysis">
+                    <h3>분석 및 투자자 반응</h3>
+                    <ul class="bullet-list">
+                        <li><span class="positive">혁신적 치료법에 대한 기대:</span> 개인 맞춤형 세포 치료법인 TIL이 기존 치료에 실패한 암 환자들에게 새로운 희망이 될 수 있다는 기대감이 높습니다.</li>
+                        <li><span class="positive">높은 인수합병(M&A) 가능성:</span> 독보적인 기술력과 생산 시설을 갖추고 있어 Merck, Pfizer 등 대형 제약사에 인수될 가능성이 매우 높다는 분석이 나왔습니다. 인수 시 예상 주가에 대한 다양한 시나리오가 제시되었습니다.</li>
+                        <li><span class="negative">치료 부작용 및 비용 문제:</span> 치료 과정에서 환자가 사망할 수 있는 위험성과 높은 치료 비용이 상용화의 장벽이 될 수 있다는 지적도 있었습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock-section">
+            <h2>기타 언급된 주식들</h2>
+            <div class="stock-info">
+                <ul class="bullet-list">
+                    <li><strong>Tesla (TSLA):</strong> 현금 소진 비교 대상으로 언급되었으며, 일부는 로봇 사업에 대한 기대를, 다른 일부는 CEO 리스크와 판매 부진을 지적합니다.</li>
+                    <li><strong>Home Depot (HD):</strong> 예상을 상회하는 실적을 발표했으나, 높은 주택 개조 비용으로 인해 수요가 둔화되고 있다는 의견이 있습니다.</li>
+                    <li><strong>Nuclear Energy Stocks (OKLO, SMR):</strong> AI 데이터센터의 막대한 전력 수요를 감당하기 위한 대안으로 원자력 관련주에 대한 관심이 증가하고 있습니다.</li>
+                    <li><strong>MercadoLibre (MELI):</strong> 실적 발표 후 주가가 하락했으며, 일부 투자자들은 이를 과도한 반응으로 보고 저가 매수 기회로 삼고 있습니다.</li>
+                    <li><strong>Keurig Dr Pepper (KDP):</strong> 실적 발표 후 콜옵션 수익을 인증하는 글이 올라왔습니다.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
