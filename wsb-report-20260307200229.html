@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #dddfe2;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #1877f2;
+        }
+        .header p {
+            margin: 5px 0 0;
+            color: #606770;
+            font-size: 1em;
+        }
+        .container {
+            padding: 15px;
+        }
+        .stock-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .stock-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #1c1e21;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e7f3ff;
+            padding-bottom: 10px;
+        }
+        .stock-title span {
+            font-size: 0.8em;
+            color: #606770;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+        .reason-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .reason-item {
+            margin-bottom: 18px;
+        }
+        .reason-title {
+            font-weight: 600;
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .reason-text {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #444;
+            margin: 0;
+        }
+        .annotation {
+            font-size: 0.8em;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+        }
+        .sentiment {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .sentiment-bullish { background-color: #e7f7ef; color: #1f8a4a; }
+        .sentiment-bearish { background-color: #fdecea; color: #d93025; }
+        .sentiment-mixed { background-color: #fff8e1; color: #f29900; }
+        .sentiment-neutral { background-color: #f1f3f4; color: #5f6368; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>미국 SNS 주식 관심 동향</h1>
+        <p>26.03.07 PM</p>
+    </div>
+
+    <div class="container">
+
+        <div class="stock-card">
+            <div class="stock-title">시장 종합 <span class="sentiment sentiment-bearish">매우 부정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">경기 침체(Stagflation) 공포 확산</p>
+                    <p class="reason-text">예상치를 크게 하회한 고용 지표(-92,000)와 실업률 상승(4.4%)으로 인해 경기 침체에 대한 우려가 급격히 확산되고 있습니다. 동시에 중동 전쟁으로 인한 유가 급등은 인플레이션 압력을 가중시켜, 물가는 오르는데 경기는 침체하는 '스태그플레이션' 시나리오가 현실화될 수 있다는 공포감이 팽배합니다. 많은 투자자들이 시장 하락에 베팅하는 풋옵션을 매수하거나 고려 중입니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">중동 지정학적 리스크 및 유가 급등</p>
+                    <p class="reason-text">미국과 이란 간의 전쟁으로 인해 유가가 역사적인 수준으로 폭등(주간 35% 상승)했습니다. 이는 운송비, 생산비 등 전반적인 비용 상승을 유발하여 기업 실적과 소비 심리에 큰 타격을 줄 것으로 예상됩니다. 유가 상승은 인플레이션을 자극하여 연준의 금리 인하 기대를 약화시키는 요인으로 작용하고 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">AI 버블 붕괴 신호</p>
+                    <p class="reason-text">블랙록의 사모펀드 환매 중단과 오라클-OpenAI의 데이터센터 확장 계획 철회 소식은 AI 산업에 대한 과도한 기대감이 꺾이는 신호로 해석되고 있습니다. 투자자들은 이를 2000년 닷컴 버블 붕괴와 유사한 상황으로 인식하며, 벤처 캐피탈(VC)의 자금 회수가 시작되면 AI 관련 주식들이 연쇄적으로 폭락할 수 있다고 우려하고 있습니다.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">BlackRock (BLK) <span class="sentiment sentiment-bearish">매우 부정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">사모 신용 펀드(Private Credit Fund) 환매 제한</p>
+                    <p class="reason-text">블랙록이 운용하는 260억 달러 규모의 사모 신용 펀드에서 환매 요청이 급증하자 인출을 제한했다는 소식이 전해졌습니다. 이는 시장 참여자들에게 2008년 금융 위기의 전조를 떠올리게 하는 강력한 위험 신호로 받아들여지고 있습니다. 투자자들은 이를 유동성 위기의 시작으로 해석하며, '뱅크런'과 유사한 사태가 사모 펀드 시장 전반으로 확산될 수 있다는 공포를 느끼고 있습니다.</p>
+                    <p class="annotation"><strong>사모 신용 펀드(Private Credit Fund):</strong> 비공개적으로 자금을 모아 기업에 직접 대출해주는 펀드. 일반적으로 유동성이 낮아 환매에 제약이 있을 수 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">시스템 리스크 우려</p>
+                    <p class="reason-text">일부 투자자들은 이것이 비유동성 자산의 일반적인 운용 규칙이라고 주장하지만, 대다수는 세계 최대 자산운용사의 이러한 조치가 시장의 신뢰를 심각하게 훼손하고 다른 금융 기관으로 위기가 전이될 수 있는 시스템 리스크의 징후라고 우려하고 있습니다.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">Oracle (ORCL) <span class="sentiment sentiment-bearish">부정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">OpenAI와의 데이터센터 확장 계획 철회</p>
+                    <p class="reason-text">OpenAI와 함께 추진하던 대규모 데이터센터 확장 계획을 철회했다는 소식이 AI 버블 붕괴의 신호탄으로 여겨지고 있습니다. 투자자들은 이를 오라클 또는 OpenAI의 자금난이나 AI 수요 둔화의 증거로 해석하며, 관련 AI 섹터 전체에 대한 불안감을 표출하고 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">실적 발표에 대한 비관적 전망</p>
+                    <p class="reason-text">다음 주 예정된 실적 발표에 대한 전망이 매우 부정적입니다. 데이터센터 계획 철회 소식과 맞물려 실적이 시장 기대치를 하회할 것이라는 예상이 지배적이며, 많은 투자자들이 주가 하락에 베팅하는 풋옵션을 매수하고 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">일부 반대 매수 심리 존재</p>
+                    <p class="reason-text">한편, 모두가 하락을 예상할 때 오히려 주가가 상승할 수 있다는 '역발상 투자' 심리도 일부 나타나고 있습니다. 시장의 비관론이 극에 달했기 때문에, 예상보다 나쁘지 않은 실적이 발표될 경우 오히려 주가가 급등할 수 있다는 기대감입니다.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">Oil & Energy (USO, UCO) <span class="sentiment sentiment-bullish">매우 긍정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">중동 전쟁으로 인한 공급망 차질</p>
+                    <p class="reason-text">미국과 이란의 전쟁으로 호르무즈 해협의 통행이 사실상 마비되면서 국제 유가가 기록적으로 폭등하고 있습니다. 이는 원유 공급에 대한 극심한 불안감을 반영하며, 관련 ETF인 USO, UCO 등의 가격 급등으로 이어졌습니다. 많은 투자자들이 유가 상승에 베팅하며 큰 수익을 올렸고, 추가 상승에 대한 기대감도 높은 상황입니다.</p>
+                    <p class="annotation"><strong>호르무즈 해협:</strong> 전 세계 원유 해상 수송량의 약 20%가 통과하는 핵심 길목으로, 이곳이 막히면 국제 유가에 즉각적인 영향을 미칩니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">네이키드 콜 매도자의 막대한 손실</p>
+                    <p class="reason-text">한 투자자가 유가 하락에 베팅하며 기초자산 없이 콜옵션을 매도(네이키드 콜 매도)했다가 막대한 손실을 입은 사례가 공유되었습니다. 이는 전쟁 상황에서 유가 하락에 베팅하는 것이 얼마나 위험한지를 보여주는 사례로, 유가 상승에 대한 시장의 강력한 컨센서스를 반증합니다.</p>
+                    <p class="annotation"><strong>네이키드 콜 매도 (Naked Call Selling):</strong> 해당 주식을 보유하지 않은 상태에서 콜옵션을 매도하는 전략. 주가가 무한정 오를 경우 손실도 무한대가 될 수 있어 가장 위험한 투자 전략 중 하나로 꼽힙니다.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">Hims & Hers Health (HIMS) <span class="sentiment sentiment-bullish">매우 긍정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">Novo Nordisk와의 파트너십 발표</p>
+                    <p class="reason-text">세계적인 비만 치료제 제약사 노보 노디스크(NVO)와 파트너십을 맺고, HIMS의 원격의료 플랫폼을 통해 비만 치료제를 판매하기로 했다는 소식이 전해졌습니다. 이 소식에 HIMS 주가는 시간 외 거래에서 40% 이상 폭등했습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">대규모 숏 스퀴즈 발생 기대</p>
+                    <p class="reason-text">HIMS는 공매도 비율이 40%를 넘을 정도로 매우 높은 종목이었습니다. 예상치 못한 대형 호재로 인해 주가가 폭등하면서, 손실을 줄이려는 공매도 투자자들의 대규모 매수(숏 커버링)가 이어질 것으로 예상됩니다. 이는 주가를 더욱 폭발적으로 상승시키는 '숏 스퀴즈'에 대한 강한 기대를 낳고 있습니다.</p>
+                    <p class="annotation"><strong>숏 스퀴즈 (Short Squeeze):</strong> 주가 하락을 예상하고 공매도했던 투자자들이 예상과 달리 주가가 급등할 때, 손실을 줄이기 위해 서둘러 주식을 다시 사들이면서 주가 상승을 더욱 부채질하는 현상.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">Micron (MU) <span class="sentiment sentiment-mixed">혼재</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">AI 시장의 숨은 수혜주라는 분석 (Bullish)</p>
+                    <p class="reason-text">엔비디아의 GPU가 AI의 핵심이라면, 마이크론의 고대역폭 메모리(HBM)는 그 GPU가 제대로 작동하기 위한 필수 부품이라는 분석이 제기되었습니다. AI 모델이 고도화될수록 더 많은 메모리가 필요하기 때문에, 마이크론이 AI 인프라 확장의 핵심적인 수혜를 입을 것이라는 주장입니다. 이미 2026년까지 HBM 공급 물량이 매진되었다는 점이 근거로 제시되었습니다.</p>
+                </li>
+                 <li class="reason-item">
+                    <p class="reason-title">실적 호조 및 긍정적 가이던스 (Bullish)</p>
+                    <p class="reason-text">최근 발표된 실적이 시장 예상을 상회했으며, 다음 분기 가이던스 또한 매우 긍정적으로 제시되었습니다. 이는 AI 수요가 이미 실적에 반영되고 있으며, 성장세가 가속화되고 있음을 보여줍니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">과거의 주기성(Cyclical) 및 고점 우려 (Bearish)</p>
+                    <p class="reason-text">반면, 메모리 반도체 산업은 전통적으로 호황과 불황이 반복되는 주기적 특성을 가지고 있습니다. 이미 주가가 지난 1년간 300% 이상 급등했기 때문에, 현재가 고점일 수 있다는 우려와 함께 과거와 같이 공급 과잉으로 인한 마진 붕괴가 재현될 수 있다는 비관론도 존재합니다.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">NVIDIA (NVDA) <span class="sentiment sentiment-bearish">부정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">AI 투자 축소 및 버블 붕괴 우려</p>
+                    <p class="reason-text">엔비디아의 CEO 젠슨 황이 OpenAI와 앤스로픽(Anthropic)에 대한 추가 투자를 중단할 것이라고 확인했습니다. 이는 AI 산업의 리더가 속도 조절에 나선 것으로 해석되며, 시장 전반에 퍼진 AI 버블 붕괴 우려를 더욱 증폭시키고 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title">시장 조정에 대한 불안감</p>
+                    <p class="reason-text">최근 주가 상승세가 둔화되고 변동성이 커지면서 투자자들의 불안감이 높아지고 있습니다. 특히 마이크론(MU) 실적 발표 이후 주가가 하락한 사례가 언급되며, 엔비디아 역시 좋은 실적에도 불구하고 주가가 하락할 수 있다는 우려가 제기됩니다.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">JetBlue (JBLU) <span class="sentiment sentiment-bearish">매우 부정적</span></div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title">유가 급등에 따른 파산 가능성 분석</p>
+                    <p class="reason-text">유가 급등에 대한 헤지(위험회피)가 전혀 되어 있지 않은 상태에서, 역사적인 수준의 유가 폭등으로 인해 막대한 운영 손실이 예상된다는 상세한 분석이 제기되었습니다. 분석에 따르면, 현재 유가 수준이 유지될 경우 올해 말 현금 유동성이 고갈되어 파산(Chapter 11) 신청이 불가피할 것이라는 전망입니다.</p>
+                </li>
+                 <li class="reason-item">
+                    <p class="reason-title">신용카드사 지급 보류(Holdback) 리스크</p>
+                    <p class="reason-text">항공사의 유동성이 특정 수준 이하로 떨어지면, 신용카드사들은 파산 시 환불 책임을 피하기 위해 항공사에게 지급해야 할 카드 대금을 보류할 수 있습니다. 현재 유가 수준에서는 이 지급 보류 조항이 발동될 가능성이 매우 높아, 현금 흐름이 급격히 악화되는 악순환에 빠질 수 있다는 분석입니다.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">기타 관심 종목</div>
+            <ul class="reason-list">
+                <li class="reason-item">
+                    <p class="reason-title"><strong>Marvell (MRVL)</strong> <span class="sentiment sentiment-bullish">긍정적</span></p>
+                    <p class="reason-text">AI 수요에 힘입어 시장 예상을 뛰어넘는 실적과 긍정적인 향후 가이던스를 발표하며 주가가 급등했습니다. CEO가 실적 발표에서 "내가 눈을 깜빡이는 것처럼 보이나?"라고 말하며 강한 자신감을 내비친 것이 화제가 되었습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title"><strong>Plug Power (PLUG)</strong> <span class="sentiment sentiment-bearish">부정적</span></p>
+                    <p class="reason-text">유가 급등의 대안으로 수소 에너지가 부각될 것이라는 긍정적인 분석이 올라왔지만, 투자자들의 반응은 매우 냉담합니다. "주주 가치를 희석시키는 쓰레기 주식", "단 한 번도 흑자를 낸 적이 없는 회사"라는 비판이 주를 이루며 대표적인 기피 종목으로 언급되고 있습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title"><strong>Netflix (NFLX)</strong> <span class="sentiment sentiment-bullish">긍정적</span></p>
+                    <p class="reason-text">한 투자자가 콜옵션으로 막대한 수익을 인증하며 주목받았습니다. 다만 주가가 100달러 선에서 강한 저항을 받고 있다는 기술적 분석이 함께 언급되었습니다.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title"><strong>Tesla (TSLA)</strong> <span class="sentiment sentiment-bearish">부정적</span></p>
+                    <p class="reason-text">유가 급등이라는 호재에도 불구하고, 한 투자자가 풋옵션을 매수하며 하락에 베팅했습니다. 이는 테슬라가 자동차 회사라기보다는 변동성 큰 밈 주식으로 인식되고 있음을 보여줍니다.</p>
+                    <p class="annotation"><strong>밈 주식(Meme Stock):</strong> 온라인 커뮤니티의 유행이나 입소문을 타고 개인 투자자들의 매수세가 몰려 주가가 급등락하는 주식.</p>
+                </li>
+                <li class="reason-item">
+                    <p class="reason-title"><strong>Reddit (RDDT)</strong> <span class="sentiment sentiment-bearish">매우 부정적</span></p>
+                    <p class="reason-text">SNS에서 선정한 '2026년 유망주 TOP 10' 리스트에서 -42%라는 최악의 수익률을 기록하며 조롱의 대상이 되고 있습니다. 투자자들은 "레딧 광고를 클릭해서 회사를 돕자"는 식의 자조적인 농담을 나누고 있습니다.</p>
+                </li>
+                 <li class="reason-item">
+                    <p class="reason-title"><strong>Defense & Weapon (LASR)</strong> <span class="sentiment sentiment-bullish">긍정적</span></p>
+                    <p class="reason-text">nLIGHT(LASR)의 지향성 에너지 무기(레이저 무기) 기술에 대한 분석이 스타워즈의 '데스 스타' 밈과 함께 공유되며, 전쟁 상황에서 방산주에 대한 관심이 높아지고 있음을 보여주었습니다.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
