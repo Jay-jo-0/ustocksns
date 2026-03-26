@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미국 SNS 주식 관심 동향(26.03.26 PM)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #000;
+            text-align: center;
+            font-size: 2.0em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #4267B2;
+            padding-bottom: 10px;
+        }
+        .stock-card {
+            background-color: #fff;
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        .stock-title {
+            font-size: 1.7em;
+            font-weight: bold;
+            color: #1d2129;
+            margin-bottom: 10px;
+        }
+        .stock-ticker {
+            font-size: 1.1em;
+            color: #606770;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px 8px;
+            border-bottom: 1px solid #e9ebee;
+        }
+        th {
+            background-color: #f5f6f7;
+            font-weight: bold;
+            color: #4b4f56;
+            width: 30%;
+        }
+        .sentiment {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #fff;
+            text-align: center;
+        }
+        .bullish { background-color: #42b72a; }
+        .bearish { background-color: #fa383e; }
+        .neutral { background-color: #ffab00; }
+        .mixed { background-color: #606770; }
+        .annotation {
+            font-size: 0.8em;
+            color: #606770;
+            margin-top: 5px;
+            display: block;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>미국 SNS 주식 관심 동향(26.03.26 PM)</h1>
+
+        <div class="stock-card">
+            <div class="stock-title">S&P 500 ETFs <span class="stock-ticker">(SPY, SPX)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment mixed">혼재 (강한 변동성)</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>강력한 하방 압력 주장 (약세):</strong> 다수의 게시물에서 글로벌 공급망 붕괴, 에너지 쇼크(유가 급등), 부채 위기 등을 이유로 '대세 하락장'의 시작점이라는 분석이 제기되었습니다. 특히 한 분석글에서는 현재 상황이 1970년대 오일쇼크, 2000년 닷컴버블, 2008년 금융위기가 합쳐진 것보다 심각하다고 주장하며 저점 매수 기회가 아니라고 경고했습니다.</li>
+                            <li><strong>단기 변동성을 이용한 매매:</strong> 만기가 하루도 남지 않은 0DTE 옵션 거래가 매우 활발하게 언급됩니다. 시장의 급등락을 이용해 단기 차익을 노리는 투자자들이 많으며, 큰 수익을 인증하는 게시물과 막대한 손실을 입은 게시물이 동시에 나타나고 있습니다.</li>
+                            <li><strong>정치적 변수에 따른 극심한 변동성:</strong> 지정학적 리스크(전쟁 관련)에 대한 발표나 루머에 따라 시장이 급격하게 움직이고 있어, 하룻밤 사이에 포지션을 유지하는 것(오버나잇)이 매우 위험하다는 의견이 많습니다.</li>
+                             <li><strong>'어차피 오른다'는 심리 (강세):</strong> 일부 투자자들은 "주식은 결국 오른다(Stonks only go up)"는 밈을 인용하며, 모든 하락은 매수 기회라는 낙관적인 태도를 보이고 있습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>SPY 540P (4/17 만기) 풋옵션</li>
+                            <li>SPY 665C (0DTE) 콜옵션</li>
+                            <li>다수의 0DTE SPY 콜/풋옵션 (스캘핑/단타)</li>
+                            <li>SPX 풋옵션을 통해 $26,000 수익 인증</li>
+                        </ul>
+                        <small class="annotation">※ <strong>0DTE (Zero Days to Expiration):</strong> 만기일이 당일인 초단기 옵션. 높은 레버리지 효과로 '하이 리스크 하이 리턴' 투자의 대명사입니다.</small>
+                         <small class="annotation">※ <strong>스캘핑(Scalping):</strong> 초단위로 포지션을 잡고 청산하여 작은 이익을 반복적으로 쌓는 매매 기법입니다.</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">Microsoft <span class="stock-ticker">(MSFT)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bearish">약세</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>주가 급락에 따른 손실 인증:</strong> 장기 콜옵션(LEAPS)에 10만 달러 이상을 투자했다가 -70% 이상의 막대한 손실을 본 투자자의 게시물이 큰 주목을 받았습니다. 많은 투자자들이 MSFT의 하락으로 고통받고 있음을 토로했습니다.</li>
+                            <li><strong>기술적 분석 (약세):</strong> 주가가 200주 이동평균선을 하회하고 주요 지지선을 이탈하여 약세 사이클에 진입했다는 기술적 분석이 제기되었습니다.</li>
+                            <li><strong>펀더멘털 우려:</strong> AI 서비스인 'Copilot'의 기능 부족, Windows 11의 버그, 클라우드 서비스 'Azure'의 보안 취약점 등 핵심 사업부에 대한 비판이 제기되며 장기 성장 동력에 대한 의문이 나왔습니다.</li>
+                             <li><strong>과매도 인식 (강세):</strong> 일부 투자자들은 현재 주가가 과도하게 하락했으며, 장기적으로는 회복할 것이라는 의견을 제시했습니다. 한 투자자는 2027년 1월 만기 콜옵션을 보유하며 장기적인 반등을 기대하고 있습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>$550 콜옵션 (2027년 1월 만기) - 대규모 손실 발생</li>
+                            <li>$385 콜옵션 (6월 18일 만기)</li>
+                            <li>다수의 콜옵션 투자자들이 손실을 보고 있음</li>
+                        </ul>
+                        <small class="annotation">※ <strong>LEAPS (Long-Term Equity Anticipation Securities):</strong> 만기가 1년 이상 남은 장기 옵션을 의미합니다.</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">Meta Platforms <span class="stock-ticker">(META)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment mixed">혼재</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>인력 감축 (강세):</strong> 메타가 수백 명의 직원을 해고했다는 소식에 대해, 비용 절감 및 이익 증대로 이어질 것이라는 기대감으로 '콜옵션(매수)'을 외치는 등 강세 의견이 많았습니다. 해고를 통해 AI 효율성을 내세우면 주가가 상승한다는 인식이 지배적입니다.</li>
+                            <li><strong>소송 리스크 (약세):</strong> 소셜 미디어 중독과 관련하여 10대에게 정신적 피해를 입힌 혐의로 300만 달러의 배상 판결을 받았다는 소식이 주요하게 다뤄졌습니다. 이는 단일 소송이지만, 1,600명 이상의 원고가 참여하는 추가 소송의 선례가 될 수 있어 잠재적인 재무 리스크로 평가됩니다.</li>
+                             <li><strong>사업 방향성 비판:</strong> 메타버스 사업의 실패와 막대한 투자금 낭비에 대한 비판이 이어졌습니다. 회사의 전략적 방향성이 불분명하다는 의견도 있습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>콜옵션 (Calls) - 인력 감축 소식에 대한 반응</li>
+                            <li>풋옵션 (Puts) - 소송 리스크 및 펀더멘털 우려에 대한 반응</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">SpaceX <span class="stock-ticker">(비상장)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bullish">강세 (과열 우려)</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>IPO 기대감:</strong> SpaceX가 곧 기업공개(IPO)를 신청할 수 있다는 소식에 폭발적인 관심이 쏠리고 있습니다. Tesla처럼 고평가 논란에도 불구하고 상장 후 주가가 급등할 것이라는 기대가 팽배합니다.</li>
+                            <li><strong>독점적 시장 지위:</strong> 우주 산업의 '마지막 개척자(final frontier)'라는 상징성과 압도적인 기술력을 바탕으로 시장을 선도하고 있다는 점이 강세 요인으로 꼽혔습니다.</li>
+                            <li><strong>고평가 및 버블 우려:</strong> 일부 투자자들은 이미 기업가치가 과도하게 부풀려져 있으며, 개인 투자자들이 고점에 물릴 위험이 크다고 경고합니다. '억만장자들을 위한 펌프 앤 덤프'라는 비판도 제기되었습니다.</li>
+                             <li><strong>관련주 동반 상승 기대:</strong> SpaceX IPO가 현실화될 경우, Rocket Lab(RKLB), AST SpaceMobile(ASTS) 등 다른 우주 관련주들의 가치가 재평가되며 동반 상승할 것이라는 기대감이 형성되고 있습니다.</li>
+                        </ul>
+                         <small class="annotation">※ <strong>펌프 앤 덤프(Pump and Dump):</strong> 주가를 인위적으로 부양시킨 뒤 고점에서 매도하여 차익을 챙기는 사기 수법을 의미합니다.</small>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>상장 시 매수(All in)하겠다는 의견 다수</li>
+                            <li>상장 초기 단기 풋옵션 매수를 고려하는 소수 의견</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">iShares Russell 2000 ETF <span class="stock-ticker">(IWM)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bearish">매우 약세</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>시스템 위기론의 핵심 타겟:</strong> 한 투자자는 현재의 경제 상황을 '현대 금융 시스템의 변곡점'으로 규정하며, 에너지 가격 급등, 소비 위축, 부채 리파이낸싱 문제의 직격탄을 맞을 대상으로 중소기업을 지목했습니다.</li>
+                            <li><strong>취약한 펀더멘털:</strong> IWM 지수에 포함된 기업의 40%가 수익을 내지 못하고 있으며, 낮은 이익률과 높은 에너지 수요로 인해 현재의 경제 위기를 버텨낼 가능성이 매우 낮다고 분석했습니다.</li>
+                            <li><strong>장기 풋옵션 베팅:</strong> 이러한 분석을 바탕으로, 해당 투자자는 전 재산을 12월 18일 만기 IWM 풋옵션에 투자했다고 밝혔습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>12월 18일 만기 장기 풋옵션 (100% 비중)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">SoFi Technologies <span class="stock-ticker">(SOFI)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bearish">매우 약세</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>회계 부정 의혹 (GAAP 위반):</strong> 한 투자자가 SoFi가 미국 일반회계기준(GAAP)을 위반하고 있다고 주장하는 상세한 분석글을 게시했습니다. 핵심은 대출 자산의 공정가치 평가에서 '실현 손익'과 '미실현 손익'을 구분하여 공시해야 하는 규정(ASC 820-10-50-2(c))을 따르지 않고 있다는 것입니다.</li>
+                            <li><strong>손실 은폐 가능성:</strong> 이로 인해 투자자들이 SoFi의 내부 가치평가 모델이 자산 가치를 인위적으로 부풀려 실제 현금 손실을 숨기고 있는지 파악할 수 없다고 지적했습니다. SoFi의 대출 자산 가치가 금리 인상에도 불구하고 다른 은행들과 달리 프리미엄을 유지하는 점을 의심스러운 정황으로 제시했습니다.</li>
+                            <li><strong>공매도 리포트와의 연관성:</strong> 이러한 회계 처리 방식이 공매도 투자사인 머디 워터스(Muddy Waters)가 제기했던 의혹을 뒷받침할 수 있다고 주장했습니다. 해당 분석글 작성자는 SoFi에 풋옵션을 보유하고 있다고 밝혔습니다.</li>
+                        </ul>
+                         <small class="annotation">※ <strong>GAAP (Generally Accepted Accounting Principles):</strong> 일반적으로 인정된 회계원칙. 기업의 재무 보고를 위한 표준입니다.</small>
+                         <small class="annotation">※ <strong>공정가치(Fair Value):</strong> 자산을 시장에서 합리적인 판단력으로 거래할 때 형성될 수 있는 교환 가격입니다.</small>
+                    </td>
+                </tr>
+                <tr>
+                    <th>언급된 포지션</th>
+                    <td>
+                        <ul>
+                            <li>4월 만기 $12 풋옵션</li>
+                             <li>8월 만기 $15 풋옵션</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">우주 항공 및 방산 관련주</div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bullish">강세</span></td>
+                </tr>
+                <tr>
+                    <th>종목 및 분석</th>
+                    <td>
+                        <ul>
+                            <li><strong>Rocket Lab (RKLB), AST SpaceMobile (ASTS):</strong> 한 투자자가 옵션 거래로 큰 수익을 낸 핵심 포트폴리오로 공개했습니다. 위성 기술 및 로켓 기술을 기반으로 목표 주가를 $500로 설정할 만큼 매우 낙관적으로 보고 있습니다. SpaceX IPO와 연계되어 동반 상승 기대감이 있습니다.</li>
+                            <li><strong>Planet Labs (PL), NioCorp Developments (NBIS):</strong> 위 종목들과 함께 같은 투자자의 장기 성장 포트폴리오에 포함되어 있습니다. 특히 NBIS는 엔비디아(NVDA), 메타(META)와의 계약을 근거로 강한 상승을 기대하고 있습니다.</li>
+                            <li><strong>방산주 (LMT, NOC, RTX, LHX):</strong> 지정학적 갈등 상황에서 '예상치 못한 순풍(Unexpected Tailwinds)'을 맞을 대표적인 수혜주로 언급되었습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">메모리 반도체 관련주</div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bearish">약세</span></td>
+                </tr>
+                <tr>
+                    <th>종목 및 분석</th>
+                    <td>
+                        <ul>
+                            <li><strong>Micron (MU), Western Digital (WDC), SanDisk (SNDK):</strong> 구글(Google)이 발표한 AI 속도 향상 기술 'TurboQuant'가 메모리 사용량을 6배 절감한다는 소식에 주가가 하락했습니다. AI 발전이 오히려 기존 메모리 반도체 수요를 감소시킬 수 있다는 우려가 반영되었습니다.</li>
+                             <li><strong>개인 투자자 손실:</strong> 한 투자자는 Micron 주가 하락으로 큰 손실을 보고 있다고 언급했으며, 다른 투자자도 MU 주식을 보유하며 손실을 보고 있다고 토로했습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">Zoom Video Communications <span class="stock-ticker">(ZM)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment bullish">강세</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>최고의 Anthropic 관련주 주장:</strong> ZM이 유망 AI 기업 'Anthropic'의 지분 약 1%를 보유하고 있다는 점에 주목했습니다. 이는 ZM의 시가총액 대비 상당한 가치이며, 현재 주가는 Anthropic의 가치를 제대로 반영하지 않고 있다고 분석했습니다.</li>
+                            <li><strong>저평가 분석:</strong> 연간 20억 달러의 잉여현금흐름(FCF)과 78억 달러의 현금을 보유하고 있어 재무적으로 매우 안정적입니다. Anthropic 지분 가치를 제외하면 핵심 사업이 FCF의 5배 수준에서 거래되고 있어 매우 저평가되었다고 주장했습니다.</li>
+                            <li><strong>원격 근무 재확산 가능성:</strong> 유가 급등으로 인해 기업들이 다시 재택근무를 장려할 경우, ZM이 수혜를 볼 수 있다는 의견도 제시되었습니다.</li>
+                        </ul>
+                        <small class="annotation">※ <strong>NAV (Net Asset Value):</strong> 순자산가치. 기업의 총자산에서 총부채를 뺀 값입니다.</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="stock-card">
+            <div class="stock-title">Advanced Micro Devices <span class="stock-ticker">(AMD)</span></div>
+            <table>
+                <tr>
+                    <th>투자 심리</th>
+                    <td><span class="sentiment neutral">중립 (단기 트레이딩)</span></td>
+                </tr>
+                <tr>
+                    <th>분석 및 언급 이유</th>
+                    <td>
+                        <ul>
+                            <li><strong>풋 크레딧 스프레드 거래:</strong> 한 투자자가 AMD 풋옵션 크레딧 스프레드 전략으로 약 8만 달러의 수익을 올린 거래를 인증했습니다. 이는 주가가 특정 가격(이 경우 $180) 아래로 크게 하락하지만 않으면 수익을 내는 전략입니다.</li>
+                            <li><strong>'증기기관차 앞에서 동전 줍기':</strong> 이 전략은 성공 시 제한된 수익을 얻지만, 실패 시 막대한 손실을 볼 수 있어 '증기기관차 앞에서 동전 줍기'에 비유되었습니다. 해당 투자자는 최대 손실 가능액이 51만 달러 이상이었다고 설명했습니다.</li>
+                        </ul>
+                        <small class="annotation">※ <strong>크레딧 스프레드(Credit Spread):</strong> 두 개의 다른 옵션을 동시에 거래하여 초기에 프리미엄(credit)을 받고, 주가가 특정 범위 내에서 움직일 경우 수익을 얻는 전략입니다.</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="stock-card">
+            <div class="stock-title">기타 언급된 주식</div>
+            <table>
+                <tr>
+                    <th>종목</th>
+                    <th>내용</th>
+                </tr>
+                <tr>
+                    <td><strong>Energy Select Sector SPDR Fund (XLE)</strong></td>
+                    <td>전쟁과 유가 상승으로 에너지 섹터가 수혜를 볼 것이라는 예상과 달리, 한 투자자가 풋옵션을 매수해 의문을 샀습니다. 투자자들 사이에서 해당 포지션에 대한 갑론을박이 있었습니다. (심리: 혼재)</td>
+                </tr>
+                <tr>
+                    <td><strong>Alphabet/Google (GOOGL)</strong></td>
+                    <td>소셜 미디어 중독 소송에서 30%의 책임 판결을 받았습니다. 또한 AI 기업 'Anthropic'의 주요 투자사로 언급되었으며, 메모리 절감 기술 발표로 반도체 주가에 영향을 미쳤습니다. MAG7 중 하나로 최근 하락세를 보였습니다. (심리: 약세)</td>
+                </tr>
+                 <tr>
+                    <td><strong>Space 관련주 (VCX, SKM)</strong></td>
+                    <td>VCX는 SpaceX, SKM은 Anthropic에 대한 투자로 인해 관련주로 주목받으며 주가가 급등했습니다. ZM과 비교되며 어떤 종목이 더 나은 투자처인지에 대한 토론이 있었습니다. (심리: 강세)</td>
+                </tr>
+                <tr>
+                    <td><strong>JD.com (JD)</strong></td>
+                    <td>중국의 이커머스 기업으로, 실적 발표가 좋았다는 이유로 한 투자자가 33,000달러를 'YOLO' 투자했습니다. 중국 시장에 대한 긍정적인 베팅으로 보입니다. (심리: 강세)</td>
+                </tr>
+                <tr>
+                    <td><strong>Apple (AAPL)</strong></td>
+                    <td>MAG7 종목 중 하나로 최근 하락세를 보였습니다. "AI에 힘쓰지 않고 로고만으로 고객에게 비싸게 파는 순수한 자본주의"라는 긍정적인(?) 평가를 받았습니다. (심리: 약세)</td>
+                </tr>
+                 <tr>
+                    <td><strong>Tesla (TSLA)</strong></td>
+                    <td>경영자에 대한 비판에도 불구하고 주가가 높은 대표적인 사례로 언급되었습니다. SpaceX IPO 시 자금 이동 가능성이 제기되었으며, MAG7 종목 중 하락률이 높게 나타났습니다. (심리: 혼재)</td>
+                </tr>
+                 <tr>
+                    <td><strong>NVIDIA (NVDA)</strong></td>
+                    <td>S&P500 내에서 높은 마진의 물리적 제품을 판매하는 거의 유일한 기업으로 언급되었습니다. MAG7 중 하나로 최근 하락세를 보였습니다. (심리: 약세)</td>
+                </tr>
+                 <tr>
+                    <td><strong>Amazon (AMZN)</strong></td>
+                    <td>AI 기업 'Anthropic'에 40억 달러를 투자한 주요 투자사로, Anthropic 관련 최고의 투자처 중 하나로 꼽혔습니다. MAG7 중 하나로 최근 하락세를 보였습니다. (심리: 혼재)</td>
+                </tr>
+                <tr>
+                    <td><strong>QQQ / TQQQ</strong></td>
+                    <td>나스닥 100 지수를 추종하는 ETF. 한 투자자가 0DTE 콜옵션으로 전 재산을 잃었고, 다른 투자자는 3배 레버리지 인버스 상품인 TQQQ를 통해 하락에 베팅했습니다. (심리: 약세)</td>
+                </tr>
+                 <tr>
+                    <td><strong>MAAS Power Group (MAAS)</strong></td>
+                    <td>중국계 페니 주식으로, 한 투자자가 부모님 돈을 빌려 11만 달러를 투자했습니다. 매우 낮은 거래량과 과거 여러 차례의 주식 병합 이력 때문에 다른 투자자들은 극도로 위험한 투자라고 경고했습니다. (심리: 매우 약세)</td>
+                </tr>
+                 <tr>
+                    <td><strong>기타 개별주</strong></td>
+                    <td>
+                        <ul>
+                            <li><strong>FedEx (FDX):</strong> 펀더멘털이 나쁨에도 긍정적 가이던스로 주가가 상승한 사례로 언급.</li>
+                             <li><strong>The Mosaic Company (MOS):</strong> 비료 및 희토류 사업을 근거로 매수 추천.</li>
+                            <li><strong>SoFi (SOFI):</strong> 회계 부정 의혹에 대한 심층 분석글이 게시됨 (매우 약세).</li>
+                             <li><strong>Nokia (NOK):</strong> 소액의 장기 옵션(Leap) 수익 인증.</li>
+                             <li><strong>APA Corporation (APA):</strong> 콜옵션을 통한 수익 인증.</li>
+                             <li><strong>Nikola (NKLA):</strong> 소액 매수 언급.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
